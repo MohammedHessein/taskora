@@ -28,23 +28,146 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  async:
+  cupertino_icons: ^1.0.8
+
+  # Core Dependencies
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+  # State Management
+  bloc: ^9.0.0
+  flutter_bloc: ^9.0.0
+  hydrated_bloc: ^10.0.0
+  fpdart: ^1.1.1
+  equatable: ^2.0.7
+  get_it: ^8.0.2
+  injectable: ^2.5.0
+
+  # HTTP & Networking
+  dio: ^5.7.0
+  retrofit: ^4.4.0
+  dio_cookie_manager: ^3.1.1
+  cookie_jar: ^4.0.8
+  dio_http2_adapter: ^2.5.3
+  dio_cache_interceptor: ^3.5.0
+  http_cache_hive_store: ^5.0.1
+  dio_smart_retry:
+  connectivity_plus: ^6.0.5
+  universal_platform: ^1.1.0
+  envied: ^1.1.1
+  freezed_annotation: ^2.4.4
+
+  # Firebase
+  firebase_core:
+  firebase_crashlytics: ^4.3.4
+  firebase_messaging: ^15.2.4
+
+  # Caching & Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.2
+  flutter_secure_storage: ^9.2.2
+
+  # UI & Styling
+  flutter_svg: ^2.0.10+1
+  flutter_hooks: ^0.21.2
+  flutter_screenutil: ^5.9.3
+  styled_text: 8.1.0
+  pinput: ^5.0.0
+  skeletonizer: ^1.4.2
+  gap: ^3.0.1
+  material_design_icons_flutter: ^7.0.7296
+  flutter_html:
+  conditional_builder_null_safety: ^0.0.6
+  iconify_flutter_plus: ^1.0.4
+  getwidget: ^6.0.0
+  smooth_page_indicator: ^1.2.1
+  carousel_slider: ^5.0.0
+  dotted_border: ^3.1.0
+
+  # Image Handling
+  cached_network_image: ^3.4.1
+  flutter_image_compress: ^2.3.0
+
+  # Utilities
+  path_provider: ^2.1.4
+  path: ^1.9.1
+  json_annotation: ^4.9.0
+  uuid: ^4.4.0
+  meta:
+  dartx: ^1.2.0
+  stream_transform: ^2.1.0
+  decimal:
+  android_id: ^0.4.0
+  flutter_udid: ^4.0.0
+  device_info_plus: ^11.1.1
+  permission_handler: ^12.0.1
+  url_launcher: ^6.3.1
+  rxdart: ^0.28.0
+  ntp: ^2.0.0
+  package_info_plus: ^8.3.0
+  safe_device: ^1.2.0
+  kt_dart: ^1.1.0
+  flutter_flavorizr: ^2.4.0
+  flutter_phoenix: ^1.1.1
+  mocktail: ^1.0.4
+  image_picker: ^1.1.2
+  pdf: ^3.11.3
+  printing: ^5.14.2
+
+  # Design & UX
+  flutter_native_splash: ^2.3.0
+  flutter_launcher_icons: ^0.14.1
+
+  # Localization
+  country_code_picker: ^3.0.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  intl_utils: ^2.8.7
+
+  # Debugging & Logging
+  talker: ^4.5.1
+  talker_flutter: ^4.5.1
+  talker_dio_logger: ^4.5.1
+  talker_bloc_logger: ^4.5.1
+
+  # Notifications
+  toastification: ^3.0.1
+
+  # Others
+  asset_showcase: ^1.0.4
+  high_q_notifications: ^2.0.0
+  syncfusion_flutter_sliders: ^30.2.6
+  font_awesome_flutter: ^10.9.1
+  location: ^8.0.1
+  flutter_local_notifications: ^19.4.1
 
 dev_dependencies:
+  # Core Flutter Dependencies
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  # Code Generators
+  build_runner: ^2.4.5 # Build system for code generation
+  bloc_test: ^10.0.0
+  envied_generator: ^1.1.1 # Generator for Envied package
+  freezed: ^2.4.5 # Downgraded for compatibility
+  json_serializable: ^6.7.1 # JSON serialization code generator
+  hive_generator: ^2.0.1 # Generates TypeAdapters for Hive
+  injectable_generator: ^2.6.2 # Dependency injection code generator
+  retrofit_generator: 7.0.8 # Generator for Retrofit-based HTTP client
+  # flutter_gen_runner: ^5.3.2 # Temporarily removed to fix build_runner issues
+  flutter_lints: ^4.0.0 # Downgraded for compatibility
+
+  # Web Support
+  build_web_compilers: ^4.0.11 # Wraps dart2js and DDC compilers
+  dart_code_metrics_presets: ^2.22.0
+  easy_stepper: ^0.8.5+1
+
+flutter_intl:
+  enabled: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -87,3 +210,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  assets:
+    - assets/fonts/
+

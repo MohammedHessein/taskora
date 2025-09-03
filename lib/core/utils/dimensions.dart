@@ -1,0 +1,90 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class Dimensions {
+  static double f4 = 4.0.sp;
+  static double f5 = 5.0.sp;
+  static double f6 = 6.0.sp;
+  static double f7 = 7.0.sp;
+  static double f8 = 8.0.sp;
+  static double f9 = 9.0.sp;
+  static double f10 = 10.0.sp;
+  static double f11 = 11.0.sp;
+  static double f12 = 12.0.sp;
+  static double f13 = 13.0.sp;
+  static double f14 = 14.0.sp;
+  static double f15 = 15.0.sp;
+  static double f16 = 16.0.sp;
+  static double f17 = 17.0.sp;
+  static double f18 = 18.0.sp;
+  static double f20 = 20.0.sp;
+  static double f22 = 22.0.sp;
+  static double f24 = 24.0.sp;
+  static double f26 = 26.0.sp;
+  static double f28 = 28.0.sp;
+  static double f30 = 30.0.sp;
+  static double f32 = 32.0.sp;
+  static double f34 = 34.0.sp;
+  static double f36 = 36.0.sp;
+  static double f55 = 55.0.sp;
+  static double f58 = 58.0.sp;
+
+  static FontWeight w100Thin = FontWeight.w100;
+  static FontWeight w200ExtraLight = FontWeight.w200;
+  static FontWeight w300Light = FontWeight.w300;
+  static FontWeight w400Regular = FontWeight.w400;
+  static FontWeight w500Medium = FontWeight.w500;
+  static FontWeight w600SemiBold = FontWeight.w600;
+  static FontWeight w700Bold = FontWeight.w700;
+  static FontWeight w800ExtraBold = FontWeight.w800;
+  static FontWeight w900Black = FontWeight.w900;
+
+  static const double p4 = 4;
+  static const double p5 = 5;
+  static const double p8 = 8;
+  static const double p10 = 10;
+  static const double p12 = 12;
+  static const double p15 = 15;
+  static const double p16 = 16;
+  static const double p20 = 20;
+  static const double p24 = 24;
+  static const double p25 = 25;
+  static const double p30 = 30;
+  static const double p32 = 32;
+  static const double p35 = 35;
+  static const double p40 = 40;
+  static const double p50 = 50;
+
+  static const double m4 = 4;
+  static const double m5 = 5;
+  static const double m8 = 8;
+  static const double m10 = 10;
+  static const double m16 = 16;
+  static const double m20 = 20;
+  static const double m25 = 25;
+  static const double m35 = 30;
+
+  static double r3 = 3.0.r;
+  static double r4 = 4.0.r;
+  static double r5 = 5.0.r;
+  static double r8 = 8.0.r;
+  static double r10 = 10.0.r;
+  static double r12 = 12.0.r;
+  static double r15 = 15.0.r;
+  static double r20 = 20.0.r;
+  static double r24 = 24.0.r;
+  static double r25 = 25.0.r;
+  static double r30 = 30.0.r;
+  static double r35 = 35.0.r;
+  static double r50 = 50.0.r;
+  static double r75 = 75.0.r;
+  static double r100 = 100.0.r;
+
+  static double designDeviceWidth = 375;
+  static double designDeviceHeight = 840;
+  static double phoneMaxWidth = 600.w;
+  static double tabletMaxWidth = 770.w;
+  static double laptopMaxWidth = 990.w;
+  static double webMaxWidth = 1200.w;
+  static const int messageInputLength = 250;
+}

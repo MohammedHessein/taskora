@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1082222861713",
+    "project_id": "taskora-d1af6",
+    "storage_bucket": "taskora-d1af6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082222861713:android:5c8502d2a58c6b2d08ce30",
+        "android_client_info": {
+          "package_name": "com.coddiv.taskora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWltkae20wngZVC0bQl1DuyOST4GjGtgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-package com.example.taskora
+package com.coddiv.taskora
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -185,14 +185,6 @@
   "laundryClothesBlankets": "laundry/clothes/blankets",
   "loyaltyPoints": "loyalty points",
   "redeemPoints": "Redeem points",
-  "youHavePointsPoints": "you have {points} points",
-  "@youHavePointsPoints": {
-    "placeholders": {
-      "points": {
-        "type": "int"
-      }
-    }
-  },
   "service": "Services",
   "orderStatus": "Order status",
   "noOrdersYet": "No orders yet",
@@ -230,14 +222,7 @@
   "hanged": "Hanged",
   "orderSchedule": "Order Schedule",
   "yourLocation": "Your location",
-  "minimumOrder": "Minimum order",
-  "@minimumOrder": {
-    "placeholders": {
-      "orders": {
-        "type": "num"
-      }
-    }
-  },
+
   "priceMenu": "Price Menu",
   "selectAPickupTime": "Select a pickup time",
   "selectADeliveryTime": "Select a delivery time",
@@ -273,14 +258,6 @@
     }
   },
   "noLoyaltyPointsAvailable": "No loyalty points available",
-  "youHavePoints": "You have <a>{points}</a> points",
-  "@youHavePoints": {
-    "placeholders": {
-      "points": {
-        "type": "num"
-      }
-    }
-  },
   "offerCode": "Offer code",
   "send": "Send",
   "pay": "Pay",
@@ -322,13 +299,21 @@
   "discount23": "Discount 23%",
   "limitedTimeOffer": "Limited Time Offer",
   "exchangePoints": "Exchange points",
-  "you have {points} points": "You have {points} points",
+  "youHavePoints": "You have {points} points",
+  "@youHavePoints": {
+    "placeholders": {
+      "points": {
+        "type": "int",
+        "example": "100"
+      }
+    }
+  },
   "onlineOrder": "Online Order",
   "hour": "{date} Hr",
   "noAccount": "don't have an account",
   "alreadyHaveAccount": "Already have an account?",
   "signIn": "Login",
-  "resend again": "Resend again?",
+  "resendAgain": "Resend again?",
   "didNotReceiveTheCode": "Didn't receive the code? Contact us now.",
   "meter": "{meter} meter",
   "service1": "1-Service",
@@ -386,24 +371,20 @@
   "confirm": "Confirm",
   "services_title": "Services",
   "services_subtitle": "We've gathered all the services your home needs",
-  "categories": {
-    "plumbing": "Plumbing",
-    "swimming_pool": "Swimming Pool",
-    "carpentry": "Carpentry",
-    "installation": "Installation",
-    "home_appliances": "Home Appliances",
-    "security": "Security",
-    "tiling": "Tiling",
-    "cleaning": "Cleaning",
-    "laundry": "Laundry"
-  },
-  "tabs": {
-    "home": "Home",
-    "orders": "Orders",
-    "offers": "Offers",
-    "store": "Store",
-    "settings": "Settings"
-  },
+  "categories_plumbing": "Plumbing",
+  "categories_swimming_pool": "Swimming Pool",
+  "categories_carpentry": "Carpentry",
+  "categories_installation": "Installation",
+  "categories_home_appliances": "Home Appliances",
+  "categories_security": "Security",
+  "categories_tiling": "Tiling",
+  "categories_cleaning": "Cleaning",
+  "categories_laundry": "Laundry",
+  "tabs_home": "Home",
+  "tabs_orders": "Orders",
+  "tabs_offers": "Offers",
+  "tabs_store": "Store",
+  "tabs_settings": "Settings",
   "select_service": "Select Service",
   "personal_info": "Personal Information",
   "account_settings": "Account Settings",
@@ -454,7 +435,7 @@
   "ad_title": "Ad Title",
   "ad_description": "Ad Description",
   "condition": "Condition",
-  "new": "New",
+  "newItem": "New",
   "used": "Used",
   "publish": "Publish",
   "auction_details": "Auction Details",
@@ -469,5 +450,7 @@
   "follow_auction": "Follow Auction",
   "active": "Active",
   "ended": "Ended",
-  "pending": "Pending"
+  "pending": "Pending",
+  "loading": "Loading",
+  "unknown": "Unknown"
 }

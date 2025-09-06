@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taskora/core/constants/api_constants.dart';
-import 'package:taskora/core/constants/ui_constants.dart';
 import 'package:taskora/core/dependency_injection/injector.dart';
 import 'package:taskora/core/helpers/cache_helper.dart';
 import 'package:taskora/core/shared/cubits/app_cubit/app_cubit.dart';
 import 'package:taskora/core/shared/cubits/app_cubit/app_states.dart';
 import 'package:taskora/core/theme/app_colors.dart';
-import 'package:taskora/home_view.dart';
+import 'package:taskora/features/auth/login/presentation/pages/login_view.dart';
 
 class MainView extends StatefulWidget {
   const MainView({super.key});
@@ -18,13 +17,6 @@ class MainView extends StatefulWidget {
 
 class _MainViewState extends State<MainView> {
   Future<String?> _checkAutoLogin() async {
-    final seenOnboarding =
-        await CacheHelper.getData(UiConstants.seenOnboarding) as bool? ?? false;
-
-    if (!seenOnboarding) {
-      return "ONBOARDING";
-    }
-
     final token = await CacheHelper.getSecuredString(
       ApiConstants.accessTokenKey,
     );
@@ -62,11 +54,9 @@ class _MainViewState extends State<MainView> {
                   ),
                 );
               }
-              return HomeView();
+              return const LoginView();
 
               // switch (snapshot.data) {
-              //   case "ONBOARDING":
-              //     return const OnboardingView();
               //   case "HOME":
               //     return const NavBar();
               //   case "LOGIN":

@@ -27,10 +27,6 @@ class _CustomStepSliderState extends State<CustomStepSlider> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          context.tr.youHavePointsPoints(_value.toInt()),
-          style: CustomTextStyle.kTextStyleF16,
-        ),
         SfSlider(
           min: 0,
           max: 5000,

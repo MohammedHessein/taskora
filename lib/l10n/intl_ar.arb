@@ -185,14 +185,6 @@
   "laundryClothesBlankets": "غسيل ملابس/ بطانيات",
   "loyaltyPoints": "نقاط الولاء",
   "redeemPoints": "استخدام النقاط",
-  "youHavePointsPoints": "لديك {points} نقطة",
-  "@youHavePointsPoints": {
-    "placeholders": {
-      "points": {
-        "type": "int"
-      }
-    }
-  },
   "service": "الخدمات",
   "orderStatus": "حالة الطلب",
   "noOrdersYet": "لا يوجد طلبات حتى الان",
@@ -215,6 +207,7 @@
   "additionalDetergents": "منظفات إضافية",
   "fabricSoftener": "منعم ملابس",
   "aromaticScent": "رائحة عطرية",
+  "ifThisOptionIsActivated": "إذا تم تفعيل هذا الخيار، ستستخدم المغسلة منعم الملابس إذا لزم الأمر",
   "typeOfIroning": "نوع الكوي الغترة/الشماغ",
   "without": "بدون",
   "withMarzam": "مع مرزم",
@@ -229,14 +222,6 @@
   "hanged": "معلقة",
   "orderSchedule": "جدول الطلب",
   "yourLocation": "موقعك",
-  "minimumOrder": "الحد الأدنى للطلب",
-  "@minimumOrder": {
-    "placeholders": {
-      "orders": {
-        "type": "num"
-      }
-    }
-  },
   "priceMenu": "قائمة الأسعار",
   "selectAPickupTime": "حدد وقت الاستلام",
   "selectADeliveryTime": "حدد وقت التسليم",
@@ -273,14 +258,6 @@
     }
   },
   "noLoyaltyPointsAvailable": "لا توجد نقاط الولاء المتاحة",
-  "youHavePoints": "لديك <a>{points}</a> نقطة",
-  "@youHavePoints": {
-    "placeholders": {
-      "points": {
-        "type": "num"
-      }
-    }
-  },
   "offerCode": "كود العرض",
   "send": "إرسال",
   "pay": "ادفع",
@@ -322,13 +299,21 @@
   "discount23": "خصم 23 %",
   "limitedTimeOffer": "عرض خاص لفتره محدوده",
   "exchangePoints": "استبدال النقاط",
-  "you have {points} points": "لديك {points} نقطة",
+  "youHavePoints": "لديك {points} نقطة",
+  "@youHavePoints": {
+    "placeholders": {
+      "points": {
+        "type": "int",
+        "example": "100"
+      }
+    }
+  },
   "onlineOrder": "طلب اونلاين",
   "hour": "{date} ساعة",
   "noAccount": "ليس لدى حساب",
   "alreadyHaveAccount": "لديك حساب بالفعل",
   "signIn": "تسجيل الدخول",
-  "resend again": "اعاده الارسال؟",
+  "resendAgain": "اعاده الارسال؟",
   "didNotReceiveTheCode": "لم يصلك الرمز؟ قم بالتواصل الان",
   "meter": "{meter} متر",
   "service1": "1 -الخدمه",
@@ -385,24 +370,20 @@
   "confirm": "أكيد",
   "services_title": "خدمات فتح",
   "services_subtitle": "جمعنا لك كل الخدمات التي يمتاجها بيتك",
-  "categories": {
-    "plumbing": "خورباء",
-    "swimming_pool": "سباحة",
-    "carpentry": "نجارة",
-    "installation": "ستالبت",
-    "home_appliances": "أجهزة متزلية",
-    "security": "أمن وسلدهة",
-    "tiling": "تبليط",
-    "cleaning": "تنظيف",
-    "laundry": "Laundry"
-  },
-  "tabs": {
-    "home": "الرئيسية",
-    "orders": "الطلبات",
-    "offers": "العروض",
-    "store": "المتجر",
-    "settings": "العمادات"
-  },
+  "categories_plumbing": "سباكة",
+  "categories_swimming_pool": "سباحة",
+  "categories_carpentry": "نجارة",
+  "categories_installation": "تركيب",
+  "categories_home_appliances": "أجهزة منزلية",
+  "categories_security": "أمن وسلامة",
+  "categories_tiling": "تبليط",
+  "categories_cleaning": "تنظيف",
+  "categories_laundry": "Laundry",
+  "tabs_home": "الرئيسية",
+  "tabs_orders": "الطلبات",
+  "tabs_offers": "العروض",
+  "tabs_store": "المتجر",
+  "tabs_settings": "الإعدادات",
   "select_service": "حدد الخدمة",
   "personal_info": "البيانات الشخصية",
   "account_settings": "إعدادات الحساب",
@@ -453,7 +434,7 @@
   "ad_title": "عنوان الاعلان",
   "ad_description": "وصف الاعلان",
   "condition": "الحالة",
-  "new": "جديد",
+  "newItem": "جديد",
   "used": "مستعمل",
   "publish": "نشر",
   "auction_details": "تفاصيل المزاد",
@@ -468,5 +449,7 @@
   "follow_auction": "متابعة المزاد",
   "active": "نشط",
   "ended": "منتهي",
-  "pending": "معلق"
+  "pending": "معلق",
+  "loading": "جاري التحميل",
+  "unknown": "غير معروف"
 }

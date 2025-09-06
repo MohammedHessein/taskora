@@ -33,49 +33,58 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m5(meter) => "${meter} meter";
 
-  static String m6(orders) => "Minimum order";
+  static String m6(orderNumber) => "Order No ${orderNumber}";
 
-  static String m7(orderNumber) => "Order No ${orderNumber}";
+  static String m7(email) => "OTP sent to ${email}";
 
-  static String m8(email) => "OTP sent to ${email}";
+  static String m8(product) => "Product Details <a>(${product})</a>";
 
-  static String m9(product) => "Product Details <a>(${product})</a>";
+  static String m9(amount) => "${amount} Riyal";
 
-  static String m10(amount) => "${amount} Riyal";
+  static String m10(id) => "Tax ID: ${id}";
 
-  static String m11(id) => "Tax ID: ${id}";
-
-  static String m12(count) =>
+  static String m11(count) =>
       "${Intl.plural(count, one: '1 day ago', other: '${count} days ago')}";
 
-  static String m13(count) =>
+  static String m12(count) =>
       "${Intl.plural(count, one: '1 hour ago', other: '${count} hours ago')}";
 
-  static String m14(count) =>
+  static String m13(count) =>
       "${Intl.plural(count, one: '1 minute ago', other: '${count} minutes ago')}";
 
-  static String m15(count) =>
+  static String m14(count) =>
       "${Intl.plural(count, zero: 'just now', one: '1 second ago', other: '${count} seconds ago')}";
 
-  static String m16(vat) => "vat (${vat})";
+  static String m15(vat) => "vat (${vat})";
 
-  static String m17(points) => "You have <a>${points}</a> points";
-
-  static String m18(points) => "you have ${points} points";
+  static String m16(points) => "You have ${points} points";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aboutProduct": m0,
         "aboutSupplier": MessageLookupByLibrary.simpleMessage("About Supplier"),
+        "about_app": MessageLookupByLibrary.simpleMessage("About App"),
+        "about_app_description": MessageLookupByLibrary.simpleMessage(
+            "Ragwa Provider is a comprehensive application that connects you with a wide range of home and technical service providers easily and professionally."),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
+        "account_settings":
+            MessageLookupByLibrary.simpleMessage("Account Settings"),
+        "active": MessageLookupByLibrary.simpleMessage("Active"),
+        "active_auctions":
+            MessageLookupByLibrary.simpleMessage("Active Auctions"),
+        "ad_description":
+            MessageLookupByLibrary.simpleMessage("Ad Description"),
+        "ad_title": MessageLookupByLibrary.simpleMessage("Ad Title"),
         "add": MessageLookupByLibrary.simpleMessage("Add"),
         "addRecleanSmartBagToMyOrder": MessageLookupByLibrary.simpleMessage(
             "Add Reclean Smart Bag to my order"),
         "addToCart": MessageLookupByLibrary.simpleMessage("Add to cart"),
+        "add_ad": MessageLookupByLibrary.simpleMessage("Add Advertisement"),
         "additionalDetergents":
             MessageLookupByLibrary.simpleMessage("Additional detergents"),
         "additionalNotes":
             MessageLookupByLibrary.simpleMessage("Additional notes"),
+        "address": MessageLookupByLibrary.simpleMessage("Address"),
         "advantages": MessageLookupByLibrary.simpleMessage("Advantages"),
         "agreeToTermsAndPolicies": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to all of our <a>Terms & Conditions</a> and <b>Privacy policies</b>"),
@@ -84,6 +93,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "alreadyHaveAnAccountLogin": MessageLookupByLibrary.simpleMessage(
             "Already have an account? <a>Login</a>"),
         "amountWillBeCharged": m1,
+        "app_experience":
+            MessageLookupByLibrary.simpleMessage("Overall App Experience"),
+        "app_name": MessageLookupByLibrary.simpleMessage("Taskora - Ragwa"),
         "areYouSureYouWantToCloseTheApp": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to close the app?"),
         "areYouSureYouWantToContinueOrdering":
@@ -92,11 +104,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYouSureYouWantToKeepOrdering": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to keep ordering?"),
         "aromaticScent": MessageLookupByLibrary.simpleMessage("Aromatic scent"),
+        "auction_details":
+            MessageLookupByLibrary.simpleMessage("Auction Details"),
+        "auction_duration":
+            MessageLookupByLibrary.simpleMessage("Auction Duration"),
+        "auctions": MessageLookupByLibrary.simpleMessage("Auctions"),
         "automaticPayment": MessageLookupByLibrary.simpleMessage(
             "Activate the automatic payment feature from the balance"),
         "bad": MessageLookupByLibrary.simpleMessage("Bad"),
         "balance": MessageLookupByLibrary.simpleMessage("Balance"),
         "balanceAmount": MessageLookupByLibrary.simpleMessage("Balance amount"),
+        "bank_details": MessageLookupByLibrary.simpleMessage("Bank Details"),
+        "bid_increment":
+            MessageLookupByLibrary.simpleMessage("Minimum Bid Increment"),
+        "book_service": MessageLookupByLibrary.simpleMessage("Book Service"),
         "buyerInformation":
             MessageLookupByLibrary.simpleMessage("Buyer information"),
         "byClickingContinueYouAgreeToAtermsOfUseAnd":
@@ -105,9 +126,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "byCreatingAnAccountYouAgreeToOurTermsConditions":
             MessageLookupByLibrary.simpleMessage(
                 "By creating an account, you agree to our <a>Terms & Conditions</a> and <b>Privacy Policy</b>"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "card_number": MessageLookupByLibrary.simpleMessage("Card Number"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("Cash on Delivery"),
+        "categories_carpentry":
+            MessageLookupByLibrary.simpleMessage("Carpentry"),
+        "categories_cleaning": MessageLookupByLibrary.simpleMessage("Cleaning"),
+        "categories_home_appliances":
+            MessageLookupByLibrary.simpleMessage("Home Appliances"),
+        "categories_installation":
+            MessageLookupByLibrary.simpleMessage("Installation"),
+        "categories_laundry": MessageLookupByLibrary.simpleMessage("Laundry"),
+        "categories_plumbing": MessageLookupByLibrary.simpleMessage("Plumbing"),
+        "categories_security": MessageLookupByLibrary.simpleMessage("Security"),
+        "categories_swimming_pool":
+            MessageLookupByLibrary.simpleMessage("Swimming Pool"),
+        "categories_tiling": MessageLookupByLibrary.simpleMessage("Tiling"),
         "changePassword":
             MessageLookupByLibrary.simpleMessage("Change Password"),
         "chargeYourBalance":
@@ -117,6 +153,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Clothes are not considered for you"),
         "clothingArrangementMechanism": MessageLookupByLibrary.simpleMessage(
             "Clothing arrangement mechanism"),
+        "comment": MessageLookupByLibrary.simpleMessage("Comment"),
         "common_cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "common_confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "common_error": MessageLookupByLibrary.simpleMessage("Error"),
@@ -127,10 +164,17 @@ class MessageLookup extends MessageLookupByLibrary {
             "Something went wrong. Please restart the app."),
         "common_success": MessageLookupByLibrary.simpleMessage("Success"),
         "common_yes": MessageLookupByLibrary.simpleMessage("Yes"),
+        "condition": MessageLookupByLibrary.simpleMessage("Condition"),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmOrder": MessageLookupByLibrary.simpleMessage("Confirm Order"),
+        "confirm_order": MessageLookupByLibrary.simpleMessage("Confirm Order"),
+        "countdown_timer":
+            MessageLookupByLibrary.simpleMessage("Auction Countdown"),
+        "coupon_code": MessageLookupByLibrary.simpleMessage("Coupon Code"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create new account"),
         "currentOrders": MessageLookupByLibrary.simpleMessage("Current orders"),
+        "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("Delivery date"),
         "deliveryFee": MessageLookupByLibrary.simpleMessage("Delivery fee"),
@@ -144,15 +188,23 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Download Invoice"),
         "dryClean": MessageLookupByLibrary.simpleMessage("Dry clean"),
         "dryCleaning": MessageLookupByLibrary.simpleMessage("Dry Cleaning"),
+        "ease_of_use":
+            MessageLookupByLibrary.simpleMessage("Ease of Use & Communication"),
         "eightAMToTenAM":
             MessageLookupByLibrary.simpleMessage("08:00 AM - 10:00 AM"),
         "eightPMToTenPM":
             MessageLookupByLibrary.simpleMessage("08:00 PM - 10:00 PM"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "ended": MessageLookupByLibrary.simpleMessage("Ended"),
+        "ended_auctions":
+            MessageLookupByLibrary.simpleMessage("Ended Auctions"),
         "enterConfirmationCode":
             MessageLookupByLibrary.simpleMessage("Enter Confirmation Code"),
         "enterTheShippingBalanceAmount": MessageLookupByLibrary.simpleMessage(
             "Enter the shipping balance amount"),
+        "enter_mobile": MessageLookupByLibrary.simpleMessage(
+            "Enter your mobile number to receive activation code"),
+        "enter_otp": MessageLookupByLibrary.simpleMessage("Enter OTP Code"),
         "errorHandler_badGateway": MessageLookupByLibrary.simpleMessage(
             "Invalid data. Please try again."),
         "errorHandler_badRequest": MessageLookupByLibrary.simpleMessage(
@@ -226,6 +278,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "excellent": MessageLookupByLibrary.simpleMessage("Excellent"),
         "exchangePoints":
             MessageLookupByLibrary.simpleMessage("Exchange points"),
+        "expiry_date": MessageLookupByLibrary.simpleMessage("Expiry Date"),
         "fabricSoftener":
             MessageLookupByLibrary.simpleMessage("Fabric softener"),
         "feedback": MessageLookupByLibrary.simpleMessage("Feedback"),
@@ -233,13 +286,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "finalizePayment":
             MessageLookupByLibrary.simpleMessage("Finalize Payment"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
+        "fixed_price_services":
+            MessageLookupByLibrary.simpleMessage("Fixed Price Services"),
         "folded": MessageLookupByLibrary.simpleMessage("Folded"),
+        "follow_auction":
+            MessageLookupByLibrary.simpleMessage("Follow Auction"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("Forget Pass"),
         "fourAMToSixAM":
             MessageLookupByLibrary.simpleMessage("04:00 AM - 06:00 AM"),
         "fourPMToSixPM":
             MessageLookupByLibrary.simpleMessage("04:00 PM - 06:00 PM"),
         "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "full_name": MessageLookupByLibrary.simpleMessage("Full Name"),
         "general_error": m2,
         "general_noImageAvailable":
             MessageLookupByLibrary.simpleMessage("No image available"),
@@ -252,6 +310,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Hang it up and don\'t meet the representative. You don\'t need to be at home."),
         "hanged": MessageLookupByLibrary.simpleMessage("Hanged"),
         "high": MessageLookupByLibrary.simpleMessage("High"),
+        "highest_bidder":
+            MessageLookupByLibrary.simpleMessage("Highest Bidder"),
         "history": MessageLookupByLibrary.simpleMessage("History"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "hour": m3,
@@ -283,6 +343,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "limitedTimeOffer":
             MessageLookupByLibrary.simpleMessage("Limited Time Offer"),
         "little": MessageLookupByLibrary.simpleMessage("Little"),
+        "loading": MessageLookupByLibrary.simpleMessage("Loading"),
         "located": MessageLookupByLibrary.simpleMessage("Located"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
@@ -290,12 +351,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "medium": MessageLookupByLibrary.simpleMessage("Medium"),
         "meter": m5,
-        "minimumOrder": m6,
         "minimumOrderPrice":
             MessageLookupByLibrary.simpleMessage("Minimum order price"),
+        "mobile": MessageLookupByLibrary.simpleMessage("Mobile"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "nearbyWashers": MessageLookupByLibrary.simpleMessage("Nearby Washers"),
+        "newItem": MessageLookupByLibrary.simpleMessage("New"),
+        "next": MessageLookupByLibrary.simpleMessage("Next"),
         "noAccount":
             MessageLookupByLibrary.simpleMessage("don\'t have an account"),
         "noGiftsAvailable":
@@ -328,9 +391,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "orderValue": MessageLookupByLibrary.simpleMessage("Order value"),
         "order_cancelled":
             MessageLookupByLibrary.simpleMessage("Order cancelled"),
-        "order_number": m7,
+        "order_details": MessageLookupByLibrary.simpleMessage("Order Details"),
+        "order_number": m6,
         "orders": MessageLookupByLibrary.simpleMessage("Orders"),
-        "otpSent": m8,
+        "otpSent": m7,
+        "otp_sent_to": MessageLookupByLibrary.simpleMessage("OTP code sent to"),
         "ourServices": MessageLookupByLibrary.simpleMessage("Our Services"),
         "packages": MessageLookupByLibrary.simpleMessage("Packages"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
@@ -346,6 +411,11 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Payment Details"),
         "paymentMethods":
             MessageLookupByLibrary.simpleMessage("Payment Methods"),
+        "payment_method":
+            MessageLookupByLibrary.simpleMessage("Payment Method"),
+        "pending": MessageLookupByLibrary.simpleMessage("Pending"),
+        "personal_info":
+            MessageLookupByLibrary.simpleMessage("Personal Information"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
         "pleaseAcceptTheTermsAndConditions":
             MessageLookupByLibrary.simpleMessage(
@@ -387,9 +457,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Previous Orders"),
         "price": MessageLookupByLibrary.simpleMessage("Price"),
         "priceMenu": MessageLookupByLibrary.simpleMessage("Price Menu"),
+        "price_vs_quality":
+            MessageLookupByLibrary.simpleMessage("Price vs Quality"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-        "productDetails": m9,
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "privacy_policy_description": MessageLookupByLibrary.simpleMessage(
+            "At Ragwa Provider, we value your privacy and strive to protect all your personal data. Only necessary data is collected to provide and improve the user experience."),
+        "productDetails": m8,
+        "publish": MessageLookupByLibrary.simpleMessage("Publish"),
+        "punctuality": MessageLookupByLibrary.simpleMessage("Punctuality"),
         "quantityCount": MessageLookupByLibrary.simpleMessage("Quantity Count"),
+        "rate_service": MessageLookupByLibrary.simpleMessage("Rate Service"),
         "recleanSmartBag":
             MessageLookupByLibrary.simpleMessage("Reclean Smart Bag"),
         "recleanSmartBagContent": MessageLookupByLibrary.simpleMessage(
@@ -408,24 +487,46 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Request and specify the type of washing for each bag"),
         "requestSchedule":
             MessageLookupByLibrary.simpleMessage("Request Schedule"),
+        "resend": MessageLookupByLibrary.simpleMessage("Resend?"),
+        "resendAgain": MessageLookupByLibrary.simpleMessage("Resend again?"),
         "resendOtp": MessageLookupByLibrary.simpleMessage("Resend OTP"),
+        "reserve_price": MessageLookupByLibrary.simpleMessage("Reserve Price"),
         "retailPrice": MessageLookupByLibrary.simpleMessage("Retail price"),
         "returnToHome": MessageLookupByLibrary.simpleMessage("Return to home"),
         "reviewOrder": MessageLookupByLibrary.simpleMessage("Review Order"),
+        "review_data": MessageLookupByLibrary.simpleMessage("Review Data"),
         "rial": MessageLookupByLibrary.simpleMessage("Riyal"),
-        "riyal": m10,
+        "riyal": m9,
+        "schedule_order":
+            MessageLookupByLibrary.simpleMessage("Schedule Order"),
+        "searching_technician":
+            MessageLookupByLibrary.simpleMessage("Searching for Technician"),
         "selectADeliveryTime":
             MessageLookupByLibrary.simpleMessage("Select a delivery time"),
         "selectAPickupTime":
             MessageLookupByLibrary.simpleMessage("Select a pickup time"),
+        "select_location":
+            MessageLookupByLibrary.simpleMessage("Select Location"),
+        "select_service":
+            MessageLookupByLibrary.simpleMessage("Select Service"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
         "sendActivationCode":
             MessageLookupByLibrary.simpleMessage("Send activation code"),
+        "send_message":
+            MessageLookupByLibrary.simpleMessage("Leave your message"),
         "service": MessageLookupByLibrary.simpleMessage("Services"),
         "service1": MessageLookupByLibrary.simpleMessage("1-Service"),
         "service2": MessageLookupByLibrary.simpleMessage("2-Service"),
         "service3": MessageLookupByLibrary.simpleMessage("3-Service"),
         "serviceFee": MessageLookupByLibrary.simpleMessage("Service Fee"),
+        "service_completed": MessageLookupByLibrary.simpleMessage(
+            "Service Completed Successfully"),
+        "service_fee": MessageLookupByLibrary.simpleMessage("Service Fee"),
+        "service_quality":
+            MessageLookupByLibrary.simpleMessage("Service Quality"),
+        "services_subtitle": MessageLookupByLibrary.simpleMessage(
+            "We\'ve gathered all the services your home needs"),
+        "services_title": MessageLookupByLibrary.simpleMessage("Services"),
         "setANewPassword":
             MessageLookupByLibrary.simpleMessage("Set a new password"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
@@ -439,19 +540,37 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "squared": MessageLookupByLibrary.simpleMessage("Squared"),
         "starchLevel": MessageLookupByLibrary.simpleMessage("Starch level"),
+        "start_price": MessageLookupByLibrary.simpleMessage("Start Price"),
         "step2": MessageLookupByLibrary.simpleMessage("Step 2"),
         "step3": MessageLookupByLibrary.simpleMessage("Step 3"),
+        "subject": MessageLookupByLibrary.simpleMessage("Subject"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "subtotal": MessageLookupByLibrary.simpleMessage("Sub Total"),
         "surName": MessageLookupByLibrary.simpleMessage("Sur Name"),
-        "taxId": m11,
+        "tabs_home": MessageLookupByLibrary.simpleMessage("Home"),
+        "tabs_offers": MessageLookupByLibrary.simpleMessage("Offers"),
+        "tabs_orders": MessageLookupByLibrary.simpleMessage("Orders"),
+        "tabs_settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "tabs_store": MessageLookupByLibrary.simpleMessage("Store"),
+        "taxId": m10,
+        "technical_support":
+            MessageLookupByLibrary.simpleMessage("Technical Support"),
+        "technical_support_address": MessageLookupByLibrary.simpleMessage(
+            "Riyadh - Al Malaz - 12845 - Salahuddin Road"),
+        "technical_support_contact":
+            MessageLookupByLibrary.simpleMessage("+966 55 768 6624"),
+        "technician_on_way":
+            MessageLookupByLibrary.simpleMessage("Technician on the way"),
         "tenAMToTwelvePM":
             MessageLookupByLibrary.simpleMessage("10:00 AM - 12:00 PM"),
         "tenPMToTwelveAM":
             MessageLookupByLibrary.simpleMessage("10:00 PM - 12:00 AM"),
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("Terms and Conditions"),
+        "terms_of_use": MessageLookupByLibrary.simpleMessage("Terms of Use"),
         "thankYouForYourTime":
+            MessageLookupByLibrary.simpleMessage("Thank you for your time"),
+        "thanks_for_time":
             MessageLookupByLibrary.simpleMessage("Thank you for your time"),
         "theOrderWasDeliveredByTheCaptain":
             MessageLookupByLibrary.simpleMessage(
@@ -462,10 +581,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "theTwoPartiesMeetToDeliverTheProduct":
             MessageLookupByLibrary.simpleMessage(
                 "The two parties meet to deliver the product"),
-        "timeAgo_day": m12,
-        "timeAgo_hour": m13,
-        "timeAgo_minute": m14,
-        "timeAgo_second": m15,
+        "timeAgo_day": m11,
+        "timeAgo_hour": m12,
+        "timeAgo_minute": m13,
+        "timeAgo_second": m14,
         "toMyOrder": MessageLookupByLibrary.simpleMessage("To my order"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),
         "totalAfterDiscount":
@@ -474,7 +593,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Total before discount"),
         "totalCost": MessageLookupByLibrary.simpleMessage("Total Cost"),
         "totalVat": MessageLookupByLibrary.simpleMessage("Total (VAT)"),
+        "total_vat": MessageLookupByLibrary.simpleMessage("Total (incl. VAT)"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("Track order"),
+        "track_order": MessageLookupByLibrary.simpleMessage("Track Order"),
         "twelveAMToTwoAM":
             MessageLookupByLibrary.simpleMessage("12:00 AM - 02:00 AM"),
         "twelvePMToTwoPM":
@@ -485,6 +606,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("02:00 PM - 04:00 PM"),
         "typeOfIroning": MessageLookupByLibrary.simpleMessage(
             "Type of ironing Ghutra/Shamagh"),
+        "unknown": MessageLookupByLibrary.simpleMessage("Unknown"),
         "update_available":
             MessageLookupByLibrary.simpleMessage("Update Available"),
         "update_availableBody": MessageLookupByLibrary.simpleMessage(
@@ -494,12 +616,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "update_requiredBody": MessageLookupByLibrary.simpleMessage(
             "A new version of the app is required to continue using it. Please update."),
         "useCode": MessageLookupByLibrary.simpleMessage("Use code"),
-        "vat": m16,
+        "used": MessageLookupByLibrary.simpleMessage("Used"),
+        "vat": m15,
         "vat15": MessageLookupByLibrary.simpleMessage("VAT(15%)"),
         "verifyAccount": MessageLookupByLibrary.simpleMessage("Verify Account"),
         "veryGood": MessageLookupByLibrary.simpleMessage("Very Good"),
         "viewYourReceipt":
             MessageLookupByLibrary.simpleMessage("View your receipt"),
+        "waiting_for_price": MessageLookupByLibrary.simpleMessage(
+            "Waiting for price confirmation"),
         "wallet": MessageLookupByLibrary.simpleMessage("Wallet"),
         "warning": MessageLookupByLibrary.simpleMessage("Warning"),
         "washAndIron": MessageLookupByLibrary.simpleMessage("Wash and iron"),
@@ -523,8 +648,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "youCanCancelTheOrderAtAnyTime": MessageLookupByLibrary.simpleMessage(
             "You can cancel the order before the end and receive the captain\'s bag of clothes"),
         "youCanPayNow": MessageLookupByLibrary.simpleMessage("You can pay now"),
-        "youHavePoints": m17,
-        "youHavePointsPoints": m18,
+        "youHavePoints": m16,
         "youHaveReceivedYourOrder": MessageLookupByLibrary.simpleMessage(
             "You have received your order"),
         "yourLaundryHasBeenStarted": MessageLookupByLibrary.simpleMessage(

@@ -24,4 +24,5 @@ class Routes {
   static const String orderHowItWorks = '/orderHowItWorks';
   static const String previousOrderDetails = '/previousOrderDetails';
   static const String notifications = '/notifications';
+  static const String home = '/home';
 }

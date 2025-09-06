@@ -8,4 +8,5 @@ class CacheConstants {
   static const String fcmToken = "fcmToken";
   static const String currentUser = "currentUser";
   static const String userBoxName = "userBox";
+  static const String userLocation = "userLocation";
 }

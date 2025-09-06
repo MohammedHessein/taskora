@@ -38,8 +38,6 @@ class CustomBtn extends StatelessWidget {
           condition: condition,
           builder: (context) => ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: bgColor ?? AppColors.onPrimary,
-              foregroundColor: fgColor ?? Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
                 side: BorderSide(

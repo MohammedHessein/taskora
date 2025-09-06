@@ -1,3 +1,4 @@
+import 'package:geocoding/geocoding.dart' hide Location;
 import 'package:location/location.dart';
 
 class LocationService {
@@ -26,16 +27,24 @@ class LocationService {
     }
   }
 
-  Future<void> getRealTimeLocation(void Function(LocationData)? onData) async {
-    await checkAndRequestLocationService();
-    await checkAndRequestLocationPermission();
-    location.onLocationChanged.listen(onData);
-  }
-
   Future<LocationData> getLocation() async {
     await checkAndRequestLocationService();
     await checkAndRequestLocationPermission();
     return await location.getLocation();
+  }
+
+  Future<String> getReadableLocation() async {
+    final locData = await getLocation();
+    final placeMarks = await placemarkFromCoordinates(
+      locData.latitude!,
+      locData.longitude!,
+    );
+
+    if (placeMarks.isNotEmpty) {
+      final place = placeMarks.first;
+      return "${place.postalCode}، ${place.country}";
+    }
+    return "Unknown location";
   }
 }
 

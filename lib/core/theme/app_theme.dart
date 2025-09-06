@@ -7,6 +7,13 @@ import 'package:taskora/core/utils/dimensions.dart';
 
 sealed class AppTheme {
   static ThemeData lightTheme = ThemeData(
+    appBarTheme: AppBarTheme(
+      elevation: 0,
+      backgroundColor: AppColors.secondaryWhite,
+      titleTextStyle: CustomTextStyle.kTextStyleF14.copyWith(
+        color: AppColors.secondaryBlack,
+      ),
+    ),
     brightness: Brightness.light,
     fontFamily: UiConstants.mainFontFamily,
     scaffoldBackgroundColor: AppColors.secondaryWhite,

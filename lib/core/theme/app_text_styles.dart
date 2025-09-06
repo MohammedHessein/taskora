@@ -115,7 +115,7 @@ class CustomTextStyle {
 
   static TextStyle kBtnTextStyle = TextStyle(
     fontFamily: UiConstants.mainFontFamily,
-    fontSize: Dimensions.f14,
+    fontSize: Dimensions.f17,
     fontWeight: FontWeight.w500,
     color: AppColors.secondaryWhite,
     height: 20 / 14,

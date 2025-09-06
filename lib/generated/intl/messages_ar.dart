@@ -33,49 +33,57 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m5(meter) => "${meter} متر";
 
-  static String m6(orders) => "الحد الأدنى للطلب";
+  static String m6(orderNumber) => "رقم الطلب ${orderNumber}";
 
-  static String m7(orderNumber) => "رقم الطلب ${orderNumber}";
+  static String m7(email) => "تم إرسال رمز التحقق إلى ${email}";
 
-  static String m8(email) => "تم إرسال رمز التحقق إلى ${email}";
+  static String m8(product) => "تفاصيل المنتج <a>(${product})</a>";
 
-  static String m9(product) => "تفاصيل المنتج <a>(${product})</a>";
+  static String m9(amount) => "${amount} ريال";
 
-  static String m10(amount) => "${amount} ريال";
+  static String m10(id) => "الرقم الضريبي: ${id}";
 
-  static String m11(id) => "الرقم الضريبي: ${id}";
-
-  static String m12(count) =>
+  static String m11(count) =>
       "${Intl.plural(count, one: 'منذ يوم واحد', other: 'منذ ${count} أيام')}";
 
-  static String m13(count) =>
+  static String m12(count) =>
       "${Intl.plural(count, one: 'منذ ساعة واحدة', other: 'منذ ${count} ساعات')}";
 
-  static String m14(count) =>
+  static String m13(count) =>
       "${Intl.plural(count, one: 'منذ دقيقة واحدة', other: 'منذ ${count} دقائق')}";
 
-  static String m15(count) =>
+  static String m14(count) =>
       "${Intl.plural(count, zero: 'الآن', one: 'منذ ثانية واحدة', other: 'منذ ${count} ثوانٍ')}";
 
-  static String m16(vat) => "القيمة المضافة (${vat})";
+  static String m15(vat) => "القيمة المضافة (${vat})";
 
-  static String m17(points) => "لديك <a>${points}</a> نقطة";
-
-  static String m18(points) => "لديك ${points} نقطة";
+  static String m16(points) => "لديك ${points} نقطة";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aboutProduct": m0,
         "aboutSupplier": MessageLookupByLibrary.simpleMessage("حول المورد"),
+        "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
+        "about_app_description": MessageLookupByLibrary.simpleMessage(
+            "رغوة بروفايد هو تطبيق شامل يربطك بمجموعة واسعة من مزودي الخدمات المنزلية والفنية بكل سهولة واحترافية."),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
+        "account_settings":
+            MessageLookupByLibrary.simpleMessage("إعدادات الحساب"),
+        "active": MessageLookupByLibrary.simpleMessage("نشط"),
+        "active_auctions":
+            MessageLookupByLibrary.simpleMessage("المزادات النشطة"),
+        "ad_description": MessageLookupByLibrary.simpleMessage("وصف الاعلان"),
+        "ad_title": MessageLookupByLibrary.simpleMessage("عنوان الاعلان"),
         "add": MessageLookupByLibrary.simpleMessage("اضف"),
         "addRecleanSmartBagToMyOrder": MessageLookupByLibrary.simpleMessage(
             "إضافة شنطة ريكلين الذكية إلى طلبي"),
         "addToCart": MessageLookupByLibrary.simpleMessage("أضف إلى السلة"),
+        "add_ad": MessageLookupByLibrary.simpleMessage("اضافة اعلان"),
         "additionalDetergents":
             MessageLookupByLibrary.simpleMessage("منظفات إضافية"),
         "additionalNotes":
             MessageLookupByLibrary.simpleMessage("ملاحظات إضافية"),
+        "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "advantages": MessageLookupByLibrary.simpleMessage("المميزات"),
         "agreeToTermsAndPolicies": MessageLookupByLibrary.simpleMessage(
             "بإنشائك حسابًا، فإنك توافق على جميع <a>الشروط والأحكام</a> و<b>سياسات الخصوصية</b> الخاصة بنا"),
@@ -84,6 +92,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "alreadyHaveAnAccountLogin": MessageLookupByLibrary.simpleMessage(
             "هل لديك حساب بالفعل؟ <a>تسجيل الدخول</a>"),
         "amountWillBeCharged": m1,
+        "app_experience":
+            MessageLookupByLibrary.simpleMessage("التجربة العامة للتطبيق"),
+        "app_name": MessageLookupByLibrary.simpleMessage("تاسكورا - رغوة"),
         "areYouSureYouWantToCloseTheApp": MessageLookupByLibrary.simpleMessage(
             "هل انت متاكد انك تريد اغلاق التطبيق؟"),
         "areYouSureYouWantToContinueOrdering":
@@ -91,11 +102,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYouSureYouWantToKeepOrdering": MessageLookupByLibrary.simpleMessage(
             "هل أنت متأكد أنك تريد الاستمرار في الطلب؟"),
         "aromaticScent": MessageLookupByLibrary.simpleMessage("رائحة عطرية"),
+        "auction_details":
+            MessageLookupByLibrary.simpleMessage("تفاصيل المزاد"),
+        "auction_duration": MessageLookupByLibrary.simpleMessage("مدة المزاد"),
+        "auctions": MessageLookupByLibrary.simpleMessage("المزادات"),
         "automaticPayment": MessageLookupByLibrary.simpleMessage(
             "تفعيل خاصية الدفع الاوتوماتيكي من الرصيد"),
         "bad": MessageLookupByLibrary.simpleMessage("سيئة"),
         "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
         "balanceAmount": MessageLookupByLibrary.simpleMessage("مبلغ الرصيد"),
+        "bank_details":
+            MessageLookupByLibrary.simpleMessage("البيانات البنكية"),
+        "bid_increment":
+            MessageLookupByLibrary.simpleMessage("السعر الأدنى للزيادة"),
+        "book_service": MessageLookupByLibrary.simpleMessage("حجز الخدمة"),
         "buyerInformation":
             MessageLookupByLibrary.simpleMessage("معلومات المشتري"),
         "byClickingContinueYouAgreeToAtermsOfUseAnd":
@@ -104,9 +124,25 @@ class MessageLookup extends MessageLookupByLibrary {
         "byCreatingAnAccountYouAgreeToOurTermsConditions":
             MessageLookupByLibrary.simpleMessage(
                 "بإنشائك حسابًا، فإنك توافق على <a>الشروط والأحكام</a> و<b>سياسة الخصوصية</b> الخاصة بنا"),
+        "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "card_number":
+            MessageLookupByLibrary.simpleMessage("رقم البطاقة البنكية"),
         "cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
+        "categories_carpentry": MessageLookupByLibrary.simpleMessage("نجارة"),
+        "categories_cleaning": MessageLookupByLibrary.simpleMessage("تنظيف"),
+        "categories_home_appliances":
+            MessageLookupByLibrary.simpleMessage("أجهزة منزلية"),
+        "categories_installation":
+            MessageLookupByLibrary.simpleMessage("تركيب"),
+        "categories_laundry": MessageLookupByLibrary.simpleMessage("Laundry"),
+        "categories_plumbing": MessageLookupByLibrary.simpleMessage("سباكة"),
+        "categories_security":
+            MessageLookupByLibrary.simpleMessage("أمن وسلامة"),
+        "categories_swimming_pool":
+            MessageLookupByLibrary.simpleMessage("سباحة"),
+        "categories_tiling": MessageLookupByLibrary.simpleMessage("تبليط"),
         "changePassword":
             MessageLookupByLibrary.simpleMessage("تغيير كلمة المرور"),
         "chargeYourBalance": MessageLookupByLibrary.simpleMessage("اشحن رصيدك"),
@@ -115,6 +151,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لا تعد الملابس نحسبها عنك"),
         "clothingArrangementMechanism":
             MessageLookupByLibrary.simpleMessage("آلية ترتيب الملابس"),
+        "comment": MessageLookupByLibrary.simpleMessage("تعليق"),
         "common_cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "common_confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
         "common_error": MessageLookupByLibrary.simpleMessage("خطأ"),
@@ -125,11 +162,18 @@ class MessageLookup extends MessageLookupByLibrary {
             "حدث خطأ ما. يرجى إعادة تشغيل التطبيق."),
         "common_success": MessageLookupByLibrary.simpleMessage("نجاح"),
         "common_yes": MessageLookupByLibrary.simpleMessage("نعم"),
+        "condition": MessageLookupByLibrary.simpleMessage("الحالة"),
+        "confirm": MessageLookupByLibrary.simpleMessage("أكيد"),
         "confirmOrder": MessageLookupByLibrary.simpleMessage("اجراء الطلب"),
+        "confirm_order": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
+        "countdown_timer":
+            MessageLookupByLibrary.simpleMessage("العد التنازلي للمزاد"),
+        "coupon_code": MessageLookupByLibrary.simpleMessage("رمز القسيمة"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
         "currentOrders":
             MessageLookupByLibrary.simpleMessage("الطلبات الحالية"),
+        "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("تاريخ التسليم"),
         "deliveryFee": MessageLookupByLibrary.simpleMessage("رسوم التوصيل"),
@@ -142,15 +186,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "downloadInvoice": MessageLookupByLibrary.simpleMessage("حمل الفاتورة"),
         "dryClean": MessageLookupByLibrary.simpleMessage("غسيل جاف"),
         "dryCleaning": MessageLookupByLibrary.simpleMessage("غسيل جاف"),
+        "ease_of_use":
+            MessageLookupByLibrary.simpleMessage("سهولة التعامل والتواصل"),
         "eightAMToTenAM":
             MessageLookupByLibrary.simpleMessage("8 مساء - 10 مساء"),
         "eightPMToTenPM":
             MessageLookupByLibrary.simpleMessage("8 مساء - 10 مساء"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "ended": MessageLookupByLibrary.simpleMessage("منتهي"),
+        "ended_auctions":
+            MessageLookupByLibrary.simpleMessage("المزادات المنتهية"),
         "enterConfirmationCode":
             MessageLookupByLibrary.simpleMessage("ادخل رمز التأكيد"),
         "enterTheShippingBalanceAmount":
             MessageLookupByLibrary.simpleMessage("أدخل مبلغ رصيد الشحن"),
+        "enter_mobile": MessageLookupByLibrary.simpleMessage(
+            "سجل رقم جوالتا لإرسال رمز التفعيل"),
+        "enter_otp": MessageLookupByLibrary.simpleMessage("ادخل رمز OTP"),
         "errorHandler_badGateway": MessageLookupByLibrary.simpleMessage(
             "بيانات غير صالحة. يرجى المحاولة مرة أخرى."),
         "errorHandler_badRequest": MessageLookupByLibrary.simpleMessage(
@@ -224,18 +276,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "excellent": MessageLookupByLibrary.simpleMessage("ممتازة"),
         "exchangePoints":
             MessageLookupByLibrary.simpleMessage("استبدال النقاط"),
+        "expiry_date":
+            MessageLookupByLibrary.simpleMessage("تاريخ القيام البطاقة"),
         "fabricSoftener": MessageLookupByLibrary.simpleMessage("منعم ملابس"),
         "feedback": MessageLookupByLibrary.simpleMessage("تعليق"),
         "female": MessageLookupByLibrary.simpleMessage("انثى"),
         "finalizePayment": MessageLookupByLibrary.simpleMessage("إتمام الدفع"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الأول"),
+        "fixed_price_services":
+            MessageLookupByLibrary.simpleMessage("خدمات محددة السعر"),
         "folded": MessageLookupByLibrary.simpleMessage("مطبقة"),
+        "follow_auction": MessageLookupByLibrary.simpleMessage("متابعة المزاد"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "fourAMToSixAM":
             MessageLookupByLibrary.simpleMessage("4 صباحا - 06 صباحا"),
         "fourPMToSixPM":
             MessageLookupByLibrary.simpleMessage("4 مساء - 6 مساء"),
         "fullName": MessageLookupByLibrary.simpleMessage("الاسم الكامل"),
+        "full_name": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "general_error": m2,
         "general_noImageAvailable":
             MessageLookupByLibrary.simpleMessage("لا توجد صورة متاحة"),
@@ -249,6 +307,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "علقها ولا تقابل المندوب وما يحتاج تكون بالبيت"),
         "hanged": MessageLookupByLibrary.simpleMessage("معلقة"),
         "high": MessageLookupByLibrary.simpleMessage("زياده"),
+        "highest_bidder":
+            MessageLookupByLibrary.simpleMessage("المزايد الاعلى"),
         "history": MessageLookupByLibrary.simpleMessage("السجل"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "hour": m3,
@@ -262,6 +322,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "ifTheOptionIsActivatedTheLaundryWillUseTheAromaticScentIfRequired":
             MessageLookupByLibrary.simpleMessage(
                 "في حال تفعيل الخيار سيتم من قبل المغسلة استخدام رايحة الملابس في حال تطلب ذلك."),
+        "ifThisOptionIsActivated": MessageLookupByLibrary.simpleMessage(
+            "إذا تم تفعيل هذا الخيار، ستستخدم المغسلة منعم الملابس إذا لزم الأمر"),
         "ifThisOptionIsEnabledTheLaundryWillUseFabricSoftenerIfRequired":
             MessageLookupByLibrary.simpleMessage(
                 "في حال تفعيل الخيار سيتم من قبل المغسلة استخدام منعم الملابس في حال تطلب ذلك."),
@@ -277,6 +339,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "limitedTimeOffer":
             MessageLookupByLibrary.simpleMessage("عرض خاص لفتره محدوده"),
         "little": MessageLookupByLibrary.simpleMessage("خفيف"),
+        "loading": MessageLookupByLibrary.simpleMessage("جاري التحميل"),
         "located": MessageLookupByLibrary.simpleMessage("تبعد"),
         "login": MessageLookupByLibrary.simpleMessage("سجل الدخول"),
         "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
@@ -284,13 +347,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "medium": MessageLookupByLibrary.simpleMessage("متوسط"),
         "meter": m5,
-        "minimumOrder": m6,
         "minimumOrderPrice":
             MessageLookupByLibrary.simpleMessage("الحد الادنى للطلب"),
+        "mobile": MessageLookupByLibrary.simpleMessage("الجوال"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
         "nearbyWashers":
             MessageLookupByLibrary.simpleMessage("المغسلات الاقرب"),
+        "newItem": MessageLookupByLibrary.simpleMessage("جديد"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "noAccount": MessageLookupByLibrary.simpleMessage("ليس لدى حساب"),
         "noGiftsAvailable":
             MessageLookupByLibrary.simpleMessage("لا توجد هدايا متاحة"),
@@ -324,9 +389,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "orderValue": MessageLookupByLibrary.simpleMessage("قيمة الطلب"),
         "order_cancelled":
             MessageLookupByLibrary.simpleMessage("تم الغاء الطلب"),
-        "order_number": m7,
+        "order_details": MessageLookupByLibrary.simpleMessage("تفاصيل الطلب"),
+        "order_number": m6,
         "orders": MessageLookupByLibrary.simpleMessage("الطلبات"),
-        "otpSent": m8,
+        "otpSent": m7,
+        "otp_sent_to":
+            MessageLookupByLibrary.simpleMessage("تم إرسال رمز OTP إلى"),
         "ourServices": MessageLookupByLibrary.simpleMessage("خدماتنا"),
         "packages": MessageLookupByLibrary.simpleMessage("الباقات"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
@@ -340,6 +408,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "payment": MessageLookupByLibrary.simpleMessage("الدفع"),
         "paymentDetails": MessageLookupByLibrary.simpleMessage("تفاصيل الدفع"),
         "paymentMethods": MessageLookupByLibrary.simpleMessage("طرق الدفع"),
+        "payment_method": MessageLookupByLibrary.simpleMessage("طريقة الدفع"),
+        "pending": MessageLookupByLibrary.simpleMessage("معلق"),
+        "personal_info":
+            MessageLookupByLibrary.simpleMessage("البيانات الشخصية"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
         "pleaseAcceptTheTermsAndConditions":
             MessageLookupByLibrary.simpleMessage("الرجاء قبول الشروط والأحكام"),
@@ -380,9 +452,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الطلبات السابقة"),
         "price": MessageLookupByLibrary.simpleMessage("السعر"),
         "priceMenu": MessageLookupByLibrary.simpleMessage("قائمة الأسعار"),
+        "price_vs_quality":
+            MessageLookupByLibrary.simpleMessage("السعر مقابل الجودة"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
-        "productDetails": m9,
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "privacy_policy_description": MessageLookupByLibrary.simpleMessage(
+            "في رغوة بروفايدر نعتزم خصوصيتك ونسعى لحماية جميع بياناتك الشخصية. يتم جمع البيانات الضرورية فقط لتقديم وتحسين تجربة الاستخدام."),
+        "productDetails": m8,
+        "publish": MessageLookupByLibrary.simpleMessage("نشر"),
+        "punctuality": MessageLookupByLibrary.simpleMessage("اللتزام بالموعد"),
         "quantityCount": MessageLookupByLibrary.simpleMessage("عدد القطع"),
+        "rate_service": MessageLookupByLibrary.simpleMessage("تقييم الخدمة"),
         "recleanSmartBag":
             MessageLookupByLibrary.simpleMessage("شنطة ريكلين الذكية"),
         "recleanSmartBagContent": MessageLookupByLibrary.simpleMessage(
@@ -400,25 +481,42 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "اطلب وحدد نوع الغسيل لكل شنطة"),
         "requestSchedule": MessageLookupByLibrary.simpleMessage("جدول الطلب"),
+        "resend": MessageLookupByLibrary.simpleMessage("اعد الارسال؟"),
+        "resendAgain": MessageLookupByLibrary.simpleMessage("اعاده الارسال؟"),
         "resendOtp": MessageLookupByLibrary.simpleMessage("اعادة ارسال الكود"),
+        "reserve_price": MessageLookupByLibrary.simpleMessage("الحد الأدنى"),
         "retailPrice": MessageLookupByLibrary.simpleMessage("سعر التجزئة"),
         "returnToHome":
             MessageLookupByLibrary.simpleMessage("العودة إلى الصفحة الرئيسية"),
         "reviewOrder": MessageLookupByLibrary.simpleMessage("مراجعة الطلب"),
+        "review_data": MessageLookupByLibrary.simpleMessage("مراجعة البيانات"),
         "rial": MessageLookupByLibrary.simpleMessage("ريال"),
-        "riyal": m10,
+        "riyal": m9,
+        "schedule_order": MessageLookupByLibrary.simpleMessage("جدولة الطلب"),
+        "searching_technician":
+            MessageLookupByLibrary.simpleMessage("جاري البحث عن فني"),
         "selectADeliveryTime":
             MessageLookupByLibrary.simpleMessage("حدد وقت التسليم"),
         "selectAPickupTime":
             MessageLookupByLibrary.simpleMessage("حدد وقت الاستلام"),
+        "select_location": MessageLookupByLibrary.simpleMessage("تحديد الموقع"),
+        "select_service": MessageLookupByLibrary.simpleMessage("حدد الخدمة"),
         "send": MessageLookupByLibrary.simpleMessage("إرسال"),
         "sendActivationCode":
             MessageLookupByLibrary.simpleMessage("ارسال رمز التفعيل"),
+        "send_message": MessageLookupByLibrary.simpleMessage("اترك رسالتك"),
         "service": MessageLookupByLibrary.simpleMessage("الخدمات"),
         "service1": MessageLookupByLibrary.simpleMessage("1 -الخدمه"),
         "service2": MessageLookupByLibrary.simpleMessage("2 -الخدمه"),
         "service3": MessageLookupByLibrary.simpleMessage("3 -الخدمه"),
         "serviceFee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
+        "service_completed":
+            MessageLookupByLibrary.simpleMessage("تمت الخدمة بنجاح"),
+        "service_fee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
+        "service_quality": MessageLookupByLibrary.simpleMessage("جودة الخدمة"),
+        "services_subtitle": MessageLookupByLibrary.simpleMessage(
+            "جمعنا لك كل الخدمات التي يمتاجها بيتك"),
+        "services_title": MessageLookupByLibrary.simpleMessage("خدمات فتح"),
         "setANewPassword":
             MessageLookupByLibrary.simpleMessage("تعيين كلمة مرور جديدة"),
         "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
@@ -431,20 +529,37 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "squared": MessageLookupByLibrary.simpleMessage("مربع"),
         "starchLevel": MessageLookupByLibrary.simpleMessage("مستوى النشا"),
+        "start_price": MessageLookupByLibrary.simpleMessage("سعر البدء"),
         "step2": MessageLookupByLibrary.simpleMessage("الخطوة 2"),
         "step3": MessageLookupByLibrary.simpleMessage("الخطوة 3"),
+        "subject": MessageLookupByLibrary.simpleMessage("الموضوع"),
         "submit": MessageLookupByLibrary.simpleMessage("إرسال"),
         "subtotal": MessageLookupByLibrary.simpleMessage("المجموع الفرعي"),
         "surName": MessageLookupByLibrary.simpleMessage("اسم العائلة"),
-        "taxId": m11,
+        "tabs_home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+        "tabs_offers": MessageLookupByLibrary.simpleMessage("العروض"),
+        "tabs_orders": MessageLookupByLibrary.simpleMessage("الطلبات"),
+        "tabs_settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+        "tabs_store": MessageLookupByLibrary.simpleMessage("المتجر"),
+        "taxId": m10,
+        "technical_support":
+            MessageLookupByLibrary.simpleMessage("الدعم الفني"),
+        "technical_support_address": MessageLookupByLibrary.simpleMessage(
+            "الرياض - الملاء - 12845 - طريق صالح الدين"),
+        "technical_support_contact":
+            MessageLookupByLibrary.simpleMessage("+966 55 768 6624"),
+        "technician_on_way":
+            MessageLookupByLibrary.simpleMessage("الفني في الطريق اليك"),
         "tenAMToTwelvePM":
             MessageLookupByLibrary.simpleMessage("10 مساء - 12 مساء"),
         "tenPMToTwelveAM":
             MessageLookupByLibrary.simpleMessage("10 مساء - 12 صباحا"),
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("شروط وسياسة الاستخدام"),
+        "terms_of_use": MessageLookupByLibrary.simpleMessage("شروط الاستخدام"),
         "thankYouForYourTime":
             MessageLookupByLibrary.simpleMessage("شكرًا لك على وقتك"),
+        "thanks_for_time": MessageLookupByLibrary.simpleMessage("شكرا لوقتكم"),
         "theOrderWasDeliveredByTheCaptain":
             MessageLookupByLibrary.simpleMessage(
                 "تم تسليم الطلب من قبل القبطان"),
@@ -453,10 +568,10 @@ class MessageLookup extends MessageLookupByLibrary {
                 "المندوب في الطريق لاستلام طلبك"),
         "theTwoPartiesMeetToDeliverTheProduct":
             MessageLookupByLibrary.simpleMessage("يلتقي الطرفان لتسليم المنتج"),
-        "timeAgo_day": m12,
-        "timeAgo_hour": m13,
-        "timeAgo_minute": m14,
-        "timeAgo_second": m15,
+        "timeAgo_day": m11,
+        "timeAgo_hour": m12,
+        "timeAgo_minute": m13,
+        "timeAgo_second": m14,
         "toMyOrder": MessageLookupByLibrary.simpleMessage("للطلب الخاص بي"),
         "total": MessageLookupByLibrary.simpleMessage("مجموع"),
         "totalAfterDiscount":
@@ -465,7 +580,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("المجموع قبل الخصم"),
         "totalCost": MessageLookupByLibrary.simpleMessage("التكلفة الإجمالية"),
         "totalVat": MessageLookupByLibrary.simpleMessage("الإجمالي (ض.ق.م)"),
+        "total_vat": MessageLookupByLibrary.simpleMessage(
+            "الإجمالي شامل ضريبة القيمة المضافة"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("تتبع الطلب"),
+        "track_order": MessageLookupByLibrary.simpleMessage("متابعة الطلب"),
         "twelveAMToTwoAM":
             MessageLookupByLibrary.simpleMessage("12 صباحا - 02 صباحا"),
         "twelvePMToTwoPM":
@@ -476,6 +594,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("2 مساء - 4 مساء"),
         "typeOfIroning":
             MessageLookupByLibrary.simpleMessage("نوع الكوي الغترة/الشماغ"),
+        "unknown": MessageLookupByLibrary.simpleMessage("غير معروف"),
         "update_available": MessageLookupByLibrary.simpleMessage("تحديث متاح"),
         "update_availableBody": MessageLookupByLibrary.simpleMessage(
             "يتوفر إصدار جديد. قم بالتحديث الآن للحصول على الميزات الجديدة."),
@@ -484,11 +603,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "update_requiredBody": MessageLookupByLibrary.simpleMessage(
             "يتطلب إصدار جديد من التطبيق للمتابعة. يرجى التحديث."),
         "useCode": MessageLookupByLibrary.simpleMessage("استخدام الكود"),
-        "vat": m16,
+        "used": MessageLookupByLibrary.simpleMessage("مستعمل"),
+        "vat": m15,
         "vat15": MessageLookupByLibrary.simpleMessage("القيمة المضافة (15%)"),
         "verifyAccount": MessageLookupByLibrary.simpleMessage("تحقق من الحساب"),
         "veryGood": MessageLookupByLibrary.simpleMessage("جيدة جدًا"),
         "viewYourReceipt": MessageLookupByLibrary.simpleMessage("عرض الإيصال"),
+        "waiting_for_price": MessageLookupByLibrary.simpleMessage(
+            "في انتظار تحديد السعر من الفني"),
         "wallet": MessageLookupByLibrary.simpleMessage("المحفظة"),
         "warning": MessageLookupByLibrary.simpleMessage("تحذير"),
         "washAndIron": MessageLookupByLibrary.simpleMessage("اغسل واكوي"),
@@ -511,8 +633,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "تقدر تلغي الطلب قبل خروج الكابتن واستلام شنطة الملابس"),
         "youCanPayNow":
             MessageLookupByLibrary.simpleMessage("يمكنك الدفع الان"),
-        "youHavePoints": m17,
-        "youHavePointsPoints": m18,
+        "youHavePoints": m16,
         "youHaveReceivedYourOrder":
             MessageLookupByLibrary.simpleMessage("تم استلام طلبك"),
         "yourLaundryHasBeenStarted": MessageLookupByLibrary.simpleMessage(

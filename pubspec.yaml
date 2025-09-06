@@ -142,7 +142,10 @@ dependencies:
   syncfusion_flutter_sliders: ^30.2.6
   font_awesome_flutter: ^10.9.1
   location: ^8.0.1
+  geocoding: ^3.0.0
   flutter_local_notifications: ^19.4.1
+  shimmer: ^3.0.0
+  loading_animation_widget: ^1.3.0
 
 dev_dependencies:
   # Core Flutter Dependencies
@@ -151,6 +154,7 @@ dev_dependencies:
 
   # Code Generators
   build_runner: ^2.4.5 # Build system for code generation
+  intl_translation: ^0.20.1
   bloc_test: ^10.0.0
   envied_generator: ^1.1.1 # Generator for Envied package
   freezed: ^2.4.5 # Downgraded for compatibility
@@ -158,7 +162,6 @@ dev_dependencies:
   hive_generator: ^2.0.1 # Generates TypeAdapters for Hive
   injectable_generator: ^2.6.2 # Dependency injection code generator
   retrofit_generator: 7.0.8 # Generator for Retrofit-based HTTP client
-  # flutter_gen_runner: ^5.3.2 # Temporarily removed to fix build_runner issues
   flutter_lints: ^4.0.0 # Downgraded for compatibility
 
   # Web Support
@@ -168,12 +171,17 @@ dev_dependencies:
 
 flutter_intl:
   enabled: true
+  class_name: S
+  main_locale: en
+  arb_dir: lib/l10n
+  output_dir: lib/generated
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
+  generate: true
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -211,5 +219,27 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
   assets:
-    - assets/fonts/
+    - assets/images/
+    - assets/svgs/
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Cairo-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Cairo-Light.ttf
+          weight: 100
 

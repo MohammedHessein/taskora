@@ -51,6 +51,8 @@ class Dimensions {
   static const double p25 = 25;
   static const double p30 = 30;
   static const double p32 = 32;
+  static const double p34 = 34;
+  static const double p36 = 36;
   static const double p35 = 35;
   static const double p40 = 40;
   static const double p50 = 50;

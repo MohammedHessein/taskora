@@ -8,7 +8,7 @@ import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 import 'package:taskora/generated/assets.dart';
 
-import '../../../generated/l10n.dart';
+import '../../../generated/app_localizations.dart';
 
 class NoInternetWidget extends StatelessWidget {
   const NoInternetWidget({super.key});
@@ -28,13 +28,13 @@ class NoInternetWidget extends StatelessWidget {
           ),
           Gap(20.h),
           Text(
-            S.of(context).NoInternetWidget_noInternetConnection,
+            AppLocalizations.of(context)!.NoInternetWidget_noInternetConnection,
             textAlign: TextAlign.center,
             style: CustomTextStyle.kTextStyleF18,
           ),
           Gap(10.h),
           Text(
-            S.of(context).NoInternetWidget_checkInternetConnection,
+            AppLocalizations.of(context)!.NoInternetWidget_checkInternetConnection,
             textAlign: TextAlign.center,
             style: CustomTextStyle.kTextStyleF14,
           ),
@@ -61,8 +61,8 @@ class NoInternetWidget extends StatelessWidget {
               ),
               const Spacer(flex: 2),
               ErrorInfo(
-                title: S.of(context).noInternetWidget_noInternetConnection,
-                description: S.of(context).noInternetWidget_checkConnection,
+                title: AppLocalizations.of(context)!.noInternetWidget_noInternetConnection,
+                description: AppLocalizations.of(context)!.noInternetWidget_checkConnection,
                 // button: you can pass your custom button,
                 // btnText: default is retry, you can pass your custom text,
                 press: () {},

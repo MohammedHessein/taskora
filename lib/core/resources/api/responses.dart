@@ -1,4 +1,4 @@
-import '../../../generated/l10n.dart';
+import '../../../generated/app_localizations.dart';
 
 enum ResponseCode {
   success(200), // Success with data

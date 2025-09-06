@@ -28,5 +28,8 @@
   "add": "اضف",
   "language": "اللغة",
   "logout": "تسجيل الخروج",
-  "app_name": "تاسكورا - رغوة"
+  "app_name": "تاسكورا - رغوة",
+  "noInternetWidgetNoInternetConnection": "لا يوجد اتصال بالإنترنت",
+  "noInternetWidgetCheckConnection": "هناك مشكلة في الاتصال. يرجى المحاولة لاحقًا.",
+  "generalNoImageAvailable": "لا توجد صورة متاحة"
 }

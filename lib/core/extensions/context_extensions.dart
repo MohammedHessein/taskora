@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 import 'package:toastification/toastification.dart';
 
-import '../../generated/l10n.dart';
+import '../../generated/app_localizations.dart';
 
 extension ContextExtensions on BuildContext {
   Future<T?> pushNamed<T>(String routeName, {Object? arguments}) {
@@ -29,7 +29,7 @@ extension ContextExtensions on BuildContext {
 
   ScaffoldMessengerState get scaffoldMessenger => ScaffoldMessenger.of(this);
 
-  S get tr => S.of(this);
+  AppLocalizations get tr => AppLocalizations.of(this)!;
 
   // void defaultSnackBar(String content, {Color? color, Color? textColor}) {
   // ScaffoldMessenger.of(this).showSnackBar(

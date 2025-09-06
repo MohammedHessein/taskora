@@ -28,5 +28,8 @@
   "add": "Add",
   "language": "Language",
   "logout": "Logout",
-  "app_name": "Taskora - Ragwa"
+  "app_name": "Taskora - Ragwa",
+  "noInternetWidgetNoInternetConnection": "No Internet Connection",
+  "noInternetWidgetCheckConnection": "Something is wrong with your connection. Please try again later.",
+  "generalNoImageAvailable": "No image available"
 }

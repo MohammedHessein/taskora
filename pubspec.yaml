@@ -166,15 +166,15 @@ dev_dependencies:
   dart_code_metrics_presets: ^2.22.0
   easy_stepper: ^0.8.5+1
 
-flutter_intl:
-  enabled: true
+# Removed flutter_intl to use built-in Flutter localization
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  generate: true
+  
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

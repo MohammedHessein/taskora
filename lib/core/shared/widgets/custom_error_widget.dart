@@ -6,7 +6,7 @@ import 'package:taskora/core/extensions/theme_extensions.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 
-import '../../../generated/l10n.dart';
+import '../../../generated/app_localizations.dart';
 
 class CustomErrorWidget extends StatelessWidget {
   const CustomErrorWidget({required this.error, super.key});

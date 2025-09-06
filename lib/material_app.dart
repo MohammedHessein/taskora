@@ -12,7 +12,7 @@ import 'package:taskora/core/theme/app_theme.dart';
 import 'package:taskora/core/theme/cubit/theme_cubit.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 
-import 'generated/l10n.dart';
+import 'generated/app_localizations.dart';
 import 'main_view.dart';
 
 class MyApp extends StatefulWidget {
@@ -76,13 +76,13 @@ class _MyAppState extends State<MyApp> {
                   themeMode: state,
                   locale: _locale,
                   localizationsDelegates: const [
-                    S.delegate,
+                    AppLocalizations.delegate,
                     CountryLocalizations.delegate,
                     GlobalMaterialLocalizations.delegate,
                     GlobalWidgetsLocalizations.delegate,
                     GlobalCupertinoLocalizations.delegate,
                   ],
-                  supportedLocales: S.delegate.supportedLocales,
+                  supportedLocales: AppLocalizations.supportedLocales,
                   title: UiConstants.appName,
                   onGenerateRoute: AppRouters.routeGenerator,
                   navigatorObservers: [RouteLogger()],

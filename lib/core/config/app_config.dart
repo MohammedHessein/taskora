@@ -15,7 +15,7 @@ import 'package:taskora/core/utils/cubit_observer.dart';
 import 'package:taskora/core/utils/logger.dart';
 import 'package:universal_platform/universal_platform.dart';
 
-import '../../generated/l10n.dart';
+import '../../generated/app_localizations.dart';
 
 class AppConfig extends ApplicationConfig {
   factory AppConfig.getInstance() {

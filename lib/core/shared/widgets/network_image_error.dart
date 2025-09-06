@@ -6,7 +6,7 @@ import 'package:iconify_flutter_plus/icons/mdi.dart';
 import 'package:taskora/core/extensions/theme_extensions.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 
-import '../../../generated/l10n.dart';
+import '../../../generated/app_localizations.dart';
 
 class NetworkImageError extends StatelessWidget {
   const NetworkImageError({super.key});
@@ -34,7 +34,7 @@ class NetworkImageError extends StatelessWidget {
         ), */
         Gap(5.h),
         Text(
-          S.of(context).general_noImageAvailable,
+          AppLocalizations.of(context)!.general_noImageAvailable,
           style: CustomTextStyle.kTextStyleF12.copyWith(
             color: context.customColors.errorColor,
           ),

@@ -38,7 +38,6 @@ class MessageLookup extends MessageLookupByLibrary {
   static String m15(count) => "\${Intl.plural(count, zero: 'الآن', one: 'منذ ثانية واحدة', other: 'منذ \${count} ثوانٍ')}";
   static String m16(vat) => "القيمة المضافة (\${vat})";
   static String m17(points) => "لديك <a>\${points}</a> نقطة";
-  static String m18(points) => "لديك \${points} نقطة";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
@@ -50,7 +49,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "advantages": MessageLookupByLibrary.simpleMessage("المميزات"),
         "amountWillBeCharged": m1,
         "app_name": MessageLookupByLibrary.simpleMessage("تاسكورا - رغوة"),
-        "bad": MessageLookupByLibrary.simpleMessage("سيئة"),
         "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "cart": MessageLookupByLibrary.simpleMessage("السلة"),
@@ -106,6 +104,5 @@ class MessageLookup extends MessageLookupByLibrary {
         "total": MessageLookupByLibrary.simpleMessage("مجموع"),
         "vat": m16,
         "youHavePoints": m17,
-        "youHavePointsPoints": m18,
       };
 }

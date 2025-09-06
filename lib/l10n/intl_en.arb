@@ -171,175 +171,22 @@
       }
     }
   },
-  "weHaveBagsEachOneLabeledWithIroningIroningAnd": "We have bags, each one labeled with ironing + ironing and washing + dry cleaning.",
-  "requestAndSpecifyTheTypeOfWashingForEachBag": "Request and specify the type of washing for each bag",
-  "washAndIron": "Wash and iron",
-  "iron": "Iron",
-  "dryClean": "Dry clean",
-  "hangItOnTheDoorWeTakeItPrepareIt": "Hang it on the door, we take it, prepare it, wash it and send you the bill.",
-  "weDeliverItAndHangItOnYourDoorWithout": "We deliver it and hang it on your door without you being at home",
-  "whyTheSmartRecleanLaundryBag": "Why the smart Reclean laundry bag?",
-  "hangItUpAndDontMeetTheRepresentativeYouDont": "Hang it up and don't meet the representative. You don't need to be at home.",
-  "clothesAreNotConsideredForYou": "Clothes are not considered for you",
-  "howDoesItWork": "How does it work?",
-  "laundryClothesBlankets": "laundry/clothes/blankets",
-  "loyaltyPoints": "loyalty points",
-  "redeemPoints": "Redeem points",
-  "youHavePointsPoints": "you have {points} points",
-  "@youHavePointsPoints": {
-    "placeholders": {
-      "points": {
-        "type": "int"
-      }
-    }
-  },
-  "service": "Services",
-  "orderStatus": "Order status",
-  "noOrdersYet": "No orders yet",
-  "orderNumber": "order number",
-  "theRepresentativeIsOnHisWayToReceiveYourOrder": "The representative is on his way to receive your order.",
-  "prepareYourOrderAndItWillBeReceivedAtThe": "Prepare your order and it will be received at the pre-specified time.",
-  "trackOrder": "Track order",
   "orders": "Orders",
-  "representativeIsOnTheWay": "The representative is on the way to pick up the order",
-  "prepareYourOrder": "Prepare your order and it will be delivered on time",
-  "youCanPayNow": "You can pay now",
-  "yourOrderIsOnItsWay": "Your order is on its way to the laundry and the tepidarium will be dispatched soon",
-  "yourLaundryHasBeenStarted": "Your laundry has been started, please pay your bill now to prepare your order for delivery",
-  "yourOrderIsReadyForDelivery": "Your order is ready for delivery",
-  "theOrderWasDeliveredByTheCaptain": "The order was delivered by the captain",
-  "viewYourReceipt": "View your receipt",
-  "youCanCancelTheOrder": "You can cancel the order before the captain exits and receives the garment bag",
-  "additionalNotes": "Additional notes",
-  "laundryExtras": "Laundry extras",
-  "additionalDetergents": "Additional detergents",
-  "fabricSoftener": "Fabric softener",
-  "aromaticScent": "Aromatic scent",
-  "ifThisOptionIsActivated": "If this option is activated, the laundry will use fabric softener if required",
-  "typeOfIroning": "Type of ironing Ghutra/Shamagh",
-  "without": "Without",
-  "withMarzam": "With Marzam",
-  "rectangular": "Rectangular",
-  "squared": "Squared",
-  "starchLevel": "Starch level",
-  "little": "Little",
-  "medium": "Medium",
-  "high": "High",
-  "clothingArrangementMechanism": "Clothing arrangement mechanism",
-  "folded": "Folded",
-  "hanged": "Hanged",
-  "orderSchedule": "Order Schedule",
-  "yourLocation": "Your location",
-  "minimumOrder": "Minimum order",
-  "@minimumOrder": {
-    "placeholders": {
-      "orders": {
-        "type": "num"
-      }
-    }
-  },
-  "priceMenu": "Price Menu",
-  "selectAPickupTime": "Select a pickup time",
-  "selectADeliveryTime": "Select a delivery time",
-  "recleanSmartBag": "Reclean Smart Bag",
-  "recleanSmartBagContent": "Add the Recklin Smart Bag to your order, enjoy contactless delivery, get a very convenient laundry service with no hassle, no contact with the delivery person and no need to be in your apartment at the time of pickup and delivery.",
-  "addRecleanSmartBagToMyOrder": "Add Reclean Smart Bag to my order",
-  "areYouSureYouWantToKeepOrdering": "Are you sure you want to keep ordering?",
-  "byClickingContinueYouAgreeToAtermsOfUseAnd": "By clicking Continue, you agree to <a>Terms of Use and Policy</a>",
-  "confirmOrder": "Confirm Order",
-  "orderSummary": "Order Summary",
-  "taxId": "Tax ID: {id}",
-  "@taxId": {
-    "placeholders": {
-      "id": {
-        "type": "num"
-      }
-    }
-  },
-  "laundryAndIroning": "Laundry and Ironing",
-  "ironing": "Ironing",
-  "dryCleaning": "Dry Cleaning",
-  "orderValue": "Order value",
-  "deliveryFee": "Delivery fee",
-  "vat15": "VAT(15%)",
-  "total": "Total",
-  "noGiftsAvailable": "No gifts available",
-  "riyal": "{amount} Riyal",
-  "@riyal": {
-    "placeholders": {
-      "amount": {
-        "type": "num"
-      }
-    }
-  },
-  "noLoyaltyPointsAvailable": "No loyalty points available",
-  "youHavePoints": "You have <a>{points}</a> points",
-  "@youHavePoints": {
-    "placeholders": {
-      "points": {
-        "type": "num"
-      }
-    }
-  },
-  "offerCode": "Offer code",
-  "send": "Send",
-  "pay": "Pay",
-  "invoiceNo": "Invoice No #{invoiceNo}",
-  "@invoiceNo": {
-    "placeholders": {
-      "invoiceNo": {
-        "type": "num"
-      }
-    }
-  },
-  "payedInvoice": "Payed Invoice",
-  "downloadInvoice": "Download Invoice",
-  "payment": "Payment",
-  "balance": "Balance",
-  "paymentMethods": "Payment Methods",
-  "or": "or",
-  "nearbyWashers": "Nearby Washers",
-  "located": "Located",
-  "ourServices": "Our Services",
-  "automaticPayment": "Activate the automatic payment feature from the balance",
-  "balanceAmount": "Balance amount",
-  "enterTheShippingBalanceAmount": "Enter the shipping balance amount",
-  "chargeYourBalance": "charge your balance",
-  "useCode": "Use code",
-  "win": "Win",
-  "points": "Points",
-  "wallet": "Wallet",
   "settings": "Settings",
-  "previousOrders": "Previous Orders",
-  "details": "Details",
-  "register_with_application": "Register with application",
-  "pleaseEnterYourName": "Please enter your name",
   "name": "Name",
-  "iAgreeToThe": "I agree to the",
-  "privacyPolicy": "Privacy Policy",
-  "pleaseEnterYourMobileNumberToReceiveActivationCode": "Please enter your mobile number to receive activation code",
-  "sendActivationCode": "Send activation code",
-  "discount23": "Discount 23%",
-  "limitedTimeOffer": "Limited Time Offer",
+  "next": "Next",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "confirmOrder": "Confirm Order",
+  "total": "Total",
+  "balance": "Balance",
+  "add": "Add",
+  "categories": "Categories",
   "exchangePoints": "Exchange points",
   "onlineOrder": "Online Order",
-  "hour": "{date} Hr",
-  "noAccount": "don't have an account",
-  "alreadyHaveAccount": "Already have an account?",
-  "signIn": "Login",
+  "orderCancelled": "Order cancelled",
   "resendAgain": "Resend again?",
-  "didNotReceiveTheCode": "Didn't receive the code? Contact us now.",
-  "meter": "{meter} meter",
-  "service1": "1-Service",
-  "service2": "2-Service",
-  "service3": "3-Service",
-  "requestSchedule": "Request Schedule",
-  "areYouSureYouWantToContinueOrdering": "Are you sure you want to continue ordering?",
-  "onPressingContinueYouAgree": "on pressing continue, you agree to",
-  "termsAndConditions": "Terms and Conditions",
-  "ifThisOptionIsEnabledTheLaundryWillUseFabricSoftenerIfRequired": "If this option is enabled, the laundry will use fabric softener if required.",
-  "ifTheOptionIsActivatedTheLaundryWillUseTheAromaticScentIfRequired": "If the option is activated, the laundry will use the aromatic scent if required.",
-  "quantityCount": "Quantity Count",
+  "signIn": "Login",
   "orderNumber": "Order No {orderNumber}",
   "@orderNumber": {
     "placeholders": {
@@ -348,61 +195,57 @@
       }
     }
   },
-  "yourOrderWillBeDeliveredAtTheSpecifiedTime": "Your order will be delivered at the specified time",
-  "youHaveReceivedYourOrder": "You have received your order",
-  "youCanCancelTheOrderAtAnyTime": "You can cancel the order before the end and receive the captain's bag of clothes",
-  "payInvoice": "Pay Invoice",
-  "showYourInvoice": "Show your invoice",
-  "price": "Price",
-  "packages": "Packages",
-  "history": "History",
-  "date": "Date",
-  "rial": "Riyal",
-  "eightAMToTenAM": "08:00 AM - 10:00 AM",
-  "tenAMToTwelvePM": "10:00 AM - 12:00 PM",
-  "twelvePMToTwoPM": "12:00 PM - 02:00 PM",
-  "twoPMToFourPM": "02:00 PM - 04:00 PM",
-  "fourPMToSixPM": "04:00 PM - 06:00 PM",
-  "sixPMToEightPM": "06:00 PM - 08:00 PM",
-  "eightPMToTenPM": "08:00 PM - 10:00 PM",
-  "tenPMToTwelveAM": "10:00 PM - 12:00 AM",
-  "twelveAMToTwoAM": "12:00 AM - 02:00 AM",
-  "twoAMToFourAM": "02:00 AM - 04:00 AM",
-  "fourAMToSixAM": "04:00 AM - 06:00 AM",
-  "sixAMToEightAM": "06:00 AM - 08:00 AM",
-  "add": "Add",
-  "toMyOrder": "To my order",
-  "minimumOrderPrice": "Minimum order price",
-  "pleaseSelectTheWashType": "Please select the wash type",
-  "orderCancelled": "Order cancelled",
+  "youHavePoints": "You have <a>{points}</a> points",
+  "@youHavePoints": {
+    "placeholders": {
+      "points": {
+        "type": "num"
+      }
+    }
+  },
+  "riyal": "{amount} Riyal",
+  "@riyal": {
+    "placeholders": {
+      "amount": {
+        "type": "num"
+      }
+    }
+  },
+  "taxId": "Tax ID: {id}",
+  "@taxId": {
+    "placeholders": {
+      "id": {
+        "type": "num"
+      }
+    }
+  },
   "vat": "vat ({vat})",
-  "totalBeforeDiscount": "Total before discount",
-  "totalAfterDiscount": "Total after discount",
-  "more": "More",
-  "currentOrders": "Current orders",
-  "deliveryDate": "Delivery date",
-  "notifications": "Notifications",
-  "noNotifications": "No notifications",
+  "hour": "{date} Hr",
+  "meter": "{meter} meter",
+  "minimumOrder": "Minimum order",
+  "@minimumOrder": {
+    "placeholders": {
+      "orders": {
+        "type": "num"
+      }
+    }
+  },
+  "invoiceNo": "Invoice No #{invoiceNo}",
+  "@invoiceNo": {
+    "placeholders": {
+      "invoiceNo": {
+        "type": "num"
+      }
+    }
+  },
   "app_name": "Taskora - Ragwa",
   "fixed_price_services": "Fixed Price Services",
   "enter_mobile": "Enter your mobile number to receive activation code",
   "enter_otp": "Enter OTP Code",
   "otp_sent_to": "OTP code sent to",
   "resend": "Resend?",
-  "confirm": "Confirm",
   "services_title": "Services",
   "services_subtitle": "We've gathered all the services your home needs",
-  "categories": {
-    "plumbing": "Plumbing",
-    "swimming_pool": "Swimming Pool",
-    "carpentry": "Carpentry",
-    "installation": "Installation",
-    "home_appliances": "Home Appliances",
-    "security": "Security",
-    "tiling": "Tiling",
-    "cleaning": "Cleaning",
-    "laundry": "Laundry"
-  },
   "tabs": {
     "home": "Home",
     "orders": "Orders",
@@ -431,9 +274,6 @@
   "full_name": "Full Name",
   "service_fee": "Service Fee",
   "total_vat": "Total (incl. VAT)",
-  "cancel": "Cancel",
-  "next": "Next",
-  "confirm_order": "Confirm Order",
   "track_order": "Track Order",
   "order_details": "Order Details",
   "searching_technician": "Searching for Technician",

@@ -7,7 +7,7 @@
   "common_success": "نجاح",
   "common_error": "خطأ",
   "common_next": "التالى",
-  "common_confirm": "تأكيد",
+  "common_confirm": "تأكيد",
   "common_somethingWentWrong": "حدث خطأ ما. يرجى إعادة تشغيل التطبيق.",
   "errorHandler_success": "نجاح",
   "errorHandler_badRequest": "طلب غير صالح. حاول مرة أخرى لاحقًا.",
@@ -92,7 +92,7 @@
   "warning": "تحذير",
   "pleaseAcceptTheTermsAndConditions": "الرجاء قبول الشروط والأحكام",
   "fullName": "الاسم الكامل",
-  "surName": "اسم العائلة",
+  "surName": "اسم العائلة",
   "male": "ذكر",
   "female": "انثى",
   "byCreatingAnAccountYouAgreeToOurTermsConditions": "بإنشائك حسابًا، فإنك توافق على <a>الشروط والأحكام</a> و<b>سياسة الخصوصية</b> الخاصة بنا",
@@ -171,175 +171,22 @@
       }
     }
   },
-  "weHaveBagsEachOneLabeledWithIroningIroningAnd": "معنا اكياس كل كيس مكتوب عليه كوي+ كوي وغسيل+ غسيل جاف",
-  "requestAndSpecifyTheTypeOfWashingForEachBag": "اطلب وحدد نوع الغسيل لكل شنطة",
-  "washAndIron": "اغسل واكوي",
-  "iron": "كوي",
-  "dryClean": "غسيل جاف",
-  "hangItOnTheDoorWeTakeItPrepareIt": "علقها على الباب، نأخذها ونعدها، ونغسلها ونرسلك الفاتورة",
-  "weDeliverItAndHangItOnYourDoorWithout": "نوصلها ونعلقها على بابك من دون تواجدك في البيت",
-  "whyTheSmartRecleanLaundryBag": "لماذا شنطة مغسلة ريكلين الذكية؟",
-  "hangItUpAndDontMeetTheRepresentativeYouDont": "علقها ولا تقابل المندوب وما يحتاج تكون بالبيت",
-  "clothesAreNotConsideredForYou": "لا تعد الملابس نحسبها عنك",
-  "howDoesItWork": "ما هي طريقة العمل؟",
-  "laundryClothesBlankets": "غسيل ملابس/ بطانيات",
-  "loyaltyPoints": "نقاط الولاء",
-  "redeemPoints": "استخدام النقاط",
-  "youHavePointsPoints": "لديك {points} نقطة",
-  "@youHavePointsPoints": {
-    "placeholders": {
-      "points": {
-        "type": "int"
-      }
-    }
-  },
-  "service": "الخدمات",
-  "orderStatus": "حالة الطلب",
-  "noOrdersYet": "لا يوجد طلبات حتى الان",
-  "orderNumber": "رقم الطلب",
-  "theRepresentativeIsOnHisWayToReceiveYourOrder": "المندوب في الطريق لاستلام طلبك",
-  "prepareYourOrderAndItWillBeReceivedAtThe": "جهز طلبك سيتم الاستلام في الوقت المحدد مسبقًا.",
-  "trackOrder": "تتبع الطلب",
   "orders": "الطلبات",
-  "representativeIsOnTheWay": "المندوب في الطريق لاستلام الطلب ",
-  "prepareYourOrder": "جهز طلبك سيتم الاستلام  في الوقت المحدد مسبقا",
-  "youHaveReceivedYourOrder": "تم استلام طلبك",
-  "yourOrderIsOnItsWay": "طلبك في الطريق الى المغسلة وسيتم ارسال الفاتورة قريبا",
-  "yourLaundryHasBeenStarted": "تم بدأ الغسيل يرجى دفع الفاتورة الان لتجهيز طلبك للتوصيل",
-  "yourOrderIsReadyForDelivery": "طلبك جاهز للتسليم",
-  "theOrderWasDeliveredByTheCaptain": "تم تسليم الطلب من قبل القبطان",
-  "viewYourReceipt": "عرض الإيصال",
-  "youCanCancelTheOrder": "يمكنك إلغاء الطلب قبل مغادرة الكابتن واستلام حقيبة الملابس",
-  "additionalNotes": "ملاحظات إضافية",
-  "laundryExtras": "إضافات الغسيل",
-  "additionalDetergents": "منظفات إضافية",
-  "fabricSoftener": "منعم ملابس",
-  "aromaticScent": "رائحة عطرية",
-  "typeOfIroning": "نوع الكوي الغترة/الشماغ",
-  "without": "بدون",
-  "withMarzam": "مع مرزم",
-  "rectangular": "مستطيل",
-  "squared": "مربع",
-  "starchLevel": "مستوى النشا",
-  "little": "خفيف",
-  "medium": "متوسط",
-  "high": "زياده",
-  "clothingArrangementMechanism": "آلية ترتيب الملابس",
-  "folded": "مطبقة",
-  "hanged": "معلقة",
-  "orderSchedule": "جدول الطلب",
-  "yourLocation": "موقعك",
-  "minimumOrder": "الحد الأدنى للطلب",
-  "@minimumOrder": {
-    "placeholders": {
-      "orders": {
-        "type": "num"
-      }
-    }
-  },
-  "priceMenu": "قائمة الأسعار",
-  "selectAPickupTime": "حدد وقت الاستلام",
-  "selectADeliveryTime": "حدد وقت التسليم",
-  "recleanSmartBag": "شنطة ريكلين الذكية",
-  "recleanSmartBagContent": "أضف حقيبة ريكلين الذكية إلى طلبك، واستمتع بتسليم بدون تلامس، واحصل على خدمة غسيل ملابس مريحة للغاية بدون متاعب، وبدون تلامس مع شخص التسليم وبدون الحاجة إلى التواجد في شقتك في وقت الاستلام والتسليم.",
-  "addRecleanSmartBagToMyOrder": "إضافة شنطة ريكلين الذكية إلى طلبي",
-  "areYouSureYouWantToKeepOrdering": "هل أنت متأكد أنك تريد الاستمرار في الطلب؟",
-  "byClickingContinueYouAgreeToAtermsOfUseAnd": "بالنقر على متابعة، فإنك توافق على <a>شروط الاستخدام والسياسة</a>",
-  "confirmOrder": "اجراء الطلب",
-  "orderSummary": "ملخص الطلب",
-  "taxId": "الرقم الضريبي: {id}",
-  "@taxId": {
-    "placeholders": {
-      "id": {
-        "type": "num"
-      }
-    }
-  },
-  "laundryAndIroning": "غسيل وكوي",
-  "ironing": "كوي",
-  "dryCleaning": "غسيل جاف",
-  "orderValue": "قيمة الطلب",
-  "deliveryFee": "رسوم التوصيل",
-  "vat15": "القيمة المضافة (15%)",
-  "vat": "القيمة المضافة ({vat})",
-  "total": "مجموع",
-  "noGiftsAvailable": "لا توجد هدايا متاحة",
-  "riyal": "{amount} ريال",
-  "@riyal": {
-    "placeholders": {
-      "amount": {
-        "type": "num"
-      }
-    }
-  },
-  "noLoyaltyPointsAvailable": "لا توجد نقاط الولاء المتاحة",
-  "youHavePoints": "لديك <a>{points}</a> نقطة",
-  "@youHavePoints": {
-    "placeholders": {
-      "points": {
-        "type": "num"
-      }
-    }
-  },
-  "offerCode": "كود العرض",
-  "send": "إرسال",
-  "pay": "ادفع",
-  "invoiceNo": "الفاتورة رقم #{invoiceNo}",
-  "@invoiceNo": {
-    "placeholders": {
-      "invoiceNo": {
-        "type": "num"
-      }
-    }
-  },
-  "payedInvoice": "فاتورة مدفوعة",
-  "downloadInvoice": "حمل الفاتورة",
-  "payment": "الدفع",
-  "balance": "الرصيد",
-  "paymentMethods": "طرق الدفع",
-  "or": "أو",
-  "nearbyWashers": "المغسلات الاقرب",
-  "located": "تبعد",
-  "ourServices": "خدماتنا",
-  "automaticPayment": "تفعيل خاصية الدفع الاوتوماتيكي من الرصيد",
-  "balanceAmount": "مبلغ الرصيد",
-  "enterTheShippingBalanceAmount": "أدخل مبلغ رصيد الشحن",
-  "chargeYourBalance": "اشحن رصيدك",
-  "useCode": "استخدام الكود",
-  "win": "اكسب",
-  "points": "نقاط",
-  "wallet": "المحفظة",
   "settings": "الاعدادات",
-  "previousOrders": "الطلبات السابقة",
-  "details": "تفاصيل",
-  "register_with_application": "سجل بالتطبيق",
-  "pleaseEnterYourName": "الرجاء ادخال الاسم",
   "name": "الاسم",
-  "iAgreeToThe": "اوافق على",
-  "privacyPolicy": "سياسة الخصوصية",
-  "pleaseEnterYourMobileNumberToReceiveActivationCode": "سجل رقم جوالك لإرسال رمز التفعيل",
-  "sendActivationCode": "ارسال رمز التفعيل",
-  "discount23": "خصم 23 %",
-  "limitedTimeOffer": "عرض خاص لفتره محدوده",
+  "next": "التالي",
+  "cancel": "الغاء",
+  "confirm": "أكيد",
+  "confirmOrder": "اجراء الطلب",
+  "total": "مجموع",
+  "balance": "الرصيد",
+  "add": "اضف",
+  "categories": "الفئات",
   "exchangePoints": "استبدال النقاط",
   "onlineOrder": "طلب اونلاين",
-  "hour": "{date} ساعة",
-  "noAccount": "ليس لدى حساب",
-  "alreadyHaveAccount": "لديك حساب بالفعل",
-  "signIn": "تسجيل الدخول",
+  "orderCancelled": "تم الغاء الطلب",
   "resendAgain": "اعاده الارسال؟",
-  "didNotReceiveTheCode": "لم يصلك الرمز؟ قم بالتواصل الان",
-  "meter": "{meter} متر",
-  "service1": "1 -الخدمه",
-  "service2": "2 -الخدمه",
-  "service3": "3 -الخدمه",
-  "requestSchedule": "جدول الطلب",
-  "areYouSureYouWantToContinueOrdering": "متأكد في استمرار الطلب؟",
-  "onPressingContinueYouAgree": "بالضغط على استمرار، انت توافق على",
-  "termsAndConditions": "شروط وسياسة الاستخدام",
-  "ifThisOptionIsEnabledTheLaundryWillUseFabricSoftenerIfRequired": "في حال تفعيل الخيار سيتم من قبل المغسلة استخدام منعم الملابس في حال تطلب ذلك.",
-  "ifTheOptionIsActivatedTheLaundryWillUseTheAromaticScentIfRequired": "في حال تفعيل الخيار سيتم من قبل المغسلة استخدام رايحة الملابس في حال تطلب ذلك.",
-  "quantityCount": "عدد القطع",
+  "signIn": "تسجيل الدخول",
   "orderNumber": "رقم الطلب {orderNumber}",
   "@orderNumber": {
     "placeholders": {
@@ -348,66 +195,63 @@
       }
     }
   },
-  "yourOrderWillBeDeliveredAtTheSpecifiedTime": "جهز طلبك سيتم الاستلام  في الوقت المحدد مسبقا",
-  "youCanPayNow": "يمكنك الدفع الان",
-  "youCanCancelTheOrderAtAnyTime": "تقدر تلغي الطلب قبل خروج الكابتن واستلام شنطة الملابس",
-  "payInvoice": "دفع الفاتورة",
-  "showYourInvoice": "اعرض فاتورتك",
-  "price": "السعر",
-  "packages": "الباقات",
-  "history": "السجل",
-  "date": "التاريخ",
-  "rial": "ريال",
-  "eightAMToTenAM": "8 مساء - 10 مساء",
-  "tenAMToTwelvePM": "10 مساء - 12 مساء",
-  "twelvePMToTwoPM": "12 مساء - 2 مساء",
-  "twoPMToFourPM": "2 مساء - 4 مساء",
-  "fourPMToSixPM": "4 مساء - 6 مساء",
-  "sixPMToEightPM": "6 مساء - 8 مساء",
-  "eightPMToTenPM": "8 مساء - 10 مساء",
-  "tenPMToTwelveAM": "10 مساء - 12 صباحا",
-  "twelveAMToTwoAM": "12 صباحا - 02 صباحا",
-  "twoAMToFourAM": "2 صباحا - 04 صباحا",
-  "fourAMToSixAM": "4 صباحا - 06 صباحا",
-  "sixAMToEightAM": "6 صباحا - 08 صباحا",
-  "add": "اضف",
-  "toMyOrder": "للطلب الخاص بي",
-  "minimumOrderPrice": "الحد الادنى للطلب",
-  "pleaseSelectTheWashType": "الرجاء اختيار نوع الغسل",
-  "orderCancelled": "تم الغاء الطلب",
-  "totalBeforeDiscount": "المجموع قبل الخصم",
-  "totalAfterDiscount": "المجموع بعد الخصم",
-  "more": "المزيد",
-  "currentOrders": "الطلبات الحالية",
-  "deliveryDate": "تاريخ التسليم",
-  "notifications": "الاشعارات",
-  "noNotifications": "لا يوجد اشعارات",
+  "youHavePoints": "لديك <a>{points}</a> نقطة",
+  "@youHavePoints": {
+    "placeholders": {
+      "points": {
+        "type": "num"
+      }
+    }
+  },
+  "riyal": "{amount} ريال",
+  "@riyal": {
+    "placeholders": {
+      "amount": {
+        "type": "num"
+      }
+    }
+  },
+  "taxId": "الرقم الضريبي: {id}",
+  "@taxId": {
+    "placeholders": {
+      "id": {
+        "type": "num"
+      }
+    }
+  },
+  "vat": "القيمة المضافة ({vat})",
+  "hour": "{date} ساعة",
+  "meter": "{meter} متر",
+  "minimumOrder": "الحد الأدنى للطلب",
+  "@minimumOrder": {
+    "placeholders": {
+      "orders": {
+        "type": "num"
+      }
+    }
+  },
+  "invoiceNo": "الفاتورة رقم #{invoiceNo}",
+  "@invoiceNo": {
+    "placeholders": {
+      "invoiceNo": {
+        "type": "num"
+      }
+    }
+  },
   "app_name": "تاسكورا - رغوة",
   "fixed_price_services": "خدمات محددة السعر",
-  "enter_mobile": "سجل رقم جوالتا لإرسال رمز التفعيل",
+  "enter_mobile": "سجل رقم جوالك لإرسال رمز التفعيل",
   "enter_otp": "ادخل رمز OTP",
   "otp_sent_to": "تم إرسال رمز OTP إلى",
   "resend": "اعد الارسال؟",
-  "confirm": "أكيد",
   "services_title": "خدمات فتح",
-  "services_subtitle": "جمعنا لك كل الخدمات التي يمتاجها بيتك",
-  "categories": {
-    "plumbing": "خورباء",
-    "swimming_pool": "سباحة",
-    "carpentry": "نجارة",
-    "installation": "ستالبت",
-    "home_appliances": "أجهزة متزلية",
-    "security": "أمن وسلدهة",
-    "tiling": "تبليط",
-    "cleaning": "تنظيف",
-    "laundry": "Laundry"
-  },
+  "services_subtitle": "جمعنا لك كل الخدمات التي يحتاجها بيتك",
   "tabs": {
     "home": "الرئيسية",
     "orders": "الطلبات",
     "offers": "العروض",
     "store": "المتجر",
-    "settings": "العمادات"
+    "settings": "الاعدادات"
   },
   "select_service": "حدد الخدمة",
   "personal_info": "البيانات الشخصية",
@@ -422,7 +266,7 @@
   "bank_details": "البيانات البنكية",
   "card_number": "رقم البطاقة البنكية",
   "cvv": "CVV",
-  "expiry_date": "تاريخ القيام البطاقة",
+  "expiry_date": "تاريخ انتهاء البطاقة",
   "coupon_code": "رمز القسيمة",
   "schedule_order": "جدولة الطلب",
   "select_location": "تحديد الموقع",
@@ -430,9 +274,6 @@
   "full_name": "الاسم بالكامل",
   "service_fee": "رسوم الخدمة",
   "total_vat": "الإجمالي شامل ضريبة القيمة المضافة",
-  "cancel": "الغاء",
-  "next": "التالي",
-  "confirm_order": "تأكيد الطلب",
   "track_order": "متابعة الطلب",
   "order_details": "تفاصيل الطلب",
   "searching_technician": "جاري البحث عن فني",
@@ -441,16 +282,16 @@
   "service_completed": "تمت الخدمة بنجاح",
   "rate_service": "تقييم الخدمة",
   "service_quality": "جودة الخدمة",
-  "punctuality": "اللتزام بالموعد",
+  "punctuality": "الالتزام بالموعد",
   "ease_of_use": "سهولة التعامل والتواصل",
   "price_vs_quality": "السعر مقابل الجودة",
   "app_experience": "التجربة العامة للتطبيق",
   "comment": "تعليق",
   "thanks_for_time": "شكرا لوقتكم",
   "about_app_description": "رغوة بروفايد هو تطبيق شامل يربطك بمجموعة واسعة من مزودي الخدمات المنزلية والفنية بكل سهولة واحترافية.",
-  "privacy_policy_description": "في رغوة بروفايدر نعتزم خصوصيتك ونسعى لحماية جميع بياناتك الشخصية. يتم جمع البيانات الضرورية فقط لتقديم وتحسين تجربة الاستخدام.",
+  "privacy_policy_description": "في رغوة بروفايدر نحترم خصوصيتك ونسعى لحماية جميع بياناتك الشخصية. يتم جمع البيانات الضرورية فقط لتقديم وتحسين تجربة الاستخدام.",
   "technical_support_contact": "+966 55 768 6624",
-  "technical_support_address": "الرياض - الملاء - 12845 - طريق صالح الدين",
+  "technical_support_address": "الرياض - الملاز - 12845 - طريق صلاح الدين",
   "send_message": "اترك رسالتك",
   "mobile": "الجوال",
   "address": "العنوان",

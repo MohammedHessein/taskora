@@ -322,13 +322,12 @@
   "discount23": "خصم 23 %",
   "limitedTimeOffer": "عرض خاص لفتره محدوده",
   "exchangePoints": "استبدال النقاط",
-  "you have {points} points": "لديك {points} نقطة",
   "onlineOrder": "طلب اونلاين",
   "hour": "{date} ساعة",
   "noAccount": "ليس لدى حساب",
   "alreadyHaveAccount": "لديك حساب بالفعل",
   "signIn": "تسجيل الدخول",
-  "resend again": "اعاده الارسال؟",
+  "resendAgain": "اعاده الارسال؟",
   "didNotReceiveTheCode": "لم يصلك الرمز؟ قم بالتواصل الان",
   "meter": "{meter} متر",
   "service1": "1 -الخدمه",
@@ -341,7 +340,14 @@
   "ifThisOptionIsEnabledTheLaundryWillUseFabricSoftenerIfRequired": "في حال تفعيل الخيار سيتم من قبل المغسلة استخدام منعم الملابس في حال تطلب ذلك.",
   "ifTheOptionIsActivatedTheLaundryWillUseTheAromaticScentIfRequired": "في حال تفعيل الخيار سيتم من قبل المغسلة استخدام رايحة الملابس في حال تطلب ذلك.",
   "quantityCount": "عدد القطع",
-  "order_number": "رقم الطلب {orderNumber}",
+  "orderNumber": "رقم الطلب {orderNumber}",
+  "@orderNumber": {
+    "placeholders": {
+      "orderNumber": {
+        "type": "String"
+      }
+    }
+  },
   "yourOrderWillBeDeliveredAtTheSpecifiedTime": "جهز طلبك سيتم الاستلام  في الوقت المحدد مسبقا",
   "youCanPayNow": "يمكنك الدفع الان",
   "youCanCancelTheOrderAtAnyTime": "تقدر تلغي الطلب قبل خروج الكابتن واستلام شنطة الملابس",
@@ -368,7 +374,7 @@
   "toMyOrder": "للطلب الخاص بي",
   "minimumOrderPrice": "الحد الادنى للطلب",
   "pleaseSelectTheWashType": "الرجاء اختيار نوع الغسل",
-  "order_cancelled": "تم الغاء الطلب",
+  "orderCancelled": "تم الغاء الطلب",
   "totalBeforeDiscount": "المجموع قبل الخصم",
   "totalAfterDiscount": "المجموع بعد الخصم",
   "more": "المزيد",

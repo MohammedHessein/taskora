@@ -322,13 +322,12 @@
   "discount23": "Discount 23%",
   "limitedTimeOffer": "Limited Time Offer",
   "exchangePoints": "Exchange points",
-  "you have {points} points": "You have {points} points",
   "onlineOrder": "Online Order",
   "hour": "{date} Hr",
   "noAccount": "don't have an account",
   "alreadyHaveAccount": "Already have an account?",
   "signIn": "Login",
-  "resend again": "Resend again?",
+  "resendAgain": "Resend again?",
   "didNotReceiveTheCode": "Didn't receive the code? Contact us now.",
   "meter": "{meter} meter",
   "service1": "1-Service",
@@ -341,7 +340,14 @@
   "ifThisOptionIsEnabledTheLaundryWillUseFabricSoftenerIfRequired": "If this option is enabled, the laundry will use fabric softener if required.",
   "ifTheOptionIsActivatedTheLaundryWillUseTheAromaticScentIfRequired": "If the option is activated, the laundry will use the aromatic scent if required.",
   "quantityCount": "Quantity Count",
-  "order_number": "Order No {orderNumber}",
+  "orderNumber": "Order No {orderNumber}",
+  "@orderNumber": {
+    "placeholders": {
+      "orderNumber": {
+        "type": "String"
+      }
+    }
+  },
   "yourOrderWillBeDeliveredAtTheSpecifiedTime": "Your order will be delivered at the specified time",
   "youHaveReceivedYourOrder": "You have received your order",
   "youCanCancelTheOrderAtAnyTime": "You can cancel the order before the end and receive the captain's bag of clothes",
@@ -368,7 +374,7 @@
   "toMyOrder": "To my order",
   "minimumOrderPrice": "Minimum order price",
   "pleaseSelectTheWashType": "Please select the wash type",
-  "order_cancelled": "Order cancelled",
+  "orderCancelled": "Order cancelled",
   "vat": "vat ({vat})",
   "totalBeforeDiscount": "Total before discount",
   "totalAfterDiscount": "Total after discount",

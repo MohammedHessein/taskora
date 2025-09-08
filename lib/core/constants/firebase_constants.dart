@@ -1,6 +1,6 @@
 class FirebaseConstants {
   FirebaseConstants._();
-  
+
   static final firebaseMessagingServiceKey = {
     "type": "service_account",
     "project_id": "flutter-essentials-dcbb9",

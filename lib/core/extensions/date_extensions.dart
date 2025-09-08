@@ -21,23 +21,28 @@ enum DateFormatType {
 }
 
 extension DateExtensions on DateTime {
-  String stringFormat(DateFormatType formatType,
-      {bool use24HoursFormat = false, bool showSeconds = false,}) {
+  String stringFormat(
+    DateFormatType formatType, {
+    bool use24HoursFormat = false,
+    bool showSeconds = false,
+  }) {
     switch (formatType) {
       case DateFormatType.shortDate:
         return DateFormat('MM/dd/yyyy').format(this);
       case DateFormatType.shortDateTime:
-        return DateFormat(use24HoursFormat
-                ? 'MM/dd/yyyy HH:mm${showSeconds ? ':ss' : ''}'
-                : 'MM/dd/yyyy h:mm${showSeconds ? ':ss a' : ' a'}',)
-            .format(this);
+        return DateFormat(
+          use24HoursFormat
+              ? 'MM/dd/yyyy HH:mm${showSeconds ? ':ss' : ''}'
+              : 'MM/dd/yyyy h:mm${showSeconds ? ':ss a' : ' a'}',
+        ).format(this);
       case DateFormatType.hyphenatedDate:
         return DateFormat('MM-dd-yyyy').format(this);
       case DateFormatType.hyphenatedDateTime:
-        return DateFormat(use24HoursFormat
-                ? 'MM-dd-yyyy HH:mm${showSeconds ? ':ss' : ''}'
-                : 'MM-dd-yyyy h:mm${showSeconds ? ':ss a' : ' a'}',)
-            .format(this);
+        return DateFormat(
+          use24HoursFormat
+              ? 'MM-dd-yyyy HH:mm${showSeconds ? ':ss' : ''}'
+              : 'MM-dd-yyyy h:mm${showSeconds ? ':ss a' : ' a'}',
+        ).format(this);
       case DateFormatType.dayMonthYear:
         return DateFormat('dd MMM yyyy').format(this);
       case DateFormatType.monthDayYear:
@@ -54,10 +59,11 @@ extension DateExtensions on DateTime {
         return DateFormat('E dd MMMM yyyy').format(this);
 
       case DateFormatType.timeOnly:
-        return DateFormat(use24HoursFormat
-                ? 'HH:mm${showSeconds ? ':ss' : ''}'
-                : 'h:mm${showSeconds ? ':ss a' : ' a'}',)
-            .format(this);
+        return DateFormat(
+          use24HoursFormat
+              ? 'HH:mm${showSeconds ? ':ss' : ''}'
+              : 'h:mm${showSeconds ? ':ss a' : ' a'}',
+        ).format(this);
       case DateFormatType.timeAgo:
         final now = DateTime.now();
         final difference = now.difference(this);
@@ -75,14 +81,16 @@ extension DateExtensions on DateTime {
         }
 
       case DateFormatType.timeWithSeconds:
-        return DateFormat(use24HoursFormat
-                ? 'HH:mm${showSeconds ? ':ss' : ''}'
-                : 'h:mm${showSeconds ? ':ss a' : ' a'}',)
-            .format(this);
+        return DateFormat(
+          use24HoursFormat
+              ? 'HH:mm${showSeconds ? ':ss' : ''}'
+              : 'h:mm${showSeconds ? ':ss a' : ' a'}',
+        ).format(this);
 
       case DateFormatType.fullGmtWithTimezone:
-        final formattedDate =
-            DateFormat('EEE MMM d yyyy HH:mm:ss').format(this);
+        final formattedDate = DateFormat(
+          'EEE MMM d yyyy HH:mm:ss',
+        ).format(this);
         final offset = timeZoneOffset.isNegative ? '-' : '+';
         final hours = timeZoneOffset.inHours.abs();
         final minutes = timeZoneOffset.inMinutes.abs() % 60;

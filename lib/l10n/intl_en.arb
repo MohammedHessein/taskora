@@ -369,7 +369,7 @@
   "otp_sent_to": "OTP code sent to",
   "resend": "Resend?",
   "confirm": "Confirm",
-  "services_title": "Services",
+  "services_title": "Technical services",
   "services_subtitle": "We've gathered all the services your home needs",
   "categories_plumbing": "Plumbing",
   "categories_swimming_pool": "Swimming Pool",
@@ -458,5 +458,9 @@
   "No results found": "No results found",
   "requests": "Requests",
   "offers": "Offers",
-  "store": "Store"
+  "store": "Store",
+  "electricity": "Electricity",
+  "airConditioning": "Air conditioning",
+  "satellite": "Satellite",
+  "paints": "Paints"
 }

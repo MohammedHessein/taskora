@@ -1,4 +1,5 @@
 import 'config.dart';
+
 abstract class ApplicationConfig extends Config {}
 
 class AppInitializer {

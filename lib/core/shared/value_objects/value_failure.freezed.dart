@@ -12,7 +12,8 @@ part of 'value_failure.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ValueFailure<T> {
@@ -28,8 +29,7 @@ mixin _$ValueFailure<T> {
     required TResult Function(T failedValue) shortPassword,
     required TResult Function(T failedValue) invalidPhotoUrl,
     required TResult Function(T failedValue) invalidAutoId,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(T failedValue, int max)? exceedingLength,
@@ -41,8 +41,7 @@ mixin _$ValueFailure<T> {
     TResult? Function(T failedValue)? shortPassword,
     TResult? Function(T failedValue)? invalidPhotoUrl,
     TResult? Function(T failedValue)? invalidAutoId,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(T failedValue, int max)? exceedingLength,
@@ -55,8 +54,7 @@ mixin _$ValueFailure<T> {
     TResult Function(T failedValue)? invalidPhotoUrl,
     TResult Function(T failedValue)? invalidAutoId,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(ExceedingLength<T> value) exceedingLength,
@@ -68,8 +66,7 @@ mixin _$ValueFailure<T> {
     required TResult Function(ShortPassword<T> value) shortPassword,
     required TResult Function(InvalidPhotoUrl<T> value) invalidPhotoUrl,
     required TResult Function(InvalidAutoId<T> value) invalidAutoId,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(ExceedingLength<T> value)? exceedingLength,
@@ -81,8 +78,7 @@ mixin _$ValueFailure<T> {
     TResult? Function(ShortPassword<T> value)? shortPassword,
     TResult? Function(InvalidPhotoUrl<T> value)? invalidPhotoUrl,
     TResult? Function(InvalidAutoId<T> value)? invalidAutoId,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ExceedingLength<T> value)? exceedingLength,
@@ -95,8 +91,7 @@ mixin _$ValueFailure<T> {
     TResult Function(InvalidPhotoUrl<T> value)? invalidPhotoUrl,
     TResult Function(InvalidAutoId<T> value)? invalidAutoId,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ValueFailureCopyWith<T, ValueFailure<T>> get copyWith =>
@@ -106,8 +101,9 @@ mixin _$ValueFailure<T> {
 /// @nodoc
 abstract class $ValueFailureCopyWith<T, $Res> {
   factory $ValueFailureCopyWith(
-          ValueFailure<T> value, $Res Function(ValueFailure<T>) then) =
-      _$ValueFailureCopyWithImpl<T, $Res, ValueFailure<T>>;
+    ValueFailure<T> value,
+    $Res Function(ValueFailure<T>) then,
+  ) = _$ValueFailureCopyWithImpl<T, $Res, ValueFailure<T>>;
   @useResult
   $Res call({T failedValue});
 }
@@ -124,24 +120,26 @@ class _$ValueFailureCopyWithImpl<T, $Res, $Val extends ValueFailure<T>>
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-  }) {
-    return _then(_value.copyWith(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-    ) as $Val);
+  $Res call({Object? failedValue = freezed}) {
+    return _then(
+      _value.copyWith(
+            failedValue: freezed == failedValue
+                ? _value.failedValue
+                : failedValue // ignore: cast_nullable_to_non_nullable
+                      as T,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$ExceedingLengthImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$ExceedingLengthImplCopyWith(_$ExceedingLengthImpl<T> value,
-          $Res Function(_$ExceedingLengthImpl<T>) then) =
-      __$$ExceedingLengthImplCopyWithImpl<T, $Res>;
+  factory _$$ExceedingLengthImplCopyWith(
+    _$ExceedingLengthImpl<T> value,
+    $Res Function(_$ExceedingLengthImpl<T>) then,
+  ) = __$$ExceedingLengthImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue, int max});
@@ -151,26 +149,26 @@ abstract class _$$ExceedingLengthImplCopyWith<T, $Res>
 class __$$ExceedingLengthImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$ExceedingLengthImpl<T>>
     implements _$$ExceedingLengthImplCopyWith<T, $Res> {
-  __$$ExceedingLengthImplCopyWithImpl(_$ExceedingLengthImpl<T> _value,
-      $Res Function(_$ExceedingLengthImpl<T>) _then)
-      : super(_value, _then);
+  __$$ExceedingLengthImplCopyWithImpl(
+    _$ExceedingLengthImpl<T> _value,
+    $Res Function(_$ExceedingLengthImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-    Object? max = null,
-  }) {
-    return _then(_$ExceedingLengthImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-      max: null == max
-          ? _value.max
-          : max // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+  $Res call({Object? failedValue = freezed, Object? max = null}) {
+    return _then(
+      _$ExceedingLengthImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+        max: null == max
+            ? _value.max
+            : max // ignore: cast_nullable_to_non_nullable
+                  as int,
+      ),
+    );
   }
 }
 
@@ -205,21 +203,28 @@ class _$ExceedingLengthImpl<T>
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ExceedingLengthImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue) &&
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ) &&
             (identical(other.max, max) || other.max == max));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue), max);
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+    max,
+  );
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ExceedingLengthImplCopyWith<T, _$ExceedingLengthImpl<T>> get copyWith =>
       __$$ExceedingLengthImplCopyWithImpl<T, _$ExceedingLengthImpl<T>>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -327,9 +332,10 @@ class _$ExceedingLengthImpl<T>
 }
 
 abstract class ExceedingLength<T> implements ValueFailure<T> {
-  const factory ExceedingLength(
-      {required final T failedValue,
-      required final int max}) = _$ExceedingLengthImpl<T>;
+  const factory ExceedingLength({
+    required final T failedValue,
+    required final int max,
+  }) = _$ExceedingLengthImpl<T>;
 
   @override
   T get failedValue;
@@ -344,8 +350,9 @@ abstract class ExceedingLength<T> implements ValueFailure<T> {
 abstract class _$$EmptyImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory _$$EmptyImplCopyWith(
-          _$EmptyImpl<T> value, $Res Function(_$EmptyImpl<T>) then) =
-      __$$EmptyImplCopyWithImpl<T, $Res>;
+    _$EmptyImpl<T> value,
+    $Res Function(_$EmptyImpl<T>) then,
+  ) = __$$EmptyImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -356,20 +363,21 @@ class __$$EmptyImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$EmptyImpl<T>>
     implements _$$EmptyImplCopyWith<T, $Res> {
   __$$EmptyImplCopyWithImpl(
-      _$EmptyImpl<T> _value, $Res Function(_$EmptyImpl<T>) _then)
-      : super(_value, _then);
+    _$EmptyImpl<T> _value,
+    $Res Function(_$EmptyImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-  }) {
-    return _then(_$EmptyImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
+  $Res call({Object? failedValue = freezed}) {
+    return _then(
+      _$EmptyImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+      ),
+    );
   }
 }
 
@@ -399,13 +407,17 @@ class _$EmptyImpl<T> with DiagnosticableTreeMixin implements Empty<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$EmptyImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue));
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue));
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+  );
 
   @JsonKey(ignore: true)
   @override
@@ -533,8 +545,9 @@ abstract class Empty<T> implements ValueFailure<T> {
 abstract class _$$MultilineImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory _$$MultilineImplCopyWith(
-          _$MultilineImpl<T> value, $Res Function(_$MultilineImpl<T>) then) =
-      __$$MultilineImplCopyWithImpl<T, $Res>;
+    _$MultilineImpl<T> value,
+    $Res Function(_$MultilineImpl<T>) then,
+  ) = __$$MultilineImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -545,20 +558,21 @@ class __$$MultilineImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$MultilineImpl<T>>
     implements _$$MultilineImplCopyWith<T, $Res> {
   __$$MultilineImplCopyWithImpl(
-      _$MultilineImpl<T> _value, $Res Function(_$MultilineImpl<T>) _then)
-      : super(_value, _then);
+    _$MultilineImpl<T> _value,
+    $Res Function(_$MultilineImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-  }) {
-    return _then(_$MultilineImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
+  $Res call({Object? failedValue = freezed}) {
+    return _then(
+      _$MultilineImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+      ),
+    );
   }
 }
 
@@ -588,13 +602,17 @@ class _$MultilineImpl<T> with DiagnosticableTreeMixin implements Multiline<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$MultilineImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue));
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue));
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+  );
 
   @JsonKey(ignore: true)
   @override
@@ -721,9 +739,10 @@ abstract class Multiline<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$NumberTooLargeImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$NumberTooLargeImplCopyWith(_$NumberTooLargeImpl<T> value,
-          $Res Function(_$NumberTooLargeImpl<T>) then) =
-      __$$NumberTooLargeImplCopyWithImpl<T, $Res>;
+  factory _$$NumberTooLargeImplCopyWith(
+    _$NumberTooLargeImpl<T> value,
+    $Res Function(_$NumberTooLargeImpl<T>) then,
+  ) = __$$NumberTooLargeImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue, num max});
@@ -733,26 +752,26 @@ abstract class _$$NumberTooLargeImplCopyWith<T, $Res>
 class __$$NumberTooLargeImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$NumberTooLargeImpl<T>>
     implements _$$NumberTooLargeImplCopyWith<T, $Res> {
-  __$$NumberTooLargeImplCopyWithImpl(_$NumberTooLargeImpl<T> _value,
-      $Res Function(_$NumberTooLargeImpl<T>) _then)
-      : super(_value, _then);
+  __$$NumberTooLargeImplCopyWithImpl(
+    _$NumberTooLargeImpl<T> _value,
+    $Res Function(_$NumberTooLargeImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-    Object? max = null,
-  }) {
-    return _then(_$NumberTooLargeImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-      max: null == max
-          ? _value.max
-          : max // ignore: cast_nullable_to_non_nullable
-              as num,
-    ));
+  $Res call({Object? failedValue = freezed, Object? max = null}) {
+    return _then(
+      _$NumberTooLargeImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+        max: null == max
+            ? _value.max
+            : max // ignore: cast_nullable_to_non_nullable
+                  as num,
+      ),
+    );
   }
 }
 
@@ -787,21 +806,28 @@ class _$NumberTooLargeImpl<T>
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$NumberTooLargeImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue) &&
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ) &&
             (identical(other.max, max) || other.max == max));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue), max);
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+    max,
+  );
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NumberTooLargeImplCopyWith<T, _$NumberTooLargeImpl<T>> get copyWith =>
       __$$NumberTooLargeImplCopyWithImpl<T, _$NumberTooLargeImpl<T>>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -909,9 +935,10 @@ class _$NumberTooLargeImpl<T>
 }
 
 abstract class NumberTooLarge<T> implements ValueFailure<T> {
-  const factory NumberTooLarge(
-      {required final T failedValue,
-      required final num max}) = _$NumberTooLargeImpl<T>;
+  const factory NumberTooLarge({
+    required final T failedValue,
+    required final num max,
+  }) = _$NumberTooLargeImpl<T>;
 
   @override
   T get failedValue;
@@ -925,9 +952,10 @@ abstract class NumberTooLarge<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$ListTooLongImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$ListTooLongImplCopyWith(_$ListTooLongImpl<T> value,
-          $Res Function(_$ListTooLongImpl<T>) then) =
-      __$$ListTooLongImplCopyWithImpl<T, $Res>;
+  factory _$$ListTooLongImplCopyWith(
+    _$ListTooLongImpl<T> value,
+    $Res Function(_$ListTooLongImpl<T>) then,
+  ) = __$$ListTooLongImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue, int max});
@@ -938,25 +966,25 @@ class __$$ListTooLongImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$ListTooLongImpl<T>>
     implements _$$ListTooLongImplCopyWith<T, $Res> {
   __$$ListTooLongImplCopyWithImpl(
-      _$ListTooLongImpl<T> _value, $Res Function(_$ListTooLongImpl<T>) _then)
-      : super(_value, _then);
+    _$ListTooLongImpl<T> _value,
+    $Res Function(_$ListTooLongImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-    Object? max = null,
-  }) {
-    return _then(_$ListTooLongImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-      max: null == max
-          ? _value.max
-          : max // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+  $Res call({Object? failedValue = freezed, Object? max = null}) {
+    return _then(
+      _$ListTooLongImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+        max: null == max
+            ? _value.max
+            : max // ignore: cast_nullable_to_non_nullable
+                  as int,
+      ),
+    );
   }
 }
 
@@ -991,21 +1019,28 @@ class _$ListTooLongImpl<T>
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ListTooLongImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue) &&
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ) &&
             (identical(other.max, max) || other.max == max));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue), max);
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+    max,
+  );
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ListTooLongImplCopyWith<T, _$ListTooLongImpl<T>> get copyWith =>
       __$$ListTooLongImplCopyWithImpl<T, _$ListTooLongImpl<T>>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -1113,9 +1148,10 @@ class _$ListTooLongImpl<T>
 }
 
 abstract class ListTooLong<T> implements ValueFailure<T> {
-  const factory ListTooLong(
-      {required final T failedValue,
-      required final int max}) = _$ListTooLongImpl<T>;
+  const factory ListTooLong({
+    required final T failedValue,
+    required final int max,
+  }) = _$ListTooLongImpl<T>;
 
   @override
   T get failedValue;
@@ -1129,9 +1165,10 @@ abstract class ListTooLong<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$InvalidEmailImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$InvalidEmailImplCopyWith(_$InvalidEmailImpl<T> value,
-          $Res Function(_$InvalidEmailImpl<T>) then) =
-      __$$InvalidEmailImplCopyWithImpl<T, $Res>;
+  factory _$$InvalidEmailImplCopyWith(
+    _$InvalidEmailImpl<T> value,
+    $Res Function(_$InvalidEmailImpl<T>) then,
+  ) = __$$InvalidEmailImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -1142,20 +1179,21 @@ class __$$InvalidEmailImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$InvalidEmailImpl<T>>
     implements _$$InvalidEmailImplCopyWith<T, $Res> {
   __$$InvalidEmailImplCopyWithImpl(
-      _$InvalidEmailImpl<T> _value, $Res Function(_$InvalidEmailImpl<T>) _then)
-      : super(_value, _then);
+    _$InvalidEmailImpl<T> _value,
+    $Res Function(_$InvalidEmailImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-  }) {
-    return _then(_$InvalidEmailImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
+  $Res call({Object? failedValue = freezed}) {
+    return _then(
+      _$InvalidEmailImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+      ),
+    );
   }
 }
 
@@ -1187,20 +1225,26 @@ class _$InvalidEmailImpl<T>
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InvalidEmailImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue));
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue));
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+  );
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InvalidEmailImplCopyWith<T, _$InvalidEmailImpl<T>> get copyWith =>
       __$$InvalidEmailImplCopyWithImpl<T, _$InvalidEmailImpl<T>>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -1322,9 +1366,10 @@ abstract class InvalidEmail<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$ShortPasswordImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$ShortPasswordImplCopyWith(_$ShortPasswordImpl<T> value,
-          $Res Function(_$ShortPasswordImpl<T>) then) =
-      __$$ShortPasswordImplCopyWithImpl<T, $Res>;
+  factory _$$ShortPasswordImplCopyWith(
+    _$ShortPasswordImpl<T> value,
+    $Res Function(_$ShortPasswordImpl<T>) then,
+  ) = __$$ShortPasswordImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -1334,21 +1379,22 @@ abstract class _$$ShortPasswordImplCopyWith<T, $Res>
 class __$$ShortPasswordImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$ShortPasswordImpl<T>>
     implements _$$ShortPasswordImplCopyWith<T, $Res> {
-  __$$ShortPasswordImplCopyWithImpl(_$ShortPasswordImpl<T> _value,
-      $Res Function(_$ShortPasswordImpl<T>) _then)
-      : super(_value, _then);
+  __$$ShortPasswordImplCopyWithImpl(
+    _$ShortPasswordImpl<T> _value,
+    $Res Function(_$ShortPasswordImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-  }) {
-    return _then(_$ShortPasswordImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
+  $Res call({Object? failedValue = freezed}) {
+    return _then(
+      _$ShortPasswordImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+      ),
+    );
   }
 }
 
@@ -1380,20 +1426,26 @@ class _$ShortPasswordImpl<T>
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ShortPasswordImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue));
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue));
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+  );
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ShortPasswordImplCopyWith<T, _$ShortPasswordImpl<T>> get copyWith =>
       __$$ShortPasswordImplCopyWithImpl<T, _$ShortPasswordImpl<T>>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -1515,9 +1567,10 @@ abstract class ShortPassword<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$InvalidPhotoUrlImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$InvalidPhotoUrlImplCopyWith(_$InvalidPhotoUrlImpl<T> value,
-          $Res Function(_$InvalidPhotoUrlImpl<T>) then) =
-      __$$InvalidPhotoUrlImplCopyWithImpl<T, $Res>;
+  factory _$$InvalidPhotoUrlImplCopyWith(
+    _$InvalidPhotoUrlImpl<T> value,
+    $Res Function(_$InvalidPhotoUrlImpl<T>) then,
+  ) = __$$InvalidPhotoUrlImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -1527,21 +1580,22 @@ abstract class _$$InvalidPhotoUrlImplCopyWith<T, $Res>
 class __$$InvalidPhotoUrlImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$InvalidPhotoUrlImpl<T>>
     implements _$$InvalidPhotoUrlImplCopyWith<T, $Res> {
-  __$$InvalidPhotoUrlImplCopyWithImpl(_$InvalidPhotoUrlImpl<T> _value,
-      $Res Function(_$InvalidPhotoUrlImpl<T>) _then)
-      : super(_value, _then);
+  __$$InvalidPhotoUrlImplCopyWithImpl(
+    _$InvalidPhotoUrlImpl<T> _value,
+    $Res Function(_$InvalidPhotoUrlImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-  }) {
-    return _then(_$InvalidPhotoUrlImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
+  $Res call({Object? failedValue = freezed}) {
+    return _then(
+      _$InvalidPhotoUrlImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+      ),
+    );
   }
 }
 
@@ -1573,20 +1627,26 @@ class _$InvalidPhotoUrlImpl<T>
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InvalidPhotoUrlImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue));
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue));
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+  );
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InvalidPhotoUrlImplCopyWith<T, _$InvalidPhotoUrlImpl<T>> get copyWith =>
       __$$InvalidPhotoUrlImplCopyWithImpl<T, _$InvalidPhotoUrlImpl<T>>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -1708,9 +1768,10 @@ abstract class InvalidPhotoUrl<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$InvalidAutoIdImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$InvalidAutoIdImplCopyWith(_$InvalidAutoIdImpl<T> value,
-          $Res Function(_$InvalidAutoIdImpl<T>) then) =
-      __$$InvalidAutoIdImplCopyWithImpl<T, $Res>;
+  factory _$$InvalidAutoIdImplCopyWith(
+    _$InvalidAutoIdImpl<T> value,
+    $Res Function(_$InvalidAutoIdImpl<T>) then,
+  ) = __$$InvalidAutoIdImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -1720,21 +1781,22 @@ abstract class _$$InvalidAutoIdImplCopyWith<T, $Res>
 class __$$InvalidAutoIdImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$InvalidAutoIdImpl<T>>
     implements _$$InvalidAutoIdImplCopyWith<T, $Res> {
-  __$$InvalidAutoIdImplCopyWithImpl(_$InvalidAutoIdImpl<T> _value,
-      $Res Function(_$InvalidAutoIdImpl<T>) _then)
-      : super(_value, _then);
+  __$$InvalidAutoIdImplCopyWithImpl(
+    _$InvalidAutoIdImpl<T> _value,
+    $Res Function(_$InvalidAutoIdImpl<T>) _then,
+  ) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? failedValue = freezed,
-  }) {
-    return _then(_$InvalidAutoIdImpl<T>(
-      failedValue: freezed == failedValue
-          ? _value.failedValue
-          : failedValue // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
+  $Res call({Object? failedValue = freezed}) {
+    return _then(
+      _$InvalidAutoIdImpl<T>(
+        failedValue: freezed == failedValue
+            ? _value.failedValue
+            : failedValue // ignore: cast_nullable_to_non_nullable
+                  as T,
+      ),
+    );
   }
 }
 
@@ -1766,20 +1828,26 @@ class _$InvalidAutoIdImpl<T>
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InvalidAutoIdImpl<T> &&
-            const DeepCollectionEquality()
-                .equals(other.failedValue, failedValue));
+            const DeepCollectionEquality().equals(
+              other.failedValue,
+              failedValue,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(failedValue));
+    runtimeType,
+    const DeepCollectionEquality().hash(failedValue),
+  );
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InvalidAutoIdImplCopyWith<T, _$InvalidAutoIdImpl<T>> get copyWith =>
       __$$InvalidAutoIdImplCopyWithImpl<T, _$InvalidAutoIdImpl<T>>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs

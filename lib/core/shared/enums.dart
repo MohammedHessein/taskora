@@ -11,6 +11,20 @@ enum OrderStatus {
   cancelled,
 }
 
+enum Tabs { home, requests, offers, store, settings }
+
+bool showSearchTextField(Tabs tab) {
+  switch (tab) {
+    case Tabs.home:
+    case Tabs.requests:
+    case Tabs.offers:
+    case Tabs.store:
+      return true;
+    case Tabs.settings:
+      return false;
+  }
+}
+
 extension OrderStatusX on OrderStatus {
   String get toApi {
     switch (this) {

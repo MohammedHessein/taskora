@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
+import 'package:taskora/core/shared/enums.dart';
 import 'package:taskora/core/shared/widgets/custom_search_text_field.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
@@ -10,10 +11,14 @@ import 'package:taskora/generated/assets.dart';
 import 'gaps.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({required Future<String> locationFuture, super.key})
-    : _locationFuture = locationFuture;
+  const CustomAppBar({
+    required Future<String> locationFuture,
+    required this.currentTab,
+    super.key,
+  }) : _locationFuture = locationFuture;
 
   final Future<String> _locationFuture;
+  final Tabs currentTab;
 
   @override
   Widget build(BuildContext context) {
@@ -89,10 +94,15 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ),
       ],
-      bottom: const CustomSearchTextField(),
+
+      /// 👇 الشرط هنا
+      bottom: showSearchTextField(currentTab)
+          ? const CustomSearchTextField()
+          : null,
     );
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(120.h);
+  Size get preferredSize =>
+      Size.fromHeight(showSearchTextField(currentTab) ? 120.h : 70.h);
 }

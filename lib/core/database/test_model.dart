@@ -6,12 +6,8 @@ part 'test_model.g.dart';
 
 @HiveType(typeId: 0)
 class DBTestModel extends Equatable {
-
-   DBTestModel({
-    this.firstField,
-    this.secondField,
-    this.thirdField,
-  }) : id = const Uuid().v4();
+  DBTestModel({this.firstField, this.secondField, this.thirdField})
+    : id = const Uuid().v4();
   @HiveField(0)
   final String? id;
   @HiveField(1)
@@ -19,14 +15,8 @@ class DBTestModel extends Equatable {
   @HiveField(2)
   final String? secondField;
   @HiveField(3)
-
   final num? thirdField;
 
   @override
-  List<Object?> get props => [
-        id,
-        firstField,
-        secondField,
-        thirdField,
-      ];
+  List<Object?> get props => [id, firstField, secondField, thirdField];
 }

@@ -368,7 +368,7 @@
   "otp_sent_to": "تم إرسال رمز OTP إلى",
   "resend": "اعد الارسال؟",
   "confirm": "أكيد",
-  "services_title": "خدمات فتح",
+  "services_title": "خدمات فني",
   "services_subtitle": "جمعنا لك كل الخدمات التي يمتاجها بيتك",
   "categories_plumbing": "سباكة",
   "categories_swimming_pool": "سباحة",
@@ -457,5 +457,9 @@
   "No results found": "لم يتم العثور على نتائج",
   "requests": "طلبات",
   "offers": "عروض",
-  "store": "متجر"
+  "store": "متجر",
+  "electricity": "كهرباء",
+  "airConditioning": "تكييف",
+  "satellite": "ستاليت",
+  "paints": "دهانات"
 }

@@ -24,7 +24,7 @@ void logW(message) {
 
 /// Error log
 void logE(message, {error, StackTrace? stackTrace}) {
-  talker.error(message,error, stackTrace);
+  talker.error(message, error, stackTrace);
 }
 
 /// Fatal error log
@@ -38,8 +38,13 @@ void logRoute(message) {
 }
 
 /// Custom log
-void logCustom(message,
-    {String? title, LogLevel? logLevel = LogLevel.debug, AnsiPen? pen,}) {
+void logCustom(
+  message, {
+  String? title,
+  LogLevel? logLevel = LogLevel.debug,
+  AnsiPen? pen,
+}) {
   talker.logCustom(
-      TalkerLog(message, title: title, logLevel: logLevel, pen: pen),);
+    TalkerLog(message, title: title, logLevel: logLevel, pen: pen),
+  );
 }

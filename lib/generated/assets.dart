@@ -11,10 +11,24 @@ class Assets {
   static const String fontsCairoMedium = 'assets/fonts/Cairo-Medium.ttf';
   static const String fontsCairoRegular = 'assets/fonts/Cairo-Regular.ttf';
   static const String fontsCairoSemiBold = 'assets/fonts/Cairo-SemiBold.ttf';
+  static const String imagesAirConditioning =
+      'assets/images/air_conditioning.png';
   static const String imagesAndroid12Splash =
       'assets/images/android_12_splash.png';
+  static const String imagesCarpentary = 'assets/images/carpentary.png';
+  static const String imagesCleaner = 'assets/images/cleaner.png';
+  static const String imagesCleaning = 'assets/images/cleaning.png';
+  static const String imagesElectricity = 'assets/images/electricity.png';
+  static const String imagesHomeAppliances =
+      'assets/images/home_appliances.png';
+  static const String imagesLaundry = 'assets/images/laundry.png';
   static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesPlumping = 'assets/images/plumping.png';
+  static const String imagesSecurity = 'assets/images/security.png';
   static const String imagesSplash = 'assets/images/splash.png';
+  static const String imagesStallite = 'assets/images/stallite.png';
+  static const String imagesStallite2 = 'assets/images/stallite2.png';
+  static const String imagesTilling = 'assets/images/tilling.png';
   static const String svgsActiveHome = 'assets/svgs/active_home.svg';
   static const String svgsActiveOffers = 'assets/svgs/active_offers.svg';
   static const String svgsActiveRequests = 'assets/svgs/active_requests.svg';
@@ -22,6 +36,7 @@ class Assets {
   static const String svgsActiveStore = 'assets/svgs/active_store.svg';
   static const String svgsCart = 'assets/svgs/cart.svg';
   static const String svgsCartCount = 'assets/svgs/cart_count.svg';
+  static const String svgsCleaner = 'assets/svgs/cleaner.svg';
   static const String svgsInactiveHome = 'assets/svgs/inactive_home.svg';
   static const String svgsInactiveOffers = 'assets/svgs/inactive_offers.svg';
   static const String svgsInactiveRequests =
@@ -29,6 +44,7 @@ class Assets {
   static const String svgsInactiveSettings =
       'assets/svgs/inactive_settings.svg';
   static const String svgsInactiveStore = 'assets/svgs/inactive_store.svg';
+  static const String svgsLaundry = 'assets/svgs/laundry.svg';
   static const String svgsLocation = 'assets/svgs/location.svg';
   static const String svgsLogo = 'assets/svgs/logo.svg';
   static const String svgsRat = 'assets/svgs/rat.svg';

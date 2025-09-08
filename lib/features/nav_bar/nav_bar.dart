@@ -7,6 +7,7 @@ import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/extensions/theme_extensions.dart';
 import 'package:taskora/core/helpers/cache_helper.dart';
 import 'package:taskora/core/service/location_service.dart';
+import 'package:taskora/core/shared/enums.dart';
 import 'package:taskora/core/shared/widgets/custom_app_bar.dart';
 import 'package:taskora/core/shared/widgets/default_dialog.dart';
 import 'package:taskora/features/main/home/presentation/views/home_view.dart';
@@ -53,6 +54,23 @@ class _NavBarState extends State<NavBar> {
     return location;
   }
 
+  Tabs _getCurrentTab() {
+    switch (_selectedIndex) {
+      case 0:
+        return Tabs.home;
+      case 1:
+        return Tabs.requests;
+      case 2:
+        return Tabs.offers;
+      case 3:
+        return Tabs.store;
+      case 4:
+        return Tabs.settings;
+      default:
+        return Tabs.home;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return PopScope(
@@ -75,6 +93,10 @@ class _NavBarState extends State<NavBar> {
             false;
       },
       child: Scaffold(
+        appBar: CustomAppBar(
+          locationFuture: _locationFuture,
+          currentTab: _getCurrentTab(),
+        ),
         body: Center(
           child: IndexedStack(
             index: _selectedIndex,
@@ -87,7 +109,6 @@ class _NavBarState extends State<NavBar> {
             ],
           ),
         ),
-        appBar: CustomAppBar(locationFuture: _locationFuture),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: context.customColors.secondaryWhite,
           elevation: 0,

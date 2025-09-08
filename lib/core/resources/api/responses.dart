@@ -9,14 +9,17 @@ enum ResponseCode {
   badRequest(400), // Failure, API rejected request
   unauthorized(401), // Failure, user is not authorized
   paymentRequired(
-      402,), // Might be used as part of a digital cash or micro-payment scheme
+    402,
+  ), // Might be used as part of a digital cash or micro-payment scheme
   forbidden(403), // Failure, API rejected request
   notFound(404), // Failure, not found
   methodNotAllowed(405), // Request was made using unsupported method
   tooManyRequests(
-      429,), // User has sent too many requests in a given amount of time
+    429,
+  ), // User has sent too many requests in a given amount of time
   unavailableForLegalReasons(
-      451,), // Denied access to the resource as a consequence of a legal demand
+    451,
+  ), // Denied access to the resource as a consequence of a legal demand
   internalServerError(500), // Failure, crash in server side
   badGateway(502), // Server received an invalid response
   serviceUnavailable(503), // Server down or in maintenance

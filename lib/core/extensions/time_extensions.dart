@@ -20,22 +20,31 @@ extension TimeOfDayExtensions on TimeOfDay {
     final minute = this.minute;
 
     // Add hours and minutes to the original time
-    final modifiedTime =
-        DateTime(2022, 1, 1, hour + addedHours, minute + addedMinutes);
+    final modifiedTime = DateTime(
+      2022,
+      1,
+      1,
+      hour + addedHours,
+      minute + addedMinutes,
+    );
 
     switch (formatType) {
       case TimeFormatType.hoursMinutes:
-        return DateFormat(use24HoursFormat ? 'HH:mm' : 'h:mm a')
-            .format(modifiedTime);
+        return DateFormat(
+          use24HoursFormat ? 'HH:mm' : 'h:mm a',
+        ).format(modifiedTime);
       case TimeFormatType.hoursMinutesPeriod:
-        return DateFormat(use24HoursFormat ? 'HH:mm' : 'h:mm a')
-            .format(modifiedTime);
+        return DateFormat(
+          use24HoursFormat ? 'HH:mm' : 'h:mm a',
+        ).format(modifiedTime);
       case TimeFormatType.addHours:
-        return DateFormat(use24HoursFormat ? 'HH:mm' : 'h:mm a')
-            .format(modifiedTime);
+        return DateFormat(
+          use24HoursFormat ? 'HH:mm' : 'h:mm a',
+        ).format(modifiedTime);
       case TimeFormatType.addMinutes:
-        return DateFormat(use24HoursFormat ? 'HH:mm' : 'h:mm a')
-            .format(modifiedTime);
+        return DateFormat(
+          use24HoursFormat ? 'HH:mm' : 'h:mm a',
+        ).format(modifiedTime);
       case TimeFormatType.hoursMinutesSeconds:
         return DateFormat('HH:mm:ss').format(modifiedTime);
     }

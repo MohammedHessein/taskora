@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class Debouncer {
-
   /// Creates a new Debouncer with the specified interval.
   Debouncer(this.interval);
+
   /// The duration to wait before executing the action.
   final Duration interval;
 

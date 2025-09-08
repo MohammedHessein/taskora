@@ -11,7 +11,8 @@ class IntentUtils {
       return launchUrl(
         uri,
         mode: inApp
-            ? LaunchMode.inAppWebView // Opens the URL in an in-app WebView
+            ? LaunchMode
+                  .inAppWebView // Opens the URL in an in-app WebView
             : LaunchMode.externalApplication, // Opens the URL in the browser
       );
     }
@@ -19,10 +20,7 @@ class IntentUtils {
   }
 
   static Future<void> makePhoneCall(String phoneNumber) async {
-    final launchUri = Uri(
-      scheme: 'tel',
-      path: phoneNumber,
-    );
+    final launchUri = Uri(scheme: 'tel', path: phoneNumber);
     await launchUrl(launchUri);
   }
 
@@ -45,8 +43,8 @@ class IntentUtils {
       return params.entries
           .map(
             (MapEntry<String, String> e) =>
-        '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}',
-      )
+                '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}',
+          )
           .join('&');
     }
 

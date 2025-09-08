@@ -6,7 +6,6 @@ part 'value_failure.freezed.dart';
 /// Base Value Object class
 @freezed
 abstract class ValueFailure<T> with _$ValueFailure<T> {
-
   /// Factory constructor for [ValueFailure.exceedingLength]
   ///
   /// This constructor is used to create a [ValueFailure] when a given value
@@ -20,17 +19,13 @@ abstract class ValueFailure<T> with _$ValueFailure<T> {
     required int max,
   }) = ExceedingLength<T>;
 
-
   /// Factory constructor for [ValueFailure.empty]
   ///
   /// This constructor is used to create a [ValueFailure] when a given value
   /// is empty or missing
   ///
   /// [failedValue] is the value that is being checked
-  const factory ValueFailure.empty({
-    required T failedValue,
-  }) = Empty<T>;
-
+  const factory ValueFailure.empty({required T failedValue}) = Empty<T>;
 
   /// Factory constructor for [ValueFailure.multiline]
   ///
@@ -38,10 +33,7 @@ abstract class ValueFailure<T> with _$ValueFailure<T> {
   /// contains more than one line
   ///
   /// [failedValue] is the value that is being checked
-  const factory ValueFailure.multiline({
-    required T failedValue,
-  }) = Multiline<T>;
-
+  const factory ValueFailure.multiline({required T failedValue}) = Multiline<T>;
 
   /// Factory constructor for [ValueFailure.numberTooLarge]
   ///
@@ -71,9 +63,8 @@ abstract class ValueFailure<T> with _$ValueFailure<T> {
   /// is not a valid email address
   ///
   /// [failedValue] is the value that is being checked
-  const factory ValueFailure.invalidEmail({
-    required T failedValue,
-  }) = InvalidEmail<T>;
+  const factory ValueFailure.invalidEmail({required T failedValue}) =
+      InvalidEmail<T>;
 
   /// Factory constructor for [ValueFailure.shortPassword]
   ///
@@ -81,9 +72,8 @@ abstract class ValueFailure<T> with _$ValueFailure<T> {
   /// is considered too short based on a predefined minimum length
   ///
   /// [failedValue] is the password that is being checked
-  const factory ValueFailure.shortPassword({
-    required T failedValue,
-  }) = ShortPassword<T>;
+  const factory ValueFailure.shortPassword({required T failedValue}) =
+      ShortPassword<T>;
 
   /// Factory constructor for [ValueFailure.invalidPhotoUrl]
   ///
@@ -91,9 +81,8 @@ abstract class ValueFailure<T> with _$ValueFailure<T> {
   /// is not a valid photo url
   ///
   /// [failedValue] is the value that is being checked
-  const factory ValueFailure.invalidPhotoUrl({
-    required T failedValue,
-  }) = InvalidPhotoUrl<T>;
+  const factory ValueFailure.invalidPhotoUrl({required T failedValue}) =
+      InvalidPhotoUrl<T>;
 
   /// Factory constructor for [ValueFailure.invalidAutoId]
   ///
@@ -101,6 +90,6 @@ abstract class ValueFailure<T> with _$ValueFailure<T> {
   /// is not a valid auto-incrementing id
   ///
   /// [failedValue] is the value that is being checked
-  const factory ValueFailure.invalidAutoId({required T failedValue}) = InvalidAutoId<T>;
-
+  const factory ValueFailure.invalidAutoId({required T failedValue}) =
+      InvalidAutoId<T>;
 }

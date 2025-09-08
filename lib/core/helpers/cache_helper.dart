@@ -58,7 +58,7 @@ class CacheHelper {
   static Future<String> getAppLang() async {
     await _initPrefs();
     final language = _prefs?.getString(LangConstants.prefsLangKey);
-    return language?.isNotEmpty == true
+    return language?.isNotEmpty ?? false
         ? language!
         : LanguageType.ENGLISH.getValue();
   }

@@ -23,6 +23,27 @@ class UserModel {
     this.fcmDeviceToken,
   });
 
+  factory UserModel.fromJson(Map<String, dynamic> json) {
+    return UserModel(
+      id: json['id'],
+      role: json['role'],
+      firstName: json['first_name'],
+      lastName: json['last_name'],
+      name: json['name'],
+      avatar: json['avatar'],
+      email: json['email'],
+      phone: json['phone'],
+      whatsappNumber: json['whatsapp_number'],
+      address: json['address'],
+      otpExpiresAt: json['otp_expires_at'],
+      isActive: json['is_active'],
+      bio: json['bio'],
+      createdAt: json['created_at'],
+      updatedAt: json['updated_at'],
+      fcmDeviceToken: json['fcm_device_token'],
+    );
+  }
+
   @HiveField(0)
   final int? id;
   @HiveField(1)
@@ -55,27 +76,6 @@ class UserModel {
   final String? updatedAt;
   @HiveField(15)
   final String? fcmDeviceToken;
-
-  factory UserModel.fromJson(Map<String, dynamic> json) {
-    return UserModel(
-      id: json['id'],
-      role: json['role'],
-      firstName: json['first_name'],
-      lastName: json['last_name'],
-      name: json['name'],
-      avatar: json['avatar'],
-      email: json['email'],
-      phone: json['phone'],
-      whatsappNumber: json['whatsapp_number'],
-      address: json['address'],
-      otpExpiresAt: json['otp_expires_at'],
-      isActive: json['is_active'],
-      bio: json['bio'],
-      createdAt: json['created_at'],
-      updatedAt: json['updated_at'],
-      fcmDeviceToken: json['fcm_device_token'],
-    );
-  }
 
   Map<String, dynamic> toJson() {
     return {

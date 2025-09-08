@@ -34,7 +34,6 @@ class LoginView extends StatelessWidget {
                 stream: Stream.value(true),
                 condition: true,
                 label: context.tr.sendActivationCode,
-                isUpperCase: false,
                 onPressed: () {
                   context.pushNamed(Routes.verifyAccount);
                 },

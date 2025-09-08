@@ -452,5 +452,11 @@
   "ended": "Ended",
   "pending": "Pending",
   "loading": "Loading",
-  "unknown": "Unknown"
+  "unknown": "Unknown",
+  "error": "Error",
+  "search": "Search...",
+  "No results found": "No results found",
+  "requests": "Requests",
+  "offers": "Offers",
+  "store": "Store"
 }

@@ -451,5 +451,11 @@
   "ended": "منتهي",
   "pending": "معلق",
   "loading": "جاري التحميل",
-  "unknown": "غير معروف"
+  "unknown": "غير معروف",
+  "error": "خطأ",
+  "search": "بحث...",
+  "No results found": "لم يتم العثور على نتائج",
+  "requests": "طلبات",
+  "offers": "عروض",
+  "store": "متجر"
 }

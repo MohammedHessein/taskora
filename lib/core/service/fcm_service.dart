@@ -183,7 +183,6 @@ class FcmService {
         priority: Priority.high,
         icon: '@drawable/ic_notification',
         enableLights: true,
-        playSound: true,
       ),
       iOS: DarwinNotificationDetails(
         presentAlert: true,
@@ -229,7 +228,7 @@ class FcmService {
       debugPrint("🔑 Getting FCM token...");
 
       String? token;
-      for (int i = 0; i < retries; i++) {
+      for (var i = 0; i < retries; i++) {
         token = await _messaging.getToken();
         if (token != null) break;
         debugPrint("⚠️ Token is null, retrying in 2s... (attempt ${i + 1})");

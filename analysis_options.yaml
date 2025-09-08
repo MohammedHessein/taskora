@@ -42,7 +42,8 @@ dart_code_metrics:
     - i18n/**
 
   rules:
-    prefer-trailing-comma:
+    prefer-trailing-comma: true
+    prefer-const:
       severity: style
     no-boolean-literal-compare: true
     no-empty-block:

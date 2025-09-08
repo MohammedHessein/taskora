@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:taskora/core/extensions/theme_extensions.dart';
 
 class ToggleIcon extends StatelessWidget {
-  const ToggleIcon({this.label, required this.notifier, super.key});
+  const ToggleIcon({required this.notifier, this.label, super.key});
 
   final String? label;
   final ValueNotifier<bool> notifier;

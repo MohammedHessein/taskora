@@ -3,7 +3,7 @@ import 'package:taskora/core/constants/cache_constants.dart';
 import 'package:taskora/core/shared/models/user_model.dart';
 
 class UserCacheService {
-  static final String _boxName = CacheConstants.userBoxName;
+  static const String _boxName = CacheConstants.userBoxName;
 
   static Future<void> saveUser(UserModel user) async {
     final box = await Hive.openBox<UserModel>(_boxName);

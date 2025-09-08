@@ -5,7 +5,7 @@ class LocationService {
   Location location = Location();
 
   Future<void> checkAndRequestLocationService() async {
-    bool isServiceEnabled = await location.serviceEnabled();
+    var isServiceEnabled = await location.serviceEnabled();
     if (!isServiceEnabled) {
       isServiceEnabled = await location.requestService();
       if (!isServiceEnabled) {
@@ -15,7 +15,7 @@ class LocationService {
   }
 
   Future<void> checkAndRequestLocationPermission() async {
-    PermissionStatus permissionStatus = await location.hasPermission();
+    var permissionStatus = await location.hasPermission();
     if (permissionStatus == PermissionStatus.deniedForever) {
       throw LocationPermissionException();
     }
@@ -30,7 +30,7 @@ class LocationService {
   Future<LocationData> getLocation() async {
     await checkAndRequestLocationService();
     await checkAndRequestLocationPermission();
-    return await location.getLocation();
+    return location.getLocation();
   }
 
   Future<String> getReadableLocation() async {

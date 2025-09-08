@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:taskora/core/constants/cache_constants.dart';
-import 'package:taskora/core/dependency_injection/injector.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/extensions/theme_extensions.dart';
-import 'package:taskora/core/helpers/cache_helper.dart';
-import 'package:taskora/core/service/location_service.dart';
-import 'package:taskora/core/shared/enums.dart';
-import 'package:taskora/core/shared/widgets/custom_app_bar.dart';
 import 'package:taskora/core/shared/widgets/default_dialog.dart';
 import 'package:taskora/features/main/home/presentation/views/home_view.dart';
 import 'package:taskora/features/main/offers/presentation/views/offers_view.dart';
@@ -25,50 +19,12 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  late Future<String> _locationFuture;
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _locationFuture = _getLocation();
-  }
-
-  Future<String> _getLocation() async {
-    final cached = await CacheHelper.getData(CacheConstants.userLocation);
-
-    if (cached != null && cached is String && cached.isNotEmpty) {
-      return cached;
-    }
-
-    final locationService = di<LocationService>();
-    final location = await locationService.getReadableLocation();
-
-    await CacheHelper.setData(CacheConstants.userLocation, location);
-    return location;
-  }
-
-  Tabs _getCurrentTab() {
-    switch (_selectedIndex) {
-      case 0:
-        return Tabs.home;
-      case 1:
-        return Tabs.requests;
-      case 2:
-        return Tabs.offers;
-      case 3:
-        return Tabs.store;
-      case 4:
-        return Tabs.settings;
-      default:
-        return Tabs.home;
-    }
   }
 
   @override
@@ -93,10 +49,6 @@ class _NavBarState extends State<NavBar> {
             false;
       },
       child: Scaffold(
-        appBar: CustomAppBar(
-          locationFuture: _locationFuture,
-          currentTab: _getCurrentTab(),
-        ),
         body: Center(
           child: IndexedStack(
             index: _selectedIndex,
@@ -115,7 +67,6 @@ class _NavBarState extends State<NavBar> {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-              backgroundColor: context.customColors.secondaryWhite,
               icon: SvgPicture.asset(Assets.svgsInactiveHome),
               activeIcon: SvgPicture.asset(Assets.svgsActiveHome),
               label: context.tr.home,

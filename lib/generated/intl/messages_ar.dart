@@ -109,6 +109,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "auctions": MessageLookupByLibrary.simpleMessage("المزادات"),
         "automaticPayment": MessageLookupByLibrary.simpleMessage(
             "تفعيل خاصية الدفع الاوتوماتيكي من الرصيد"),
+        "available": MessageLookupByLibrary.simpleMessage("متاح"),
         "bad": MessageLookupByLibrary.simpleMessage("سيئة"),
         "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
         "balanceAmount": MessageLookupByLibrary.simpleMessage("مبلغ الرصيد"),
@@ -375,6 +376,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لا يوجد طلبات حتى الان"),
         "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
         "offerCode": MessageLookupByLibrary.simpleMessage("كود العرض"),
+        "offer_description": MessageLookupByLibrary.simpleMessage(
+            "استمتع بخصم 50% علىجميع الخدمات لمدة 24 ساعة فقط"),
+        "offer_title": MessageLookupByLibrary.simpleMessage("حصري لعملاء رغوة"),
         "offers": MessageLookupByLibrary.simpleMessage("عروض"),
         "onPressingContinueYouAgree": MessageLookupByLibrary.simpleMessage(
             "بالضغط على استمرار، انت توافق على"),
@@ -603,6 +607,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("2 مساء - 4 مساء"),
         "typeOfIroning":
             MessageLookupByLibrary.simpleMessage("نوع الكوي الغترة/الشماغ"),
+        "unavailable": MessageLookupByLibrary.simpleMessage("منتهى"),
         "unknown": MessageLookupByLibrary.simpleMessage("غير معروف"),
         "update_available": MessageLookupByLibrary.simpleMessage("تحديث متاح"),
         "update_availableBody": MessageLookupByLibrary.simpleMessage(

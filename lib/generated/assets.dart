@@ -23,6 +23,10 @@ class Assets {
       'assets/images/home_appliances.png';
   static const String imagesLaundry = 'assets/images/laundry.png';
   static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesOffer1 = 'assets/images/offer_1.png';
+  static const String imagesOffer2 = 'assets/images/offer_2.png';
+  static const String imagesOffer3 = 'assets/images/offer_3.png';
+  static const String imagesOffer4 = 'assets/images/offer_4.png';
   static const String imagesPlumping = 'assets/images/plumping.png';
   static const String imagesSecurity = 'assets/images/security.png';
   static const String imagesSplash = 'assets/images/splash.png';

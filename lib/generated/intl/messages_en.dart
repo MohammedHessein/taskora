@@ -113,6 +113,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "auctions": MessageLookupByLibrary.simpleMessage("Auctions"),
         "automaticPayment": MessageLookupByLibrary.simpleMessage(
             "Activate the automatic payment feature from the balance"),
+        "available": MessageLookupByLibrary.simpleMessage("Available"),
         "bad": MessageLookupByLibrary.simpleMessage("Bad"),
         "balance": MessageLookupByLibrary.simpleMessage("Balance"),
         "balanceAmount": MessageLookupByLibrary.simpleMessage("Balance amount"),
@@ -378,6 +379,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "noOrdersYet": MessageLookupByLibrary.simpleMessage("No orders yet"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "offerCode": MessageLookupByLibrary.simpleMessage("Offer code"),
+        "offer_description": MessageLookupByLibrary.simpleMessage(
+            "Enjoy a 50% discount on all services for only 24 hours!"),
+        "offer_title": MessageLookupByLibrary.simpleMessage(
+            "Exclusive for Taskora customers"),
         "offers": MessageLookupByLibrary.simpleMessage("Offers"),
         "onPressingContinueYouAgree": MessageLookupByLibrary.simpleMessage(
             "on pressing continue, you agree to"),
@@ -617,6 +622,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("02:00 PM - 04:00 PM"),
         "typeOfIroning": MessageLookupByLibrary.simpleMessage(
             "Type of ironing Ghutra/Shamagh"),
+        "unavailable": MessageLookupByLibrary.simpleMessage("Unavailable"),
         "unknown": MessageLookupByLibrary.simpleMessage("Unknown"),
         "update_available":
             MessageLookupByLibrary.simpleMessage("Update Available"),

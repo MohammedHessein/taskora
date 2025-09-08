@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
+import 'package:taskora/core/helpers/location_provider.dart';
+import 'package:taskora/core/shared/enums.dart';
+import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
@@ -15,60 +18,64 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final services = getTechnicalServices(context);
+    return SafeArea(
+      child: Scaffold(
+        body: CustomScrollView(
+          slivers: [
+            CustomSliverAppBar(
+              locationFuture: LocationProvider.getLocation(),
+              currentTab: Tabs.home,
+            ),
+            SliverToBoxAdapter(child: hGap20),
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: Dimensions.p16.w),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      context.tr.services_title,
+                      style: CustomTextStyle.kTextStyleF16.copyWith(
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    hGap8,
+                    Text(
+                      context.tr.services_subtitle,
+                      style: CustomTextStyle.kTextStyleF12.copyWith(
+                        color: AppColors.grey.withValues(alpha: 0.8),
+                      ),
+                    ),
+                    hGap20,
 
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(
-          Dimensions.p16,
-          Dimensions.p34,
-          Dimensions.p16,
-          Dimensions.p16,
-        ),
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              hGap20,
-              Text(
-                context.tr.services_title,
-                style: CustomTextStyle.kTextStyleF16.copyWith(
-                  fontWeight: FontWeight.w700,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: services.take(2).map((service) {
+                        return ServiceItem(
+                          service: service,
+                          width: (MediaQuery.of(context).size.width - 48.w) / 2,
+                        );
+                      }).toList(),
+                    ),
+                    SizedBox(height: 16.h),
+                    Wrap(
+                      spacing: 12.w,
+                      runSpacing: 14.h,
+                      children: List.generate(services.length - 2, (index) {
+                        final service = services[index + 2];
+                        final itemWidth =
+                            (MediaQuery.of(context).size.width - 150.w) / 3;
+
+                        return ServiceItem(service: service, width: itemWidth);
+                      }),
+                    ),
+                    hGap20,
+                    const CarouselServiceWidget(),
+                  ],
                 ),
               ),
-              hGap8,
-              Text(
-                context.tr.services_subtitle,
-                style: CustomTextStyle.kTextStyleF12.copyWith(
-                  color: AppColors.grey.withValues(alpha: 0.8),
-                ),
-              ),
-              hGap20,
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: services.take(2).map((service) {
-                  return ServiceItem(
-                    service: service,
-                    width: (MediaQuery.of(context).size.width - 48.w) / 2,
-                  );
-                }).toList(),
-              ),
-              SizedBox(height: 16.h),
-              Wrap(
-                spacing: 12.w,
-                runSpacing: 14.h,
-                children: List.generate(services.length - 2, (index) {
-                  final service = services[index + 2];
-                  final itemWidth =
-                      (MediaQuery.of(context).size.width - 150.w) / 3;
-
-                  return ServiceItem(service: service, width: itemWidth);
-                }),
-              ),
-              hGap20,
-              const CarouselServiceWidget(),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

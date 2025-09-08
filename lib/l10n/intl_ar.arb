@@ -461,5 +461,9 @@
   "electricity": "كهرباء",
   "airConditioning": "تكييف",
   "satellite": "ستاليت",
-  "paints": "دهانات"
+  "paints": "دهانات",
+  "offer_title": "حصري لعملاء رغوة",
+  "offer_description": "استمتع بخصم 50% علىجميع الخدمات لمدة 24 ساعة فقط",
+  "available": "متاح",
+  "unavailable": "منتهى"
 }

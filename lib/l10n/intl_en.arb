@@ -222,7 +222,6 @@
   "hanged": "Hanged",
   "orderSchedule": "Order Schedule",
   "yourLocation": "Your location",
-
   "priceMenu": "Price Menu",
   "selectAPickupTime": "Select a pickup time",
   "selectADeliveryTime": "Select a delivery time",
@@ -462,5 +461,9 @@
   "electricity": "Electricity",
   "airConditioning": "Air conditioning",
   "satellite": "Satellite",
-  "paints": "Paints"
+  "paints": "Paints",
+  "offer_title": "Exclusive for Taskora customers",
+  "offer_description": "Enjoy a 50% discount on all services for only 24 hours!",
+  "available": "Available",
+  "unavailable": "Unavailable"
 }

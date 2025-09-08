@@ -4,14 +4,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/shared/enums.dart';
 import 'package:taskora/core/shared/widgets/custom_search_text_field.dart';
+import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/generated/assets.dart';
 
-import 'gaps.dart';
-
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({
+class CustomSliverAppBar extends StatelessWidget {
+  const CustomSliverAppBar({
     required Future<String> locationFuture,
     required this.currentTab,
     super.key,
@@ -22,8 +21,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
+    return SliverAppBar(
       automaticallyImplyLeading: false,
+      expandedHeight: showSearchTextField(currentTab) ? 120.h : 70.h,
+      backgroundColor: Colors.white,
+      elevation: 1,
       title: Row(
         children: [
           SvgPicture.asset(Assets.svgsLocation),
@@ -94,15 +96,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ),
       ],
-
-      /// 👇 الشرط هنا
-      bottom: showSearchTextField(currentTab)
-          ? const CustomSearchTextField()
+      flexibleSpace: showSearchTextField(currentTab)
+          ? FlexibleSpaceBar(
+              background: Padding(
+                padding: EdgeInsets.only(top: 60.h),
+                child: const CustomSearchTextField(),
+              ),
+            )
           : null,
     );
   }
-
-  @override
-  Size get preferredSize =>
-      Size.fromHeight(showSearchTextField(currentTab) ? 120.h : 70.h);
 }

@@ -4040,6 +4040,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Exclusive for Taskora customers`
+  String get offer_title {
+    return Intl.message(
+      'Exclusive for Taskora customers',
+      name: 'offer_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enjoy a 50% discount on all services for only 24 hours!`
+  String get offer_description {
+    return Intl.message(
+      'Enjoy a 50% discount on all services for only 24 hours!',
+      name: 'offer_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Available`
+  String get available {
+    return Intl.message(
+      'Available',
+      name: 'available',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unavailable`
+  String get unavailable {
+    return Intl.message(
+      'Unavailable',
+      name: 'unavailable',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

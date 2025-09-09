@@ -1,4 +1,4 @@
-import '../../../generated/l10n.dart';
+import 'package:taskora/generated/l10n.dart';
 
 enum ResponseCode {
   success(200), // Success with data

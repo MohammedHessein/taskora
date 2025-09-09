@@ -13,9 +13,8 @@ import 'package:taskora/core/resources/firebase/firebase_resources.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/cubit_observer.dart';
 import 'package:taskora/core/utils/logger.dart';
+import 'package:taskora/generated/l10n.dart';
 import 'package:universal_platform/universal_platform.dart';
-
-import '../../generated/l10n.dart';
 
 class AppConfig extends ApplicationConfig {
   factory AppConfig.getInstance() {

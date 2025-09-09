@@ -5,7 +5,7 @@ import 'package:taskora/core/service/api_client.dart';
 import 'package:taskora/core/service/dio_factory.dart';
 import 'package:taskora/core/service/location_service.dart';
 
-import '../shared/cubits/app_cubit/app_cubit.dart';
+import 'package:taskora/core/shared/cubits/app_cubit/app_cubit.dart';
 
 @module
 abstract class AppModule {

@@ -9,7 +9,7 @@ import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 
-import '../widget/otp_form.dart';
+import 'package:taskora/features/auth/verify_account/presentation/widget/otp_form.dart';
 
 class VerifyAccountView extends StatelessWidget {
   const VerifyAccountView({super.key});

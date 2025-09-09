@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'custom_colors_extension.dart';
+import 'package:taskora/core/extensions/custom_colors_extension.dart';
 
 extension ThemeContextExtensions on BuildContext {
   bool get isDarkMode {

@@ -8,7 +8,7 @@ import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 import 'package:taskora/generated/assets.dart';
 
-import '../../../generated/l10n.dart';
+import 'package:taskora/generated/l10n.dart';
 
 class NoInternetWidget extends StatelessWidget {
   const NoInternetWidget({super.key});

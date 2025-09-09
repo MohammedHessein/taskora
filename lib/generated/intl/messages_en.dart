@@ -90,6 +90,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "By creating an account, you agree to all of our <a>Terms & Conditions</a> and <b>Privacy policies</b>"),
         "airConditioning":
             MessageLookupByLibrary.simpleMessage("Air conditioning"),
+        "all": MessageLookupByLibrary.simpleMessage("All"),
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
         "alreadyHaveAnAccountLogin": MessageLookupByLibrary.simpleMessage(
@@ -121,6 +122,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "bid_increment":
             MessageLookupByLibrary.simpleMessage("Minimum Bid Increment"),
         "book_service": MessageLookupByLibrary.simpleMessage("Book Service"),
+        "buy": MessageLookupByLibrary.simpleMessage("Buy"),
         "buyerInformation":
             MessageLookupByLibrary.simpleMessage("Buyer information"),
         "byClickingContinueYouAgreeToAtermsOfUseAnd":
@@ -131,6 +133,7 @@ class MessageLookup extends MessageLookupByLibrary {
                 "By creating an account, you agree to our <a>Terms & Conditions</a> and <b>Privacy Policy</b>"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "card_number": MessageLookupByLibrary.simpleMessage("Card Number"),
+        "cars": MessageLookupByLibrary.simpleMessage("Cars"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("Cash on Delivery"),
@@ -197,6 +200,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("08:00 AM - 10:00 AM"),
         "eightPMToTenPM":
             MessageLookupByLibrary.simpleMessage("08:00 PM - 10:00 PM"),
+        "electrical_devices":
+            MessageLookupByLibrary.simpleMessage("Electrical devices"),
         "electricity": MessageLookupByLibrary.simpleMessage("Electricity"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "ended": MessageLookupByLibrary.simpleMessage("Ended"),
@@ -286,6 +291,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "expiry_date": MessageLookupByLibrary.simpleMessage("Expiry Date"),
         "fabricSoftener":
             MessageLookupByLibrary.simpleMessage("Fabric softener"),
+        "featured_ad":
+            MessageLookupByLibrary.simpleMessage("Featured Advertisement"),
+        "featured_ad_date": MessageLookupByLibrary.simpleMessage("20-7-2025"),
+        "featured_ad_description":
+            MessageLookupByLibrary.simpleMessage("The latest design for 2025"),
+        "featured_ad_price_after_discount":
+            MessageLookupByLibrary.simpleMessage("200 r.s"),
+        "featured_ad_price_before_discount":
+            MessageLookupByLibrary.simpleMessage("400 r.s"),
+        "featured_ad_title":
+            MessageLookupByLibrary.simpleMessage("Laundry 1500W"),
         "feedback": MessageLookupByLibrary.simpleMessage("Feedback"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "finalizePayment":
@@ -301,8 +317,11 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("04:00 AM - 06:00 AM"),
         "fourPMToSixPM":
             MessageLookupByLibrary.simpleMessage("04:00 PM - 06:00 PM"),
+        "free_delivery": MessageLookupByLibrary.simpleMessage("Free Delivery"),
         "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
         "full_name": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "furniture_equipment":
+            MessageLookupByLibrary.simpleMessage("Furniture equipment"),
         "general_error": m2,
         "general_noImageAvailable":
             MessageLookupByLibrary.simpleMessage("No image available"),
@@ -320,6 +339,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "history": MessageLookupByLibrary.simpleMessage("History"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "hour": m3,
+        "household_tools":
+            MessageLookupByLibrary.simpleMessage("Household tools"),
         "howDoesItWork":
             MessageLookupByLibrary.simpleMessage("How does it work?"),
         "howWasYourExperienceWithUs": MessageLookupByLibrary.simpleMessage(
@@ -347,6 +368,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "laundryExtras": MessageLookupByLibrary.simpleMessage("Laundry extras"),
         "limitedTimeOffer":
             MessageLookupByLibrary.simpleMessage("Limited Time Offer"),
+        "list": MessageLookupByLibrary.simpleMessage("List"),
         "little": MessageLookupByLibrary.simpleMessage("Little"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading"),
         "located": MessageLookupByLibrary.simpleMessage("Located"),
@@ -362,6 +384,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "nearbyWashers": MessageLookupByLibrary.simpleMessage("Nearby Washers"),
+        "network": MessageLookupByLibrary.simpleMessage("Network"),
         "newItem": MessageLookupByLibrary.simpleMessage("New"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "noAccount":
@@ -559,6 +582,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "step2": MessageLookupByLibrary.simpleMessage("Step 2"),
         "step3": MessageLookupByLibrary.simpleMessage("Step 3"),
         "store": MessageLookupByLibrary.simpleMessage("Store"),
+        "store_item_date": MessageLookupByLibrary.simpleMessage("20-7-2025"),
+        "store_item_description":
+            MessageLookupByLibrary.simpleMessage("The latest design for 2025"),
+        "store_item_price_after_discount":
+            MessageLookupByLibrary.simpleMessage("200 r.s"),
+        "store_item_price_before_discount":
+            MessageLookupByLibrary.simpleMessage("400 r.s"),
+        "store_item_title":
+            MessageLookupByLibrary.simpleMessage("Laundry 1500W"),
         "subject": MessageLookupByLibrary.simpleMessage("Subject"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "subtotal": MessageLookupByLibrary.simpleMessage("Sub Total"),
@@ -624,6 +656,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Type of ironing Ghutra/Shamagh"),
         "unavailable": MessageLookupByLibrary.simpleMessage("Unavailable"),
         "unknown": MessageLookupByLibrary.simpleMessage("Unknown"),
+        "up_for_auction":
+            MessageLookupByLibrary.simpleMessage("Up for Auction"),
         "update_available":
             MessageLookupByLibrary.simpleMessage("Update Available"),
         "update_availableBody": MessageLookupByLibrary.simpleMessage(

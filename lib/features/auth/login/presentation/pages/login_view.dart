@@ -8,7 +8,7 @@ import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 
-import '../widget/login_form.dart';
+import 'package:taskora/features/auth/login/presentation/widget/login_form.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});

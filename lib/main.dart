@@ -12,7 +12,7 @@ import 'package:taskora/core/utils/device_utils.dart';
 import 'package:taskora/core/utils/logger.dart';
 import 'package:taskora/firebase_options.dart';
 
-import 'material_app.dart';
+import 'package:taskora/material_app.dart';
 
 void main() => runZonedGuarded(_runMyApp, _reportError);
 

@@ -1,6 +1,6 @@
 import 'package:intl/intl.dart';
 
-import '../../generated/l10n.dart';
+import 'package:taskora/generated/l10n.dart';
 
 enum DateFormatType {
   shortDate,

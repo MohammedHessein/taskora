@@ -8,8 +8,8 @@ import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 
-import '../widget/register_form.dart';
-import '../widget/terms_conditions_policy_row.dart';
+import 'package:taskora/features/auth/register/presentation/widget/register_form.dart';
+import 'package:taskora/features/auth/register/presentation/widget/terms_conditions_policy_row.dart';
 
 class RegisterView extends StatelessWidget {
   const RegisterView({super.key});

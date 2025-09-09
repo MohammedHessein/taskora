@@ -1,4 +1,4 @@
-import 'config.dart';
+import 'package:taskora/core/config/config.dart';
 
 abstract class ApplicationConfig extends Config {}
 

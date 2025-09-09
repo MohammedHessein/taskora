@@ -4080,6 +4080,216 @@ class S {
       args: [],
     );
   }
+
+  /// `Featured Advertisement`
+  String get featured_ad {
+    return Intl.message(
+      'Featured Advertisement',
+      name: 'featured_ad',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Laundry 1500W`
+  String get featured_ad_title {
+    return Intl.message(
+      'Laundry 1500W',
+      name: 'featured_ad_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The latest design for 2025`
+  String get featured_ad_description {
+    return Intl.message(
+      'The latest design for 2025',
+      name: 'featured_ad_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `400 r.s`
+  String get featured_ad_price_before_discount {
+    return Intl.message(
+      '400 r.s',
+      name: 'featured_ad_price_before_discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `200 r.s`
+  String get featured_ad_price_after_discount {
+    return Intl.message(
+      '200 r.s',
+      name: 'featured_ad_price_after_discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `20-7-2025`
+  String get featured_ad_date {
+    return Intl.message(
+      '20-7-2025',
+      name: 'featured_ad_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy`
+  String get buy {
+    return Intl.message(
+      'Buy',
+      name: 'buy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `List`
+  String get list {
+    return Intl.message(
+      'List',
+      name: 'list',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Network`
+  String get network {
+    return Intl.message(
+      'Network',
+      name: 'network',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Electrical devices`
+  String get electrical_devices {
+    return Intl.message(
+      'Electrical devices',
+      name: 'electrical_devices',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Household tools`
+  String get household_tools {
+    return Intl.message(
+      'Household tools',
+      name: 'household_tools',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Furniture equipment`
+  String get furniture_equipment {
+    return Intl.message(
+      'Furniture equipment',
+      name: 'furniture_equipment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cars`
+  String get cars {
+    return Intl.message(
+      'Cars',
+      name: 'cars',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Laundry 1500W`
+  String get store_item_title {
+    return Intl.message(
+      'Laundry 1500W',
+      name: 'store_item_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The latest design for 2025`
+  String get store_item_description {
+    return Intl.message(
+      'The latest design for 2025',
+      name: 'store_item_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `400 r.s`
+  String get store_item_price_before_discount {
+    return Intl.message(
+      '400 r.s',
+      name: 'store_item_price_before_discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `200 r.s`
+  String get store_item_price_after_discount {
+    return Intl.message(
+      '200 r.s',
+      name: 'store_item_price_after_discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `20-7-2025`
+  String get store_item_date {
+    return Intl.message(
+      '20-7-2025',
+      name: 'store_item_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Up for Auction`
+  String get up_for_auction {
+    return Intl.message(
+      'Up for Auction',
+      name: 'up_for_auction',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Free Delivery`
+  String get free_delivery {
+    return Intl.message(
+      'Free Delivery',
+      name: 'free_delivery',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

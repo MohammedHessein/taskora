@@ -29,7 +29,6 @@ class _CarouselServiceWidgetState extends State<CarouselServiceWidget> {
           itemCount: banners.length,
           options: CarouselOptions(
             height: 160.h,
-            viewportFraction: 0.8,
             autoPlay: true,
             autoPlayInterval: const Duration(seconds: 5),
             onPageChanged: (index, reason) {

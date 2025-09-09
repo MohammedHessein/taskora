@@ -5,7 +5,7 @@ import 'package:taskora/core/exceptions/base/failure_class.dart';
 import 'package:taskora/core/resources/api/data_sources.dart';
 import 'package:taskora/core/utils/logger.dart';
 
-import '../../../generated/l10n.dart';
+import 'package:taskora/generated/l10n.dart';
 
 class ErrorHandler implements Exception {
   ErrorHandler.handle(error, {String? identifier}) {

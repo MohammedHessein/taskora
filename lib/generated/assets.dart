@@ -19,6 +19,7 @@ class Assets {
   static const String imagesCleaner = 'assets/images/cleaner.png';
   static const String imagesCleaning = 'assets/images/cleaning.png';
   static const String imagesElectricity = 'assets/images/electricity.png';
+  static const String imagesFeaturedAd = 'assets/images/featured_ad.png';
   static const String imagesHomeAppliances =
       'assets/images/home_appliances.png';
   static const String imagesLaundry = 'assets/images/laundry.png';
@@ -32,7 +33,10 @@ class Assets {
   static const String imagesSplash = 'assets/images/splash.png';
   static const String imagesStallite = 'assets/images/stallite.png';
   static const String imagesStallite2 = 'assets/images/stallite2.png';
+  static const String imagesStoreItem1 = 'assets/images/store_item_1.png';
+  static const String imagesStoreItem2 = 'assets/images/store_item_2.png';
   static const String imagesTilling = 'assets/images/tilling.png';
+  static const String svgsActiveHeart = 'assets/svgs/active_heart.svg';
   static const String svgsActiveHome = 'assets/svgs/active_home.svg';
   static const String svgsActiveOffers = 'assets/svgs/active_offers.svg';
   static const String svgsActiveRequests = 'assets/svgs/active_requests.svg';
@@ -41,6 +45,7 @@ class Assets {
   static const String svgsCart = 'assets/svgs/cart.svg';
   static const String svgsCartCount = 'assets/svgs/cart_count.svg';
   static const String svgsCleaner = 'assets/svgs/cleaner.svg';
+  static const String svgsInactiveHeart = 'assets/svgs/inactive_heart.svg';
   static const String svgsInactiveHome = 'assets/svgs/inactive_home.svg';
   static const String svgsInactiveOffers = 'assets/svgs/inactive_offers.svg';
   static const String svgsInactiveRequests =

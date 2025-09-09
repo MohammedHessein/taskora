@@ -12,8 +12,8 @@ import 'package:taskora/core/theme/app_theme.dart';
 import 'package:taskora/core/theme/cubit/theme_cubit.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 
-import 'generated/l10n.dart';
-import 'main_view.dart';
+import 'package:taskora/generated/l10n.dart';
+import 'package:taskora/main_view.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({required this.currentLang, super.key});

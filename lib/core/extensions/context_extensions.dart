@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:taskora/core/utils/dimensions.dart';
+import 'package:taskora/generated/l10n.dart';
 import 'package:toastification/toastification.dart';
-
-import '../../generated/l10n.dart';
 
 extension ContextExtensions on BuildContext {
   Future<T?> pushNamed<T>(String routeName, {Object? arguments}) {

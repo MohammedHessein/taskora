@@ -6,7 +6,7 @@ import 'package:iconify_flutter_plus/icons/mdi.dart';
 import 'package:taskora/core/extensions/theme_extensions.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 
-import '../../../generated/l10n.dart';
+import 'package:taskora/generated/l10n.dart';
 
 class NetworkImageError extends StatelessWidget {
   const NetworkImageError({super.key});

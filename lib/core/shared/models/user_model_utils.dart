@@ -1,6 +1,6 @@
 // ignore_for_file: use_setters_to_change_properties
 
-import 'user_model.dart';
+import 'package:taskora/core/shared/models/user_model.dart';
 
 /// A utility class for managing a static instance of [UserData].
 ///

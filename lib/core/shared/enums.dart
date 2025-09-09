@@ -62,3 +62,13 @@ extension OrderStatusX on OrderStatus {
     }
   }
 }
+
+enum StoreTabs { list, grid }
+
+enum StoreCategoryTabs {
+  all,
+  electricalDevices,
+  householdTools,
+  furnitureEquipment,
+  cars,
+}

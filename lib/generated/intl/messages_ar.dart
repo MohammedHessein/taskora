@@ -306,6 +306,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("خدمات محددة السعر"),
         "folded": MessageLookupByLibrary.simpleMessage("مطبقة"),
         "follow_auction": MessageLookupByLibrary.simpleMessage("متابعة المزاد"),
+        "follow_up_on_the_order":
+            MessageLookupByLibrary.simpleMessage("متابعة الطلب"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "fourAMToSixAM":
             MessageLookupByLibrary.simpleMessage("4 صباحا - 06 صباحا"),
@@ -410,6 +412,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboardingTitle3": MessageLookupByLibrary.simpleMessage(
             "استفد من العروض اليومية والخصومات الحصرية لك!"),
         "onlineOrder": MessageLookupByLibrary.simpleMessage("طلب اونلاين"),
+        "operation_done_successfully":
+            MessageLookupByLibrary.simpleMessage("تمت العمليه بنجاح"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "orderNumber": MessageLookupByLibrary.simpleMessage("رقم الطلب"),
         "orderSchedule": MessageLookupByLibrary.simpleMessage("جدول الطلب"),
@@ -511,6 +515,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "اطلب وحدد نوع الغسيل لكل شنطة"),
         "requestSchedule": MessageLookupByLibrary.simpleMessage("جدول الطلب"),
+        "request_number": MessageLookupByLibrary.simpleMessage("طلب رقم"),
         "requests": MessageLookupByLibrary.simpleMessage("طلبات"),
         "resend": MessageLookupByLibrary.simpleMessage("اعد الارسال؟"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("اعاده الارسال؟"),
@@ -547,6 +552,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تمت الخدمة بنجاح"),
         "service_fee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
         "service_quality": MessageLookupByLibrary.simpleMessage("جودة الخدمة"),
+        "services": MessageLookupByLibrary.simpleMessage("خدمات"),
         "services_subtitle": MessageLookupByLibrary.simpleMessage(
             "جمعنا لك كل الخدمات التي يمتاجها بيتك"),
         "services_title": MessageLookupByLibrary.simpleMessage("خدمات فني"),
@@ -622,6 +628,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("المجموع قبل الخصم"),
         "totalCost": MessageLookupByLibrary.simpleMessage("التكلفة الإجمالية"),
         "totalVat": MessageLookupByLibrary.simpleMessage("الإجمالي (ض.ق.م)"),
+        "total_price": MessageLookupByLibrary.simpleMessage("المبلغ الكلي"),
         "total_vat": MessageLookupByLibrary.simpleMessage(
             "الإجمالي شامل ضريبة القيمة المضافة"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("تتبع الطلب"),
@@ -655,6 +662,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "viewYourReceipt": MessageLookupByLibrary.simpleMessage("عرض الإيصال"),
         "waiting_for_price": MessageLookupByLibrary.simpleMessage(
             "في انتظار تحديد السعر من الفني"),
+        "waiting_for_technician":
+            MessageLookupByLibrary.simpleMessage("فى انتظار الفني"),
         "wallet": MessageLookupByLibrary.simpleMessage("المحفظة"),
         "warning": MessageLookupByLibrary.simpleMessage("تحذير"),
         "washAndIron": MessageLookupByLibrary.simpleMessage("اغسل واكوي"),

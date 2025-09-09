@@ -486,5 +486,11 @@
   "store_item_price_after_discount": "200 r.s",
   "store_item_date": "20-7-2025",
   "up_for_auction": "Up for Auction",
-  "free_delivery": "Free Delivery"
+  "free_delivery": "Free Delivery",
+  "request_number":"Request Number",
+  "services": "Services",
+  "follow_up_on_the_order": "Follow up on the order",
+  "total_price": "Total Price",
+  "waiting_for_technician": "Waiting for The Technician",
+  "operation_done_successfully": "Operation Done Successfully"
 }

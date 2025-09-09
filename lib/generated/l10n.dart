@@ -4290,6 +4290,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Request Number`
+  String get request_number {
+    return Intl.message(
+      'Request Number',
+      name: 'request_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Services`
+  String get services {
+    return Intl.message(
+      'Services',
+      name: 'services',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Follow up on the order`
+  String get follow_up_on_the_order {
+    return Intl.message(
+      'Follow up on the order',
+      name: 'follow_up_on_the_order',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Price`
+  String get total_price {
+    return Intl.message(
+      'Total Price',
+      name: 'total_price',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Waiting for The Technician`
+  String get waiting_for_technician {
+    return Intl.message(
+      'Waiting for The Technician',
+      name: 'waiting_for_technician',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Operation Done Successfully`
+  String get operation_done_successfully {
+    return Intl.message(
+      'Operation Done Successfully',
+      name: 'operation_done_successfully',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -72,3 +72,10 @@ enum StoreCategoryTabs {
   furnitureEquipment,
   cars,
 }
+
+enum RequestStatus {
+  waitingForTechnician,
+  active,
+  operationDoneSuccessfully,
+  orderCancelled,
+}

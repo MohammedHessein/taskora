@@ -312,6 +312,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "folded": MessageLookupByLibrary.simpleMessage("Folded"),
         "follow_auction":
             MessageLookupByLibrary.simpleMessage("Follow Auction"),
+        "follow_up_on_the_order":
+            MessageLookupByLibrary.simpleMessage("Follow up on the order"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("Forget Pass"),
         "fourAMToSixAM":
             MessageLookupByLibrary.simpleMessage("04:00 AM - 06:00 AM"),
@@ -416,6 +418,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Take advantage of daily deals and exclusive discounts for you!"),
         "onlineOrder": MessageLookupByLibrary.simpleMessage("Online Order"),
+        "operation_done_successfully":
+            MessageLookupByLibrary.simpleMessage("Operation Done Successfully"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "orderNumber": MessageLookupByLibrary.simpleMessage("order number"),
         "orderSchedule": MessageLookupByLibrary.simpleMessage("Order Schedule"),
@@ -521,6 +525,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Request and specify the type of washing for each bag"),
         "requestSchedule":
             MessageLookupByLibrary.simpleMessage("Request Schedule"),
+        "request_number":
+            MessageLookupByLibrary.simpleMessage("Request Number"),
         "requests": MessageLookupByLibrary.simpleMessage("Requests"),
         "resend": MessageLookupByLibrary.simpleMessage("Resend?"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("Resend again?"),
@@ -561,6 +567,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "service_fee": MessageLookupByLibrary.simpleMessage("Service Fee"),
         "service_quality":
             MessageLookupByLibrary.simpleMessage("Service Quality"),
+        "services": MessageLookupByLibrary.simpleMessage("Services"),
         "services_subtitle": MessageLookupByLibrary.simpleMessage(
             "We\'ve gathered all the services your home needs"),
         "services_title":
@@ -641,6 +648,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Total before discount"),
         "totalCost": MessageLookupByLibrary.simpleMessage("Total Cost"),
         "totalVat": MessageLookupByLibrary.simpleMessage("Total (VAT)"),
+        "total_price": MessageLookupByLibrary.simpleMessage("Total Price"),
         "total_vat": MessageLookupByLibrary.simpleMessage("Total (incl. VAT)"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("Track order"),
         "track_order": MessageLookupByLibrary.simpleMessage("Track Order"),
@@ -676,6 +684,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("View your receipt"),
         "waiting_for_price": MessageLookupByLibrary.simpleMessage(
             "Waiting for price confirmation"),
+        "waiting_for_technician":
+            MessageLookupByLibrary.simpleMessage("Waiting for The Technician"),
         "wallet": MessageLookupByLibrary.simpleMessage("Wallet"),
         "warning": MessageLookupByLibrary.simpleMessage("Warning"),
         "washAndIron": MessageLookupByLibrary.simpleMessage("Wash and iron"),

@@ -486,5 +486,11 @@
   "store_item_price_after_discount": "200 ر.س",
   "store_item_date": "20-7-2025",
   "up_for_auction": "قيد المزاد",
-  "free_delivery": "توصيل مجاني"
+  "free_delivery": "توصيل مجاني",
+  "request_number": "طلب رقم",
+  "services": "خدمات",
+  "follow_up_on_the_order": "متابعة الطلب",
+  "total_price": "المبلغ الكلي",
+  "waiting_for_technician": "فى انتظار الفني",
+  "operation_done_successfully": "تمت العمليه بنجاح"
 }

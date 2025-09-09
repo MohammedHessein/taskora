@@ -60,5 +60,7 @@ class Assets {
   static const String svgsRat = 'assets/svgs/rat.svg';
   static const String svgsRiyal = 'assets/svgs/riyal.svg';
   static const String svgsSearch = 'assets/svgs/search.svg';
+  static const String svgsService = 'assets/svgs/service.svg';
+  static const String svgsTime = 'assets/svgs/time.svg';
   static const String svgsWallet = 'assets/svgs/wallet.svg';
 }

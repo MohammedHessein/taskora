@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taskora/core/extensions/localization_extension.dart';
 import 'package:taskora/core/helpers/location_provider.dart';
 import 'package:taskora/core/shared/enums.dart';
@@ -12,6 +13,7 @@ import 'package:taskora/features/main/home/presentation/widgets/carousel_service
 import 'package:taskora/features/main/store/presentation/widgets/carousel_featured_ads.dart';
 import 'package:taskora/features/main/store/presentation/widgets/store_grid_view.dart';
 import 'package:taskora/features/main/store/presentation/widgets/store_list_view.dart';
+import 'package:taskora/generated/assets.dart';
 import 'package:taskora/generated/l10n.dart';
 
 class StoreView extends StatefulWidget {
@@ -100,6 +102,22 @@ class _StoreViewState extends State<StoreView>
                         color: isLayoutSelected(StoreTabs.grid)
                             ? AppColors.black
                             : AppColors.grey,
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                  Padding(
+                    padding: EdgeInsets.all(8.r),
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                        padding: EdgeInsets.all(8.r),
+                        decoration: BoxDecoration(
+                          color: AppColors.white,
+                          borderRadius: BorderRadius.circular(12.r),
+                          border: Border.all(color: AppColors.grey.shade200),
+                        ),
+                        child: SvgPicture.asset(Assets.svgsFilter),
                       ),
                     ),
                   ),

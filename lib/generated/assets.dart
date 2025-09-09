@@ -45,6 +45,7 @@ class Assets {
   static const String svgsCart = 'assets/svgs/cart.svg';
   static const String svgsCartCount = 'assets/svgs/cart_count.svg';
   static const String svgsCleaner = 'assets/svgs/cleaner.svg';
+  static const String svgsFilter = 'assets/svgs/filter.svg';
   static const String svgsInactiveHeart = 'assets/svgs/inactive_heart.svg';
   static const String svgsInactiveHome = 'assets/svgs/inactive_home.svg';
   static const String svgsInactiveOffers = 'assets/svgs/inactive_offers.svg';

@@ -74,6 +74,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Active Auctions"),
         "ad_description":
             MessageLookupByLibrary.simpleMessage("Ad Description"),
+        "ad_images": MessageLookupByLibrary.simpleMessage("Ad Images"),
+        "ad_number": MessageLookupByLibrary.simpleMessage("Ad Number"),
+        "ad_purpose": MessageLookupByLibrary.simpleMessage("Ad Purpose"),
         "ad_title": MessageLookupByLibrary.simpleMessage("Ad Title"),
         "add": MessageLookupByLibrary.simpleMessage("Add"),
         "addRecleanSmartBagToMyOrder": MessageLookupByLibrary.simpleMessage(
@@ -99,6 +102,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "alreadyHaveAnAccountLogin": MessageLookupByLibrary.simpleMessage(
             "Already have an account? <a>Login</a>"),
         "amountWillBeCharged": m1,
+        "announced_limit":
+            MessageLookupByLibrary.simpleMessage("Announced Limit"),
         "app_experience":
             MessageLookupByLibrary.simpleMessage("Overall App Experience"),
         "app_name": MessageLookupByLibrary.simpleMessage("Taskora - Ragwa"),
@@ -114,7 +119,23 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Auction Details"),
         "auction_duration":
             MessageLookupByLibrary.simpleMessage("Auction Duration"),
+        "auction_end_date":
+            MessageLookupByLibrary.simpleMessage("Auction End Date"),
+        "auction_end_time":
+            MessageLookupByLibrary.simpleMessage("Auction End Time"),
+        "auction_number":
+            MessageLookupByLibrary.simpleMessage("Auction Number"),
+        "auction_purpose":
+            MessageLookupByLibrary.simpleMessage("Auction Purpose"),
+        "auction_start_date":
+            MessageLookupByLibrary.simpleMessage("Auction Start Date"),
+        "auction_start_time":
+            MessageLookupByLibrary.simpleMessage("Auction Start Time"),
+        "auction_winner":
+            MessageLookupByLibrary.simpleMessage("Auction Winner"),
         "auctions": MessageLookupByLibrary.simpleMessage("Auctions"),
+        "auto_bid_increment":
+            MessageLookupByLibrary.simpleMessage("Automatic Bid Increment"),
         "automaticPayment": MessageLookupByLibrary.simpleMessage(
             "Activate the automatic payment feature from the balance"),
         "available": MessageLookupByLibrary.simpleMessage("Available"),
@@ -126,6 +147,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Minimum Bid Increment"),
         "book_service": MessageLookupByLibrary.simpleMessage("Book Service"),
         "buy": MessageLookupByLibrary.simpleMessage("Buy"),
+        "buy_now": MessageLookupByLibrary.simpleMessage("Buy Now"),
         "buyerInformation":
             MessageLookupByLibrary.simpleMessage("Buyer information"),
         "byClickingContinueYouAgreeToAtermsOfUseAnd":
@@ -135,6 +157,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "By creating an account, you agree to our <a>Terms & Conditions</a> and <b>Privacy Policy</b>"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "cancel_ok": MessageLookupByLibrary.simpleMessage("Cancel / OK"),
         "card_number": MessageLookupByLibrary.simpleMessage("Card Number"),
         "cars": MessageLookupByLibrary.simpleMessage("Cars"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
@@ -160,6 +183,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "chargeYourBalance":
             MessageLookupByLibrary.simpleMessage("charge your balance"),
         "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
+        "choose_package_discount": MessageLookupByLibrary.simpleMessage(
+            "Choose the package that suits you and get up to 81% discount"),
         "choose_service":
             MessageLookupByLibrary.simpleMessage("Choose Service"),
         "clothesAreNotConsideredForYou": MessageLookupByLibrary.simpleMessage(
@@ -298,6 +323,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "expiry_date": MessageLookupByLibrary.simpleMessage("Expiry Date"),
         "fabricSoftener":
             MessageLookupByLibrary.simpleMessage("Fabric softener"),
+        "faq": MessageLookupByLibrary.simpleMessage("FAQ"),
         "featured_ad":
             MessageLookupByLibrary.simpleMessage("Featured Advertisement"),
         "featured_ad_date": MessageLookupByLibrary.simpleMessage("20-7-2025"),
@@ -334,6 +360,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "general_error": m2,
         "general_noImageAvailable":
             MessageLookupByLibrary.simpleMessage("No image available"),
+        "gift_details": MessageLookupByLibrary.simpleMessage("Gift Details"),
+        "gift_value": MessageLookupByLibrary.simpleMessage("Gift Value"),
         "good": MessageLookupByLibrary.simpleMessage("Good"),
         "grandTotal": MessageLookupByLibrary.simpleMessage("Grand Total"),
         "grid": MessageLookupByLibrary.simpleMessage("Grid"),
@@ -355,6 +383,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("How does it work?"),
         "howWasYourExperienceWithUs": MessageLookupByLibrary.simpleMessage(
             "How was your experience with us?"),
+        "how_to_benefit_from_offers": MessageLookupByLibrary.simpleMessage(
+            "How can I benefit from the offers?"),
         "iAgreeToThe": MessageLookupByLibrary.simpleMessage("I agree to the"),
         "iAgreeToTheTermsConditions": MessageLookupByLibrary.simpleMessage(
             "I agree to the <a>Terms & Conditions</a>"),
@@ -382,9 +412,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "little": MessageLookupByLibrary.simpleMessage("Little"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading"),
         "located": MessageLookupByLibrary.simpleMessage("Located"),
+        "location_and_facilities":
+            MessageLookupByLibrary.simpleMessage("Location & Facilities"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "loyaltyPoints": MessageLookupByLibrary.simpleMessage("loyalty points"),
+        "make_featured_ad":
+            MessageLookupByLibrary.simpleMessage("Make it a featured ad"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "medium": MessageLookupByLibrary.simpleMessage("Medium"),
         "meter": m5,
@@ -450,6 +484,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Passwords doesn\'t match"),
         "pay": MessageLookupByLibrary.simpleMessage("Pay"),
         "payInvoice": MessageLookupByLibrary.simpleMessage("Pay Invoice"),
+        "pay_less_earn_more":
+            MessageLookupByLibrary.simpleMessage("Pay less & earn more"),
         "payedInvoice": MessageLookupByLibrary.simpleMessage("Payed Invoice"),
         "payment": MessageLookupByLibrary.simpleMessage("Payment"),
         "paymentDetails":
@@ -504,6 +540,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Previous Orders"),
         "price": MessageLookupByLibrary.simpleMessage("Price"),
         "priceMenu": MessageLookupByLibrary.simpleMessage("Price Menu"),
+        "price_after_inspection":
+            MessageLookupByLibrary.simpleMessage("Price after inspection"),
         "price_vs_quality":
             MessageLookupByLibrary.simpleMessage("Price vs Quality"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
@@ -512,9 +550,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy_policy_description": MessageLookupByLibrary.simpleMessage(
             "At Ragwa Provider, we value your privacy and strive to protect all your personal data. Only necessary data is collected to provide and improve the user experience."),
         "productDetails": m8,
+        "product_rating":
+            MessageLookupByLibrary.simpleMessage("Product Rating"),
+        "product_specifications":
+            MessageLookupByLibrary.simpleMessage("Product Specifications"),
         "publish": MessageLookupByLibrary.simpleMessage("Publish"),
         "punctuality": MessageLookupByLibrary.simpleMessage("Punctuality"),
+        "purpose_buy": MessageLookupByLibrary.simpleMessage("Buy"),
+        "purpose_charity": MessageLookupByLibrary.simpleMessage("Charity"),
+        "purpose_exchange": MessageLookupByLibrary.simpleMessage("Exchange"),
+        "purpose_lost_found":
+            MessageLookupByLibrary.simpleMessage("Lost & Found"),
+        "purpose_rent": MessageLookupByLibrary.simpleMessage("Rent"),
+        "purpose_sale": MessageLookupByLibrary.simpleMessage("Sale"),
         "quantityCount": MessageLookupByLibrary.simpleMessage("Quantity Count"),
+        "raghwa_gifts": MessageLookupByLibrary.simpleMessage("Raghwa Gifts"),
         "rate_service": MessageLookupByLibrary.simpleMessage("Rate Service"),
         "recleanSmartBag":
             MessageLookupByLibrary.simpleMessage("Reclean Smart Bag"),
@@ -545,6 +595,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "returnToHome": MessageLookupByLibrary.simpleMessage("Return to home"),
         "reviewOrder": MessageLookupByLibrary.simpleMessage("Review Order"),
         "review_data": MessageLookupByLibrary.simpleMessage("Review Data"),
+        "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
         "rial": MessageLookupByLibrary.simpleMessage("Riyal"),
         "riyal": m9,
         "satellite": MessageLookupByLibrary.simpleMessage("Satellite"),
@@ -553,17 +604,22 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("Search..."),
         "searching_technician":
             MessageLookupByLibrary.simpleMessage("Searching for Technician"),
+        "secret_limit": MessageLookupByLibrary.simpleMessage("Secret Limit"),
         "selectADeliveryTime":
             MessageLookupByLibrary.simpleMessage("Select a delivery time"),
         "selectAPickupTime":
             MessageLookupByLibrary.simpleMessage("Select a pickup time"),
         "select_location":
             MessageLookupByLibrary.simpleMessage("Select Location"),
+        "select_price_type":
+            MessageLookupByLibrary.simpleMessage("Select Price Type"),
         "select_service":
             MessageLookupByLibrary.simpleMessage("Select Service"),
+        "seller_rating": MessageLookupByLibrary.simpleMessage("Seller Rating"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
         "sendActivationCode":
             MessageLookupByLibrary.simpleMessage("Send activation code"),
+        "send_gift": MessageLookupByLibrary.simpleMessage("Send Gift"),
         "send_message":
             MessageLookupByLibrary.simpleMessage("Leave your message"),
         "service": MessageLookupByLibrary.simpleMessage("Services"),
@@ -577,6 +633,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "service_quality":
             MessageLookupByLibrary.simpleMessage("Service Quality"),
         "services": MessageLookupByLibrary.simpleMessage("Services"),
+        "services_need_inspection": MessageLookupByLibrary.simpleMessage(
+            "Services need technician inspection"),
         "services_subtitle": MessageLookupByLibrary.simpleMessage(
             "We\'ve gathered all the services your home needs"),
         "services_title":
@@ -609,6 +667,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Laundry 1500W"),
         "subject": MessageLookupByLibrary.simpleMessage("Subject"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "subscribe": MessageLookupByLibrary.simpleMessage("Subscribe"),
         "subtotal": MessageLookupByLibrary.simpleMessage("Sub Total"),
         "surName": MessageLookupByLibrary.simpleMessage("Sur Name"),
         "tabsAcCentral": MessageLookupByLibrary.simpleMessage("Central AC"),
@@ -714,6 +773,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "veryGood": MessageLookupByLibrary.simpleMessage("Very Good"),
         "viewYourReceipt":
             MessageLookupByLibrary.simpleMessage("View your receipt"),
+        "view_all": MessageLookupByLibrary.simpleMessage("View All"),
         "waiting_for_price": MessageLookupByLibrary.simpleMessage(
             "Waiting for price confirmation"),
         "waiting_for_technician":

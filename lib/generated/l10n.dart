@@ -4550,6 +4550,406 @@ class S {
       args: [],
     );
   }
+
+  /// `Raghwa Gifts`
+  String get raghwa_gifts {
+    return Intl.message(
+      'Raghwa Gifts',
+      name: 'raghwa_gifts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send Gift`
+  String get send_gift {
+    return Intl.message(
+      'Send Gift',
+      name: 'send_gift',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gift Details`
+  String get gift_details {
+    return Intl.message(
+      'Gift Details',
+      name: 'gift_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gift Value`
+  String get gift_value {
+    return Intl.message(
+      'Gift Value',
+      name: 'gift_value',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pay less & earn more`
+  String get pay_less_earn_more {
+    return Intl.message(
+      'Pay less & earn more',
+      name: 'pay_less_earn_more',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose the package that suits you and get up to 81% discount`
+  String get choose_package_discount {
+    return Intl.message(
+      'Choose the package that suits you and get up to 81% discount',
+      name: 'choose_package_discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subscribe`
+  String get subscribe {
+    return Intl.message(
+      'Subscribe',
+      name: 'subscribe',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `FAQ`
+  String get faq {
+    return Intl.message(
+      'FAQ',
+      name: 'faq',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How can I benefit from the offers?`
+  String get how_to_benefit_from_offers {
+    return Intl.message(
+      'How can I benefit from the offers?',
+      name: 'how_to_benefit_from_offers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ad Number`
+  String get ad_number {
+    return Intl.message(
+      'Ad Number',
+      name: 'ad_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ad Purpose`
+  String get ad_purpose {
+    return Intl.message(
+      'Ad Purpose',
+      name: 'ad_purpose',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Charity`
+  String get purpose_charity {
+    return Intl.message(
+      'Charity',
+      name: 'purpose_charity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lost & Found`
+  String get purpose_lost_found {
+    return Intl.message(
+      'Lost & Found',
+      name: 'purpose_lost_found',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rent`
+  String get purpose_rent {
+    return Intl.message(
+      'Rent',
+      name: 'purpose_rent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sale`
+  String get purpose_sale {
+    return Intl.message(
+      'Sale',
+      name: 'purpose_sale',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy`
+  String get purpose_buy {
+    return Intl.message(
+      'Buy',
+      name: 'purpose_buy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exchange`
+  String get purpose_exchange {
+    return Intl.message(
+      'Exchange',
+      name: 'purpose_exchange',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select Price Type`
+  String get select_price_type {
+    return Intl.message(
+      'Select Price Type',
+      name: 'select_price_type',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Make it a featured ad`
+  String get make_featured_ad {
+    return Intl.message(
+      'Make it a featured ad',
+      name: 'make_featured_ad',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ad Images`
+  String get ad_images {
+    return Intl.message(
+      'Ad Images',
+      name: 'ad_images',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction Number`
+  String get auction_number {
+    return Intl.message(
+      'Auction Number',
+      name: 'auction_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction Purpose`
+  String get auction_purpose {
+    return Intl.message(
+      'Auction Purpose',
+      name: 'auction_purpose',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Secret Limit`
+  String get secret_limit {
+    return Intl.message(
+      'Secret Limit',
+      name: 'secret_limit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Announced Limit`
+  String get announced_limit {
+    return Intl.message(
+      'Announced Limit',
+      name: 'announced_limit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy Now`
+  String get buy_now {
+    return Intl.message(
+      'Buy Now',
+      name: 'buy_now',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Automatic Bid Increment`
+  String get auto_bid_increment {
+    return Intl.message(
+      'Automatic Bid Increment',
+      name: 'auto_bid_increment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction Start Date`
+  String get auction_start_date {
+    return Intl.message(
+      'Auction Start Date',
+      name: 'auction_start_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction Start Time`
+  String get auction_start_time {
+    return Intl.message(
+      'Auction Start Time',
+      name: 'auction_start_time',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction End Date`
+  String get auction_end_date {
+    return Intl.message(
+      'Auction End Date',
+      name: 'auction_end_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction End Time`
+  String get auction_end_time {
+    return Intl.message(
+      'Auction End Time',
+      name: 'auction_end_time',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction Winner`
+  String get auction_winner {
+    return Intl.message(
+      'Auction Winner',
+      name: 'auction_winner',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Services need technician inspection`
+  String get services_need_inspection {
+    return Intl.message(
+      'Services need technician inspection',
+      name: 'services_need_inspection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Price after inspection`
+  String get price_after_inspection {
+    return Intl.message(
+      'Price after inspection',
+      name: 'price_after_inspection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel / OK`
+  String get cancel_ok {
+    return Intl.message(
+      'Cancel / OK',
+      name: 'cancel_ok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product Specifications`
+  String get product_specifications {
+    return Intl.message(
+      'Product Specifications',
+      name: 'product_specifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location & Facilities`
+  String get location_and_facilities {
+    return Intl.message(
+      'Location & Facilities',
+      name: 'location_and_facilities',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reviews`
+  String get reviews {
+    return Intl.message(
+      'Reviews',
+      name: 'reviews',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product Rating`
+  String get product_rating {
+    return Intl.message(
+      'Product Rating',
+      name: 'product_rating',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Seller Rating`
+  String get seller_rating {
+    return Intl.message(
+      'Seller Rating',
+      name: 'seller_rating',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `View All`
+  String get view_all {
+    return Intl.message(
+      'View All',
+      name: 'view_all',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

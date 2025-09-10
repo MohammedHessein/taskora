@@ -10,4 +10,5 @@ class Routes {
   static const String services = '/services';
   static const String orderDetails = '/orderDetailsView';
   static const String notifications = '/notificationsView';
+  static const String cart = '/cartView';
 }

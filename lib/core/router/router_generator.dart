@@ -4,6 +4,7 @@ import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/features/auth/login/presentation/pages/login_view.dart';
 import 'package:taskora/features/auth/register/presentation/pages/register_view.dart';
 import 'package:taskora/features/auth/verify_account/presentation/pages/verify_account_view.dart';
+import 'package:taskora/features/cart/presentation/views/cart_view.dart';
 import 'package:taskora/features/nav_bar/nav_bar.dart';
 import 'package:taskora/features/services/presentation/views/services_page.dart';
 import 'package:taskora/main_view.dart';
@@ -25,6 +26,8 @@ class AppRouters {
         return _buildRoute(const NavBar(), isIOS, settings);
       case Routes.services:
         return _buildRoute(const ServicesPage(), isIOS, settings);
+      case Routes.cart:
+        return _buildRoute(const CartView(), isIOS, settings);
       default:
         return null;
     }

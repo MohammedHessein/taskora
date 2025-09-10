@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
+import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/core/shared/enums.dart';
 import 'package:taskora/core/shared/widgets/custom_search_text_field.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
@@ -51,7 +52,12 @@ class CustomSliverAppBar extends StatelessWidget {
           padding: EdgeInsets.all(8.r),
           child: Row(
             children: [
-              SvgPicture.asset(Assets.svgsCart),
+              GestureDetector(
+                onTap: () {
+                  context.pushNamed(Routes.cart);
+                },
+                child: SvgPicture.asset(Assets.svgsCart),
+              ),
               wGap10,
               Container(
                 height: 27.h,

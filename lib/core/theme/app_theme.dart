@@ -24,7 +24,7 @@ sealed class AppTheme {
           horizontal: Dimensions.p12.w,
           vertical: Dimensions.p12.h,
         ),
-        minimumSize: const Size(double.infinity, 56),
+        minimumSize: Size(double.infinity, 56.h),
         shape: RoundedRectangleBorder(
           side: const BorderSide(color: AppColors.primaryBlue),
           borderRadius: BorderRadius.circular(Dimensions.r10),

@@ -5,6 +5,8 @@ import 'package:taskora/core/helpers/location_provider.dart';
 import 'package:taskora/core/shared/enums.dart';
 import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
+import 'package:taskora/core/theme/app_colors.dart';
+import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 import 'package:taskora/features/cart/data/models/cart_model.dart';
 import 'package:taskora/features/cart/presentation/widgets/cart_item.dart';
@@ -51,7 +53,12 @@ class _CartViewState extends State<CartView> {
                 padding: EdgeInsets.symmetric(horizontal: Dimensions.p16.w),
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: Text(context.tr.buy),
+                  child: Text(
+                    context.tr.buy,
+                    style: CustomTextStyle.kTextStyleF17.copyWith(
+                      color: AppColors.white,
+                    ),
+                  ),
                 ),
               ),
             ),

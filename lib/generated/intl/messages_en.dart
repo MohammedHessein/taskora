@@ -86,10 +86,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Additional notes"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "advantages": MessageLookupByLibrary.simpleMessage("Advantages"),
+        "advertisements":
+            MessageLookupByLibrary.simpleMessage("Advertisements"),
         "agreeToTermsAndPolicies": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to all of our <a>Terms & Conditions</a> and <b>Privacy policies</b>"),
         "airConditioning":
             MessageLookupByLibrary.simpleMessage("Air conditioning"),
+        "alerts": MessageLookupByLibrary.simpleMessage("Alerts"),
         "all": MessageLookupByLibrary.simpleMessage("All"),
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
@@ -152,6 +155,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "categories_tiling": MessageLookupByLibrary.simpleMessage("Tiling"),
         "changePassword":
             MessageLookupByLibrary.simpleMessage("Change Password"),
+        "change_language":
+            MessageLookupByLibrary.simpleMessage("Change Language"),
         "chargeYourBalance":
             MessageLookupByLibrary.simpleMessage("charge your balance"),
         "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
@@ -454,6 +459,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "payment_method":
             MessageLookupByLibrary.simpleMessage("Payment Method"),
         "pending": MessageLookupByLibrary.simpleMessage("Pending"),
+        "personal_details":
+            MessageLookupByLibrary.simpleMessage("Personal Details"),
         "personal_info":
             MessageLookupByLibrary.simpleMessage("Personal Information"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
@@ -629,6 +636,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "tabs_orders": MessageLookupByLibrary.simpleMessage("Orders"),
         "tabs_settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "tabs_store": MessageLookupByLibrary.simpleMessage("Store"),
+        "taskora_offers":
+            MessageLookupByLibrary.simpleMessage("Taskora Offers"),
         "taxId": m10,
         "technical_support":
             MessageLookupByLibrary.simpleMessage("Technical Support"),
@@ -696,6 +705,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Update Required"),
         "update_requiredBody": MessageLookupByLibrary.simpleMessage(
             "A new version of the app is required to continue using it. Please update."),
+        "updates": MessageLookupByLibrary.simpleMessage("Updates"),
         "useCode": MessageLookupByLibrary.simpleMessage("Use code"),
         "used": MessageLookupByLibrary.simpleMessage("Used"),
         "vat": m15,

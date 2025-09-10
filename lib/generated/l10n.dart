@@ -4490,6 +4490,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Personal Details`
+  String get personal_details {
+    return Intl.message(
+      'Personal Details',
+      name: 'personal_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Taskora Offers`
+  String get taskora_offers {
+    return Intl.message(
+      'Taskora Offers',
+      name: 'taskora_offers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Advertisements`
+  String get advertisements {
+    return Intl.message(
+      'Advertisements',
+      name: 'advertisements',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Alerts`
+  String get alerts {
+    return Intl.message(
+      'Alerts',
+      name: 'alerts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Updates`
+  String get updates {
+    return Intl.message(
+      'Updates',
+      name: 'updates',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Language`
+  String get change_language {
+    return Intl.message(
+      'Change Language',
+      name: 'change_language',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

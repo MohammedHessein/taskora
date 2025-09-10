@@ -4,8 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:taskora/core/service/api_client.dart';
 import 'package:taskora/core/service/dio_factory.dart';
 import 'package:taskora/core/service/location_service.dart';
-
 import 'package:taskora/core/shared/cubits/app_cubit/app_cubit.dart';
+import 'package:taskora/core/shared/cubits/language_cubit/language_cubit.dart';
 
 @module
 abstract class AppModule {
@@ -14,6 +14,10 @@ abstract class AppModule {
   /// <!------ Location Service ------->
   @lazySingleton
   LocationService getLocationService() => LocationService();
+
+  /// <!------ Language Cubit ------->
+  @injectable
+  LanguageCubit get languageCubit => LanguageCubit();
 
   /// <!------ APP MODULE ------->
   @factoryMethod

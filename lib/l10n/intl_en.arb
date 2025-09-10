@@ -506,5 +506,11 @@
   "tabsSatelliteProgramming": "Programming",
   "tabsSatelliteInstallation": "Installation",
   "tabsSatelliteOther": "Other",
-  "choose_service": "Choose Service"
+  "choose_service": "Choose Service",
+  "personal_details": "Personal Details",
+  "taskora_offers": "Taskora Offers",
+  "advertisements": "Advertisements",
+  "alerts": "Alerts",
+  "updates": "Updates",
+  "change_language": "Change Language"
 }

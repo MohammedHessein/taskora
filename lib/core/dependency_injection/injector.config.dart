@@ -16,6 +16,8 @@ import 'package:taskora/core/dependency_injection/app_module.dart' as _i924;
 import 'package:taskora/core/service/api_client.dart' as _i848;
 import 'package:taskora/core/service/location_service.dart' as _i37;
 import 'package:taskora/core/shared/cubits/app_cubit/app_cubit.dart' as _i467;
+import 'package:taskora/core/shared/cubits/language_cubit/language_cubit.dart'
+    as _i103;
 
 extension GetItInjectableX on _i174.GetIt {
 // initializes the registration of main-scope dependencies inside of GetIt
@@ -29,6 +31,7 @@ extension GetItInjectableX on _i174.GetIt {
       environmentFilter,
     );
     final appModule = _$AppModule();
+    gh.factory<_i103.LanguageCubit>(() => appModule.languageCubit);
     await gh.factoryAsync<_i361.Dio>(
       () => appModule.dio,
       preResolve: true,

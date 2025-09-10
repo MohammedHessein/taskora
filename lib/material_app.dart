@@ -8,88 +8,65 @@ import 'package:taskora/core/config/app_navigator.dart';
 import 'package:taskora/core/constants/ui_constants.dart';
 import 'package:taskora/core/router/route_logger.dart';
 import 'package:taskora/core/router/router_generator.dart';
+import 'package:taskora/core/shared/cubits/language_cubit/language_cubit.dart';
+import 'package:taskora/core/shared/cubits/language_cubit/language_state.dart';
 import 'package:taskora/core/theme/app_theme.dart';
 import 'package:taskora/core/theme/cubit/theme_cubit.dart';
 import 'package:taskora/core/utils/dimensions.dart';
-
 import 'package:taskora/generated/l10n.dart';
 import 'package:taskora/main_view.dart';
 
 class MyApp extends StatefulWidget {
-  const MyApp({required this.currentLang, super.key});
-
-  final Locale currentLang;
-
-  static Future<void> setLocale(BuildContext context, Locale newLocale) async {
-    final state = context.findAncestorStateOfType<_MyAppState>();
-    state!.changeLanguage(newLocale);
-  }
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  late Locale _locale;
-
-  void changeLanguage(Locale newLocale) {
-    setState(() {
-      _locale = newLocale;
-    });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _locale = widget.currentLang;
-
-    // Local notifications can be handled here
-    // FlutterLocalNotificationsPlugin.onMessage.listen(
-    //   (NotificationResponse response) {
-    //     context.defaultSnackBar(
-    //       title: response.payload ?? AppConstants.unknownStringValue,
-    //       description: response.notificationResponseType.toString(),
-    //     );
-    //   },
-    // );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Phoenix(
       child: MultiBlocProvider(
-        providers: [BlocProvider(create: (context) => ThemeCubit())],
-        child: BlocBuilder<ThemeCubit, ThemeMode>(
-          builder: (context, state) {
-            return ScreenUtilInit(
-              designSize: Size(
-                Dimensions.designDeviceWidth,
-                Dimensions.designDeviceHeight,
-              ),
-              minTextAdapt: true,
-              splitScreenMode: true,
-              builder: (ctx, child) {
-                return MaterialApp(
-                  navigatorKey: AppNavigator.navigatorKey,
-                  debugShowCheckedModeBanner: false,
-                  theme: AppTheme.lightTheme,
-                  themeMode: state,
-                  locale: _locale,
-                  localizationsDelegates: const [
-                    S.delegate,
-                    CountryLocalizations.delegate,
-                    GlobalMaterialLocalizations.delegate,
-                    GlobalWidgetsLocalizations.delegate,
-                    GlobalCupertinoLocalizations.delegate,
-                  ],
-                  supportedLocales: S.delegate.supportedLocales,
-                  title: UiConstants.appName,
-                  onGenerateRoute: AppRouters.routeGenerator,
-                  navigatorObservers: [RouteLogger()],
-                  home: child,
+        providers: [
+          BlocProvider(create: (context) => ThemeCubit()),
+          BlocProvider(create: (context) => LanguageCubit()),
+        ],
+        child: BlocBuilder<LanguageCubit, LanguageState>(
+          builder: (context, languageState) {
+            return BlocBuilder<ThemeCubit, ThemeMode>(
+              builder: (context, themeState) {
+                return ScreenUtilInit(
+                  designSize: Size(
+                    Dimensions.designDeviceWidth,
+                    Dimensions.designDeviceHeight,
+                  ),
+                  minTextAdapt: true,
+                  splitScreenMode: true,
+                  builder: (ctx, child) {
+                    return MaterialApp(
+                      navigatorKey: AppNavigator.navigatorKey,
+                      debugShowCheckedModeBanner: false,
+                      theme: AppTheme.lightTheme,
+                      themeMode: themeState,
+                      locale: languageState.locale,
+                      localizationsDelegates: const [
+                        S.delegate,
+                        CountryLocalizations.delegate,
+                        GlobalMaterialLocalizations.delegate,
+                        GlobalWidgetsLocalizations.delegate,
+                        GlobalCupertinoLocalizations.delegate,
+                      ],
+                      supportedLocales: S.delegate.supportedLocales,
+                      title: UiConstants.appName,
+                      onGenerateRoute: AppRouters.routeGenerator,
+                      navigatorObservers: [RouteLogger()],
+                      home: child,
+                    );
+                  },
+                  child: const MainView(),
                 );
               },
-              child: const MainView(),
             );
           },
         ),

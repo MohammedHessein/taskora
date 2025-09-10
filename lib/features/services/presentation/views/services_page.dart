@@ -78,7 +78,6 @@ class _ServicesPageState extends State<ServicesPage>
                 tabs: List.generate(tabsKeys.length, (index) {
                   final isSelected = _tabController!.index == index;
                   final key = tabsKeys[index];
-
                   return Container(
                     margin: EdgeInsets.only(right: 8.w),
                     decoration: BoxDecoration(
@@ -110,10 +109,10 @@ class _ServicesPageState extends State<ServicesPage>
             SliverToBoxAdapter(child: hGap20),
           ],
           body: TabBarView(
+            physics: const NeverScrollableScrollPhysics(),
             controller: _tabController,
             children: tabsKeys.map((key) {
               final items = serviceItems[key] ?? [];
-
               return ListView.separated(
                 padding: EdgeInsets.all(12.w),
                 itemCount: items.length + 1,

@@ -506,5 +506,11 @@
   "tabsSatelliteProgramming": "برمجة",
   "tabsSatelliteInstallation": "تركيب",
   "tabsSatelliteOther": "أخرى",
-  "choose_service": "اختر الخدمة"
+  "choose_service": "اختر الخدمة",
+  "personal_details": "التفاصيل الشخصية",
+  "taskora_offers": "عروض تاسكورا",
+  "advertisements": "اعلانات",
+  "alerts": "التنبيهات",
+  "updates": "التحديثات",
+  "change_language": "تغيير اللغة"
 }

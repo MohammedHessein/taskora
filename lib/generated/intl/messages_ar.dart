@@ -85,9 +85,11 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ملاحظات إضافية"),
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "advantages": MessageLookupByLibrary.simpleMessage("المميزات"),
+        "advertisements": MessageLookupByLibrary.simpleMessage("اعلانات"),
         "agreeToTermsAndPolicies": MessageLookupByLibrary.simpleMessage(
             "بإنشائك حسابًا، فإنك توافق على جميع <a>الشروط والأحكام</a> و<b>سياسات الخصوصية</b> الخاصة بنا"),
         "airConditioning": MessageLookupByLibrary.simpleMessage("تكييف"),
+        "alerts": MessageLookupByLibrary.simpleMessage("التنبيهات"),
         "all": MessageLookupByLibrary.simpleMessage("الكل"),
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل"),
@@ -150,6 +152,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "categories_tiling": MessageLookupByLibrary.simpleMessage("تبليط"),
         "changePassword":
             MessageLookupByLibrary.simpleMessage("تغيير كلمة المرور"),
+        "change_language": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "chargeYourBalance": MessageLookupByLibrary.simpleMessage("اشحن رصيدك"),
         "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
         "choose_service": MessageLookupByLibrary.simpleMessage("اختر الخدمة"),
@@ -445,6 +448,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "paymentMethods": MessageLookupByLibrary.simpleMessage("طرق الدفع"),
         "payment_method": MessageLookupByLibrary.simpleMessage("طريقة الدفع"),
         "pending": MessageLookupByLibrary.simpleMessage("معلق"),
+        "personal_details":
+            MessageLookupByLibrary.simpleMessage("التفاصيل الشخصية"),
         "personal_info":
             MessageLookupByLibrary.simpleMessage("البيانات الشخصية"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
@@ -609,6 +614,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "tabs_orders": MessageLookupByLibrary.simpleMessage("الطلبات"),
         "tabs_settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "tabs_store": MessageLookupByLibrary.simpleMessage("المتجر"),
+        "taskora_offers": MessageLookupByLibrary.simpleMessage("عروض تاسكورا"),
         "taxId": m10,
         "technical_support":
             MessageLookupByLibrary.simpleMessage("الدعم الفني"),
@@ -673,6 +679,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("التحديث مطلوب"),
         "update_requiredBody": MessageLookupByLibrary.simpleMessage(
             "يتطلب إصدار جديد من التطبيق للمتابعة. يرجى التحديث."),
+        "updates": MessageLookupByLibrary.simpleMessage("التحديثات"),
         "useCode": MessageLookupByLibrary.simpleMessage("استخدام الكود"),
         "used": MessageLookupByLibrary.simpleMessage("مستعمل"),
         "vat": m15,

@@ -9,6 +9,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:talker_dio_logger/talker_dio_logger.dart';
 import 'package:taskora/core/constants/api_constants.dart';
+import 'package:taskora/core/constants/cache_constants.dart';
 import 'package:taskora/core/helpers/cache_helper.dart';
 import 'package:taskora/core/resources/api/error_handler.dart';
 
@@ -38,7 +39,7 @@ class DioFactory {
         headers: {
           "Content-Type": ApiConstants.applicationJson,
           "Accept": ApiConstants.applicationJson,
-          "Accept-Language": await CacheHelper.getAppLang(),
+          "Accept-Language": await CacheHelper.getData(CacheConstants.appLang),
           if (token != null && token.isNotEmpty)
             'Authorization': 'Bearer $token',
         },

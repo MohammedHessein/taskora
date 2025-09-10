@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,9 +11,11 @@ import 'package:taskora/core/database/hive_service.dart';
 import 'package:taskora/core/dependency_injection/injector.dart';
 import 'package:taskora/core/exceptions/exception_observer.dart';
 import 'package:taskora/core/resources/firebase/firebase_resources.dart';
+import 'package:taskora/core/service/fcm_service.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/cubit_observer.dart';
 import 'package:taskora/core/utils/logger.dart';
+import 'package:taskora/firebase_options.dart';
 import 'package:taskora/generated/l10n.dart';
 import 'package:universal_platform/universal_platform.dart';
 
@@ -29,6 +32,10 @@ class AppConfig extends ApplicationConfig {
   Future<void> config() async {
     try {
       Bloc.observer = appCubitObserver;
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+      await FcmService.fcmInit();
 
       // Setup HydratedStorage
       HydratedBloc.storage = await HydratedStorage.build(

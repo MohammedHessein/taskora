@@ -8,7 +8,6 @@ import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
-
 import 'package:taskora/features/auth/verify_account/presentation/widget/otp_form.dart';
 
 class VerifyAccountView extends StatelessWidget {
@@ -63,7 +62,7 @@ class VerifyAccountView extends StatelessWidget {
                 label: context.tr.common_next,
                 isUpperCase: true,
                 onPressed: () {
-                  context.pushNamed(Routes.home);
+                  context.pushNamed(Routes.navBar);
                 },
               ),
               hGap15,

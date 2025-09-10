@@ -155,6 +155,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "chargeYourBalance":
             MessageLookupByLibrary.simpleMessage("charge your balance"),
         "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
+        "choose_service":
+            MessageLookupByLibrary.simpleMessage("Choose Service"),
         "clothesAreNotConsideredForYou": MessageLookupByLibrary.simpleMessage(
             "Clothes are not considered for you"),
         "clothingArrangementMechanism": MessageLookupByLibrary.simpleMessage(
@@ -329,6 +331,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("No image available"),
         "good": MessageLookupByLibrary.simpleMessage("Good"),
         "grandTotal": MessageLookupByLibrary.simpleMessage("Grand Total"),
+        "grid": MessageLookupByLibrary.simpleMessage("Grid"),
         "hangItOnTheDoorWeTakeItPrepareIt": MessageLookupByLibrary.simpleMessage(
             "Hang it on the door, we take it, prepare it, wash it and send you the bill."),
         "hangItUpAndDontMeetTheRepresentativeYouDont":
@@ -386,7 +389,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "nearbyWashers": MessageLookupByLibrary.simpleMessage("Nearby Washers"),
-        "network": MessageLookupByLibrary.simpleMessage("Network"),
         "newItem": MessageLookupByLibrary.simpleMessage("New"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "noAccount":
@@ -602,6 +604,26 @@ class MessageLookup extends MessageLookupByLibrary {
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "subtotal": MessageLookupByLibrary.simpleMessage("Sub Total"),
         "surName": MessageLookupByLibrary.simpleMessage("Sur Name"),
+        "tabsAcCentral": MessageLookupByLibrary.simpleMessage("Central AC"),
+        "tabsAcOther": MessageLookupByLibrary.simpleMessage("Other"),
+        "tabsAcSplit": MessageLookupByLibrary.simpleMessage("Split AC"),
+        "tabsAcWindow": MessageLookupByLibrary.simpleMessage("Window AC"),
+        "tabsElectricityInstallation":
+            MessageLookupByLibrary.simpleMessage("Installation & Setup"),
+        "tabsElectricityMain":
+            MessageLookupByLibrary.simpleMessage("Main Services"),
+        "tabsElectricityOther": MessageLookupByLibrary.simpleMessage("Other"),
+        "tabsPlumbingInstallation":
+            MessageLookupByLibrary.simpleMessage("Installation"),
+        "tabsPlumbingOther": MessageLookupByLibrary.simpleMessage("Other"),
+        "tabsPlumpingChangeImpactEstablishment":
+            MessageLookupByLibrary.simpleMessage(
+                "Change,Impact & Establishment"),
+        "tabsSatelliteInstallation":
+            MessageLookupByLibrary.simpleMessage("Installation"),
+        "tabsSatelliteOther": MessageLookupByLibrary.simpleMessage("Other"),
+        "tabsSatelliteProgramming":
+            MessageLookupByLibrary.simpleMessage("Programming"),
         "tabs_home": MessageLookupByLibrary.simpleMessage("Home"),
         "tabs_offers": MessageLookupByLibrary.simpleMessage("Offers"),
         "tabs_orders": MessageLookupByLibrary.simpleMessage("Orders"),

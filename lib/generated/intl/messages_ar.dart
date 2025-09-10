@@ -152,6 +152,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغيير كلمة المرور"),
         "chargeYourBalance": MessageLookupByLibrary.simpleMessage("اشحن رصيدك"),
         "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
+        "choose_service": MessageLookupByLibrary.simpleMessage("اختر الخدمة"),
         "clothesAreNotConsideredForYou":
             MessageLookupByLibrary.simpleMessage("لا تعد الملابس نحسبها عنك"),
         "clothingArrangementMechanism":
@@ -323,6 +324,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لا توجد صورة متاحة"),
         "good": MessageLookupByLibrary.simpleMessage("جيدة"),
         "grandTotal": MessageLookupByLibrary.simpleMessage("المجموع الكلي"),
+        "grid": MessageLookupByLibrary.simpleMessage("شبكة"),
         "hangItOnTheDoorWeTakeItPrepareIt":
             MessageLookupByLibrary.simpleMessage(
                 "علقها على الباب، نأخذها ونعدها، ونغسلها ونرسلك الفاتورة"),
@@ -380,7 +382,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
         "nearbyWashers":
             MessageLookupByLibrary.simpleMessage("المغسلات الاقرب"),
-        "network": MessageLookupByLibrary.simpleMessage("شبكة"),
         "newItem": MessageLookupByLibrary.simpleMessage("جديد"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "noAccount": MessageLookupByLibrary.simpleMessage("ليس لدى حساب"),
@@ -584,6 +585,25 @@ class MessageLookup extends MessageLookupByLibrary {
         "submit": MessageLookupByLibrary.simpleMessage("إرسال"),
         "subtotal": MessageLookupByLibrary.simpleMessage("المجموع الفرعي"),
         "surName": MessageLookupByLibrary.simpleMessage("اسم العائلة"),
+        "tabsAcCentral": MessageLookupByLibrary.simpleMessage("تكييف مركزي"),
+        "tabsAcOther": MessageLookupByLibrary.simpleMessage("أخرى"),
+        "tabsAcSplit": MessageLookupByLibrary.simpleMessage("سبليت"),
+        "tabsAcWindow": MessageLookupByLibrary.simpleMessage("شباك"),
+        "tabsElectricityInstallation":
+            MessageLookupByLibrary.simpleMessage("تركيب وتأسيس"),
+        "tabsElectricityMain":
+            MessageLookupByLibrary.simpleMessage("أهم الخدمات"),
+        "tabsElectricityOther": MessageLookupByLibrary.simpleMessage("أخرى"),
+        "tabsPlumbingInstallation":
+            MessageLookupByLibrary.simpleMessage("تركيب"),
+        "tabsPlumbingOther": MessageLookupByLibrary.simpleMessage("أخرى"),
+        "tabsPlumpingChangeImpactEstablishment":
+            MessageLookupByLibrary.simpleMessage("تغيير وتاثير وتأسيس"),
+        "tabsSatelliteInstallation":
+            MessageLookupByLibrary.simpleMessage("تركيب"),
+        "tabsSatelliteOther": MessageLookupByLibrary.simpleMessage("أخرى"),
+        "tabsSatelliteProgramming":
+            MessageLookupByLibrary.simpleMessage("برمجة"),
         "tabs_home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "tabs_offers": MessageLookupByLibrary.simpleMessage("العروض"),
         "tabs_orders": MessageLookupByLibrary.simpleMessage("الطلبات"),

@@ -96,7 +96,7 @@ class _StoreViewState extends State<StoreView>
                       });
                     },
                     child: Text(
-                      context.tr.network,
+                      context.tr.grid,
                       style: CustomTextStyle.kTextStyleF14.copyWith(
                         fontWeight: FontWeight.w700,
                         color: isLayoutSelected(StoreTabs.grid)

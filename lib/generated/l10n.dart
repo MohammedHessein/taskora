@@ -4161,11 +4161,11 @@ class S {
     );
   }
 
-  /// `Network`
-  String get network {
+  /// `Grid`
+  String get grid {
     return Intl.message(
-      'Network',
-      name: 'network',
+      'Grid',
+      name: 'grid',
       desc: '',
       args: [],
     );
@@ -4346,6 +4346,146 @@ class S {
     return Intl.message(
       'Operation Done Successfully',
       name: 'operation_done_successfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Main Services`
+  String get tabsElectricityMain {
+    return Intl.message(
+      'Main Services',
+      name: 'tabsElectricityMain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installation & Setup`
+  String get tabsElectricityInstallation {
+    return Intl.message(
+      'Installation & Setup',
+      name: 'tabsElectricityInstallation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Other`
+  String get tabsElectricityOther {
+    return Intl.message(
+      'Other',
+      name: 'tabsElectricityOther',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installation`
+  String get tabsPlumbingInstallation {
+    return Intl.message(
+      'Installation',
+      name: 'tabsPlumbingInstallation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change,Impact & Establishment`
+  String get tabsPlumpingChangeImpactEstablishment {
+    return Intl.message(
+      'Change,Impact & Establishment',
+      name: 'tabsPlumpingChangeImpactEstablishment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Other`
+  String get tabsPlumbingOther {
+    return Intl.message(
+      'Other',
+      name: 'tabsPlumbingOther',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Split AC`
+  String get tabsAcSplit {
+    return Intl.message(
+      'Split AC',
+      name: 'tabsAcSplit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Window AC`
+  String get tabsAcWindow {
+    return Intl.message(
+      'Window AC',
+      name: 'tabsAcWindow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Central AC`
+  String get tabsAcCentral {
+    return Intl.message(
+      'Central AC',
+      name: 'tabsAcCentral',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Other`
+  String get tabsAcOther {
+    return Intl.message(
+      'Other',
+      name: 'tabsAcOther',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Programming`
+  String get tabsSatelliteProgramming {
+    return Intl.message(
+      'Programming',
+      name: 'tabsSatelliteProgramming',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installation`
+  String get tabsSatelliteInstallation {
+    return Intl.message(
+      'Installation',
+      name: 'tabsSatelliteInstallation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Other`
+  String get tabsSatelliteOther {
+    return Intl.message(
+      'Other',
+      name: 'tabsSatelliteOther',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose Service`
+  String get choose_service {
+    return Intl.message(
+      'Choose Service',
+      name: 'choose_service',
       desc: '',
       args: [],
     );

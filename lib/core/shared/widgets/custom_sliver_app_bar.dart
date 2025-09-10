@@ -12,18 +12,20 @@ import 'package:taskora/generated/assets.dart';
 class CustomSliverAppBar extends StatelessWidget {
   const CustomSliverAppBar({
     required Future<String> locationFuture,
-    required this.currentTab,
+    this.currentTab,
     super.key,
   }) : _locationFuture = locationFuture;
 
   final Future<String> _locationFuture;
-  final Tabs currentTab;
+  final Tabs? currentTab;
 
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
       automaticallyImplyLeading: false,
-      expandedHeight: showSearchTextField(currentTab) ? 120.h : 70.h,
+      expandedHeight: showSearchTextField(currentTab ?? Tabs.settings)
+          ? 120.h
+          : 70.h,
       backgroundColor: Colors.white,
       elevation: 1,
       title: Row(
@@ -96,7 +98,7 @@ class CustomSliverAppBar extends StatelessWidget {
           ),
         ),
       ],
-      flexibleSpace: showSearchTextField(currentTab)
+      flexibleSpace: showSearchTextField(currentTab ?? Tabs.settings)
           ? FlexibleSpaceBar(
               background: Padding(
                 padding: EdgeInsets.only(top: 60.h),

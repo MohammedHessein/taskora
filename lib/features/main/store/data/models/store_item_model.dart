@@ -10,7 +10,6 @@ class StoreItemModel {
     required this.priceAfterDiscount,
     required this.date,
     required this.imageUrl,
-    required this.category,
     required this.priceBeforeDiscount,
     required this.deliveryStatus,
     this.isLiked = false,
@@ -25,7 +24,6 @@ class StoreItemModel {
   bool isLiked = false;
   final DateTime date;
   final String imageUrl;
-  final String category;
 
   String get formattedPrice => 'رس $priceAfterDiscount';
 
@@ -43,7 +41,6 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem1,
-        category: 'electrical_devices',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
@@ -58,7 +55,6 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem2,
-        category: 'household_tools',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
@@ -73,7 +69,6 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem1,
-        category: 'cars',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
@@ -88,7 +83,6 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem1,
-        category: 'furniture_equipment',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
@@ -103,7 +97,6 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem1,
-        category: 'electrical_devices',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
@@ -118,7 +111,6 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem1,
-        category: 'household_tools',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
@@ -133,7 +125,6 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem1,
-        category: 'cars',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
@@ -148,22 +139,10 @@ class StoreItemModel {
             context?.tr.store_item_price_after_discount ?? '200',
         date: DateTime(2025, 7, 20),
         imageUrl: Assets.imagesStoreItem1,
-        category: 'furniture_equipment',
         priceBeforeDiscount:
             context?.tr.store_item_price_before_discount ?? '300',
         deliveryStatus: context?.tr.up_for_auction ?? 'Up For Auction',
       ),
     ];
-  }
-
-  static List<StoreItemModel> getDummyStoreItemsByCategory(
-    String categoryKey, {
-    BuildContext? context,
-  }) {
-    if (categoryKey == 'all') return getDummyStoreItems(context: context);
-
-    return getDummyStoreItems(
-      context: context,
-    ).where((item) => item.category == categoryKey).toList();
   }
 }

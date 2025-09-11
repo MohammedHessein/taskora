@@ -4,9 +4,7 @@ import 'package:taskora/features/main/store/data/models/store_item_model.dart';
 import 'package:taskora/features/main/store/presentation/widgets/store_grid_item.dart';
 
 class StoreGridView extends StatefulWidget {
-  const StoreGridView({required this.categoryKey, super.key});
-
-  final String categoryKey;
+  const StoreGridView({super.key});
 
   @override
   State<StoreGridView> createState() => _StoreGridViewState();
@@ -17,8 +15,7 @@ class _StoreGridViewState extends State<StoreGridView>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    final items = StoreItemModel.getDummyStoreItemsByCategory(
-      widget.categoryKey,
+    final items = StoreItemModel.getDummyStoreItems(
       context: context,
     );
 

@@ -145,7 +145,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "bank_details": MessageLookupByLibrary.simpleMessage("Bank Details"),
         "bid_increment":
             MessageLookupByLibrary.simpleMessage("Minimum Bid Increment"),
+        "book": MessageLookupByLibrary.simpleMessage("Book"),
         "book_service": MessageLookupByLibrary.simpleMessage("Book Service"),
+        "brand": MessageLookupByLibrary.simpleMessage("Brand"),
         "buy": MessageLookupByLibrary.simpleMessage("Buy"),
         "buy_now": MessageLookupByLibrary.simpleMessage("Buy Now"),
         "buyerInformation":
@@ -631,6 +633,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "serviceFee": MessageLookupByLibrary.simpleMessage("Service Fee"),
         "service_completed": MessageLookupByLibrary.simpleMessage(
             "Service Completed Successfully"),
+        "service_details":
+            MessageLookupByLibrary.simpleMessage("Service Details"),
         "service_fee": MessageLookupByLibrary.simpleMessage("Service Fee"),
         "service_quality":
             MessageLookupByLibrary.simpleMessage("Service Quality"),

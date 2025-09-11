@@ -79,3 +79,5 @@ enum RequestStatus {
   operationDoneSuccessfully,
   orderCancelled,
 }
+
+enum DetailsType { service, product, cartItem }

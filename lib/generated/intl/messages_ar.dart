@@ -137,7 +137,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("البيانات البنكية"),
         "bid_increment":
             MessageLookupByLibrary.simpleMessage("السعر الأدنى للزيادة"),
+        "book": MessageLookupByLibrary.simpleMessage("حجز"),
         "book_service": MessageLookupByLibrary.simpleMessage("حجز الخدمة"),
+        "brand": MessageLookupByLibrary.simpleMessage("العلامة التجارية"),
         "buy": MessageLookupByLibrary.simpleMessage("شراء"),
         "buy_now": MessageLookupByLibrary.simpleMessage("اشتر الان"),
         "buyerInformation":
@@ -609,6 +611,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "serviceFee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
         "service_completed":
             MessageLookupByLibrary.simpleMessage("تمت الخدمة بنجاح"),
+        "service_details":
+            MessageLookupByLibrary.simpleMessage("تفاصيل الخدمة"),
         "service_fee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
         "service_quality": MessageLookupByLibrary.simpleMessage("جودة الخدمة"),
         "services": MessageLookupByLibrary.simpleMessage("خدمات"),

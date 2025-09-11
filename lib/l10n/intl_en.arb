@@ -553,6 +553,8 @@
   "product_rating": "Product Rating",
   "seller_rating": "Seller Rating",
   "view_all": "View All",
-  "leave_your_message": "Leave your message"
-
+  "leave_your_message": "Leave your message",
+  "service_details": "Service Details",
+  "book": "Book",
+  "brand": "Brand"
 }

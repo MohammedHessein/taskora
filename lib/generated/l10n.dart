@@ -4960,6 +4960,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Service Details`
+  String get service_details {
+    return Intl.message(
+      'Service Details',
+      name: 'service_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book`
+  String get book {
+    return Intl.message(
+      'Book',
+      name: 'book',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Brand`
+  String get brand {
+    return Intl.message(
+      'Brand',
+      name: 'brand',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -553,6 +553,8 @@
   "product_rating": "تقييم المنتج",
   "seller_rating": "تقييم التاجر",
   "view_all": "عرض الكل",
-  "leave_your_message": "اترك رسالتك"
-
+  "leave_your_message": "اترك رسالتك",
+  "service_details": "تفاصيل الخدمة",
+  "book": "حجز",
+  "brand": "العلامة التجارية"
 }

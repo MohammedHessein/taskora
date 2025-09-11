@@ -14,4 +14,5 @@ class Routes {
   static const String aboutApp = '/aboutAppView';
   static const String privacyPolicy = '/privacyPolicyView';
   static const String technicalSupport = '/technicalSupportView';
+  static const String details = '/detailsView';
 }

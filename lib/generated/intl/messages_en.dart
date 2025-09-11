@@ -65,7 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "aboutSupplier": MessageLookupByLibrary.simpleMessage("About Supplier"),
         "about_app": MessageLookupByLibrary.simpleMessage("About App"),
         "about_app_description": MessageLookupByLibrary.simpleMessage(
-            "Ragwa Provider is a comprehensive application that connects you with a wide range of home and technical service providers easily and professionally."),
+            "\"Taskora Provider\" is a comprehensive app that connects you with a wide range of professional home and technical service providers, all with ease and convenience. Whether you need a plumber, an appliance technician, an electronics expert, or any other service, the app offers a flexible and secure way to book the right service at your preferred time. Ragha Provider aims to simplify your daily life with its user-friendly interface, transparent provider ratings, and real-time order status updates."),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "account_settings":
             MessageLookupByLibrary.simpleMessage("Account Settings"),
@@ -406,6 +406,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "laundryClothesBlankets":
             MessageLookupByLibrary.simpleMessage("laundry/clothes/blankets"),
         "laundryExtras": MessageLookupByLibrary.simpleMessage("Laundry extras"),
+        "leave_your_message":
+            MessageLookupByLibrary.simpleMessage("Leave your message"),
         "limitedTimeOffer":
             MessageLookupByLibrary.simpleMessage("Limited Time Offer"),
         "list": MessageLookupByLibrary.simpleMessage("List"),
@@ -548,7 +550,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "privacy_policy_description": MessageLookupByLibrary.simpleMessage(
-            "At Ragwa Provider, we value your privacy and strive to protect all your personal data. Only necessary data is collected to provide and improve the user experience."),
+            "At Taskura Provider, we respect your privacy and are committed to protecting your personal data. We only collect the information necessary to provide and improve our service, such as your name, phone number, and location. Your information will not be shared with any third parties outside of the service provision context, and it is stored using advanced security systems. By using the application, you agree to this privacy policy, and we will notify you of any future changes to this policy."),
         "productDetails": m8,
         "product_rating":
             MessageLookupByLibrary.simpleMessage("Product Rating"),

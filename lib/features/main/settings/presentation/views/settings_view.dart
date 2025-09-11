@@ -74,11 +74,15 @@ class SettingsView extends StatelessWidget {
                     ),
                     SettingsItem(
                       title: context.tr.technical_support,
-                      onTap: () {},
+                      onTap: () {
+                        context.pushNamed(Routes.technicalSupport);
+                      },
                     ),
                     SettingsItem(
                       title: context.tr.privacyPolicy,
-                      onTap: () {},
+                      onTap: () {
+                        context.pushNamed(Routes.privacyPolicy);
+                      },
                     ),
                     SettingsItem(
                       title: context.tr.terms_of_use,
@@ -86,7 +90,9 @@ class SettingsView extends StatelessWidget {
                     ),
                     SettingsItem(
                       title: context.tr.about_app,
-                      onTap: () {},
+                      onTap: () {
+                        context.pushNamed(Routes.aboutApp);
+                      },
                     ),
                     SettingsItem(
                       title: context.tr.alerts,

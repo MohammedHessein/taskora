@@ -65,7 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "aboutSupplier": MessageLookupByLibrary.simpleMessage("حول المورد"),
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
         "about_app_description": MessageLookupByLibrary.simpleMessage(
-            "رغوة بروفايد هو تطبيق شامل يربطك بمجموعة واسعة من مزودي الخدمات المنزلية والفنية بكل سهولة واحترافية."),
+            "\"تاسكورا بروفايدر\" هو تطبيق شامل يربطك بمجموعة واسعة من مزودي الخدمات المنزلية والفنية بكل سهولة واحترافية. سواء كنت بحاجة إلى سباك، فني أجهزة منزلية، مختص في الإلكترونيات، أو أي خدمة أخرى، يوفر لك التطبيق تجربة مرنة وآمنة لحجز الخدمة المناسبة في الوقت الذي تختاره. يهدف \"رغوة بروفايدر\" إلى تسهيل حياتك اليومية من خلال واجهة استخدام بسيطة، وتقييمات شفافة لمزودي الخدمة، وتحديثات لحظية لحالة الطلب."),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "account_settings":
             MessageLookupByLibrary.simpleMessage("إعدادات الحساب"),
@@ -392,6 +392,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "laundryClothesBlankets":
             MessageLookupByLibrary.simpleMessage("غسيل ملابس/ بطانيات"),
         "laundryExtras": MessageLookupByLibrary.simpleMessage("إضافات الغسيل"),
+        "leave_your_message":
+            MessageLookupByLibrary.simpleMessage("اترك رسالتك"),
         "limitedTimeOffer":
             MessageLookupByLibrary.simpleMessage("عرض خاص لفتره محدوده"),
         "list": MessageLookupByLibrary.simpleMessage("قائمة"),
@@ -532,7 +534,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "privacy_policy_description": MessageLookupByLibrary.simpleMessage(
-            "في رغوة بروفايدر نعتزم خصوصيتك ونسعى لحماية جميع بياناتك الشخصية. يتم جمع البيانات الضرورية فقط لتقديم وتحسين تجربة الاستخدام."),
+            "في \"تاسكورا بروفايدر\"، نحترم خصوصيتك ونسعى لحماية جميع بياناتك الشخصية. يتم جمع البيانات الضرورية فقط لتقديم وتحسين تجربة الاستخدام، مثل الاسم، رقم الهاتف، والموقع. لا تتم مشاركة معلوماتك مع أي طرف ثالث خارج نطاق تقديم الخدمة، ويتم تخزينها باستخدام أنظمة أمان متقدمة. باستخدامك للتطبيق، فإنك توافق على سياسة الخصوصية هذه، ونلتزم بإشعارك بأي تغييرات مستقبلية على السياسات."),
         "productDetails": m8,
         "product_rating": MessageLookupByLibrary.simpleMessage("تقييم المنتج"),
         "product_specifications":

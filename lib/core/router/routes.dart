@@ -11,4 +11,7 @@ class Routes {
   static const String orderDetails = '/orderDetailsView';
   static const String notifications = '/notificationsView';
   static const String cart = '/cartView';
+  static const String aboutApp = '/aboutAppView';
+  static const String privacyPolicy = '/privacyPolicyView';
+  static const String technicalSupport = '/technicalSupportView';
 }

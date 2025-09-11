@@ -3649,20 +3649,20 @@ class S {
     );
   }
 
-  /// `Ragwa Provider is a comprehensive application that connects you with a wide range of home and technical service providers easily and professionally.`
+  /// `"Taskora Provider" is a comprehensive app that connects you with a wide range of professional home and technical service providers, all with ease and convenience. Whether you need a plumber, an appliance technician, an electronics expert, or any other service, the app offers a flexible and secure way to book the right service at your preferred time. Ragha Provider aims to simplify your daily life with its user-friendly interface, transparent provider ratings, and real-time order status updates.`
   String get about_app_description {
     return Intl.message(
-      'Ragwa Provider is a comprehensive application that connects you with a wide range of home and technical service providers easily and professionally.',
+      '"Taskora Provider" is a comprehensive app that connects you with a wide range of professional home and technical service providers, all with ease and convenience. Whether you need a plumber, an appliance technician, an electronics expert, or any other service, the app offers a flexible and secure way to book the right service at your preferred time. Ragha Provider aims to simplify your daily life with its user-friendly interface, transparent provider ratings, and real-time order status updates.',
       name: 'about_app_description',
       desc: '',
       args: [],
     );
   }
 
-  /// `At Ragwa Provider, we value your privacy and strive to protect all your personal data. Only necessary data is collected to provide and improve the user experience.`
+  /// `At Taskura Provider, we respect your privacy and are committed to protecting your personal data. We only collect the information necessary to provide and improve our service, such as your name, phone number, and location. Your information will not be shared with any third parties outside of the service provision context, and it is stored using advanced security systems. By using the application, you agree to this privacy policy, and we will notify you of any future changes to this policy.`
   String get privacy_policy_description {
     return Intl.message(
-      'At Ragwa Provider, we value your privacy and strive to protect all your personal data. Only necessary data is collected to provide and improve the user experience.',
+      'At Taskura Provider, we respect your privacy and are committed to protecting your personal data. We only collect the information necessary to provide and improve our service, such as your name, phone number, and location. Your information will not be shared with any third parties outside of the service provision context, and it is stored using advanced security systems. By using the application, you agree to this privacy policy, and we will notify you of any future changes to this policy.',
       name: 'privacy_policy_description',
       desc: '',
       args: [],
@@ -4946,6 +4946,16 @@ class S {
     return Intl.message(
       'View All',
       name: 'view_all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Leave your message`
+  String get leave_your_message {
+    return Intl.message(
+      'Leave your message',
+      name: 'leave_your_message',
       desc: '',
       args: [],
     );

@@ -422,8 +422,8 @@
   "app_experience": "Overall App Experience",
   "comment": "Comment",
   "thanks_for_time": "Thank you for your time",
-  "about_app_description": "Ragwa Provider is a comprehensive application that connects you with a wide range of home and technical service providers easily and professionally.",
-  "privacy_policy_description": "At Ragwa Provider, we value your privacy and strive to protect all your personal data. Only necessary data is collected to provide and improve the user experience.",
+  "about_app_description": "\"Taskora Provider\" is a comprehensive app that connects you with a wide range of professional home and technical service providers, all with ease and convenience. Whether you need a plumber, an appliance technician, an electronics expert, or any other service, the app offers a flexible and secure way to book the right service at your preferred time. Ragha Provider aims to simplify your daily life with its user-friendly interface, transparent provider ratings, and real-time order status updates.",
+  "privacy_policy_description": "At Taskura Provider, we respect your privacy and are committed to protecting your personal data. We only collect the information necessary to provide and improve our service, such as your name, phone number, and location. Your information will not be shared with any third parties outside of the service provision context, and it is stored using advanced security systems. By using the application, you agree to this privacy policy, and we will notify you of any future changes to this policy.",
   "technical_support_contact": "+966 55 768 6624",
   "technical_support_address": "Riyadh - Al Malaz - 12845 - Salahuddin Road",
   "send_message": "Leave your message",
@@ -552,6 +552,7 @@
   "reviews": "Reviews",
   "product_rating": "Product Rating",
   "seller_rating": "Seller Rating",
-  "view_all": "View All"
+  "view_all": "View All",
+  "leave_your_message": "Leave your message"
 
 }

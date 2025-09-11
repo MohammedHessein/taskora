@@ -556,5 +556,9 @@
   "leave_your_message": "اترك رسالتك",
   "service_details": "تفاصيل الخدمة",
   "book": "حجز",
-  "brand": "العلامة التجارية"
+  "brand": "العلامة التجارية",
+  "cars_wash": "غسيل السيارات",
+  "taskora_gifts": "هدايا تاسكورا",
+  "choose_payment_method": "اختر طريقة الدفع"
+
 }

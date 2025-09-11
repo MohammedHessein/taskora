@@ -27,6 +27,11 @@ List<TechnicalServiceModel> getTechnicalServices(BuildContext context) => [
     iconPath: Assets.imagesPlumping,
   ),
   TechnicalServiceModel(
+    id: "carsWashing",
+    title: context.tr.cars_wash,
+    iconPath: Assets.imagesCarsWash,
+  ),
+  TechnicalServiceModel(
     id: "ac",
     title: context.tr.airConditioning,
     iconPath: Assets.imagesAirConditioning,

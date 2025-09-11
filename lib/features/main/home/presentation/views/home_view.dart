@@ -47,13 +47,13 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
                     hGap20,
-
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: services.take(2).map((service) {
-                        return ServiceItem(
-                          service: service,
-                          width: (MediaQuery.of(context).size.width - 48.w) / 2,
+                      children: services.take(3).map((service) {
+                        return Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4.w),
+                            child: ServiceItem(service: service),
+                          ),
                         );
                       }).toList(),
                     ),
@@ -61,8 +61,8 @@ class HomeView extends StatelessWidget {
                     Wrap(
                       spacing: 12.w,
                       runSpacing: 14.h,
-                      children: List.generate(services.length - 2, (index) {
-                        final service = services[index + 2];
+                      children: List.generate(services.length - 3, (index) {
+                        final service = services[index + 3];
                         final itemWidth =
                             (MediaQuery.of(context).size.width - 150.w) / 3;
 

@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/helpers/location_provider.dart';
+import 'package:taskora/core/shared/widgets/custom_form_field.dart';
 import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
@@ -130,29 +131,36 @@ class TechnicalSupportView extends StatelessWidget {
                       ],
                     ),
                     hGap35,
-                    TextFormField(
-                      decoration: InputDecoration(
-                        hintText: context.tr.name,
-                      ),
+                    CustomFormField(
+                      stream: Stream.value(true),
+                      onChanged: (name) {},
+                      label: context.tr.name,
+                      keyboardType: TextInputType.name,
+                      nextAction: TextInputAction.next,
                     ),
                     hGap15,
-                    TextFormField(
-                      decoration: InputDecoration(
-                        hintText: context.tr.phoneNumber,
-                      ),
+                    CustomFormField(
+                      stream: Stream.value(true),
+                      onChanged: (name) {},
+                      label: context.tr.phoneNumber,
+                      keyboardType: TextInputType.phone,
+                      nextAction: TextInputAction.next,
                     ),
                     hGap15,
-                    TextFormField(
-                      decoration: InputDecoration(
-                        hintText: context.tr.address,
-                      ),
+                    CustomFormField(
+                      stream: Stream.value(true),
+                      onChanged: (name) {},
+                      label: context.tr.address,
+                      keyboardType: TextInputType.streetAddress,
+                      nextAction: TextInputAction.next,
                     ),
                     hGap15,
-                    TextFormField(
-                      maxLines: 3,
-                      decoration: InputDecoration(
-                        hintText: context.tr.comment,
-                      ),
+                    CustomFormField(
+                      stream: Stream.value(true),
+                      onChanged: (name) {},
+                      label: context.tr.comment,
+                      keyboardType: TextInputType.text,
+                      nextAction: TextInputAction.done,
                     ),
                     hGap35,
                     ElevatedButton(

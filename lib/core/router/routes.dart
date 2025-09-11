@@ -15,4 +15,6 @@ class Routes {
   static const String privacyPolicy = '/privacyPolicyView';
   static const String technicalSupport = '/technicalSupportView';
   static const String details = '/detailsView';
+  static const String gifts = '/giftsView';
+  static const String sendGift = '/sendGiftView';
 }

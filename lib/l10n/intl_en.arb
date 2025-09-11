@@ -556,5 +556,8 @@
   "leave_your_message": "Leave your message",
   "service_details": "Service Details",
   "book": "Book",
-  "brand": "Brand"
+  "brand": "Brand",
+  "cars_wash": "Cars Wash",
+  "taskora_gifts": "Taskora Gifts",
+  "choose_payment_method": "Choose Payment Method"
 }

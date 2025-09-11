@@ -4990,6 +4990,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Cars Wash`
+  String get cars_wash {
+    return Intl.message(
+      'Cars Wash',
+      name: 'cars_wash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Taskora Gifts`
+  String get taskora_gifts {
+    return Intl.message(
+      'Taskora Gifts',
+      name: 'taskora_gifts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose Payment Method`
+  String get choose_payment_method {
+    return Intl.message(
+      'Choose Payment Method',
+      name: 'choose_payment_method',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -1,16 +1,20 @@
 class CartModel {
   CartModel({
     required this.name,
-    required this.brand,
-    required this.quantity,
     required this.price,
+    this.brand,
+    this.description,
+    this.imageUrl,
+    this.quantity = 1,
+    this.isFavorite = false,
   });
-
   final String name;
-  final String brand;
-  int quantity;
   final double price;
-  bool isFavorite = false;
+  final String? brand;
+  final String? description;
+  final String? imageUrl;
+  int quantity;
+  bool isFavorite;
 }
 
 final List<CartModel> cartItems = [

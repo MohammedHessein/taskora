@@ -162,6 +162,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel_ok": MessageLookupByLibrary.simpleMessage("Cancel / OK"),
         "card_number": MessageLookupByLibrary.simpleMessage("Card Number"),
         "cars": MessageLookupByLibrary.simpleMessage("Cars"),
+        "cars_wash": MessageLookupByLibrary.simpleMessage("Cars Wash"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("Cash on Delivery"),
@@ -187,6 +188,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
         "choose_package_discount": MessageLookupByLibrary.simpleMessage(
             "Choose the package that suits you and get up to 81% discount"),
+        "choose_payment_method":
+            MessageLookupByLibrary.simpleMessage("Choose Payment Method"),
         "choose_service":
             MessageLookupByLibrary.simpleMessage("Choose Service"),
         "clothesAreNotConsideredForYou": MessageLookupByLibrary.simpleMessage(
@@ -701,6 +704,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "tabs_orders": MessageLookupByLibrary.simpleMessage("Orders"),
         "tabs_settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "tabs_store": MessageLookupByLibrary.simpleMessage("Store"),
+        "taskora_gifts": MessageLookupByLibrary.simpleMessage("Taskora Gifts"),
         "taskora_offers":
             MessageLookupByLibrary.simpleMessage("Taskora Offers"),
         "taxId": m10,

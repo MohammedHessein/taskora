@@ -16,10 +16,12 @@ class Assets {
   static const String imagesAndroid12Splash =
       'assets/images/android_12_splash.png';
   static const String imagesCarpentary = 'assets/images/carpentary.png';
+  static const String imagesCarsWash = 'assets/images/cars_wash.png';
   static const String imagesCleaner = 'assets/images/cleaner.png';
   static const String imagesCleaning = 'assets/images/cleaning.png';
   static const String imagesElectricity = 'assets/images/electricity.png';
   static const String imagesFeaturedAd = 'assets/images/featured_ad.png';
+  static const String imagesGift = 'assets/images/gift.png';
   static const String imagesHomeAppliances =
       'assets/images/home_appliances.png';
   static const String imagesLaundry = 'assets/images/laundry.png';
@@ -42,6 +44,7 @@ class Assets {
   static const String svgsActiveRequests = 'assets/svgs/active_requests.svg';
   static const String svgsActiveSettings = 'assets/svgs/active_settings.svg';
   static const String svgsActiveStore = 'assets/svgs/active_store.svg';
+  static const String svgsApplePay = 'assets/svgs/apple_pay.svg';
   static const String svgsCart = 'assets/svgs/cart.svg';
   static const String svgsCartCount = 'assets/svgs/cart_count.svg';
   static const String svgsCleaner = 'assets/svgs/cleaner.svg';
@@ -57,6 +60,7 @@ class Assets {
   static const String svgsLaundry = 'assets/svgs/laundry.svg';
   static const String svgsLocation = 'assets/svgs/location.svg';
   static const String svgsLogo = 'assets/svgs/logo.svg';
+  static const String svgsMada = 'assets/svgs/mada.svg';
   static const String svgsMessage = 'assets/svgs/message.svg';
   static const String svgsPhone = 'assets/svgs/phone.svg';
   static const String svgsPhone2 = 'assets/svgs/phone_2.svg';
@@ -65,5 +69,7 @@ class Assets {
   static const String svgsSearch = 'assets/svgs/search.svg';
   static const String svgsService = 'assets/svgs/service.svg';
   static const String svgsTime = 'assets/svgs/time.svg';
+  static const String svgsVisaOrMasterCard =
+      'assets/svgs/visa_or_master_card.svg';
   static const String svgsWallet = 'assets/svgs/wallet.svg';
 }

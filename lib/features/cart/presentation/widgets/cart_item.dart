@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/router/route_arguments.dart';
 import 'package:taskora/core/router/routes.dart';
-import 'package:taskora/core/shared/enums.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/features/cart/data/models/cart_model.dart';
@@ -31,7 +30,6 @@ class _CartItemState extends State<CartItem> {
           Routes.details,
           arguments: DetailsArgs(
             cartItem: widget.item,
-            detailsType: DetailsType.cartItem,
           ),
         );
         setState(() {});
@@ -102,7 +100,7 @@ class _CartItemState extends State<CartItem> {
                   Align(
                     alignment: Alignment.centerRight,
                     child: Text(
-                      widget.item.brand,
+                      widget.item.brand ?? '',
                       style: CustomTextStyle.kTextStyleF12.copyWith(
                         color: AppColors.black,
                         fontWeight: FontWeight.w400,

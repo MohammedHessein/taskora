@@ -155,6 +155,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "card_number":
             MessageLookupByLibrary.simpleMessage("رقم البطاقة البنكية"),
         "cars": MessageLookupByLibrary.simpleMessage("سيارات"),
+        "cars_wash": MessageLookupByLibrary.simpleMessage("غسيل السيارات"),
         "cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
@@ -178,6 +179,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
         "choose_package_discount": MessageLookupByLibrary.simpleMessage(
             "اختر الباقة التي تناسبك واحصل على خصم يصل إلى 81%"),
+        "choose_payment_method":
+            MessageLookupByLibrary.simpleMessage("اختر طريقة الدفع"),
         "choose_service": MessageLookupByLibrary.simpleMessage("اختر الخدمة"),
         "clothesAreNotConsideredForYou":
             MessageLookupByLibrary.simpleMessage("لا تعد الملابس نحسبها عنك"),
@@ -674,6 +677,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "tabs_orders": MessageLookupByLibrary.simpleMessage("الطلبات"),
         "tabs_settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "tabs_store": MessageLookupByLibrary.simpleMessage("المتجر"),
+        "taskora_gifts": MessageLookupByLibrary.simpleMessage("هدايا تاسكورا"),
         "taskora_offers": MessageLookupByLibrary.simpleMessage("عروض تاسكورا"),
         "taxId": m10,
         "technical_support":

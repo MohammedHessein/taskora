@@ -32,7 +32,6 @@ sealed class AppTheme {
         backgroundColor: AppColors.primaryBlue,
         foregroundColor: AppColors.secondaryWhite,
         textStyle: CustomTextStyle.kBtnTextStyle,
-        // alignment: Alignment.center,
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
@@ -61,6 +60,119 @@ sealed class AppTheme {
         return AppColors.secondaryWhite;
       }),
       filled: true,
+    ),
+    dropdownMenuTheme: DropdownMenuThemeData(
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: AppColors.secondaryWhite,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(Dimensions.r10),
+          borderSide: BorderSide(color: AppColors.secondaryBlack.shade300),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(Dimensions.r10),
+          borderSide: BorderSide(color: AppColors.secondaryBlack.shade300),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(Dimensions.r10),
+          borderSide: const BorderSide(color: AppColors.primaryBlue),
+        ),
+      ),
+    ),
+    checkboxTheme: CheckboxThemeData(
+      overlayColor: WidgetStateColor.resolveWith(
+        (states) => Colors.transparent,
+      ),
+      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      visualDensity: VisualDensity.compact,
+      side: BorderSide(color: AppColors.secondaryBlack.shade300),
+      checkColor: WidgetStateProperty.all(AppColors.secondaryWhite),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: ButtonStyle(
+        textStyle: WidgetStatePropertyAll(
+          CustomTextStyle.kTextStyleF16.copyWith(
+            color: AppColors.grey.shade300,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        elevation: const WidgetStatePropertyAll(0),
+        foregroundColor: WidgetStatePropertyAll(AppColors.grey.shade300),
+      ),
+    ),
+    datePickerTheme: DatePickerThemeData(
+      inputDecorationTheme: InputDecorationTheme(
+        hintStyle: CustomTextStyle.kFormFieldTextStyle,
+        border: OutlineInputBorder(
+          borderSide: BorderSide(color: AppColors.secondaryBlack.shade300),
+          borderRadius: BorderRadius.circular(10.r),
+        ),
+      ),
+      backgroundColor: AppColors.secondaryWhite,
+      elevation: 0,
+    ),
+    timePickerTheme: TimePickerThemeData(
+      backgroundColor: AppColors.secondaryWhite,
+      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16.r),
+      ),
+      hourMinuteTextStyle: CustomTextStyle.kTextStyleF24.copyWith(
+        fontWeight: FontWeight.w600,
+        color: AppColors.secondaryBlack,
+      ),
+      dialTextStyle: CustomTextStyle.kTextStyleF16.copyWith(
+        color: AppColors.secondaryBlack,
+      ),
+      dayPeriodTextStyle: CustomTextStyle.kTextStyleF14.copyWith(
+        fontWeight: FontWeight.w500,
+        color: AppColors.secondaryBlack,
+      ),
+      helpTextStyle: CustomTextStyle.kTextStyleF16.copyWith(
+        color: AppColors.primaryBlue,
+        fontWeight: FontWeight.w500,
+      ),
+      hourMinuteShape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.r),
+      ),
+      dayPeriodShape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8.r),
+        side: BorderSide(
+          color: AppColors.secondaryBlack.shade300,
+          width: 1.w,
+        ),
+      ),
+      dialHandColor: AppColors.primaryBlue,
+      dialBackgroundColor: AppColors.secondaryBlack.shade50,
+      hourMinuteColor: WidgetStateColor.resolveWith((states) {
+        if (states.contains(WidgetState.selected)) {
+          return AppColors.primaryBlue;
+        }
+        return AppColors.secondaryBlack.shade100;
+      }),
+      hourMinuteTextColor: WidgetStateColor.resolveWith((states) {
+        if (states.contains(WidgetState.selected)) {
+          return AppColors.secondaryWhite;
+        }
+        return AppColors.secondaryBlack;
+      }),
+      dayPeriodColor: WidgetStateColor.resolveWith((states) {
+        if (states.contains(WidgetState.selected)) {
+          return AppColors.primaryBlue;
+        }
+        return AppColors.secondaryWhite;
+      }),
+      dayPeriodTextColor: WidgetStateColor.resolveWith((states) {
+        if (states.contains(WidgetState.selected)) {
+          return AppColors.secondaryWhite;
+        }
+        return AppColors.secondaryBlack;
+      }),
+      entryModeIconColor: AppColors.primaryBlue,
+      dayPeriodBorderSide: BorderSide(
+        color: AppColors.secondaryBlack.shade300,
+        width: 1.w,
+      ),
     ),
   );
 

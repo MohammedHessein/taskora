@@ -45,9 +45,12 @@ class Assets {
   static const String svgsActiveSettings = 'assets/svgs/active_settings.svg';
   static const String svgsActiveStore = 'assets/svgs/active_store.svg';
   static const String svgsApplePay = 'assets/svgs/apple_pay.svg';
+  static const String svgsArrowDown = 'assets/svgs/arrow_down.svg';
+  static const String svgsCalendar = 'assets/svgs/calendar.svg';
   static const String svgsCart = 'assets/svgs/cart.svg';
   static const String svgsCartCount = 'assets/svgs/cart_count.svg';
   static const String svgsCleaner = 'assets/svgs/cleaner.svg';
+  static const String svgsExplanationMark = 'assets/svgs/explanation_mark.svg';
   static const String svgsFilter = 'assets/svgs/filter.svg';
   static const String svgsInactiveHeart = 'assets/svgs/inactive_heart.svg';
   static const String svgsInactiveHome = 'assets/svgs/inactive_home.svg';
@@ -65,6 +68,7 @@ class Assets {
   static const String svgsPhone = 'assets/svgs/phone.svg';
   static const String svgsPhone2 = 'assets/svgs/phone_2.svg';
   static const String svgsRat = 'assets/svgs/rat.svg';
+  static const String svgsRefresh = 'assets/svgs/refresh.svg';
   static const String svgsRiyal = 'assets/svgs/riyal.svg';
   static const String svgsSearch = 'assets/svgs/search.svg';
   static const String svgsService = 'assets/svgs/service.svg';

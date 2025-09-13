@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/helpers/location_provider.dart';
 import 'package:taskora/core/router/route_arguments.dart';
+import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
@@ -85,7 +86,9 @@ class DetailsView extends StatelessWidget {
                     ),
                     hGap20,
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.pushNamed(Routes.booking);
+                      },
                       child: Text(context.tr.book),
                     ),
                     hGap35,

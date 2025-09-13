@@ -68,7 +68,7 @@ class _CustomFormFieldState extends State<CustomFormField> {
             alignLabelWithHint: true,
             contentPadding: widget.contentPadding,
             prefixIcon: widget.preIcon,
-            suffix: widget.postIcon,
+            suffixIcon: widget.postIcon,
             counter: const Offstage(),
             labelText: widget.label,
             floatingLabelBehavior: widget.floatingLabel

@@ -17,4 +17,5 @@ class Routes {
   static const String details = '/detailsView';
   static const String gifts = '/giftsView';
   static const String sendGift = '/sendGiftView';
+  static const String booking = '/bookingView';
 }

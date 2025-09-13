@@ -20,6 +20,10 @@ const Map<String, List<String>> serviceTabsConfig = {
     "tabs.satellite.installation",
     "tabs.satellite.other",
   ],
+  "carsWashing": [
+    "tabs.carsWashing.main",
+    "tabs.carsWashing.other",
+  ],
 };
 const Map<String, List<Map<String, String>>> serviceItems = {
   "tabs.electricity.main": [
@@ -43,5 +47,10 @@ const Map<String, List<Map<String, String>>> serviceItems = {
     {"title": "برمجة داخلية", "price": "19.0"},
     {"title": "برمجة دش", "price": "19.0"},
     {"title": "برمجة رسيفر + صحن", "price": "19.0"},
+  ],
+  "tabs.carsWashing.main": [
+    {"title": "غسيل سيارات", "price": "19.0"},
+    {"title": "غسيل سيارات", "price": "19.0"},
+    {"title": "غسيل سيارات", "price": "19.0"},
   ],
 };

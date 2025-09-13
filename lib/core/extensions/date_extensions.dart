@@ -1,5 +1,5 @@
+import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
 import 'package:taskora/generated/l10n.dart';
 
 enum DateFormatType {
@@ -129,4 +129,9 @@ extension DateExtensions on DateTime {
 
     return DateTime(year, month, day);
   }
+}
+
+String formatTimeOfDay(TimeOfDay time, {bool use24Hour = false}) {
+  final dateTime = DateTime(2023, 1, 1, time.hour, time.minute);
+  return DateFormat(use24Hour ? 'HH:mm' : 'h:mm a').format(dateTime);
 }

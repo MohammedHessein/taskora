@@ -61,6 +61,10 @@ String translateServiceKey(BuildContext context, String key) {
     case "tabs.satellite.other":
       return s.tabsSatelliteOther;
 
+    case "tabs.carsWashing.main":
+      return s.tabsCarsWashingMain;
+    case "tabs.carsWashing.other":
+      return s.tabsCarsWashingOther;
     default:
       return key;
   }

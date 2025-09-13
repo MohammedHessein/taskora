@@ -10,4 +10,5 @@ class CacheConstants {
   static const String userBoxName = "userBox";
   static const String userLocation = "userLocation";
   static const String appLang = "app_lang";
+  static const String isWashingCarsService = "isWashingCarsService";
 }

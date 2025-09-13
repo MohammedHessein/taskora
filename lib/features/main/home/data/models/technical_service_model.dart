@@ -9,6 +9,7 @@ class TechnicalServiceModel {
     required this.iconPath,
     this.goesToBookingPage = false,
   });
+
   final String id;
   final String title;
   final String iconPath;

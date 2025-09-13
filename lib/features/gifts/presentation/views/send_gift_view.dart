@@ -51,7 +51,7 @@ class SendGiftView extends StatelessWidget {
                         Expanded(
                           child: CustomFormField(
                             stream: const Stream.empty(),
-                            onChanged: (phone) {},
+                            onChanged: (firstName) {},
                             label: context.tr.firstName,
                             preIcon: const Icon(Icons.person),
                             nextAction: TextInputAction.next,
@@ -61,7 +61,7 @@ class SendGiftView extends StatelessWidget {
                         Expanded(
                           child: CustomFormField(
                             stream: const Stream.empty(),
-                            onChanged: (phone) {},
+                            onChanged: (lastName) {},
                             label: context.tr.lastName,
                             preIcon: const Icon(Icons.person),
                             nextAction: TextInputAction.next,
@@ -90,7 +90,7 @@ class SendGiftView extends StatelessWidget {
                     hGap20,
                     CustomFormField(
                       stream: const Stream.empty(),
-                      onChanged: (phone) {},
+                      onChanged: (giftValue) {},
                       label: context.tr.gift_value,
                       nextAction: TextInputAction.done,
                     ),

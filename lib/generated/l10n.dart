@@ -3399,10 +3399,10 @@ class S {
     );
   }
 
-  /// `Expiry Date`
+  /// `Expiry Card Date`
   String get expiry_date {
     return Intl.message(
-      'Expiry Date',
+      'Expiry Card Date',
       name: 'expiry_date',
       desc: '',
       args: [],
@@ -4481,6 +4481,26 @@ class S {
     );
   }
 
+  /// `Main`
+  String get tabsCarsWashingMain {
+    return Intl.message(
+      'Main',
+      name: 'tabsCarsWashingMain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Other`
+  String get tabsCarsWashingOther {
+    return Intl.message(
+      'Other',
+      name: 'tabsCarsWashingOther',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Choose Service`
   String get choose_service {
     return Intl.message(
@@ -5016,6 +5036,186 @@ class S {
     return Intl.message(
       'Choose Payment Method',
       name: 'choose_payment_method',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Complete Booking`
+  String get complete_booking {
+    return Intl.message(
+      'Complete Booking',
+      name: 'complete_booking',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Booking Details`
+  String get booking_details {
+    return Intl.message(
+      'Booking Details',
+      name: 'booking_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Car Type`
+  String get car_type {
+    return Intl.message(
+      'Car Type',
+      name: 'car_type',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Details`
+  String get payment_details {
+    return Intl.message(
+      'Payment Details',
+      name: 'payment_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Secure Payment`
+  String get secure_payment {
+    return Intl.message(
+      'Secure Payment',
+      name: 'secure_payment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Amount reserved via Xescrow`
+  String get amount_reserved {
+    return Intl.message(
+      'Amount reserved via Xescrow',
+      name: 'amount_reserved',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Meeting takes place between both parties to deliver the product`
+  String get meeting_delivery {
+    return Intl.message(
+      'Meeting takes place between both parties to deliver the product',
+      name: 'meeting_delivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Step`
+  String get first_step {
+    return Intl.message(
+      'First Step',
+      name: 'first_step',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Second Step`
+  String get second_step {
+    return Intl.message(
+      'Second Step',
+      name: 'second_step',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Third Step`
+  String get third_step {
+    return Intl.message(
+      'Third Step',
+      name: 'third_step',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Coupon Code`
+  String get add_coupon_code {
+    return Intl.message(
+      'Add Coupon Code',
+      name: 'add_coupon_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A fee of SAR 3.67 will be deducted from your card to verify it. The amount will be refunded immediately.`
+  String get A_fee_of_SAR_will_be_deducted_from_your_card {
+    return Intl.message(
+      'A fee of SAR 3.67 will be deducted from your card to verify it. The amount will be refunded immediately.',
+      name: 'A_fee_of_SAR_will_be_deducted_from_your_card',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I agree on`
+  String get i_agree_on {
+    return Intl.message(
+      'I agree on',
+      name: 'i_agree_on',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms and Conditions`
+  String get terms_and_conditions {
+    return Intl.message(
+      'Terms and Conditions',
+      name: 'terms_and_conditions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Date`
+  String get start_date {
+    return Intl.message(
+      'Start Date',
+      name: 'start_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End Date`
+  String get end_date {
+    return Intl.message(
+      'End Date',
+      name: 'end_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Time`
+  String get start_time {
+    return Intl.message(
+      'Start Time',
+      name: 'start_time',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `End Time`
+  String get end_time {
+    return Intl.message(
+      'End Time',
+      name: 'end_time',
       desc: '',
       args: [],
     );

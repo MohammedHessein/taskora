@@ -5,6 +5,7 @@ import 'package:taskora/features/auth/login/presentation/pages/login_view.dart';
 import 'package:taskora/features/auth/register/presentation/pages/register_view.dart';
 import 'package:taskora/features/auth/verify_account/presentation/pages/verify_account_view.dart';
 import 'package:taskora/features/booking/presentation/views/first_step_booking_view.dart';
+import 'package:taskora/features/booking/presentation/views/second_step_booking_view.dart';
 import 'package:taskora/features/cart/presentation/views/cart_view.dart';
 import 'package:taskora/features/details/presentation/views/details_view.dart';
 import 'package:taskora/features/gifts/presentation/views/gifts_view.dart';
@@ -47,8 +48,10 @@ class AppRouters {
         return _buildRoute(const GiftsView(), isIOS, settings);
       case Routes.sendGift:
         return _buildRoute(const SendGiftView(), isIOS, settings);
-      case Routes.booking:
+      case Routes.firstStepBooking:
         return _buildRoute(const FirstStepBookingView(), isIOS, settings);
+      case Routes.secondStepBooking:
+        return _buildRoute(const SecondStepBookingView(), isIOS, settings);
 
       default:
         return null;

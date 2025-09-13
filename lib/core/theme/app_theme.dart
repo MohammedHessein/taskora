@@ -174,6 +174,10 @@ sealed class AppTheme {
         width: 1.w,
       ),
     ),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: AppColors.primaryBlue,
+      foregroundColor: AppColors.secondaryWhite,
+    ),
   );
 
   /*  static ThemeData darkTheme = ThemeData(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/helpers/location_provider.dart';
+import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/core/shared/widgets/checkbox_item.dart';
 import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
@@ -40,7 +41,8 @@ class _FirstStepBookingViewState extends State<FirstStepBookingView> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     BookingStepHeader(
-                      title: context.tr.first_step,
+                      currentStepTitle: context.tr.first_step,
+                      title: context.tr.complete_booking,
                       currentStep: 0,
                     ),
                     const CarTypeSection(),
@@ -81,7 +83,9 @@ class _FirstStepBookingViewState extends State<FirstStepBookingView> {
                         const Spacer(),
                         Expanded(
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              context.pushNamed(Routes.secondStepBooking);
+                            },
                             child: Text(context.tr.next),
                           ),
                         ),

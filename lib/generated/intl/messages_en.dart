@@ -342,6 +342,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "expiry_date": MessageLookupByLibrary.simpleMessage("Expiry Card Date"),
         "fabricSoftener":
             MessageLookupByLibrary.simpleMessage("Fabric softener"),
+        "failed_to_select_location":
+            MessageLookupByLibrary.simpleMessage("Failed to select location"),
         "faq": MessageLookupByLibrary.simpleMessage("FAQ"),
         "featured_ad":
             MessageLookupByLibrary.simpleMessage("Featured Advertisement"),

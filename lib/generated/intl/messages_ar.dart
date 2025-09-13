@@ -331,6 +331,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "expiry_date":
             MessageLookupByLibrary.simpleMessage("تاريخ انتهاء البطاقة"),
         "fabricSoftener": MessageLookupByLibrary.simpleMessage("منعم ملابس"),
+        "failed_to_select_location":
+            MessageLookupByLibrary.simpleMessage("فشل تحديد الموقع"),
         "faq": MessageLookupByLibrary.simpleMessage("الاسئلة الشائعة"),
         "featured_ad": MessageLookupByLibrary.simpleMessage("اعلان مميز"),
         "featured_ad_date": MessageLookupByLibrary.simpleMessage("20-7-2025"),

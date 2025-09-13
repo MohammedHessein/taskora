@@ -5220,6 +5220,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Failed to select location`
+  String get failed_to_select_location {
+    return Intl.message(
+      'Failed to select location',
+      name: 'failed_to_select_location',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

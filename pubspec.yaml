@@ -147,6 +147,7 @@ dependencies:
   shimmer: ^3.0.0
   loading_animation_widget: ^1.3.0
   dropdown_button2: ^2.3.9
+  google_maps_flutter: ^2.13.1
 
 dev_dependencies:
   # Core Flutter Dependencies

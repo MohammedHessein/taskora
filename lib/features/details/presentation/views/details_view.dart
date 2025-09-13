@@ -87,7 +87,7 @@ class DetailsView extends StatelessWidget {
                     hGap20,
                     ElevatedButton(
                       onPressed: () {
-                        context.pushNamed(Routes.booking);
+                        context.pushNamed(Routes.firstStepBooking);
                       },
                       child: Text(context.tr.book),
                     ),

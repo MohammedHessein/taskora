@@ -579,5 +579,6 @@
   "start_date": "بدايه التاريخ",
   "end_date": "نهايه التاريخ",
   "start_time": "بدايه الوقت",
-  "end_time": "نهايه الوقت"
+  "end_time": "نهايه الوقت",
+  "failed_to_select_location":"فشل تحديد الموقع"
 }

@@ -579,5 +579,7 @@
   "start_date": "Start Date",
   "end_date": "End Date",
   "start_time": "Start Time",
-  "end_time": "End Time"
+  "end_time": "End Time",
+  "failed_to_select_location":"Failed to select location"
+
 }

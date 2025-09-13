@@ -24,11 +24,16 @@ class _CheckBoxItemState extends State<CheckBoxItem> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
-          widget.title,
-          style: CustomTextStyle.kTextStyleF12.copyWith(
-            fontWeight: FontWeight.w400,
-            color: AppColors.secondaryBlack.shade300,
+        Expanded(
+          flex: 10,
+          child: Text(
+            widget.title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: CustomTextStyle.kTextStyleF12.copyWith(
+              fontWeight: FontWeight.w400,
+              color: AppColors.secondaryBlack.shade300,
+            ),
           ),
         ),
         const Spacer(),

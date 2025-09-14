@@ -22,11 +22,18 @@ class GoogleMapsWidget extends StatefulWidget {
 class _GoogleMapsWidgetState extends State<GoogleMapsWidget> {
   late GoogleMapController mapController;
   final LocationService _locationService = di<LocationService>();
+  Set<Marker> markers = {};
 
   static const CameraPosition _ksaPosition = CameraPosition(
     target: LatLng(23.886292, 45.081139),
     zoom: 5,
   );
+
+  @override
+  void initState() {
+    super.initState();
+    initMarkers();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,6 +45,7 @@ class _GoogleMapsWidgetState extends State<GoogleMapsWidget> {
           ClipRRect(
             borderRadius: BorderRadius.circular(10.r),
             child: GoogleMap(
+              markers: markers,
               onMapCreated: (controller) {
                 mapController = controller;
                 mapController.animateCamera(
@@ -69,34 +77,56 @@ class _GoogleMapsWidgetState extends State<GoogleMapsWidget> {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                onPressed: () async {
-                  try {
-                    final locData = await _locationService.getLocation();
-                    if (locData.latitude != null && locData.longitude != null) {
-                      unawaited(
-                        mapController.animateCamera(
-                          CameraUpdate.newLatLngZoom(
-                            LatLng(locData.latitude!, locData.longitude!),
-                            14,
-                          ),
-                        ),
-                      );
-                    }
-                  } catch (e) {
-                    if (context.mounted) {
-                      context.defaultSnackBar(
-                        title: context.tr.error,
-                        description: context.tr.failed_to_select_location,
-                        type: ToastificationType.error,
-                      );
-                    }
-                  }
-                },
+                onPressed: _selectCurrentLocation,
               ),
             ),
           ),
         ],
       ),
     );
+  }
+
+  void initMarkers() {
+    markers.add(
+      const Marker(
+        markerId: MarkerId('ksa_marker'),
+        position: LatLng(23.886292, 45.081139),
+      ),
+    );
+  }
+
+  Future<void> _selectCurrentLocation() async {
+    try {
+      final locationData = await _locationService.getLocation();
+      if (locationData.latitude != null && locationData.longitude != null) {
+        final userLatLng = LatLng(
+          locationData.latitude!,
+          locationData.longitude!,
+        );
+        unawaited(
+          mapController.animateCamera(
+            CameraUpdate.newLatLngZoom(userLatLng, 14),
+          ),
+        );
+        setState(() {
+          markers
+            ..removeWhere((m) => m.markerId == const MarkerId('user_marker'))
+            ..add(
+              Marker(
+                markerId: const MarkerId('user_marker'),
+                position: userLatLng,
+              ),
+            );
+        });
+      }
+    } catch (e) {
+      if (context.mounted) {
+        context.defaultSnackBar(
+          title: context.tr.error,
+          description: context.tr.failed_to_select_location,
+          type: ToastificationType.error,
+        );
+      }
+    }
   }
 }

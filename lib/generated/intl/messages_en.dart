@@ -64,6 +64,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "A_fee_of_SAR_will_be_deducted_from_your_card":
             MessageLookupByLibrary.simpleMessage(
                 "A fee of SAR 3.67 will be deducted from your card to verify it. The amount will be refunded immediately."),
+        "The_best_technician_in_your_area_has_been_found":
+            MessageLookupByLibrary.simpleMessage(
+                "The best technician in your area has been found."),
+        "The_final_price_for_services_will_be_confirmed_after_the_visit_and_completion_of_the_inspection":
+            MessageLookupByLibrary.simpleMessage(
+                "The final price for services will be confirmed after the visit and completion of the inspection."),
+        "Your_request_has_been_confirmed_and_we_are_searching_for_the_best_technician_in_your_area":
+            MessageLookupByLibrary.simpleMessage(
+                "Your request has been confirmed and we are searching for the best technician in your area."),
         "aboutProduct": m0,
         "aboutSupplier": MessageLookupByLibrary.simpleMessage("About Supplier"),
         "about_app": MessageLookupByLibrary.simpleMessage("About App"),
@@ -96,6 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "advantages": MessageLookupByLibrary.simpleMessage("Advantages"),
         "advertisements":
             MessageLookupByLibrary.simpleMessage("Advertisements"),
+        "agree": MessageLookupByLibrary.simpleMessage("Agree"),
         "agreeToTermsAndPolicies": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to all of our <a>Terms & Conditions</a> and <b>Privacy policies</b>"),
         "airConditioning":
@@ -169,6 +179,7 @@ class MessageLookup extends MessageLookupByLibrary {
                 "By creating an account, you agree to our <a>Terms & Conditions</a> and <b>Privacy Policy</b>"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "cancel_ok": MessageLookupByLibrary.simpleMessage("Cancel / OK"),
+        "cancel_order": MessageLookupByLibrary.simpleMessage("Cancel Order"),
         "car_type": MessageLookupByLibrary.simpleMessage("Car Type"),
         "card_number": MessageLookupByLibrary.simpleMessage("Card Number"),
         "cars": MessageLookupByLibrary.simpleMessage("Cars"),
@@ -206,7 +217,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Clothes are not considered for you"),
         "clothingArrangementMechanism": MessageLookupByLibrary.simpleMessage(
             "Clothing arrangement mechanism"),
+        "come_back": MessageLookupByLibrary.simpleMessage("Come Back"),
         "comment": MessageLookupByLibrary.simpleMessage("Comment"),
+        "commitment_to_deadlines":
+            MessageLookupByLibrary.simpleMessage("Commitment to Deadlines"),
         "common_cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "common_confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "common_error": MessageLookupByLibrary.simpleMessage("Error"),
@@ -223,6 +237,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmOrder": MessageLookupByLibrary.simpleMessage("Confirm Order"),
         "confirm_order": MessageLookupByLibrary.simpleMessage("Confirm Order"),
+        "contribute_to_the_development_of_our_services":
+            MessageLookupByLibrary.simpleMessage(
+                "Contribute to the development of our services"),
         "countdown_timer":
             MessageLookupByLibrary.simpleMessage("Auction Countdown"),
         "coupon_code": MessageLookupByLibrary.simpleMessage("Coupon Code"),
@@ -243,6 +260,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Download Invoice"),
         "dryClean": MessageLookupByLibrary.simpleMessage("Dry clean"),
         "dryCleaning": MessageLookupByLibrary.simpleMessage("Dry Cleaning"),
+        "ease_of_communication":
+            MessageLookupByLibrary.simpleMessage("Ease of Communication"),
         "ease_of_use":
             MessageLookupByLibrary.simpleMessage("Ease of Use & Communication"),
         "eightAMToTenAM":
@@ -393,6 +412,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "Hang it up and don\'t meet the representative. You don\'t need to be at home."),
         "hanged": MessageLookupByLibrary.simpleMessage("Hanged"),
+        "help_us_develop_our_services": MessageLookupByLibrary.simpleMessage(
+            "Help us develop our services"),
         "high": MessageLookupByLibrary.simpleMessage("High"),
         "highest_bidder":
             MessageLookupByLibrary.simpleMessage("Highest Bidder"),
@@ -439,6 +460,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "located": MessageLookupByLibrary.simpleMessage("Located"),
         "location_and_facilities":
             MessageLookupByLibrary.simpleMessage("Location & Facilities"),
+        "location_example": MessageLookupByLibrary.simpleMessage(
+            "5869 Abi Maali Al-Naqqash Street, Al-Ulaya District, Riyadh, Kingdom of Saudi Arabia"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "loyaltyPoints": MessageLookupByLibrary.simpleMessage("loyalty points"),
@@ -502,6 +525,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "otpSent": m7,
         "otp_sent_to": MessageLookupByLibrary.simpleMessage("OTP code sent to"),
         "ourServices": MessageLookupByLibrary.simpleMessage("Our Services"),
+        "overall_experience":
+            MessageLookupByLibrary.simpleMessage("Overall Experience"),
         "packages": MessageLookupByLibrary.simpleMessage("Packages"),
         "paints": MessageLookupByLibrary.simpleMessage("Paints"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
@@ -571,6 +596,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "priceMenu": MessageLookupByLibrary.simpleMessage("Price Menu"),
         "price_after_inspection":
             MessageLookupByLibrary.simpleMessage("Price after inspection"),
+        "price_quality_ratio":
+            MessageLookupByLibrary.simpleMessage("Price-Quality Ratio"),
         "price_vs_quality":
             MessageLookupByLibrary.simpleMessage("Price vs Quality"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
@@ -631,6 +658,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "schedule_order":
             MessageLookupByLibrary.simpleMessage("Schedule Order"),
         "search": MessageLookupByLibrary.simpleMessage("Search..."),
+        "search_location": MessageLookupByLibrary.simpleMessage("Search"),
         "searching_technician":
             MessageLookupByLibrary.simpleMessage("Searching for Technician"),
         "second_step": MessageLookupByLibrary.simpleMessage("Second Step"),
@@ -664,8 +692,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "service_details":
             MessageLookupByLibrary.simpleMessage("Service Details"),
         "service_fee": MessageLookupByLibrary.simpleMessage("Service Fee"),
+        "service_is_done":
+            MessageLookupByLibrary.simpleMessage("Service is done"),
         "service_quality":
             MessageLookupByLibrary.simpleMessage("Service Quality"),
+        "service_review":
+            MessageLookupByLibrary.simpleMessage("Service Review"),
         "services": MessageLookupByLibrary.simpleMessage("Services"),
         "services_need_inspection": MessageLookupByLibrary.simpleMessage(
             "Services need technician inspection"),
@@ -689,6 +721,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_date": MessageLookupByLibrary.simpleMessage("Start Date"),
         "start_price": MessageLookupByLibrary.simpleMessage("Start Price"),
         "start_time": MessageLookupByLibrary.simpleMessage("Start Time"),
+        "stc_pay": MessageLookupByLibrary.simpleMessage("STC Pay"),
         "step2": MessageLookupByLibrary.simpleMessage("Step 2"),
         "step3": MessageLookupByLibrary.simpleMessage("Step 3"),
         "store": MessageLookupByLibrary.simpleMessage("Store"),
@@ -756,6 +789,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "terms_of_use": MessageLookupByLibrary.simpleMessage("Terms of Use"),
         "thankYouForYourTime":
             MessageLookupByLibrary.simpleMessage("Thank you for your time"),
+        "thank_you_for_using_our_service": MessageLookupByLibrary.simpleMessage(
+            "Thank you for using our service"),
+        "thank_you_for_your_time":
+            MessageLookupByLibrary.simpleMessage("Thank you for your time"),
         "thanks_for_time":
             MessageLookupByLibrary.simpleMessage("Thank you for your time"),
         "theOrderWasDeliveredByTheCaptain":
@@ -781,6 +818,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalCost": MessageLookupByLibrary.simpleMessage("Total Cost"),
         "totalVat": MessageLookupByLibrary.simpleMessage("Total (VAT)"),
         "total_price": MessageLookupByLibrary.simpleMessage("Total Price"),
+        "total_service_cost":
+            MessageLookupByLibrary.simpleMessage("Total Service Cost"),
+        "total_service_cost_with_vat": MessageLookupByLibrary.simpleMessage(
+            "Total Service Cost (with VAT)"),
         "total_vat": MessageLookupByLibrary.simpleMessage("Total (incl. VAT)"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("Track order"),
         "track_order": MessageLookupByLibrary.simpleMessage("Track Order"),

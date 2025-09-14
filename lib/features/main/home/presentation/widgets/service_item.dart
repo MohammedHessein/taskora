@@ -19,7 +19,9 @@ class ServiceItem extends StatelessWidget {
     return GestureDetector(
       onTap: () async {
         if (service.goesToBookingPage) {
-          // Navigator.pushNamed(context, "/booking");
+          if (context.mounted) {
+            context.pushNamed(Routes.firstStepBooking);
+          }
         } else {
           if (service.id == 'carsWashing') {
             await CacheHelper.setData(

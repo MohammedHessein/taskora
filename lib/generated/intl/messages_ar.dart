@@ -64,6 +64,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "A_fee_of_SAR_will_be_deducted_from_your_card":
             MessageLookupByLibrary.simpleMessage(
                 "سيتم خصم مبلغ 3.67 ريال سعودي للتحقق من بطاقتك. سيتم استرداد المبلغ على الفور"),
+        "The_best_technician_in_your_area_has_been_found":
+            MessageLookupByLibrary.simpleMessage(
+                "تم العثور على أفضل فني منطقتك"),
+        "The_final_price_for_services_will_be_confirmed_after_the_visit_and_completion_of_the_inspection":
+            MessageLookupByLibrary.simpleMessage(
+                "يتم تأكيد السعر النهائي للخدمات بعد الزيارة والانتهاء من الفحص"),
+        "Your_request_has_been_confirmed_and_we_are_searching_for_the_best_technician_in_your_area":
+            MessageLookupByLibrary.simpleMessage(
+                "تم تأكيد طلبك وجاري البحث عن أفضل فني في منطقتك"),
         "aboutProduct": m0,
         "aboutSupplier": MessageLookupByLibrary.simpleMessage("حول المورد"),
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
@@ -94,6 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "advantages": MessageLookupByLibrary.simpleMessage("المميزات"),
         "advertisements": MessageLookupByLibrary.simpleMessage("اعلانات"),
+        "agree": MessageLookupByLibrary.simpleMessage("موافق"),
         "agreeToTermsAndPolicies": MessageLookupByLibrary.simpleMessage(
             "بإنشائك حسابًا، فإنك توافق على جميع <a>الشروط والأحكام</a> و<b>سياسات الخصوصية</b> الخاصة بنا"),
         "airConditioning": MessageLookupByLibrary.simpleMessage("تكييف"),
@@ -160,6 +170,7 @@ class MessageLookup extends MessageLookupByLibrary {
                 "بإنشائك حسابًا، فإنك توافق على <a>الشروط والأحكام</a> و<b>سياسة الخصوصية</b> الخاصة بنا"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "cancel_ok": MessageLookupByLibrary.simpleMessage("الغاء موافق"),
+        "cancel_order": MessageLookupByLibrary.simpleMessage("الغاء الطلب"),
         "car_type": MessageLookupByLibrary.simpleMessage("نوع السيارة"),
         "card_number":
             MessageLookupByLibrary.simpleMessage("رقم البطاقة البنكية"),
@@ -195,7 +206,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لا تعد الملابس نحسبها عنك"),
         "clothingArrangementMechanism":
             MessageLookupByLibrary.simpleMessage("آلية ترتيب الملابس"),
+        "come_back": MessageLookupByLibrary.simpleMessage("عودة"),
         "comment": MessageLookupByLibrary.simpleMessage("تعليق"),
+        "commitment_to_deadlines":
+            MessageLookupByLibrary.simpleMessage("الالتزام بالمواعيد"),
         "common_cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "common_confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
         "common_error": MessageLookupByLibrary.simpleMessage("خطأ"),
@@ -212,6 +226,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("أكيد"),
         "confirmOrder": MessageLookupByLibrary.simpleMessage("اجراء الطلب"),
         "confirm_order": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
+        "contribute_to_the_development_of_our_services":
+            MessageLookupByLibrary.simpleMessage("ساهم بتطوير خدماتنا"),
         "countdown_timer":
             MessageLookupByLibrary.simpleMessage("العد التنازلي للمزاد"),
         "coupon_code": MessageLookupByLibrary.simpleMessage("رمز القسيمة"),
@@ -232,6 +248,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "downloadInvoice": MessageLookupByLibrary.simpleMessage("حمل الفاتورة"),
         "dryClean": MessageLookupByLibrary.simpleMessage("غسيل جاف"),
         "dryCleaning": MessageLookupByLibrary.simpleMessage("غسيل جاف"),
+        "ease_of_communication":
+            MessageLookupByLibrary.simpleMessage("سهولة التعامل والتواصل"),
         "ease_of_use":
             MessageLookupByLibrary.simpleMessage("سهولة التعامل والتواصل"),
         "eightAMToTenAM":
@@ -380,6 +398,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "علقها ولا تقابل المندوب وما يحتاج تكون بالبيت"),
         "hanged": MessageLookupByLibrary.simpleMessage("معلقة"),
+        "help_us_develop_our_services":
+            MessageLookupByLibrary.simpleMessage("ساعدنا بتطوير خدماتنا"),
         "high": MessageLookupByLibrary.simpleMessage("زياده"),
         "highest_bidder":
             MessageLookupByLibrary.simpleMessage("المزايد الاعلى"),
@@ -424,6 +444,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "located": MessageLookupByLibrary.simpleMessage("تبعد"),
         "location_and_facilities":
             MessageLookupByLibrary.simpleMessage("الموقع والمرافق العامة"),
+        "location_example": MessageLookupByLibrary.simpleMessage(
+            "5869 شارع ابي معالي النقاش حي العليا الرياض- المملكة العربية السعودية"),
         "login": MessageLookupByLibrary.simpleMessage("سجل الدخول"),
         "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "loyaltyPoints": MessageLookupByLibrary.simpleMessage("نقاط الولاء"),
@@ -489,6 +511,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "otp_sent_to":
             MessageLookupByLibrary.simpleMessage("تم إرسال رمز OTP إلى"),
         "ourServices": MessageLookupByLibrary.simpleMessage("خدماتنا"),
+        "overall_experience":
+            MessageLookupByLibrary.simpleMessage("التجربة العامة للتطبيق"),
         "packages": MessageLookupByLibrary.simpleMessage("الباقات"),
         "paints": MessageLookupByLibrary.simpleMessage("دهانات"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
@@ -553,6 +577,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "priceMenu": MessageLookupByLibrary.simpleMessage("قائمة الأسعار"),
         "price_after_inspection":
             MessageLookupByLibrary.simpleMessage("السعر الخدمة بعد المعاينة"),
+        "price_quality_ratio":
+            MessageLookupByLibrary.simpleMessage("السعر مقابل الجودة"),
         "price_vs_quality":
             MessageLookupByLibrary.simpleMessage("السعر مقابل الجودة"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
@@ -610,6 +636,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "satellite": MessageLookupByLibrary.simpleMessage("ستاليت"),
         "schedule_order": MessageLookupByLibrary.simpleMessage("جدولة الطلب"),
         "search": MessageLookupByLibrary.simpleMessage("بحث..."),
+        "search_location": MessageLookupByLibrary.simpleMessage("بحث"),
         "searching_technician":
             MessageLookupByLibrary.simpleMessage("جاري البحث عن فني"),
         "second_step": MessageLookupByLibrary.simpleMessage("خطوه 2"),
@@ -639,7 +666,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "service_details":
             MessageLookupByLibrary.simpleMessage("تفاصيل الخدمة"),
         "service_fee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
+        "service_is_done":
+            MessageLookupByLibrary.simpleMessage("تم الانتهاء من الخدمة"),
         "service_quality": MessageLookupByLibrary.simpleMessage("جودة الخدمة"),
+        "service_review": MessageLookupByLibrary.simpleMessage("تقييم الخدمة"),
         "services": MessageLookupByLibrary.simpleMessage("خدمات"),
         "services_need_inspection": MessageLookupByLibrary.simpleMessage(
             "خدمات تحتاج الى معاينة الفني"),
@@ -661,6 +691,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_date": MessageLookupByLibrary.simpleMessage("بدايه التاريخ"),
         "start_price": MessageLookupByLibrary.simpleMessage("سعر البدء"),
         "start_time": MessageLookupByLibrary.simpleMessage("بدايه الوقت"),
+        "stc_pay": MessageLookupByLibrary.simpleMessage("دفع stc"),
         "step2": MessageLookupByLibrary.simpleMessage("الخطوة 2"),
         "step3": MessageLookupByLibrary.simpleMessage("الخطوة 3"),
         "store": MessageLookupByLibrary.simpleMessage("متجر"),
@@ -726,6 +757,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "terms_of_use": MessageLookupByLibrary.simpleMessage("شروط الاستخدام"),
         "thankYouForYourTime":
             MessageLookupByLibrary.simpleMessage("شكرًا لك على وقتك"),
+        "thank_you_for_using_our_service":
+            MessageLookupByLibrary.simpleMessage("شكرا لاستخدام خدمتنا"),
+        "thank_you_for_your_time":
+            MessageLookupByLibrary.simpleMessage("شكرا لوقتكم"),
         "thanks_for_time": MessageLookupByLibrary.simpleMessage("شكرا لوقتكم"),
         "theOrderWasDeliveredByTheCaptain":
             MessageLookupByLibrary.simpleMessage(
@@ -749,6 +784,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalCost": MessageLookupByLibrary.simpleMessage("التكلفة الإجمالية"),
         "totalVat": MessageLookupByLibrary.simpleMessage("الإجمالي (ض.ق.م)"),
         "total_price": MessageLookupByLibrary.simpleMessage("المبلغ الكلي"),
+        "total_service_cost":
+            MessageLookupByLibrary.simpleMessage("اجمال تكلفة الخدمة"),
+        "total_service_cost_with_vat": MessageLookupByLibrary.simpleMessage(
+            "الإجمالي (شامل ضريبة القيمة المضافة)"),
         "total_vat": MessageLookupByLibrary.simpleMessage(
             "الإجمالي شامل ضريبة القيمة المضافة"),
         "trackOrder": MessageLookupByLibrary.simpleMessage("تتبع الطلب"),

@@ -4341,11 +4341,45 @@ class S {
     );
   }
 
+  /// `Your request has been confirmed and we are searching for the best technician in your area.`
+  String
+      get Your_request_has_been_confirmed_and_we_are_searching_for_the_best_technician_in_your_area {
+    return Intl.message(
+      'Your request has been confirmed and we are searching for the best technician in your area.',
+      name:
+          'Your_request_has_been_confirmed_and_we_are_searching_for_the_best_technician_in_your_area',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The final price for services will be confirmed after the visit and completion of the inspection.`
+  String
+      get The_final_price_for_services_will_be_confirmed_after_the_visit_and_completion_of_the_inspection {
+    return Intl.message(
+      'The final price for services will be confirmed after the visit and completion of the inspection.',
+      name:
+          'The_final_price_for_services_will_be_confirmed_after_the_visit_and_completion_of_the_inspection',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Operation Done Successfully`
   String get operation_done_successfully {
     return Intl.message(
       'Operation Done Successfully',
       name: 'operation_done_successfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The best technician in your area has been found.`
+  String get The_best_technician_in_your_area_has_been_found {
+    return Intl.message(
+      'The best technician in your area has been found.',
+      name: 'The_best_technician_in_your_area_has_been_found',
       desc: '',
       args: [],
     );
@@ -5226,6 +5260,186 @@ class S {
     return Intl.message(
       'Failed to select location',
       name: 'failed_to_select_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search_location {
+    return Intl.message(
+      'Search',
+      name: 'search_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `5869 Abi Maali Al-Naqqash Street, Al-Ulaya District, Riyadh, Kingdom of Saudi Arabia`
+  String get location_example {
+    return Intl.message(
+      '5869 Abi Maali Al-Naqqash Street, Al-Ulaya District, Riyadh, Kingdom of Saudi Arabia',
+      name: 'location_example',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Service is done`
+  String get service_is_done {
+    return Intl.message(
+      'Service is done',
+      name: 'service_is_done',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thank you for using our service`
+  String get thank_you_for_using_our_service {
+    return Intl.message(
+      'Thank you for using our service',
+      name: 'thank_you_for_using_our_service',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contribute to the development of our services`
+  String get contribute_to_the_development_of_our_services {
+    return Intl.message(
+      'Contribute to the development of our services',
+      name: 'contribute_to_the_development_of_our_services',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Agree`
+  String get agree {
+    return Intl.message(
+      'Agree',
+      name: 'agree',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel Order`
+  String get cancel_order {
+    return Intl.message(
+      'Cancel Order',
+      name: 'cancel_order',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Service Cost`
+  String get total_service_cost {
+    return Intl.message(
+      'Total Service Cost',
+      name: 'total_service_cost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `STC Pay`
+  String get stc_pay {
+    return Intl.message(
+      'STC Pay',
+      name: 'stc_pay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Service Cost (with VAT)`
+  String get total_service_cost_with_vat {
+    return Intl.message(
+      'Total Service Cost (with VAT)',
+      name: 'total_service_cost_with_vat',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Service Review`
+  String get service_review {
+    return Intl.message(
+      'Service Review',
+      name: 'service_review',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Help us develop our services`
+  String get help_us_develop_our_services {
+    return Intl.message(
+      'Help us develop our services',
+      name: 'help_us_develop_our_services',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Commitment to Deadlines`
+  String get commitment_to_deadlines {
+    return Intl.message(
+      'Commitment to Deadlines',
+      name: 'commitment_to_deadlines',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ease of Communication`
+  String get ease_of_communication {
+    return Intl.message(
+      'Ease of Communication',
+      name: 'ease_of_communication',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Price-Quality Ratio`
+  String get price_quality_ratio {
+    return Intl.message(
+      'Price-Quality Ratio',
+      name: 'price_quality_ratio',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Overall Experience`
+  String get overall_experience {
+    return Intl.message(
+      'Overall Experience',
+      name: 'overall_experience',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thank you for your time`
+  String get thank_you_for_your_time {
+    return Intl.message(
+      'Thank you for your time',
+      name: 'thank_you_for_your_time',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Come Back`
+  String get come_back {
+    return Intl.message(
+      'Come Back',
+      name: 'come_back',
       desc: '',
       args: [],
     );

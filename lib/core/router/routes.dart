@@ -19,4 +19,5 @@ class Routes {
   static const String sendGift = '/sendGiftView';
   static const String firstStepBooking = '/bookingView';
   static const String secondStepBooking = '/secondStepBookingView';
+  static const String thirdStepBooking = '/thirdStepBookingView';
 }

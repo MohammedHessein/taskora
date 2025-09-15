@@ -58,7 +58,9 @@ class SettingsView extends StatelessWidget {
                     ),
                     SettingsItem(
                       title: context.tr.packages,
-                      onTap: () {},
+                      onTap: () {
+                        context.pushNamed(Routes.packages);
+                      },
                     ),
                     SettingsItem(
                       title: context.tr.taskora_gifts,

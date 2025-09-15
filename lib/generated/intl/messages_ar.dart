@@ -198,7 +198,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "chargeYourBalance": MessageLookupByLibrary.simpleMessage("اشحن رصيدك"),
         "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
         "choose_package_discount": MessageLookupByLibrary.simpleMessage(
-            "اختر الباقة التي تناسبك واحصل على خصم يصل إلى 81%"),
+            "اختر الباقة التي تناسبك واحصل على خصم يصل إلى 18% على جميع الخدمات"),
         "choose_payment_method":
             MessageLookupByLibrary.simpleMessage("اختر طريقة الدفع"),
         "choose_service": MessageLookupByLibrary.simpleMessage("اختر الخدمة"),

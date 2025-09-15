@@ -208,7 +208,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("charge your balance"),
         "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
         "choose_package_discount": MessageLookupByLibrary.simpleMessage(
-            "Choose the package that suits you and get up to 81% discount"),
+            "Choose the package that suits you and get up to 18% discount on all services"),
         "choose_payment_method":
             MessageLookupByLibrary.simpleMessage("Choose Payment Method"),
         "choose_service":

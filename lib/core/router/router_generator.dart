@@ -15,6 +15,7 @@ import 'package:taskora/features/main/settings/presentation/views/about_app_view
 import 'package:taskora/features/main/settings/presentation/views/privacy_policy_view.dart';
 import 'package:taskora/features/main/settings/presentation/views/technical_support_view.dart';
 import 'package:taskora/features/nav_bar/nav_bar.dart';
+import 'package:taskora/features/packages/presentation/views/packages_view.dart';
 import 'package:taskora/features/services/presentation/views/services_page.dart';
 import 'package:taskora/main_view.dart';
 import 'package:universal_platform/universal_platform.dart';
@@ -55,6 +56,8 @@ class AppRouters {
         return _buildRoute(const SecondStepBookingView(), isIOS, settings);
       case Routes.thirdStepBooking:
         return _buildRoute(const ThirdStepBookingView(), isIOS, settings);
+      case Routes.packages:
+        return _buildRoute(const PackagesView(), isIOS, settings);
 
       default:
         return null;

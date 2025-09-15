@@ -4655,10 +4655,10 @@ class S {
     );
   }
 
-  /// `Choose the package that suits you and get up to 81% discount`
+  /// `Choose the package that suits you and get up to 18% discount on all services`
   String get choose_package_discount {
     return Intl.message(
-      'Choose the package that suits you and get up to 81% discount',
+      'Choose the package that suits you and get up to 18% discount on all services',
       name: 'choose_package_discount',
       desc: '',
       args: [],

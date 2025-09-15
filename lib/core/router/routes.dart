@@ -20,4 +20,5 @@ class Routes {
   static const String firstStepBooking = '/bookingView';
   static const String secondStepBooking = '/secondStepBookingView';
   static const String thirdStepBooking = '/thirdStepBookingView';
+  static const String packages = '/packagesView';
 }

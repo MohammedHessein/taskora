@@ -21,5 +21,7 @@ class Routes {
   static const String secondStepBooking = '/secondStepBookingView';
   static const String thirdStepBooking = '/thirdStepBookingView';
   static const String packages = '/packagesView';
-  static const String addListingPage = '/addListingPageView';
+  static const String addListing = '/addListingPageView';
+  static const String addAdDetails = '/adDetailsView';
+  static const String addAuctionDetails = '/auctionDetailsView';
 }

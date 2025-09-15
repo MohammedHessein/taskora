@@ -7,18 +7,18 @@ import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 import 'package:taskora/features/ads/presentation/widgets/add_advertisement_form.dart';
-import 'package:taskora/features/auctions/presentation/widgets/add_auction_form.dart';
+import 'package:taskora/features/auctions/presentation/widgets/add_auctions_form.dart';
 import 'package:taskora/features/listings/presentation/widgets/add_listing_header.dart';
 import 'package:taskora/features/listings/presentation/widgets/listing_type_button.dart';
 
-class AddListingPage extends StatefulWidget {
-  const AddListingPage({super.key});
+class AddListingView extends StatefulWidget {
+  const AddListingView({super.key});
 
   @override
-  State<AddListingPage> createState() => _AddListingPageState();
+  State<AddListingView> createState() => _AddListingViewState();
 }
 
-class _AddListingPageState extends State<AddListingPage> {
+class _AddListingViewState extends State<AddListingView> {
   late ListingType listingType;
 
   @override
@@ -72,7 +72,7 @@ class _AddListingPageState extends State<AddListingPage> {
                     if (listingType == ListingType.advertisement)
                       const AddAdvertisementForm()
                     else
-                      const AddAuctionForm(),
+                      const AddAuctionsForm(),
                   ],
                 ),
               ),

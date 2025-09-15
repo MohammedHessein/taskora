@@ -87,7 +87,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "ad_address": MessageLookupByLibrary.simpleMessage("Ad Address"),
         "ad_description":
             MessageLookupByLibrary.simpleMessage("Ad Description"),
+        "ad_details": MessageLookupByLibrary.simpleMessage("Ad Details"),
+        "ad_image_conditions": MessageLookupByLibrary.simpleMessage(
+            "Images must be in JPG or PNG format, with a resolution of at least 600 x 600 pixels, no larger than 5MB, no watermarks or logos, and a maximum of 10 images allowed."),
         "ad_images": MessageLookupByLibrary.simpleMessage("Ad Images"),
+        "ad_more_attention": MessageLookupByLibrary.simpleMessage(
+            "They demanded a distinctive advertisement compared to a simple advertisement."),
         "ad_number": MessageLookupByLibrary.simpleMessage("Ad Number"),
         "ad_purpose": MessageLookupByLibrary.simpleMessage("Ad Purpose"),
         "ad_title": MessageLookupByLibrary.simpleMessage("Ad Title"),
@@ -383,6 +388,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("400 r.s"),
         "featured_ad_title":
             MessageLookupByLibrary.simpleMessage("Laundry 1500W"),
+        "featured_ads_remaining":
+            MessageLookupByLibrary.simpleMessage("Featured ads remaining:1"),
         "feedback": MessageLookupByLibrary.simpleMessage("Feedback"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "finalizePayment":

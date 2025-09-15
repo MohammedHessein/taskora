@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:taskora/core/router/routes.dart';
+import 'package:taskora/features/ads/presentation/views/add_ad_details_view.dart';
+import 'package:taskora/features/auctions/presentation/views/add_auctions_details_view.dart';
 import 'package:taskora/features/auth/login/presentation/pages/login_view.dart';
 import 'package:taskora/features/auth/register/presentation/pages/register_view.dart';
 import 'package:taskora/features/auth/verify_account/presentation/pages/verify_account_view.dart';
@@ -11,7 +13,7 @@ import 'package:taskora/features/cart/presentation/views/cart_view.dart';
 import 'package:taskora/features/details/presentation/views/details_view.dart';
 import 'package:taskora/features/gifts/presentation/views/gifts_view.dart';
 import 'package:taskora/features/gifts/presentation/views/send_gift_view.dart';
-import 'package:taskora/features/listings/presentation/views/add_listing_page.dart';
+import 'package:taskora/features/listings/presentation/views/add_listing_view.dart';
 import 'package:taskora/features/main/settings/presentation/views/about_app_view.dart';
 import 'package:taskora/features/main/settings/presentation/views/privacy_policy_view.dart';
 import 'package:taskora/features/main/settings/presentation/views/technical_support_view.dart';
@@ -59,8 +61,12 @@ class AppRouters {
         return _buildRoute(const ThirdStepBookingView(), isIOS, settings);
       case Routes.packages:
         return _buildRoute(const PackagesView(), isIOS, settings);
-      case Routes.addListingPage:
-        return _buildRoute(const AddListingPage(), isIOS, settings);
+      case Routes.addListing:
+        return _buildRoute(const AddListingView(), isIOS, settings);
+      case Routes.addAdDetails:
+        return _buildRoute(const AdDetailsView(), isIOS, settings);
+      case Routes.addAuctionDetails:
+        return _buildRoute(const AddAuctionsDetailsView(), isIOS, settings);
 
       default:
         return null;

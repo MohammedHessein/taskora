@@ -28,14 +28,14 @@ List<SettingOption> getSettingsOptions(BuildContext context) => [
   SettingOption(
     title: context.tr.add_ad,
     onTap: () => context.pushNamed(
-      Routes.addListingPage,
+      Routes.addListing,
       arguments: ListingType.advertisement,
     ),
   ),
   SettingOption(
     title: context.tr.add_auction,
     onTap: () => context.pushNamed(
-      Routes.addListingPage,
+      Routes.addListing,
       arguments: ListingType.auction,
     ),
   ),

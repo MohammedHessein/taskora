@@ -8,9 +8,11 @@ class CheckBoxItem extends StatefulWidget {
     required this.title,
     this.onChanged,
     super.key,
+    this.style,
   });
 
   final String title;
+  final TextStyle? style;
   final ValueChanged<bool>? onChanged;
 
   @override
@@ -30,10 +32,12 @@ class _CheckBoxItemState extends State<CheckBoxItem> {
             widget.title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: CustomTextStyle.kTextStyleF12.copyWith(
-              fontWeight: FontWeight.w400,
-              color: AppColors.secondaryBlack.shade300,
-            ),
+            style:
+                widget.style ??
+                CustomTextStyle.kTextStyleF12.copyWith(
+                  fontWeight: FontWeight.w400,
+                  color: AppColors.secondaryBlack.shade300,
+                ),
           ),
         ),
         const Spacer(),

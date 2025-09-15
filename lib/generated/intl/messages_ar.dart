@@ -86,7 +86,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("المزادات النشطة"),
         "ad_address": MessageLookupByLibrary.simpleMessage("عنوان الاعلان"),
         "ad_description": MessageLookupByLibrary.simpleMessage("وصف الاعلان"),
+        "ad_details": MessageLookupByLibrary.simpleMessage("تفاصيل الاعلان"),
+        "ad_image_conditions": MessageLookupByLibrary.simpleMessage(
+            "يجب أن تكون الصور بصيغة JPG أو PNG، بدقة لا تقل عن 600×600 بكسل، وحجم لا يزيد عن 5MB، مع عدم وجود علامات مائية أو شعارات، وعدد الصور المسموح به حتى 10 صور فقط."),
         "ad_images": MessageLookupByLibrary.simpleMessage("صور الاعلان"),
+        "ad_more_attention": MessageLookupByLibrary.simpleMessage(
+            "يحظى الإعلان المميز بمزيد من الاهتمام مقارنة بالإعلان البسيط"),
         "ad_number": MessageLookupByLibrary.simpleMessage("رقم الاعلان"),
         "ad_purpose": MessageLookupByLibrary.simpleMessage("غرض الاعلان"),
         "ad_title": MessageLookupByLibrary.simpleMessage("عنوان الاعلان"),
@@ -369,6 +374,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("400 ر.س"),
         "featured_ad_title":
             MessageLookupByLibrary.simpleMessage("غسالة 1500W"),
+        "featured_ads_remaining": MessageLookupByLibrary.simpleMessage(
+            "الإعلانات المميزة المتبقية:1"),
         "feedback": MessageLookupByLibrary.simpleMessage("تعليق"),
         "female": MessageLookupByLibrary.simpleMessage("انثى"),
         "finalizePayment": MessageLookupByLibrary.simpleMessage("إتمام الدفع"),

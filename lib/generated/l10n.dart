@@ -4695,6 +4695,16 @@ class S {
     );
   }
 
+  /// `Ad Details`
+  String get ad_details {
+    return Intl.message(
+      'Ad Details',
+      name: 'ad_details',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Ad Number`
   String get ad_number {
     return Intl.message(
@@ -4795,11 +4805,41 @@ class S {
     );
   }
 
+  /// `Featured ads remaining:1`
+  String get featured_ads_remaining {
+    return Intl.message(
+      'Featured ads remaining:1',
+      name: 'featured_ads_remaining',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `They demanded a distinctive advertisement compared to a simple advertisement.`
+  String get ad_more_attention {
+    return Intl.message(
+      'They demanded a distinctive advertisement compared to a simple advertisement.',
+      name: 'ad_more_attention',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Ad Images`
   String get ad_images {
     return Intl.message(
       'Ad Images',
       name: 'ad_images',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Images must be in JPG or PNG format, with a resolution of at least 600 x 600 pixels, no larger than 5MB, no watermarks or logos, and a maximum of 10 images allowed.`
+  String get ad_image_conditions {
+    return Intl.message(
+      'Images must be in JPG or PNG format, with a resolution of at least 600 x 600 pixels, no larger than 5MB, no watermarks or logos, and a maximum of 10 images allowed.',
+      name: 'ad_image_conditions',
       desc: '',
       args: [],
     );

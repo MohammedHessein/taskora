@@ -69,3 +69,23 @@ String translateServiceKey(BuildContext context, String key) {
       return key;
   }
 }
+
+String translateAdDetailsCategoryKey(BuildContext context, String key) {
+  final s = S.of(context);
+  switch (key) {
+    case "purpose_sale":
+      return s.purpose_sale;
+    case "purpose_rent":
+      return s.purpose_rent;
+    case "purpose_lost_found":
+      return s.purpose_lost_found;
+    case "purpose_charity":
+      return s.purpose_charity;
+    case "purpose_exchange":
+      return s.purpose_exchange;
+    case "purpose_buy":
+      return s.purpose_buy;
+    default:
+      return key;
+  }
+}

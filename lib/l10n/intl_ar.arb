@@ -601,5 +601,15 @@
   "price_quality_ratio": "السعر مقابل الجودة",
   "overall_experience": "التجربة العامة للتطبيق",
   "thank_you_for_your_time": "شكرا لوقتكم",
-  "come_back": "عودة"
+  "come_back": "عودة",
+  "auction": "مزاد",
+  "advertisement": "اعلان",
+  "add_auction": "اضافة مزاد",
+  "choose_ad_category": "اختر فئة الاعلان",
+  "ad_address": "عنوان الاعلان",
+  "status": "الحالة",
+  "status_new":  "جديد",
+  "choose_category": "اختر الفئة",
+  "product_address": "عنوان المنتج",
+  "product_description": "وصف المنتج"
 }

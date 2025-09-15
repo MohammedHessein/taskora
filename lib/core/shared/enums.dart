@@ -81,3 +81,7 @@ enum RequestStatus {
 }
 
 enum DetailsType { service, product, cartItem }
+
+enum ListingType { advertisement, auction }
+
+enum ListingStatus { new_, used }

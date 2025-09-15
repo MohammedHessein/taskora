@@ -84,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "active": MessageLookupByLibrary.simpleMessage("نشط"),
         "active_auctions":
             MessageLookupByLibrary.simpleMessage("المزادات النشطة"),
+        "ad_address": MessageLookupByLibrary.simpleMessage("عنوان الاعلان"),
         "ad_description": MessageLookupByLibrary.simpleMessage("وصف الاعلان"),
         "ad_images": MessageLookupByLibrary.simpleMessage("صور الاعلان"),
         "ad_number": MessageLookupByLibrary.simpleMessage("رقم الاعلان"),
@@ -94,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "إضافة شنطة ريكلين الذكية إلى طلبي"),
         "addToCart": MessageLookupByLibrary.simpleMessage("أضف إلى السلة"),
         "add_ad": MessageLookupByLibrary.simpleMessage("اضافة اعلان"),
+        "add_auction": MessageLookupByLibrary.simpleMessage("اضافة مزاد"),
         "add_coupon_code":
             MessageLookupByLibrary.simpleMessage("اضف رمز القسيمه"),
         "additionalDetergents":
@@ -102,6 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ملاحظات إضافية"),
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "advantages": MessageLookupByLibrary.simpleMessage("المميزات"),
+        "advertisement": MessageLookupByLibrary.simpleMessage("اعلان"),
         "advertisements": MessageLookupByLibrary.simpleMessage("اعلانات"),
         "agree": MessageLookupByLibrary.simpleMessage("موافق"),
         "agreeToTermsAndPolicies": MessageLookupByLibrary.simpleMessage(
@@ -127,6 +130,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYouSureYouWantToKeepOrdering": MessageLookupByLibrary.simpleMessage(
             "هل أنت متأكد أنك تريد الاستمرار في الطلب؟"),
         "aromaticScent": MessageLookupByLibrary.simpleMessage("رائحة عطرية"),
+        "auction": MessageLookupByLibrary.simpleMessage("مزاد"),
         "auction_details":
             MessageLookupByLibrary.simpleMessage("تفاصيل المزاد"),
         "auction_duration": MessageLookupByLibrary.simpleMessage("مدة المزاد"),
@@ -197,6 +201,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "change_language": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "chargeYourBalance": MessageLookupByLibrary.simpleMessage("اشحن رصيدك"),
         "checkout": MessageLookupByLibrary.simpleMessage("الدفع"),
+        "choose_ad_category":
+            MessageLookupByLibrary.simpleMessage("اختر فئة الاعلان"),
+        "choose_category": MessageLookupByLibrary.simpleMessage("اختر الفئة"),
         "choose_package_discount": MessageLookupByLibrary.simpleMessage(
             "اختر الباقة التي تناسبك واحصل على خصم يصل إلى 18% على جميع الخدمات"),
         "choose_payment_method":
@@ -587,6 +594,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy_policy_description": MessageLookupByLibrary.simpleMessage(
             "في \"تاسكورا بروفايدر\"، نحترم خصوصيتك ونسعى لحماية جميع بياناتك الشخصية. يتم جمع البيانات الضرورية فقط لتقديم وتحسين تجربة الاستخدام، مثل الاسم، رقم الهاتف، والموقع. لا تتم مشاركة معلوماتك مع أي طرف ثالث خارج نطاق تقديم الخدمة، ويتم تخزينها باستخدام أنظمة أمان متقدمة. باستخدامك للتطبيق، فإنك توافق على سياسة الخصوصية هذه، ونلتزم بإشعارك بأي تغييرات مستقبلية على السياسات."),
         "productDetails": m8,
+        "product_address": MessageLookupByLibrary.simpleMessage("عنوان المنتج"),
+        "product_description":
+            MessageLookupByLibrary.simpleMessage("وصف المنتج"),
         "product_rating": MessageLookupByLibrary.simpleMessage("تقييم المنتج"),
         "product_specifications":
             MessageLookupByLibrary.simpleMessage("مواصفات المنتج"),
@@ -691,6 +701,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_date": MessageLookupByLibrary.simpleMessage("بدايه التاريخ"),
         "start_price": MessageLookupByLibrary.simpleMessage("سعر البدء"),
         "start_time": MessageLookupByLibrary.simpleMessage("بدايه الوقت"),
+        "status": MessageLookupByLibrary.simpleMessage("الحالة"),
+        "status_new": MessageLookupByLibrary.simpleMessage("جديد"),
         "stc_pay": MessageLookupByLibrary.simpleMessage("دفع stc"),
         "step2": MessageLookupByLibrary.simpleMessage("الخطوة 2"),
         "step3": MessageLookupByLibrary.simpleMessage("الخطوة 3"),

@@ -84,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "active": MessageLookupByLibrary.simpleMessage("Active"),
         "active_auctions":
             MessageLookupByLibrary.simpleMessage("Active Auctions"),
+        "ad_address": MessageLookupByLibrary.simpleMessage("Ad Address"),
         "ad_description":
             MessageLookupByLibrary.simpleMessage("Ad Description"),
         "ad_images": MessageLookupByLibrary.simpleMessage("Ad Images"),
@@ -95,6 +96,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Add Reclean Smart Bag to my order"),
         "addToCart": MessageLookupByLibrary.simpleMessage("Add to cart"),
         "add_ad": MessageLookupByLibrary.simpleMessage("Add Advertisement"),
+        "add_auction": MessageLookupByLibrary.simpleMessage("Add Auction"),
         "add_coupon_code":
             MessageLookupByLibrary.simpleMessage("Add Coupon Code"),
         "additionalDetergents":
@@ -103,6 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Additional notes"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "advantages": MessageLookupByLibrary.simpleMessage("Advantages"),
+        "advertisement": MessageLookupByLibrary.simpleMessage("Advertisement"),
         "advertisements":
             MessageLookupByLibrary.simpleMessage("Advertisements"),
         "agree": MessageLookupByLibrary.simpleMessage("Agree"),
@@ -132,6 +135,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYouSureYouWantToKeepOrdering": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to keep ordering?"),
         "aromaticScent": MessageLookupByLibrary.simpleMessage("Aromatic scent"),
+        "auction": MessageLookupByLibrary.simpleMessage("Auction"),
         "auction_details":
             MessageLookupByLibrary.simpleMessage("Auction Details"),
         "auction_duration":
@@ -207,6 +211,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "chargeYourBalance":
             MessageLookupByLibrary.simpleMessage("charge your balance"),
         "checkout": MessageLookupByLibrary.simpleMessage("Checkout"),
+        "choose_ad_category":
+            MessageLookupByLibrary.simpleMessage("Select Ad Category"),
+        "choose_category":
+            MessageLookupByLibrary.simpleMessage("Choose Category"),
         "choose_package_discount": MessageLookupByLibrary.simpleMessage(
             "Choose the package that suits you and get up to 18% discount on all services"),
         "choose_payment_method":
@@ -606,6 +614,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy_policy_description": MessageLookupByLibrary.simpleMessage(
             "At Taskura Provider, we respect your privacy and are committed to protecting your personal data. We only collect the information necessary to provide and improve our service, such as your name, phone number, and location. Your information will not be shared with any third parties outside of the service provision context, and it is stored using advanced security systems. By using the application, you agree to this privacy policy, and we will notify you of any future changes to this policy."),
         "productDetails": m8,
+        "product_address":
+            MessageLookupByLibrary.simpleMessage("Product Address"),
+        "product_description":
+            MessageLookupByLibrary.simpleMessage("Product Description"),
         "product_rating":
             MessageLookupByLibrary.simpleMessage("Product Rating"),
         "product_specifications":
@@ -721,6 +733,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_date": MessageLookupByLibrary.simpleMessage("Start Date"),
         "start_price": MessageLookupByLibrary.simpleMessage("Start Price"),
         "start_time": MessageLookupByLibrary.simpleMessage("Start Time"),
+        "status": MessageLookupByLibrary.simpleMessage("Status"),
+        "status_new": MessageLookupByLibrary.simpleMessage("New"),
         "stc_pay": MessageLookupByLibrary.simpleMessage("STC Pay"),
         "step2": MessageLookupByLibrary.simpleMessage("Step 2"),
         "step3": MessageLookupByLibrary.simpleMessage("Step 3"),

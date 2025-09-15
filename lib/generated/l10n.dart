@@ -5444,6 +5444,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Add Auction`
+  String get add_auction {
+    return Intl.message(
+      'Add Auction',
+      name: 'add_auction',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction`
+  String get auction {
+    return Intl.message(
+      'Auction',
+      name: 'auction',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Advertisement`
+  String get advertisement {
+    return Intl.message(
+      'Advertisement',
+      name: 'advertisement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select Ad Category`
+  String get choose_ad_category {
+    return Intl.message(
+      'Select Ad Category',
+      name: 'choose_ad_category',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ad Address`
+  String get ad_address {
+    return Intl.message(
+      'Ad Address',
+      name: 'ad_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Status`
+  String get status {
+    return Intl.message(
+      'Status',
+      name: 'status',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New`
+  String get status_new {
+    return Intl.message(
+      'New',
+      name: 'status_new',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose Category`
+  String get choose_category {
+    return Intl.message(
+      'Choose Category',
+      name: 'choose_category',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product Address`
+  String get product_address {
+    return Intl.message(
+      'Product Address',
+      name: 'product_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product Description`
+  String get product_description {
+    return Intl.message(
+      'Product Description',
+      name: 'product_description',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

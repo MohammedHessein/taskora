@@ -601,5 +601,15 @@
   "price_quality_ratio": "Price-Quality Ratio",
   "overall_experience": "Overall Experience",
   "thank_you_for_your_time": "Thank you for your time",
-  "come_back": "Come Back"
+  "come_back": "Come Back",
+  "add_auction": "Add Auction",
+  "auction": "Auction",
+  "advertisement": "Advertisement",
+  "choose_ad_category": "Select Ad Category",
+  "ad_address": "Ad Address",
+  "status": "Status",
+  "status_new": "New",
+  "choose_category": "Choose Category",
+  "product_address": "Product Address",
+  "product_description": "Product Description"
 }

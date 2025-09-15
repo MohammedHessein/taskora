@@ -7,3 +7,10 @@ class DetailsArgs {
 
   final CartModel cartItem;
 }
+
+class AuthArgs {
+  AuthArgs({this.email, this.phone});
+
+  final String? email;
+  final String? phone;
+}

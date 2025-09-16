@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
-import 'package:taskora/core/extensions/date_extensions.dart';
+import 'package:taskora/core/helpers/app_helper.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/features/booking/presentation/widgets/schedule_input_field.dart';
 import 'package:taskora/generated/assets.dart';
@@ -25,43 +25,6 @@ class _RequestScheduleSectionState extends State<RequestScheduleSection> {
     _dateController.dispose();
     _timeController.dispose();
     super.dispose();
-  }
-
-  Future<void> _pickDate() async {
-    final now = DateTime.now();
-    final picked = await showDatePicker(
-      context: context,
-      initialDate: selectedDate ?? now,
-      firstDate: now,
-      lastDate: DateTime(now.year + 2),
-    );
-    if (picked != null) {
-      setState(() {
-        selectedDate = picked;
-        _dateController.text = picked.stringFormat(DateFormatType.shortDate);
-      });
-    }
-  }
-
-  Future<void> _pickTime() async {
-    final picked = await showTimePicker(
-      context: context,
-      initialTime: selectedTime ?? TimeOfDay.now(),
-      builder: (context, child) {
-        return MediaQuery(
-          data: MediaQuery.of(context).copyWith(
-            alwaysUse24HourFormat: false,
-          ),
-          child: child!,
-        );
-      },
-    );
-    if (picked != null) {
-      setState(() {
-        selectedTime = picked;
-        _timeController.text = formatTimeOfDay(picked);
-      });
-    }
   }
 
   @override
@@ -87,7 +50,14 @@ class _RequestScheduleSectionState extends State<RequestScheduleSection> {
             ),
           ),
           label: context.tr.start_date,
-          onTap: _pickDate,
+          onTap: () {
+            pickDate(
+              context: context,
+              dateController: _dateController,
+              selectedDate: selectedDate ?? DateTime.now(),
+            );
+            setState(() {});
+          },
         ),
         SizedBox(height: 20.h),
         ScheduleInputField(
@@ -101,7 +71,14 @@ class _RequestScheduleSectionState extends State<RequestScheduleSection> {
             ),
           ),
           label: context.tr.start_time,
-          onTap: _pickTime,
+          onTap: () {
+            pickTime(
+              context: context,
+              timeController: _timeController,
+              selectedTime: selectedTime ?? TimeOfDay.now(),
+            );
+            setState(() {});
+          },
         ),
       ],
     );

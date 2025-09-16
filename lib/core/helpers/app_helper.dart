@@ -2,6 +2,7 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:taskora/core/extensions/date_extensions.dart';
 
 bool isEnglish() {
   if (Intl.getCurrentLocale() == 'en') {
@@ -153,4 +154,48 @@ String getOrderStatusText(BuildContext context, String status) {
     default:
       return isEnglish() ? 'Unknown' : 'غير معروف';
   }
+}
+
+Future<DateTime?> pickDate({
+  required DateTime selectedDate,
+  required BuildContext context,
+  required TextEditingController dateController,
+}) async {
+  final now = DateTime.now();
+  final picked = await showDatePicker(
+    context: context,
+    initialDate: selectedDate,
+    firstDate: now,
+    lastDate: DateTime(now.year + 2),
+  );
+  if (picked != null) {
+    dateController.text = picked.stringFormat(DateFormatType.shortDate);
+    return picked;
+  }
+  return null;
+}
+
+Future<TimeOfDay?> pickTime({
+  required TimeOfDay selectedTime,
+  required BuildContext context,
+  required TextEditingController timeController,
+}) async {
+  final picked = await showTimePicker(
+    context: context,
+    initialTime: selectedTime,
+    builder: (context, child) {
+      return MediaQuery(
+        data: MediaQuery.of(context).copyWith(
+          alwaysUse24HourFormat: false,
+        ),
+        child: child!,
+      );
+    },
+  );
+  if (picked != null) {
+    selectedTime = picked;
+    timeController.text = formatTimeOfDay(picked);
+    return picked;
+  }
+  return null;
 }

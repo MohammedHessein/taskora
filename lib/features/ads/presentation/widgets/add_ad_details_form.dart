@@ -10,7 +10,7 @@ import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 import 'package:taskora/core/utils/dimensions.dart';
-import 'package:taskora/features/ads/presentation/widgets/add_ad_images_section.dart';
+import 'package:taskora/features/listings/presentation/widgets/add_listing_type_images_section.dart';
 import 'package:taskora/generated/assets.dart';
 
 class AdDetailsForm extends StatelessWidget {
@@ -69,7 +69,7 @@ class AdDetailsForm extends StatelessWidget {
             hGap25,
             CheckBoxItem(title: context.tr.ad_images),
             hGap15,
-            const AdImagesSection(),
+            const AddListingTypeImagesSection(),
             hGap15,
             CheckBoxItem(
               title:

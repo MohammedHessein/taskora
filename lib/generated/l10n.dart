@@ -4885,6 +4885,46 @@ class S {
     );
   }
 
+  /// `Current Price`
+  String get current_price {
+    return Intl.message(
+      'Current Price',
+      name: 'current_price',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Speaks Automatically`
+  String get speaks_automatically {
+    return Intl.message(
+      'Speaks Automatically',
+      name: 'speaks_automatically',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enable Location`
+  String get enable_location {
+    return Intl.message(
+      'Enable Location',
+      name: 'enable_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Explanation: The advertiser has the option to specify the required limit. If the buyer wishes, he will press the “Buy Now” button in the auction without waiting for the end of the countdown and the deposit will be deducted from him directly.`
+  String get announced_limit_hint {
+    return Intl.message(
+      'Explanation: The advertiser has the option to specify the required limit. If the buyer wishes, he will press the “Buy Now” button in the auction without waiting for the end of the countdown and the deposit will be deducted from him directly.',
+      name: 'announced_limit_hint',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Buy Now`
   String get buy_now {
     return Intl.message(
@@ -4950,6 +4990,26 @@ class S {
     return Intl.message(
       'Auction Winner',
       name: 'auction_winner',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auction Images`
+  String get auction_images {
+    return Intl.message(
+      'Auction Images',
+      name: 'auction_images',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Video`
+  String get add_video {
+    return Intl.message(
+      'Add Video',
+      name: 'add_video',
       desc: '',
       args: [],
     );

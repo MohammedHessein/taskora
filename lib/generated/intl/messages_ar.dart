@@ -103,6 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "add_auction": MessageLookupByLibrary.simpleMessage("اضافة مزاد"),
         "add_coupon_code":
             MessageLookupByLibrary.simpleMessage("اضف رمز القسيمه"),
+        "add_video": MessageLookupByLibrary.simpleMessage("اضافة فيديو"),
         "additionalDetergents":
             MessageLookupByLibrary.simpleMessage("منظفات إضافية"),
         "additionalNotes":
@@ -125,6 +126,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "amount_reserved":
             MessageLookupByLibrary.simpleMessage("حجز المبلغ عبر Xescrow"),
         "announced_limit": MessageLookupByLibrary.simpleMessage("الحد المعلن"),
+        "announced_limit_hint": MessageLookupByLibrary.simpleMessage(
+            "توضيح: يخير المعلن في توضيح حد المطلوب وفي حالة الرغبه المشتري، سيقوم بضغط زر \"اشتر الأن\" بالمزاد دون انتظار نهاية العد التنازلي وخصم العربون منه مباشرة"),
         "app_experience":
             MessageLookupByLibrary.simpleMessage("التجربة العامة للتطبيق"),
         "app_name": MessageLookupByLibrary.simpleMessage("تاسكورا - رغوة"),
@@ -143,6 +146,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تاريخ انتهاء المزاد"),
         "auction_end_time":
             MessageLookupByLibrary.simpleMessage("وقت انتهاء المزاد"),
+        "auction_images": MessageLookupByLibrary.simpleMessage("صور المزاد"),
         "auction_number": MessageLookupByLibrary.simpleMessage("رقم المزاد"),
         "auction_purpose": MessageLookupByLibrary.simpleMessage("غرض المزاد"),
         "auction_start_date":
@@ -247,6 +251,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
         "currentOrders":
             MessageLookupByLibrary.simpleMessage("الطلبات الحالية"),
+        "current_price": MessageLookupByLibrary.simpleMessage("السعر الحالى"),
         "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("تاريخ التسليم"),
@@ -272,6 +277,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("اجهزة كهربائية"),
         "electricity": MessageLookupByLibrary.simpleMessage("كهرباء"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "enable_location": MessageLookupByLibrary.simpleMessage("تفعيل الموقع"),
         "end_date": MessageLookupByLibrary.simpleMessage("نهايه التاريخ"),
         "end_time": MessageLookupByLibrary.simpleMessage("نهايه الوقت"),
         "ended": MessageLookupByLibrary.simpleMessage("منتهي"),
@@ -703,6 +709,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "sixPMToEightPM":
             MessageLookupByLibrary.simpleMessage("6 مساء - 8 مساء"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "speaks_automatically":
+            MessageLookupByLibrary.simpleMessage("يتحدث تلقائيًا"),
         "squared": MessageLookupByLibrary.simpleMessage("مربع"),
         "starchLevel": MessageLookupByLibrary.simpleMessage("مستوى النشا"),
         "start_date": MessageLookupByLibrary.simpleMessage("بدايه التاريخ"),

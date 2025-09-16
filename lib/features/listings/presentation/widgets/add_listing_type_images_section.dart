@@ -5,8 +5,8 @@ import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 
-class AdImagesSection extends StatelessWidget {
-  const AdImagesSection({
+class AddListingTypeImagesSection extends StatelessWidget {
+  const AddListingTypeImagesSection({
     super.key,
   });
 

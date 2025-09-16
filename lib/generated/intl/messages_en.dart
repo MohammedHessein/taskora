@@ -104,6 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "add_auction": MessageLookupByLibrary.simpleMessage("Add Auction"),
         "add_coupon_code":
             MessageLookupByLibrary.simpleMessage("Add Coupon Code"),
+        "add_video": MessageLookupByLibrary.simpleMessage("Add Video"),
         "additionalDetergents":
             MessageLookupByLibrary.simpleMessage("Additional detergents"),
         "additionalNotes":
@@ -129,6 +130,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Amount reserved via Xescrow"),
         "announced_limit":
             MessageLookupByLibrary.simpleMessage("Announced Limit"),
+        "announced_limit_hint": MessageLookupByLibrary.simpleMessage(
+            "Explanation: The advertiser has the option to specify the required limit. If the buyer wishes, he will press the “Buy Now” button in the auction without waiting for the end of the countdown and the deposit will be deducted from him directly."),
         "app_experience":
             MessageLookupByLibrary.simpleMessage("Overall App Experience"),
         "app_name": MessageLookupByLibrary.simpleMessage("Taskora - Ragwa"),
@@ -149,6 +152,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Auction End Date"),
         "auction_end_time":
             MessageLookupByLibrary.simpleMessage("Auction End Time"),
+        "auction_images":
+            MessageLookupByLibrary.simpleMessage("Auction Images"),
         "auction_number":
             MessageLookupByLibrary.simpleMessage("Auction Number"),
         "auction_purpose":
@@ -259,6 +264,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create new account"),
         "currentOrders": MessageLookupByLibrary.simpleMessage("Current orders"),
+        "current_price": MessageLookupByLibrary.simpleMessage("Current Price"),
         "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("Delivery date"),
@@ -285,6 +291,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Electrical devices"),
         "electricity": MessageLookupByLibrary.simpleMessage("Electricity"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "enable_location":
+            MessageLookupByLibrary.simpleMessage("Enable Location"),
         "end_date": MessageLookupByLibrary.simpleMessage("End Date"),
         "end_time": MessageLookupByLibrary.simpleMessage("End Time"),
         "ended": MessageLookupByLibrary.simpleMessage("Ended"),
@@ -735,6 +743,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "sixPMToEightPM":
             MessageLookupByLibrary.simpleMessage("06:00 PM - 08:00 PM"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "speaks_automatically":
+            MessageLookupByLibrary.simpleMessage("Speaks Automatically"),
         "squared": MessageLookupByLibrary.simpleMessage("Squared"),
         "starchLevel": MessageLookupByLibrary.simpleMessage("Starch level"),
         "start_date": MessageLookupByLibrary.simpleMessage("Start Date"),

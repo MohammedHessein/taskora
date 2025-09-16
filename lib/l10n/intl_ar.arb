@@ -528,6 +528,7 @@
   "faq": "الاسئلة الشائعة",
   "how_to_benefit_from_offers": "كيف يمكن ان استفيد من العروض",
   "ad_details": "تفاصيل الاعلان",
+  "for_service_product": "(لمنتج الخدمه)",
   "ad_number": "رقم الاعلان",
   "ad_purpose": "غرض الاعلان",
   "purpose_charity": "هبة خيرية",
@@ -621,5 +622,15 @@
   "status_new":  "جديد",
   "choose_category": "اختر الفئة",
   "product_address": "عنوان المنتج",
-  "product_description": "وصف المنتج"
+  "product_description": "وصف المنتج",
+  "contact_the_advertiser": "مراسلة المعلن",
+  "here_are_placed_the_advantages_of_the_pre_selected_product_towards_the_customer": "يوضع هنا مزايا المنتج المحدد مسبقا من تجاة العميل",
+  "about_the_product": "عن المنتج",
+  "product_details": "تفاصيل المنتج",
+  "location_and_public_facilities": "الموقع والمرافق العامة",
+  "it_is_2_5_km2_away_from_your_location": "تبعد عن موقعك 2.5 كم",
+  "location_ex":" حي اليرموك الرياض، المملكة العربية السعودية",
+  "show_all": "عرض الكل",
+  "review": "تقييم",
+  "merchant_rating": "تقييم التاجر"
 }

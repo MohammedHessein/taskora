@@ -13,14 +13,14 @@ import 'package:taskora/features/listings/presentation/widgets/listing_type_numb
 import 'package:taskora/features/listings/presentation/widgets/listing_type_purpose.dart';
 import 'package:taskora/features/listings/presentation/widgets/second_add_step_header.dart';
 
-class AdDetailsView extends StatefulWidget {
-  const AdDetailsView({super.key});
+class AddAdDetailsView extends StatefulWidget {
+  const AddAdDetailsView({super.key});
 
   @override
-  State<AdDetailsView> createState() => _AdDetailsViewState();
+  State<AddAdDetailsView> createState() => _AddAdDetailsViewState();
 }
 
-class _AdDetailsViewState extends State<AdDetailsView>
+class _AddAdDetailsViewState extends State<AddAdDetailsView>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   final List<String> tabs = [

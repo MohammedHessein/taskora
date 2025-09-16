@@ -78,6 +78,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "about_app": MessageLookupByLibrary.simpleMessage("About App"),
         "about_app_description": MessageLookupByLibrary.simpleMessage(
             "\"Taskora Provider\" is a comprehensive app that connects you with a wide range of professional home and technical service providers, all with ease and convenience. Whether you need a plumber, an appliance technician, an electronics expert, or any other service, the app offers a flexible and secure way to book the right service at your preferred time. Ragha Provider aims to simplify your daily life with its user-friendly interface, transparent provider ratings, and real-time order status updates."),
+        "about_the_product":
+            MessageLookupByLibrary.simpleMessage("About the Product"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "account_settings":
             MessageLookupByLibrary.simpleMessage("Account Settings"),
@@ -255,6 +257,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmOrder": MessageLookupByLibrary.simpleMessage("Confirm Order"),
         "confirm_order": MessageLookupByLibrary.simpleMessage("Confirm Order"),
+        "contact_the_advertiser":
+            MessageLookupByLibrary.simpleMessage("Contact the Advertiser"),
         "contribute_to_the_development_of_our_services":
             MessageLookupByLibrary.simpleMessage(
                 "Contribute to the development of our services"),
@@ -411,6 +415,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Follow Auction"),
         "follow_up_on_the_order":
             MessageLookupByLibrary.simpleMessage("Follow up on the order"),
+        "for_service_product":
+            MessageLookupByLibrary.simpleMessage("(For Service Product)"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("Forget Pass"),
         "fourAMToSixAM":
             MessageLookupByLibrary.simpleMessage("04:00 AM - 06:00 AM"),
@@ -437,6 +443,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "hanged": MessageLookupByLibrary.simpleMessage("Hanged"),
         "help_us_develop_our_services": MessageLookupByLibrary.simpleMessage(
             "Help us develop our services"),
+        "here_are_placed_the_advantages_of_the_pre_selected_product_towards_the_customer":
+            MessageLookupByLibrary.simpleMessage(
+                "Here are placed the advantages of the pre-selected product towards the customer."),
         "high": MessageLookupByLibrary.simpleMessage("High"),
         "highest_bidder":
             MessageLookupByLibrary.simpleMessage("Highest Bidder"),
@@ -466,6 +475,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "invoiceNo": m4,
         "iron": MessageLookupByLibrary.simpleMessage("Iron"),
         "ironing": MessageLookupByLibrary.simpleMessage("Ironing"),
+        "it_is_2_5_km2_away_from_your_location":
+            MessageLookupByLibrary.simpleMessage(
+                "It is 2.5 km2 away from your location"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "laundryAndIroning":
@@ -483,6 +495,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "located": MessageLookupByLibrary.simpleMessage("Located"),
         "location_and_facilities":
             MessageLookupByLibrary.simpleMessage("Location & Facilities"),
+        "location_and_public_facilities": MessageLookupByLibrary.simpleMessage(
+            "Location and public facilities"),
+        "location_ex": MessageLookupByLibrary.simpleMessage(
+            "Al Yarmouk District, Riyadh, Kingdom of Saudi Arabia"),
         "location_example": MessageLookupByLibrary.simpleMessage(
             "5869 Abi Maali Al-Naqqash Street, Al-Ulaya District, Riyadh, Kingdom of Saudi Arabia"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
@@ -494,6 +510,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "medium": MessageLookupByLibrary.simpleMessage("Medium"),
         "meeting_delivery": MessageLookupByLibrary.simpleMessage(
             "Meeting takes place between both parties to deliver the product"),
+        "merchant_rating":
+            MessageLookupByLibrary.simpleMessage("Merchant Rating"),
         "meter": m5,
         "minimumOrderPrice":
             MessageLookupByLibrary.simpleMessage("Minimum order price"),
@@ -633,6 +651,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Product Address"),
         "product_description":
             MessageLookupByLibrary.simpleMessage("Product Description"),
+        "product_details":
+            MessageLookupByLibrary.simpleMessage("Product Details"),
         "product_rating":
             MessageLookupByLibrary.simpleMessage("Product Rating"),
         "product_specifications":
@@ -676,6 +696,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "reserve_price": MessageLookupByLibrary.simpleMessage("Reserve Price"),
         "retailPrice": MessageLookupByLibrary.simpleMessage("Retail price"),
         "returnToHome": MessageLookupByLibrary.simpleMessage("Return to home"),
+        "review": MessageLookupByLibrary.simpleMessage("Review"),
         "reviewOrder": MessageLookupByLibrary.simpleMessage("Review Order"),
         "review_data": MessageLookupByLibrary.simpleMessage("Review Data"),
         "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
@@ -737,6 +758,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "showYourInvoice":
             MessageLookupByLibrary.simpleMessage("Show your invoice"),
+        "show_all": MessageLookupByLibrary.simpleMessage("Show All"),
         "signIn": MessageLookupByLibrary.simpleMessage("Login"),
         "sixAMToEightAM":
             MessageLookupByLibrary.simpleMessage("06:00 AM - 08:00 AM"),

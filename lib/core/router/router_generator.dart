@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:taskora/core/router/routes.dart';
+import 'package:taskora/features/ads/presentation/views/ad_details_view.dart';
 import 'package:taskora/features/ads/presentation/views/add_ad_details_view.dart';
 import 'package:taskora/features/auctions/presentation/views/add_auctions_details_view.dart';
 import 'package:taskora/features/auth/login/presentation/pages/login_view.dart';
@@ -64,9 +65,11 @@ class AppRouters {
       case Routes.addListing:
         return _buildRoute(const AddListingView(), isIOS, settings);
       case Routes.addAdDetails:
-        return _buildRoute(const AdDetailsView(), isIOS, settings);
+        return _buildRoute(const AddAdDetailsView(), isIOS, settings);
       case Routes.addAuctionDetails:
         return _buildRoute(const AddAuctionsDetailsView(), isIOS, settings);
+      case Routes.adDetails:
+        return _buildRoute(const AdDetailsView(), isIOS, settings);
 
       default:
         return null;

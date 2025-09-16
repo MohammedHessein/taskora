@@ -4705,6 +4705,16 @@ class S {
     );
   }
 
+  /// `(For Service Product)`
+  String get for_service_product {
+    return Intl.message(
+      '(For Service Product)',
+      name: 'for_service_product',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Ad Number`
   String get ad_number {
     return Intl.message(
@@ -5640,6 +5650,108 @@ class S {
     return Intl.message(
       'Product Description',
       name: 'product_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contact the Advertiser`
+  String get contact_the_advertiser {
+    return Intl.message(
+      'Contact the Advertiser',
+      name: 'contact_the_advertiser',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Here are placed the advantages of the pre-selected product towards the customer.`
+  String
+      get here_are_placed_the_advantages_of_the_pre_selected_product_towards_the_customer {
+    return Intl.message(
+      'Here are placed the advantages of the pre-selected product towards the customer.',
+      name:
+          'here_are_placed_the_advantages_of_the_pre_selected_product_towards_the_customer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About the Product`
+  String get about_the_product {
+    return Intl.message(
+      'About the Product',
+      name: 'about_the_product',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product Details`
+  String get product_details {
+    return Intl.message(
+      'Product Details',
+      name: 'product_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location and public facilities`
+  String get location_and_public_facilities {
+    return Intl.message(
+      'Location and public facilities',
+      name: 'location_and_public_facilities',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It is 2.5 km2 away from your location`
+  String get it_is_2_5_km2_away_from_your_location {
+    return Intl.message(
+      'It is 2.5 km2 away from your location',
+      name: 'it_is_2_5_km2_away_from_your_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Al Yarmouk District, Riyadh, Kingdom of Saudi Arabia`
+  String get location_ex {
+    return Intl.message(
+      'Al Yarmouk District, Riyadh, Kingdom of Saudi Arabia',
+      name: 'location_ex',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Show All`
+  String get show_all {
+    return Intl.message(
+      'Show All',
+      name: 'show_all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Review`
+  String get review {
+    return Intl.message(
+      'Review',
+      name: 'review',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Merchant Rating`
+  String get merchant_rating {
+    return Intl.message(
+      'Merchant Rating',
+      name: 'merchant_rating',
       desc: '',
       args: [],
     );

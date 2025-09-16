@@ -528,6 +528,7 @@
   "faq": "FAQ",
   "how_to_benefit_from_offers": "How can I benefit from the offers?",
   "ad_details": "Ad Details",
+  "for_service_product": "(For Service Product)",
   "ad_number": "Ad Number",
   "ad_purpose": "Ad Purpose",
   "purpose_charity": "Charity",
@@ -621,5 +622,15 @@
   "status_new": "New",
   "choose_category": "Choose Category",
   "product_address": "Product Address",
-  "product_description": "Product Description"
+  "product_description": "Product Description",
+  "contact_the_advertiser": "Contact the Advertiser",
+  "here_are_placed_the_advantages_of_the_pre_selected_product_towards_the_customer": "Here are placed the advantages of the pre-selected product towards the customer.",
+  "about_the_product": "About the Product",
+  "product_details": "Product Details",
+  "location_and_public_facilities": "Location and public facilities",
+  "it_is_2_5_km2_away_from_your_location": "It is 2.5 km2 away from your location",
+  "location_ex":"Al Yarmouk District, Riyadh, Kingdom of Saudi Arabia",
+  "show_all": "Show All",
+  "review": "Review",
+  "merchant_rating": "Merchant Rating"
 }

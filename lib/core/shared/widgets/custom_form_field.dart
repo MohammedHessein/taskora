@@ -22,6 +22,7 @@ class CustomFormField extends StatefulWidget {
     this.formatters,
     this.contentPadding,
     this.controller,
+    this.trailingButton,
   });
 
   final Stream stream;
@@ -41,6 +42,7 @@ class CustomFormField extends StatefulWidget {
   final List<TextInputFormatter>? formatters;
   final EdgeInsetsGeometry? contentPadding;
   final TextEditingController? controller;
+  final Widget? trailingButton;
 
   @override
   State<CustomFormField> createState() => _CustomFormFieldState();
@@ -52,32 +54,49 @@ class _CustomFormFieldState extends State<CustomFormField> {
     return StreamBuilder(
       stream: widget.stream,
       builder: (ctx, snapShot) {
-        return TextFormField(
-          controller: widget.controller,
-          onChanged: widget.onChanged,
-          obscureText: widget.isPassword,
-          obscuringCharacter: "*",
-          keyboardType: widget.keyboardType,
-          textInputAction: widget.nextAction,
-          maxLength: widget.maxLength,
-          maxLines: widget.maxLines,
-          initialValue: widget.initValue,
-          inputFormatters: widget.formatters,
-          style: CustomTextStyle.kFormFieldTextStyle,
-          decoration: InputDecoration(
-            alignLabelWithHint: true,
-            contentPadding: widget.contentPadding,
-            prefixIcon: widget.preIcon,
-            suffixIcon: widget.postIcon,
-            counter: const Offstage(),
-            labelText: widget.label,
-            floatingLabelBehavior: widget.floatingLabel
-                ? FloatingLabelBehavior.always
-                : FloatingLabelBehavior.auto,
-            helperText: widget.helperText,
-            hintText: widget.hint,
-            errorText: snapShot.hasError ? snapShot.error.toString() : null,
-          ),
+        return Stack(
+          children: [
+            TextFormField(
+              controller: widget.controller,
+              onChanged: widget.onChanged,
+              obscureText: widget.isPassword,
+              obscuringCharacter: "*",
+              keyboardType: widget.keyboardType,
+              textInputAction: widget.nextAction,
+              maxLength: widget.maxLength,
+              maxLines: widget.maxLines,
+              initialValue: widget.initValue,
+              inputFormatters: widget.formatters,
+              style: CustomTextStyle.kFormFieldTextStyle,
+              decoration: InputDecoration(
+                alignLabelWithHint: true,
+                contentPadding:
+                    widget.contentPadding ??
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
+                prefixIcon: widget.preIcon,
+                suffixIcon: widget.postIcon,
+                counter: const Offstage(),
+                labelText: widget.label,
+                floatingLabelBehavior: widget.floatingLabel
+                    ? FloatingLabelBehavior.always
+                    : FloatingLabelBehavior.auto,
+                helperText: widget.helperText,
+                hintText: widget.hint,
+                errorText: snapShot.hasError ? snapShot.error.toString() : null,
+              ),
+            ),
+            if (widget.trailingButton != null)
+              Positioned(
+                bottom: 8,
+                left: Directionality.of(context) == TextDirection.rtl
+                    ? 8
+                    : null,
+                right: Directionality.of(context) == TextDirection.rtl
+                    ? null
+                    : 8,
+                child: widget.trailingButton!,
+              ),
+          ],
         );
       },
     );

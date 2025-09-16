@@ -2,6 +2,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:taskora/core/extensions/context_extensions.dart';
+import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/features/main/store/data/models/featured_ad_model.dart';
 import 'package:taskora/features/main/store/presentation/widgets/featured_ad_item.dart';
@@ -37,11 +39,16 @@ class _CarouselFeaturedAdsState extends State<CarouselFeaturedAds> {
           ),
           itemBuilder: (context, index, realIndex) {
             final featuredAd = featuredAds[index];
-            return Container(
-              margin: EdgeInsets.symmetric(horizontal: 6.w),
-              child: FeaturedAdItem(
-                featuredAd: featuredAd,
-                width: width,
+            return GestureDetector(
+              onTap: () {
+                context.pushNamed(Routes.adDetails, arguments: featuredAd);
+              },
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 6.w),
+                child: FeaturedAdItem(
+                  featuredAd: featuredAd,
+                  width: width,
+                ),
               ),
             );
           },

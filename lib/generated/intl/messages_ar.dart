@@ -78,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
         "about_app_description": MessageLookupByLibrary.simpleMessage(
             "\"تاسكورا بروفايدر\" هو تطبيق شامل يربطك بمجموعة واسعة من مزودي الخدمات المنزلية والفنية بكل سهولة واحترافية. سواء كنت بحاجة إلى سباك، فني أجهزة منزلية، مختص في الإلكترونيات، أو أي خدمة أخرى، يوفر لك التطبيق تجربة مرنة وآمنة لحجز الخدمة المناسبة في الوقت الذي تختاره. يهدف \"رغوة بروفايدر\" إلى تسهيل حياتك اليومية من خلال واجهة استخدام بسيطة، وتقييمات شفافة لمزودي الخدمة، وتحديثات لحظية لحالة الطلب."),
+        "about_the_product": MessageLookupByLibrary.simpleMessage("عن المنتج"),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "account_settings":
             MessageLookupByLibrary.simpleMessage("إعدادات الحساب"),
@@ -242,6 +243,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("أكيد"),
         "confirmOrder": MessageLookupByLibrary.simpleMessage("اجراء الطلب"),
         "confirm_order": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
+        "contact_the_advertiser":
+            MessageLookupByLibrary.simpleMessage("مراسلة المعلن"),
         "contribute_to_the_development_of_our_services":
             MessageLookupByLibrary.simpleMessage("ساهم بتطوير خدماتنا"),
         "countdown_timer":
@@ -393,6 +396,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "follow_auction": MessageLookupByLibrary.simpleMessage("متابعة المزاد"),
         "follow_up_on_the_order":
             MessageLookupByLibrary.simpleMessage("متابعة الطلب"),
+        "for_service_product":
+            MessageLookupByLibrary.simpleMessage("(لمنتج الخدمه)"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "fourAMToSixAM":
             MessageLookupByLibrary.simpleMessage("4 صباحا - 06 صباحا"),
@@ -420,6 +425,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "hanged": MessageLookupByLibrary.simpleMessage("معلقة"),
         "help_us_develop_our_services":
             MessageLookupByLibrary.simpleMessage("ساعدنا بتطوير خدماتنا"),
+        "here_are_placed_the_advantages_of_the_pre_selected_product_towards_the_customer":
+            MessageLookupByLibrary.simpleMessage(
+                "يوضع هنا مزايا المنتج المحدد مسبقا من تجاة العميل"),
         "high": MessageLookupByLibrary.simpleMessage("زياده"),
         "highest_bidder":
             MessageLookupByLibrary.simpleMessage("المزايد الاعلى"),
@@ -448,6 +456,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "invoiceNo": m4,
         "iron": MessageLookupByLibrary.simpleMessage("كوي"),
         "ironing": MessageLookupByLibrary.simpleMessage("كوي"),
+        "it_is_2_5_km2_away_from_your_location":
+            MessageLookupByLibrary.simpleMessage("تبعد عن موقعك 2.5 كم"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير"),
         "laundryAndIroning": MessageLookupByLibrary.simpleMessage("غسيل وكوي"),
@@ -464,6 +474,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "located": MessageLookupByLibrary.simpleMessage("تبعد"),
         "location_and_facilities":
             MessageLookupByLibrary.simpleMessage("الموقع والمرافق العامة"),
+        "location_and_public_facilities":
+            MessageLookupByLibrary.simpleMessage("الموقع والمرافق العامة"),
+        "location_ex": MessageLookupByLibrary.simpleMessage(
+            " حي اليرموك الرياض، المملكة العربية السعودية"),
         "location_example": MessageLookupByLibrary.simpleMessage(
             "5869 شارع ابي معالي النقاش حي العليا الرياض- المملكة العربية السعودية"),
         "login": MessageLookupByLibrary.simpleMessage("سجل الدخول"),
@@ -475,6 +489,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "medium": MessageLookupByLibrary.simpleMessage("متوسط"),
         "meeting_delivery": MessageLookupByLibrary.simpleMessage(
             "يتم اللقاء بين الطرفين لتسليم المنتج"),
+        "merchant_rating": MessageLookupByLibrary.simpleMessage("تقييم التاجر"),
         "meter": m5,
         "minimumOrderPrice":
             MessageLookupByLibrary.simpleMessage("الحد الادنى للطلب"),
@@ -610,6 +625,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "product_address": MessageLookupByLibrary.simpleMessage("عنوان المنتج"),
         "product_description":
             MessageLookupByLibrary.simpleMessage("وصف المنتج"),
+        "product_details":
+            MessageLookupByLibrary.simpleMessage("تفاصيل المنتج"),
         "product_rating": MessageLookupByLibrary.simpleMessage("تقييم المنتج"),
         "product_specifications":
             MessageLookupByLibrary.simpleMessage("مواصفات المنتج"),
@@ -651,6 +668,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retailPrice": MessageLookupByLibrary.simpleMessage("سعر التجزئة"),
         "returnToHome":
             MessageLookupByLibrary.simpleMessage("العودة إلى الصفحة الرئيسية"),
+        "review": MessageLookupByLibrary.simpleMessage("تقييم"),
         "reviewOrder": MessageLookupByLibrary.simpleMessage("مراجعة الطلب"),
         "review_data": MessageLookupByLibrary.simpleMessage("مراجعة البيانات"),
         "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
@@ -703,6 +721,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تعيين كلمة مرور جديدة"),
         "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
         "showYourInvoice": MessageLookupByLibrary.simpleMessage("اعرض فاتورتك"),
+        "show_all": MessageLookupByLibrary.simpleMessage("عرض الكل"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sixAMToEightAM":
             MessageLookupByLibrary.simpleMessage("6 صباحا - 08 صباحا"),

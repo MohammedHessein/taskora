@@ -23,7 +23,14 @@ List<SettingOption> getSettingsOptions(BuildContext context) => [
     title: context.tr.taskora_gifts,
     onTap: () => context.pushNamed(Routes.gifts),
   ),
-  SettingOption(title: context.tr.advertisements, onTap: () {}),
+  SettingOption(
+    title: context.tr.advertisements,
+    onTap: () {
+      context.pushNamed(
+        Routes.ads,
+      );
+    },
+  ),
   SettingOption(title: context.tr.auctions, onTap: () {}),
   SettingOption(
     title: context.tr.add_ad,

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/features/ads/presentation/views/ad_details_view.dart';
 import 'package:taskora/features/ads/presentation/views/add_ad_details_view.dart';
+import 'package:taskora/features/ads/presentation/views/ads_view.dart';
 import 'package:taskora/features/auctions/presentation/views/add_auctions_details_view.dart';
 import 'package:taskora/features/auth/login/presentation/pages/login_view.dart';
 import 'package:taskora/features/auth/register/presentation/pages/register_view.dart';
@@ -70,6 +71,8 @@ class AppRouters {
         return _buildRoute(const AddAuctionsDetailsView(), isIOS, settings);
       case Routes.adDetails:
         return _buildRoute(const AdDetailsView(), isIOS, settings);
+      case Routes.ads:
+        return _buildRoute(const AdsView(), isIOS, settings);
 
       default:
         return null;

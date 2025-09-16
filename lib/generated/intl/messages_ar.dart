@@ -256,6 +256,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الطلبات الحالية"),
         "current_price": MessageLookupByLibrary.simpleMessage("السعر الحالى"),
         "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
+        "daily": MessageLookupByLibrary.simpleMessage("يومي"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("تاريخ التسليم"),
         "deliveryFee": MessageLookupByLibrary.simpleMessage("رسوم التوصيل"),
@@ -880,6 +881,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "weHaveBagsEachOneLabeledWithIroningIroningAnd":
             MessageLookupByLibrary.simpleMessage(
                 "معنا اكياس كل كيس مكتوب عليه كوي+ كوي وغسيل+ غسيل جاف"),
+        "weekly": MessageLookupByLibrary.simpleMessage("اسبوعي"),
         "wholesalePrice": MessageLookupByLibrary.simpleMessage("سعر الجملة"),
         "whyTheSmartRecleanLaundryBag": MessageLookupByLibrary.simpleMessage(
             "لماذا شنطة مغسلة ريكلين الذكية؟"),

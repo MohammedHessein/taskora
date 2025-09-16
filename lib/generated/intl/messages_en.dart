@@ -270,6 +270,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currentOrders": MessageLookupByLibrary.simpleMessage("Current orders"),
         "current_price": MessageLookupByLibrary.simpleMessage("Current Price"),
         "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
+        "daily": MessageLookupByLibrary.simpleMessage("Daily"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("Delivery date"),
         "deliveryFee": MessageLookupByLibrary.simpleMessage("Delivery fee"),
@@ -923,6 +924,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "weHaveBagsEachOneLabeledWithIroningIroningAnd":
             MessageLookupByLibrary.simpleMessage(
                 "We have bags, each one labeled with ironing + ironing and washing + dry cleaning."),
+        "weekly": MessageLookupByLibrary.simpleMessage("Weekly"),
         "wholesalePrice":
             MessageLookupByLibrary.simpleMessage("Wholesale price"),
         "whyTheSmartRecleanLaundryBag": MessageLookupByLibrary.simpleMessage(

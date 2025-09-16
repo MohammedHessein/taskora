@@ -143,7 +143,9 @@ class _StoreViewState extends State<StoreView>
                   ? const StoreListView()
                   : const StoreGridView(),
             ),
-            const SliverToBoxAdapter(child: CarouselServiceWidget()),
+            const SliverToBoxAdapter(
+              child: CarouselServiceWidget(),
+            ),
           ],
         ),
       ),

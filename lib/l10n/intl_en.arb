@@ -632,5 +632,7 @@
   "location_ex":"Al Yarmouk District, Riyadh, Kingdom of Saudi Arabia",
   "show_all": "Show All",
   "review": "Review",
-  "merchant_rating": "Merchant Rating"
+  "merchant_rating": "Merchant Rating",
+  "daily": "Daily",
+  "weekly": "Weekly"
 }

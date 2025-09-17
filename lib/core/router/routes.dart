@@ -26,4 +26,5 @@ class Routes {
   static const String addAuctionDetails = '/auctionDetailsView';
   static const String adDetails = '/adDetailsView';
   static const String ads = '/adsView';
+  static const String auctions = '/auctionsView';
 }

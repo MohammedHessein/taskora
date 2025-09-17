@@ -31,7 +31,14 @@ List<SettingOption> getSettingsOptions(BuildContext context) => [
       );
     },
   ),
-  SettingOption(title: context.tr.auctions, onTap: () {}),
+  SettingOption(
+    title: context.tr.auctions,
+    onTap: () {
+      context.pushNamed(
+        Routes.auctions,
+      );
+    },
+  ),
   SettingOption(
     title: context.tr.add_ad,
     onTap: () => context.pushNamed(

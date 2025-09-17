@@ -634,5 +634,9 @@
   "review": "Review",
   "merchant_rating": "Merchant Rating",
   "daily": "Daily",
-  "weekly": "Weekly"
+  "weekly": "Weekly",
+  "previous_auctions": "Previous Auctions",
+  "roaming_auctions": "Roaming Auctions",
+  "follow_the_auction": "Follow the Auction",
+  "descending_auction_fairness": "Descending auction fairness:"
 }

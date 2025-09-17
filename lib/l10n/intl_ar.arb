@@ -634,5 +634,10 @@
   "review": "تقييم",
   "merchant_rating": "تقييم التاجر",
   "daily": "يومي",
-  "weekly": "اسبوعي"
+  "weekly": "اسبوعي",
+  "previous_auctions": "المزادات السابقة",
+  "roaming_auctions": "المزادات المجوله",
+  "follow_the_auction": "متابعه المزاد",
+  "descending_auction_fairness": "العدل التنازلي للمزاد:"
+
 }

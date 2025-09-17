@@ -5776,6 +5776,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Previous Auctions`
+  String get previous_auctions {
+    return Intl.message(
+      'Previous Auctions',
+      name: 'previous_auctions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Roaming Auctions`
+  String get roaming_auctions {
+    return Intl.message(
+      'Roaming Auctions',
+      name: 'roaming_auctions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Follow the Auction`
+  String get follow_the_auction {
+    return Intl.message(
+      'Follow the Auction',
+      name: 'follow_the_auction',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Descending auction fairness:`
+  String get descending_auction_fairness {
+    return Intl.message(
+      'Descending auction fairness:',
+      name: 'descending_auction_fairness',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -274,6 +274,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "date": MessageLookupByLibrary.simpleMessage("Date"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("Delivery date"),
         "deliveryFee": MessageLookupByLibrary.simpleMessage("Delivery fee"),
+        "descending_auction_fairness": MessageLookupByLibrary.simpleMessage(
+            "Descending auction fairness:"),
         "details": MessageLookupByLibrary.simpleMessage("Details"),
         "didNotReceiveTheCode": MessageLookupByLibrary.simpleMessage(
             "Didn\'t receive the code? Contact us now."),
@@ -414,6 +416,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "folded": MessageLookupByLibrary.simpleMessage("Folded"),
         "follow_auction":
             MessageLookupByLibrary.simpleMessage("Follow Auction"),
+        "follow_the_auction":
+            MessageLookupByLibrary.simpleMessage("Follow the Auction"),
         "follow_up_on_the_order":
             MessageLookupByLibrary.simpleMessage("Follow up on the order"),
         "for_service_product":
@@ -634,6 +638,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Prepare your order and it will be received at the pre-specified time."),
         "previousOrders":
             MessageLookupByLibrary.simpleMessage("Previous Orders"),
+        "previous_auctions":
+            MessageLookupByLibrary.simpleMessage("Previous Auctions"),
         "price": MessageLookupByLibrary.simpleMessage("Price"),
         "priceMenu": MessageLookupByLibrary.simpleMessage("Price Menu"),
         "price_after_inspection":
@@ -703,6 +709,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
         "rial": MessageLookupByLibrary.simpleMessage("Riyal"),
         "riyal": m9,
+        "roaming_auctions":
+            MessageLookupByLibrary.simpleMessage("Roaming Auctions"),
         "satellite": MessageLookupByLibrary.simpleMessage("Satellite"),
         "schedule_order":
             MessageLookupByLibrary.simpleMessage("Schedule Order"),

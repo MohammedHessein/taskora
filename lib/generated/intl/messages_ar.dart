@@ -260,6 +260,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("تاريخ التسليم"),
         "deliveryFee": MessageLookupByLibrary.simpleMessage("رسوم التوصيل"),
+        "descending_auction_fairness":
+            MessageLookupByLibrary.simpleMessage("العدل التنازلي للمزاد:"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "didNotReceiveTheCode": MessageLookupByLibrary.simpleMessage(
             "لم يصلك الرمز؟ قم بالتواصل الان"),
@@ -395,6 +397,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("خدمات محددة السعر"),
         "folded": MessageLookupByLibrary.simpleMessage("مطبقة"),
         "follow_auction": MessageLookupByLibrary.simpleMessage("متابعة المزاد"),
+        "follow_the_auction":
+            MessageLookupByLibrary.simpleMessage("متابعه المزاد"),
         "follow_up_on_the_order":
             MessageLookupByLibrary.simpleMessage("متابعة الطلب"),
         "for_service_product":
@@ -609,6 +613,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "جهز طلبك سيتم الاستلام في الوقت المحدد مسبقًا."),
         "previousOrders":
             MessageLookupByLibrary.simpleMessage("الطلبات السابقة"),
+        "previous_auctions":
+            MessageLookupByLibrary.simpleMessage("المزادات السابقة"),
         "price": MessageLookupByLibrary.simpleMessage("السعر"),
         "priceMenu": MessageLookupByLibrary.simpleMessage("قائمة الأسعار"),
         "price_after_inspection":
@@ -675,6 +681,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
         "rial": MessageLookupByLibrary.simpleMessage("ريال"),
         "riyal": m9,
+        "roaming_auctions":
+            MessageLookupByLibrary.simpleMessage("المزادات المجوله"),
         "satellite": MessageLookupByLibrary.simpleMessage("ستاليت"),
         "schedule_order": MessageLookupByLibrary.simpleMessage("جدولة الطلب"),
         "search": MessageLookupByLibrary.simpleMessage("بحث..."),

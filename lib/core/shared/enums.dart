@@ -85,3 +85,7 @@ enum DetailsType { service, product, cartItem }
 enum ListingType { advertisement, auction }
 
 enum ListingStatus { new_, used }
+
+enum ListingTypeTabs { all, daily, weekly }
+
+enum AuctionTabs { all, daily, weekly, previousAuctions, roamingAuctions }

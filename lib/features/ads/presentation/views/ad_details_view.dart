@@ -7,6 +7,7 @@ import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/utils/dimensions.dart';
+import 'package:taskora/features/ads/data/models/base_ad_model.dart';
 import 'package:taskora/features/ads/presentation/widgets/ad_details_ratings_section.dart';
 import 'package:taskora/features/listings/presentation/widgets/contact_the_advertiser_section.dart';
 import 'package:taskora/features/listings/presentation/widgets/listing_type_advantages_section.dart';
@@ -15,15 +16,14 @@ import 'package:taskora/features/listings/presentation/widgets/listing_type_deta
 import 'package:taskora/features/listings/presentation/widgets/listing_type_details_section.dart';
 import 'package:taskora/features/listings/presentation/widgets/listing_type_number_section.dart';
 import 'package:taskora/features/listings/presentation/widgets/location_and_public_facilities_section.dart';
-import 'package:taskora/features/main/store/data/models/featured_ad_model.dart';
 
 class AdDetailsView extends StatelessWidget {
   const AdDetailsView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final args = ModalRoute.of(context)!.settings.arguments! as FeaturedAdModel;
-    final featuredAd = args;
+    final args = ModalRoute.of(context)!.settings.arguments! as BaseAd;
+    final baseAd = args;
     return Scaffold(
       body: SafeArea(
         child: CustomScrollView(
@@ -31,21 +31,22 @@ class AdDetailsView extends StatelessWidget {
             CustomSliverAppBar(
               locationFuture: LocationProvider.getLocation(),
             ),
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: Dimensions.p16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+            SliverPadding(
+              padding: const EdgeInsets.symmetric(horizontal: Dimensions.p16),
+              sliver: SliverList(
+                delegate: SliverChildListDelegate.fixed(
+                  [
                     hGap25,
                     ListingTypeDetailsImageSection(
-                      featuredAd: featuredAd,
+                      baseAd: baseAd,
                       listingType: ListingType.advertisement,
+                      image: baseAd.imageUrl,
                     ),
                     hGap25,
                     ListingTypeDetailsImagesList(
-                      featuredAd: featuredAd,
+                      baseAd: baseAd,
                       listingType: ListingType.advertisement,
+                      image: baseAd.imageUrl,
                     ),
                     hGap15,
                     const ListingTypeNumberSection(
@@ -70,9 +71,7 @@ class AdDetailsView extends StatelessWidget {
                         side: const BorderSide(color: AppColors.primaryBlue),
                       ),
                       onPressed: () {
-                        context.pushNamed(
-                          Routes.firstStepBooking,
-                        );
+                        context.pushNamed(Routes.firstStepBooking);
                       },
                       child: Text(context.tr.secure_payment),
                     ),

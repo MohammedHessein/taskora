@@ -1,33 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:taskora/core/shared/enums.dart';
-import 'package:taskora/features/ads/data/models/base_ad_model.dart';
+import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/generated/assets.dart';
 
-class ListingTypeDetailsImageSection extends StatefulWidget {
-  const ListingTypeDetailsImageSection({
-    required this.listingType,
-    required this.image,
-    this.baseAd,
-    super.key,
-  });
+class AuctionVideoSection extends StatefulWidget {
+  const AuctionVideoSection({required this.image, super.key});
 
-  final BaseAd? baseAd;
-  final ListingType listingType;
   final String image;
 
   @override
-  State<ListingTypeDetailsImageSection> createState() =>
-      _ListingTypeDetailsImageSectionState();
+  State<AuctionVideoSection> createState() => _AuctionVideoSectionState();
 }
 
-class _ListingTypeDetailsImageSectionState
-    extends State<ListingTypeDetailsImageSection> {
+class _AuctionVideoSectionState extends State<AuctionVideoSection> {
   bool isFavorite = false;
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.sizeOf(context);
+    final width = size.width;
     return Stack(
       children: [
         Container(
@@ -54,6 +46,18 @@ class _ListingTypeDetailsImageSectionState
               isFavorite = !isFavorite;
             });
           },
+        ),
+        Positioned(
+          top: 35.h,
+          left: width / 2 - 85.w,
+          child: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.play_arrow,
+              color: AppColors.white,
+            ),
+            iconSize: 100.sp,
+          ),
         ),
       ],
     );

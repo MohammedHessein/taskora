@@ -144,6 +144,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Are you sure you want to continue ordering?"),
         "areYouSureYouWantToKeepOrdering": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to keep ordering?"),
+        "are_you_sure_you_want_to_exit": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to exit?"),
         "aromaticScent": MessageLookupByLibrary.simpleMessage("Aromatic scent"),
         "auction": MessageLookupByLibrary.simpleMessage("Auction"),
         "auction_details":
@@ -169,6 +171,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "auctions": MessageLookupByLibrary.simpleMessage("Auctions"),
         "auto_bid_increment":
             MessageLookupByLibrary.simpleMessage("Automatic Bid Increment"),
+        "auto_increment":
+            MessageLookupByLibrary.simpleMessage("Auto Increment"),
         "automaticPayment": MessageLookupByLibrary.simpleMessage(
             "Activate the automatic payment feature from the balance"),
         "available": MessageLookupByLibrary.simpleMessage("Available"),
@@ -178,6 +182,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "bank_details": MessageLookupByLibrary.simpleMessage("Bank Details"),
         "bid_increment":
             MessageLookupByLibrary.simpleMessage("Minimum Bid Increment"),
+        "bidding": MessageLookupByLibrary.simpleMessage("Bidding"),
+        "bidding_is_at_a_value_of":
+            MessageLookupByLibrary.simpleMessage("Bidding is at a value of"),
         "book": MessageLookupByLibrary.simpleMessage("Book"),
         "book_service": MessageLookupByLibrary.simpleMessage("Book Service"),
         "booking_details":
@@ -239,6 +246,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Clothing arrangement mechanism"),
         "come_back": MessageLookupByLibrary.simpleMessage("Come Back"),
         "comment": MessageLookupByLibrary.simpleMessage("Comment"),
+        "comments": MessageLookupByLibrary.simpleMessage("comments"),
         "commitment_to_deadlines":
             MessageLookupByLibrary.simpleMessage("Commitment to Deadlines"),
         "common_cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
@@ -269,6 +277,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create new account"),
         "currentOrders": MessageLookupByLibrary.simpleMessage("Current orders"),
         "current_price": MessageLookupByLibrary.simpleMessage("Current Price"),
+        "currently": MessageLookupByLibrary.simpleMessage("Currently"),
         "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
         "daily": MessageLookupByLibrary.simpleMessage("Daily"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
@@ -409,6 +418,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "finalizePayment":
             MessageLookupByLibrary.simpleMessage("Finalize Payment"),
+        "finished": MessageLookupByLibrary.simpleMessage("Finished"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "first_step": MessageLookupByLibrary.simpleMessage("First Step"),
         "fixed_price_services":
@@ -508,6 +518,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "5869 Abi Maali Al-Naqqash Street, Al-Ulaya District, Riyadh, Kingdom of Saudi Arabia"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "lowest_bid_for_the_advertiser": MessageLookupByLibrary.simpleMessage(
+            "Lowest bid for the advertiser"),
         "loyaltyPoints": MessageLookupByLibrary.simpleMessage("loyalty points"),
         "make_featured_ad":
             MessageLookupByLibrary.simpleMessage("Make it a featured ad"),
@@ -522,6 +534,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Minimum order price"),
         "mobile": MessageLookupByLibrary.simpleMessage("Mobile"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
+        "most_prominent_comments":
+            MessageLookupByLibrary.simpleMessage("Most prominent comments"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "nearbyWashers": MessageLookupByLibrary.simpleMessage("Nearby Washers"),
         "newItem": MessageLookupByLibrary.simpleMessage("New"),
@@ -938,6 +952,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "whyTheSmartRecleanLaundryBag": MessageLookupByLibrary.simpleMessage(
             "Why the smart Reclean laundry bag?"),
         "win": MessageLookupByLibrary.simpleMessage("Win"),
+        "winner": MessageLookupByLibrary.simpleMessage("Winner"),
         "withMarzam": MessageLookupByLibrary.simpleMessage("With Marzam"),
         "without": MessageLookupByLibrary.simpleMessage("Without"),
         "writeYourProblem":

@@ -5816,6 +5816,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Currently`
+  String get currently {
+    return Intl.message(
+      'Currently',
+      name: 'currently',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lowest bid for the advertiser`
+  String get lowest_bid_for_the_advertiser {
+    return Intl.message(
+      'Lowest bid for the advertiser',
+      name: 'lowest_bid_for_the_advertiser',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Auto Increment`
+  String get auto_increment {
+    return Intl.message(
+      'Auto Increment',
+      name: 'auto_increment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bidding`
+  String get bidding {
+    return Intl.message(
+      'Bidding',
+      name: 'bidding',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bidding is at a value of`
+  String get bidding_is_at_a_value_of {
+    return Intl.message(
+      'Bidding is at a value of',
+      name: 'bidding_is_at_a_value_of',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Winner`
+  String get winner {
+    return Intl.message(
+      'Winner',
+      name: 'winner',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Finished`
+  String get finished {
+    return Intl.message(
+      'Finished',
+      name: 'finished',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to exit?`
+  String get are_you_sure_you_want_to_exit {
+    return Intl.message(
+      'Are you sure you want to exit?',
+      name: 'are_you_sure_you_want_to_exit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `comments`
+  String get comments {
+    return Intl.message(
+      'comments',
+      name: 'comments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Most prominent comments`
+  String get most_prominent_comments {
+    return Intl.message(
+      'Most prominent comments',
+      name: 'most_prominent_comments',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

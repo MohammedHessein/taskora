@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taskora/core/shared/enums.dart';
-import 'package:taskora/features/ads/data/models/auction_model.dart';
+import 'package:taskora/features/auctions/data/models/auction_model.dart';
 import 'package:taskora/features/auctions/presentation/widgets/auction_list_item.dart';
 
 class AuctionsListView extends StatelessWidget {

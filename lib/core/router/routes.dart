@@ -23,8 +23,9 @@ class Routes {
   static const String packages = '/packagesView';
   static const String addListing = '/addListingPageView';
   static const String addAdDetails = '/addAdDetailsView';
-  static const String addAuctionDetails = '/auctionDetailsView';
+  static const String addAuctionDetails = '/addAuctionDetailsView';
   static const String adDetails = '/adDetailsView';
   static const String ads = '/adsView';
   static const String auctions = '/auctionsView';
+  static const String auctionDetails = '/auctionDetailsView';
 }

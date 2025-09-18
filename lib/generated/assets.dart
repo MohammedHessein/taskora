@@ -31,6 +31,7 @@ class Assets {
   static const String imagesOffer3 = 'assets/images/offer_3.png';
   static const String imagesOffer4 = 'assets/images/offer_4.png';
   static const String imagesPlumping = 'assets/images/plumping.png';
+  static const String imagesReviewImage = 'assets/images/review_image.png';
   static const String imagesSecurity = 'assets/images/security.png';
   static const String imagesSplash = 'assets/images/splash.png';
   static const String imagesStallite = 'assets/images/stallite.png';
@@ -77,6 +78,7 @@ class Assets {
   static const String svgsPhone = 'assets/svgs/phone.svg';
   static const String svgsPhone2 = 'assets/svgs/phone_2.svg';
   static const String svgsRat = 'assets/svgs/rat.svg';
+  static const String svgsRatingContainer = 'assets/svgs/rating_container.svg';
   static const String svgsRefresh = 'assets/svgs/refresh.svg';
   static const String svgsRiyal = 'assets/svgs/riyal.svg';
   static const String svgsSearch = 'assets/svgs/search.svg';

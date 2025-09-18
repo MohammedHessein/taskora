@@ -4,8 +4,9 @@ import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/features/ads/presentation/views/ad_details_view.dart';
 import 'package:taskora/features/ads/presentation/views/add_ad_details_view.dart';
 import 'package:taskora/features/ads/presentation/views/ads_view.dart';
-import 'package:taskora/features/auctions/presentation/views/auctions_view.dart';
 import 'package:taskora/features/auctions/presentation/views/add_auctions_details_view.dart';
+import 'package:taskora/features/auctions/presentation/views/auction_details_view.dart';
+import 'package:taskora/features/auctions/presentation/views/auctions_view.dart';
 import 'package:taskora/features/auth/login/presentation/pages/login_view.dart';
 import 'package:taskora/features/auth/register/presentation/pages/register_view.dart';
 import 'package:taskora/features/auth/verify_account/presentation/pages/verify_account_view.dart';
@@ -76,6 +77,8 @@ class AppRouters {
         return _buildRoute(const AdsView(), isIOS, settings);
       case Routes.auctions:
         return _buildRoute(const AuctionsView(), isIOS, settings);
+      case Routes.auctionDetails:
+        return _buildRoute(const AuctionDetailsView(), isIOS, settings);
 
       default:
         return null;

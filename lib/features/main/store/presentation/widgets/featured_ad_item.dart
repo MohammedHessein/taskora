@@ -206,7 +206,7 @@ class _FeaturedAdItemState extends State<FeaturedAdItem> {
                   ),
                   SizedBox(height: 2.h),
                   Text(
-                    widget.featuredAd.date,
+                    widget.featuredAd.dateString,
                     style: CustomTextStyle.kTextStyleF9.copyWith(
                       fontWeight: FontWeight.w600,
                     ),

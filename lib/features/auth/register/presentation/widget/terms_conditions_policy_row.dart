@@ -4,16 +4,27 @@ import 'package:taskora/core/extensions/theme_extensions.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 
-class TermsConditionsPolicyRow extends StatelessWidget {
+class TermsConditionsPolicyRow extends StatefulWidget {
   const TermsConditionsPolicyRow({super.key});
 
+  @override
+  State<TermsConditionsPolicyRow> createState() =>
+      _TermsConditionsPolicyRowState();
+}
+
+class _TermsConditionsPolicyRowState extends State<TermsConditionsPolicyRow> {
+  bool isChecked = false;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Checkbox(
-          value: false,
-          onChanged: (value) {},
+          value: isChecked,
+          onChanged: (value) {
+            setState(() {
+              isChecked = value!;
+            });
+          },
           activeColor: context.customColors.primaryBlue,
           checkColor: Colors.white,
           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,

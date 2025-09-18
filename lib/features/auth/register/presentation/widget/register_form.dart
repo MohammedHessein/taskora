@@ -54,6 +54,7 @@ class RegisterForm extends StatelessWidget {
           keyboardType: TextInputType.emailAddress,
           nextAction: TextInputAction.next,
         ),
+        hGap15,
       ],
     );
   }

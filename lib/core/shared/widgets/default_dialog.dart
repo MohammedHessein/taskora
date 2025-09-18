@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/extensions/theme_extensions.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
+import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
 
 class DefaultAlertDialog extends StatelessWidget {
@@ -21,11 +24,16 @@ class DefaultAlertDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadiusGeometry.circular(10.r),
+      ),
+      insetPadding: EdgeInsets.symmetric(horizontal: 10.w),
       backgroundColor: context.customColors.secondaryWhite,
       content: Text(
-        title,
-        style: CustomTextStyle.kTextStyleF18.copyWith(
+        context.tr.are_you_sure_you_want_to_exit,
+        style: CustomTextStyle.kTextStyleF14.copyWith(
           color: context.customColors.secondaryBlack,
+          fontWeight: FontWeight.w500,
         ),
         textAlign: TextAlign.center,
       ),
@@ -37,12 +45,17 @@ class DefaultAlertDialog extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: onPressed1,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor:
-                      context.customColors.primaryBlue, // Background color
+                  elevation: 0,
+                  side: const BorderSide(color: AppColors.error),
+                  backgroundColor: AppColors.white,
+                  foregroundColor: AppColors.error,
                 ),
                 child: Text(
                   btn1,
-                  style: TextStyle(color: context.customColors.secondaryWhite),
+                  style: CustomTextStyle.kTextStyleF14.copyWith(
+                    color: AppColors.error,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ),
@@ -51,11 +64,17 @@ class DefaultAlertDialog extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: onPressed2,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: context.customColors.primaryBlue,
+                  elevation: 0,
+                  side: const BorderSide(color: AppColors.successGreen),
+                  backgroundColor: AppColors.white,
+                  foregroundColor: AppColors.successGreen,
                 ),
                 child: Text(
                   btn2,
-                  style: TextStyle(color: context.customColors.secondaryWhite),
+                  style: CustomTextStyle.kTextStyleF14.copyWith(
+                    color: AppColors.successGreen,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ),

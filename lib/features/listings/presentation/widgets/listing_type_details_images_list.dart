@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskora/core/shared/enums.dart';
-import 'package:taskora/features/main/store/data/models/featured_ad_model.dart';
+import 'package:taskora/features/ads/data/models/base_ad_model.dart';
 
 class ListingTypeDetailsImagesList extends StatelessWidget {
   const ListingTypeDetailsImagesList({
-    this.featuredAd,
     required this.listingType,
+    this.baseAd,
     super.key,
+    this.image,
   });
 
-  final FeaturedAdModel? featuredAd;
+  final BaseAd? baseAd;
   final ListingType listingType;
+  final String? image;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class ListingTypeDetailsImagesList extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: AssetImage(featuredAd?.image ?? ''),
+                  image: AssetImage(image ?? baseAd!.imageUrl),
                 ),
                 borderRadius: BorderRadius.circular(10.r),
               ),

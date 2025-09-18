@@ -25,10 +25,13 @@ class AuctionsView extends StatefulWidget {
 class _AuctionsViewState extends State<AuctionsView> {
   StoreTabs selectedLayout = StoreTabs.list;
   AuctionTabs selectedTab = AuctionTabs.all;
+  ListingTypeTabs selectedListingType = ListingTypeTabs.all;
 
   bool isLayoutSelected(StoreTabs tab) => selectedLayout == tab;
 
   bool isFilterSelected(AuctionTabs tab) => selectedTab == tab;
+
+  bool isListingTypeSelected(ListingTypeTabs tab) => selectedListingType == tab;
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +82,46 @@ class _AuctionsViewState extends State<AuctionsView> {
                 ),
               ),
             ),
-            SliverToBoxAdapter(child: hGap10),
+            SliverToBoxAdapter(child: hGap20),
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: Dimensions.p8.w),
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () => setState(() {
+                        selectedListingType = ListingTypeTabs.all;
+                      }),
+                      child: ListingTypeLayoutButton(
+                        text: context.tr.all,
+                        selected: isListingTypeSelected(ListingTypeTabs.all),
+                      ),
+                    ),
+                    wGap5,
+                    GestureDetector(
+                      onTap: () => setState(() {
+                        selectedListingType = ListingTypeTabs.daily;
+                      }),
+                      child: ListingTypeLayoutButton(
+                        text: context.tr.daily,
+                        selected: isListingTypeSelected(ListingTypeTabs.daily),
+                      ),
+                    ),
+                    wGap5,
+                    GestureDetector(
+                      onTap: () => setState(() {
+                        selectedListingType = ListingTypeTabs.weekly;
+                      }),
+                      child: ListingTypeLayoutButton(
+                        text: context.tr.weekly,
+                        selected: isListingTypeSelected(ListingTypeTabs.weekly),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(child: hGap20),
             SliverToBoxAdapter(
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: Dimensions.p16.w),

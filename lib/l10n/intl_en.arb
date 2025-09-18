@@ -638,5 +638,15 @@
   "previous_auctions": "Previous Auctions",
   "roaming_auctions": "Roaming Auctions",
   "follow_the_auction": "Follow the Auction",
-  "descending_auction_fairness": "Descending auction fairness:"
+  "descending_auction_fairness": "Descending auction fairness:",
+  "currently": "Currently",
+  "lowest_bid_for_the_advertiser": "Lowest bid for the advertiser",
+  "auto_increment": "Auto Increment",
+  "bidding": "Bidding",
+  "bidding_is_at_a_value_of": "Bidding is at a value of",
+  "winner": "Winner",
+  "finished": "Finished",
+  "are_you_sure_you_want_to_exit": "Are you sure you want to exit?",
+  "comments": "comments",
+  "most_prominent_comments": "Most prominent comments"
 }

@@ -138,6 +138,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("متأكد في استمرار الطلب؟"),
         "areYouSureYouWantToKeepOrdering": MessageLookupByLibrary.simpleMessage(
             "هل أنت متأكد أنك تريد الاستمرار في الطلب؟"),
+        "are_you_sure_you_want_to_exit": MessageLookupByLibrary.simpleMessage(
+            "هل انت متأكد انك تريد الخروج؟"),
         "aromaticScent": MessageLookupByLibrary.simpleMessage("رائحة عطرية"),
         "auction": MessageLookupByLibrary.simpleMessage("مزاد"),
         "auction_details":
@@ -158,6 +160,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "auctions": MessageLookupByLibrary.simpleMessage("المزادات"),
         "auto_bid_increment":
             MessageLookupByLibrary.simpleMessage("مزايدة زيادة تلقائية"),
+        "auto_increment": MessageLookupByLibrary.simpleMessage("زيادة تلقائية"),
         "automaticPayment": MessageLookupByLibrary.simpleMessage(
             "تفعيل خاصية الدفع الاوتوماتيكي من الرصيد"),
         "available": MessageLookupByLibrary.simpleMessage("متاح"),
@@ -168,6 +171,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("البيانات البنكية"),
         "bid_increment":
             MessageLookupByLibrary.simpleMessage("السعر الأدنى للزيادة"),
+        "bidding": MessageLookupByLibrary.simpleMessage("مزايدة"),
+        "bidding_is_at_a_value_of":
+            MessageLookupByLibrary.simpleMessage("يتم المزايدة بقيمة"),
         "book": MessageLookupByLibrary.simpleMessage("حجز"),
         "book_service": MessageLookupByLibrary.simpleMessage("حجز الخدمة"),
         "booking_details": MessageLookupByLibrary.simpleMessage("تفاصيل الحجز"),
@@ -225,6 +231,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("آلية ترتيب الملابس"),
         "come_back": MessageLookupByLibrary.simpleMessage("عودة"),
         "comment": MessageLookupByLibrary.simpleMessage("تعليق"),
+        "comments": MessageLookupByLibrary.simpleMessage("التعليقات"),
         "commitment_to_deadlines":
             MessageLookupByLibrary.simpleMessage("الالتزام بالمواعيد"),
         "common_cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
@@ -255,6 +262,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currentOrders":
             MessageLookupByLibrary.simpleMessage("الطلبات الحالية"),
         "current_price": MessageLookupByLibrary.simpleMessage("السعر الحالى"),
+        "currently": MessageLookupByLibrary.simpleMessage("حاليا"),
         "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
         "daily": MessageLookupByLibrary.simpleMessage("يومي"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
@@ -391,6 +399,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "feedback": MessageLookupByLibrary.simpleMessage("تعليق"),
         "female": MessageLookupByLibrary.simpleMessage("انثى"),
         "finalizePayment": MessageLookupByLibrary.simpleMessage("إتمام الدفع"),
+        "finished": MessageLookupByLibrary.simpleMessage("انتهى"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الأول"),
         "first_step": MessageLookupByLibrary.simpleMessage("خطوه 1"),
         "fixed_price_services":
@@ -487,6 +496,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "5869 شارع ابي معالي النقاش حي العليا الرياض- المملكة العربية السعودية"),
         "login": MessageLookupByLibrary.simpleMessage("سجل الدخول"),
         "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+        "lowest_bid_for_the_advertiser":
+            MessageLookupByLibrary.simpleMessage("الحد الادنى للمعلن"),
         "loyaltyPoints": MessageLookupByLibrary.simpleMessage("نقاط الولاء"),
         "make_featured_ad":
             MessageLookupByLibrary.simpleMessage("اجعله اعلان مميز"),
@@ -500,6 +511,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الحد الادنى للطلب"),
         "mobile": MessageLookupByLibrary.simpleMessage("الجوال"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
+        "most_prominent_comments":
+            MessageLookupByLibrary.simpleMessage("ابرز التعليقات"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
         "nearbyWashers":
             MessageLookupByLibrary.simpleMessage("المغسلات الاقرب"),
@@ -894,6 +907,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "whyTheSmartRecleanLaundryBag": MessageLookupByLibrary.simpleMessage(
             "لماذا شنطة مغسلة ريكلين الذكية؟"),
         "win": MessageLookupByLibrary.simpleMessage("اكسب"),
+        "winner": MessageLookupByLibrary.simpleMessage("الفائز"),
         "withMarzam": MessageLookupByLibrary.simpleMessage("مع مرزم"),
         "without": MessageLookupByLibrary.simpleMessage("بدون"),
         "writeYourProblem": MessageLookupByLibrary.simpleMessage("اكتب مشكلتك"),

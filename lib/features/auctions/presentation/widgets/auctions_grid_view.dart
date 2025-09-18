@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taskora/core/shared/enums.dart';
-import 'package:taskora/features/ads/data/models/auction_model.dart';
+import 'package:taskora/features/auctions/data/models/auction_model.dart';
 import 'package:taskora/features/auctions/presentation/widgets/auction_grid_item.dart';
 
 class AuctionsGridView extends StatelessWidget {
@@ -28,7 +28,7 @@ class AuctionsGridView extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: 12.h,
         crossAxisSpacing: 12.w,
-        childAspectRatio: 0.50, // Adjusted for auction cards which are taller
+        childAspectRatio: 0.50,
       ),
     );
   }

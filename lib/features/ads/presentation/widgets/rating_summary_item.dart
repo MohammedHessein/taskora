@@ -4,6 +4,7 @@ import 'package:taskora/core/extensions/context_extensions.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/theme/app_colors.dart';
 import 'package:taskora/core/theme/app_text_styles.dart';
+import 'package:taskora/generated/assets.dart';
 
 class RatingSummaryItem extends StatelessWidget {
   const RatingSummaryItem({super.key});
@@ -76,23 +77,17 @@ class RatingSummaryItem extends StatelessWidget {
                 children: [
                   const CircleAvatar(
                     radius: 14,
-                    backgroundImage: NetworkImage(
-                      "https://randomuser.me/api/portraits/women/32.jpg",
-                    ),
+                    backgroundImage: AssetImage(Assets.imagesReviewImage),
                   ),
                   wGap0,
                   const CircleAvatar(
                     radius: 14,
-                    backgroundImage: NetworkImage(
-                      "https://randomuser.me/api/portraits/men/44.jpg",
-                    ),
+                    backgroundImage: AssetImage(Assets.imagesReviewImage),
                   ),
                   wGap0,
                   const CircleAvatar(
                     radius: 14,
-                    backgroundImage: NetworkImage(
-                      "https://randomuser.me/api/portraits/men/22.jpg",
-                    ),
+                    backgroundImage: AssetImage(Assets.imagesReviewImage),
                   ),
                 ],
               ),

@@ -7,9 +7,12 @@ import 'package:taskora/core/theme/app_text_styles.dart';
 class ListingTypeNumberSection extends StatelessWidget {
   const ListingTypeNumberSection({
     required this.listingType,
+    this.status,
     super.key,
   });
+
   final ListingType listingType;
+  final String? status;
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +33,15 @@ class ListingTypeNumberSection extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
+        if (listingType == ListingType.auction) ...[
+          const Spacer(),
+          Text(
+            status ?? '',
+            style: CustomTextStyle.kTextStyleF16.copyWith(
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
       ],
     );
   }

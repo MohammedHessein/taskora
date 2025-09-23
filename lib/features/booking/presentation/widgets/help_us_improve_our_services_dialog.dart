@@ -11,8 +11,23 @@ import 'package:taskora/features/booking/presentation/widgets/rating_item.dart';
 import 'package:taskora/features/booking/presentation/widgets/thanks_for_your_time_dialog.dart';
 import 'package:taskora/generated/assets.dart';
 
-class HelpUsImproveOurServicesDialog extends StatelessWidget {
+class HelpUsImproveOurServicesDialog extends StatefulWidget {
   const HelpUsImproveOurServicesDialog({super.key});
+
+  @override
+  State<HelpUsImproveOurServicesDialog> createState() =>
+      _HelpUsImproveOurServicesDialogState();
+}
+
+class _HelpUsImproveOurServicesDialogState
+    extends State<HelpUsImproveOurServicesDialog> {
+  late List<int> ratings;
+
+  @override
+  void initState() {
+    super.initState();
+    ratings = List.filled(5, 0);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +39,9 @@ class HelpUsImproveOurServicesDialog extends StatelessWidget {
       context.tr.overall_experience,
     ];
     final screenHeight = ScreenUtil().screenHeight;
+
+    final overall = ratings.reduce((a, b) => a + b) ~/ ratings.length;
+
     return SingleChildScrollView(
       child: Padding(
         padding: EdgeInsets.only(
@@ -55,7 +73,7 @@ class HelpUsImproveOurServicesDialog extends StatelessWidget {
                       ),
                       wGap25,
                       Text(
-                        '3',
+                        overall.toString(),
                         style: CustomTextStyle.kTextStyleF16.copyWith(
                           fontWeight: FontWeight.w600,
                         ),
@@ -69,7 +87,14 @@ class HelpUsImproveOurServicesDialog extends StatelessWidget {
                     ratingTitles.length,
                     (index) => Padding(
                       padding: EdgeInsets.only(top: 10.h),
-                      child: RatingItem(title: ratingTitles[index]),
+                      child: RatingItem(
+                        title: ratingTitles[index],
+                        onRatingUpdate: (value) {
+                          setState(() {
+                            ratings[index] = value;
+                          });
+                        },
+                      ),
                     ),
                   ),
                   hGap25,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:taskora/core/extensions/context_extensions.dart';
-import 'package:taskora/core/extensions/theme_extensions.dart';
 import 'package:taskora/core/shared/widgets/default_dialog.dart';
 import 'package:taskora/features/main/home/presentation/views/home_view.dart';
 import 'package:taskora/features/main/offers/presentation/views/offers_view.dart';
@@ -62,9 +61,6 @@ class _NavBarState extends State<NavBar> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: context.customColors.secondaryWhite,
-          elevation: 0,
-          type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
               icon: SvgPicture.asset(Assets.svgsInactiveHome),
@@ -94,10 +90,6 @@ class _NavBarState extends State<NavBar> {
           ],
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,
-          showUnselectedLabels: false,
-          showSelectedLabels: false,
-          selectedItemColor: context.customColors.primaryBlue,
-          unselectedItemColor: context.customColors.secondaryBlack.shade300,
         ),
       ),
     );

@@ -62,7 +62,7 @@ class VerifyAccountView extends StatelessWidget {
                 label: context.tr.common_next,
                 isUpperCase: true,
                 onPressed: () {
-                  context.pushNamed(Routes.navBar);
+                  context.pushNamed(Routes.selectLocationView);
                 },
               ),
               hGap15,

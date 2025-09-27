@@ -18,6 +18,10 @@ import 'package:taskora/core/service/location_service.dart' as _i37;
 import 'package:taskora/core/shared/cubits/app_cubit/app_cubit.dart' as _i467;
 import 'package:taskora/core/shared/cubits/language_cubit/language_cubit.dart'
     as _i103;
+import 'package:taskora/features/location/presentation/cubits/add_location/add_location_cubit.dart'
+    as _i110;
+import 'package:taskora/features/location/presentation/cubits/location_list/location_list_cubit.dart'
+    as _i532;
 
 extension GetItInjectableX on _i174.GetIt {
 // initializes the registration of main-scope dependencies inside of GetIt
@@ -31,6 +35,8 @@ extension GetItInjectableX on _i174.GetIt {
       environmentFilter,
     );
     final appModule = _$AppModule();
+    gh.factory<_i532.LocationListCubit>(() => appModule.locationListCubit);
+    gh.factory<_i110.AddLocationCubit>(() => appModule.addLocationCubit);
     gh.factory<_i103.LanguageCubit>(() => appModule.languageCubit);
     await gh.factoryAsync<_i361.Dio>(
       () => appModule.dio,

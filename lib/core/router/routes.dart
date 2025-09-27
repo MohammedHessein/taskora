@@ -28,4 +28,8 @@ class Routes {
   static const String ads = '/adsView';
   static const String auctions = '/auctionsView';
   static const String auctionDetails = '/auctionDetailsView';
+  static const String selectLocationView = '/selectLocationView';
+  static const String addNewLocation = '/addNewLocationView';
+  static const String locationsListView = '/locationsListView';
+  static const String viewLocationOnMap = '/viewLocationOnMapView';
 }

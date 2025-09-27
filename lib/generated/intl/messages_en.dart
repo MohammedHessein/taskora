@@ -106,12 +106,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "add_auction": MessageLookupByLibrary.simpleMessage("Add Auction"),
         "add_coupon_code":
             MessageLookupByLibrary.simpleMessage("Add Coupon Code"),
+        "add_new_location":
+            MessageLookupByLibrary.simpleMessage("Add New Location"),
         "add_video": MessageLookupByLibrary.simpleMessage("Add Video"),
         "additionalDetergents":
             MessageLookupByLibrary.simpleMessage("Additional detergents"),
         "additionalNotes":
             MessageLookupByLibrary.simpleMessage("Additional notes"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
+        "address_location":
+            MessageLookupByLibrary.simpleMessage("Address Location"),
         "advantages": MessageLookupByLibrary.simpleMessage("Advantages"),
         "advertisement": MessageLookupByLibrary.simpleMessage("Advertisement"),
         "advertisements":
@@ -144,6 +148,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Are you sure you want to continue ordering?"),
         "areYouSureYouWantToKeepOrdering": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to keep ordering?"),
+        "are_you_sure_delete_location": MessageLookupByLibrary.simpleMessage(
+            "Are you sure delete location ?"),
         "are_you_sure_you_want_to_exit": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to exit?"),
         "aromaticScent": MessageLookupByLibrary.simpleMessage("Aromatic scent"),
@@ -251,6 +257,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Commitment to Deadlines"),
         "common_cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "common_confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "common_delete": MessageLookupByLibrary.simpleMessage("Delete"),
         "common_error": MessageLookupByLibrary.simpleMessage("Error"),
         "common_next": MessageLookupByLibrary.simpleMessage("Next"),
         "common_no": MessageLookupByLibrary.simpleMessage("No"),
@@ -264,6 +271,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "condition": MessageLookupByLibrary.simpleMessage("Condition"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmOrder": MessageLookupByLibrary.simpleMessage("Confirm Order"),
+        "confirm_delete":
+            MessageLookupByLibrary.simpleMessage("Confirm Delete"),
+        "confirm_location":
+            MessageLookupByLibrary.simpleMessage("Confirm Location"),
         "confirm_order": MessageLookupByLibrary.simpleMessage("Confirm Order"),
         "contact_the_advertiser":
             MessageLookupByLibrary.simpleMessage("Contact the Advertiser"),
@@ -276,11 +287,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create new account"),
         "currentOrders": MessageLookupByLibrary.simpleMessage("Current orders"),
+        "current_location":
+            MessageLookupByLibrary.simpleMessage("Current Location"),
         "current_price": MessageLookupByLibrary.simpleMessage("Current Price"),
         "currently": MessageLookupByLibrary.simpleMessage("Currently"),
         "cvv": MessageLookupByLibrary.simpleMessage("CVV"),
         "daily": MessageLookupByLibrary.simpleMessage("Daily"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
+        "delete_location":
+            MessageLookupByLibrary.simpleMessage("Delete Location"),
         "deliveryDate": MessageLookupByLibrary.simpleMessage("Delivery date"),
         "deliveryFee": MessageLookupByLibrary.simpleMessage("Delivery fee"),
         "descending_auction_fairness": MessageLookupByLibrary.simpleMessage(
@@ -512,10 +527,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Location & Facilities"),
         "location_and_public_facilities": MessageLookupByLibrary.simpleMessage(
             "Location and public facilities"),
+        "location_confirmed":
+            MessageLookupByLibrary.simpleMessage("Location Confirmed"),
+        "location_deleted_successfully": MessageLookupByLibrary.simpleMessage(
+            "Location deleted successfully"),
         "location_ex": MessageLookupByLibrary.simpleMessage(
             "Al Yarmouk District, Riyadh, Kingdom of Saudi Arabia"),
         "location_example": MessageLookupByLibrary.simpleMessage(
             "5869 Abi Maali Al-Naqqash Street, Al-Ulaya District, Riyadh, Kingdom of Saudi Arabia"),
+        "location_saved_successfully":
+            MessageLookupByLibrary.simpleMessage("Location saved successfully"),
+        "location_selected":
+            MessageLookupByLibrary.simpleMessage("Location Selected"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "lowest_bid_for_the_advertiser": MessageLookupByLibrary.simpleMessage(
@@ -553,6 +576,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "noNotifications":
             MessageLookupByLibrary.simpleMessage("No notifications"),
         "noOrdersYet": MessageLookupByLibrary.simpleMessage("No orders yet"),
+        "no_saved_locations":
+            MessageLookupByLibrary.simpleMessage("No Saved Locations"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "offerCode": MessageLookupByLibrary.simpleMessage("Offer code"),
         "offer_description": MessageLookupByLibrary.simpleMessage(
@@ -644,6 +669,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please enter your phone number"),
         "pleaseSelectTheWashType":
             MessageLookupByLibrary.simpleMessage("Please select the wash type"),
+        "please_select_a_location_first": MessageLookupByLibrary.simpleMessage(
+            "Please select a location first"),
+        "please_select_location_and_enter_address":
+            MessageLookupByLibrary.simpleMessage(
+                "Please select location and enter address"),
         "points": MessageLookupByLibrary.simpleMessage("Points"),
         "prepareYourOrder": MessageLookupByLibrary.simpleMessage(
             "Prepare your order and it will be delivered on time"),
@@ -726,6 +756,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "roaming_auctions":
             MessageLookupByLibrary.simpleMessage("Roaming Auctions"),
         "satellite": MessageLookupByLibrary.simpleMessage("Satellite"),
+        "saved_locations":
+            MessageLookupByLibrary.simpleMessage("Saved Locations"),
         "schedule_order":
             MessageLookupByLibrary.simpleMessage("Schedule Order"),
         "search": MessageLookupByLibrary.simpleMessage("Search..."),
@@ -746,6 +778,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Select Price Type"),
         "select_service":
             MessageLookupByLibrary.simpleMessage("Select Service"),
+        "selected_location":
+            MessageLookupByLibrary.simpleMessage("Selected Location"),
         "seller_rating": MessageLookupByLibrary.simpleMessage("Seller Rating"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
         "sendActivationCode":
@@ -814,6 +848,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "subscribe": MessageLookupByLibrary.simpleMessage("Subscribe"),
         "subtotal": MessageLookupByLibrary.simpleMessage("Sub Total"),
+        "success": MessageLookupByLibrary.simpleMessage("Success"),
         "surName": MessageLookupByLibrary.simpleMessage("Sur Name"),
         "tabsAcCentral": MessageLookupByLibrary.simpleMessage("Central AC"),
         "tabsAcOther": MessageLookupByLibrary.simpleMessage("Other"),
@@ -881,6 +916,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "The two parties meet to deliver the product"),
         "third_step": MessageLookupByLibrary.simpleMessage("Third Step"),
+        "this_address_already_exists":
+            MessageLookupByLibrary.simpleMessage("This address already exists"),
         "timeAgo_day": m11,
         "timeAgo_hour": m12,
         "timeAgo_minute": m13,
@@ -933,6 +970,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "viewYourReceipt":
             MessageLookupByLibrary.simpleMessage("View your receipt"),
         "view_all": MessageLookupByLibrary.simpleMessage("View All"),
+        "view_on_map": MessageLookupByLibrary.simpleMessage("View on Map"),
         "waiting_for_price": MessageLookupByLibrary.simpleMessage(
             "Waiting for price confirmation"),
         "waiting_for_technician":

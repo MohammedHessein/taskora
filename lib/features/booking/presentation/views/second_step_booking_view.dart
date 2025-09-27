@@ -7,7 +7,7 @@ import 'package:taskora/core/shared/widgets/custom_sliver_app_bar.dart';
 import 'package:taskora/core/shared/widgets/gaps.dart';
 import 'package:taskora/core/utils/dimensions.dart';
 import 'package:taskora/features/booking/presentation/widgets/booking_step_header.dart';
-import 'package:taskora/features/booking/presentation/widgets/google_maps_widget.dart';
+import 'package:taskora/features/location/presentation/widgets/google_maps/google_maps_widget.dart';
 
 class SecondStepBookingView extends StatelessWidget {
   const SecondStepBookingView({super.key});

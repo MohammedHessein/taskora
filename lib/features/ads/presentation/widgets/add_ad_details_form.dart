@@ -46,7 +46,7 @@ class AdDetailsForm extends StatelessWidget {
             SizedBox(
               height: 60.h,
               child: CustomDropDownMenu(
-                dropdownMenuEntries: [],
+                dropdownMenuEntries: const [],
                 hintText: context.tr.select_price_type,
               ),
             ),

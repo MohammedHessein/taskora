@@ -5916,6 +5916,206 @@ class S {
       args: [],
     );
   }
+
+  /// `Add New Location`
+  String get add_new_location {
+    return Intl.message(
+      'Add New Location',
+      name: 'add_new_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please select a location first`
+  String get please_select_a_location_first {
+    return Intl.message(
+      'Please select a location first',
+      name: 'please_select_a_location_first',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address Location`
+  String get address_location {
+    return Intl.message(
+      'Address Location',
+      name: 'address_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This address already exists`
+  String get this_address_already_exists {
+    return Intl.message(
+      'This address already exists',
+      name: 'this_address_already_exists',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Selected Location`
+  String get selected_location {
+    return Intl.message(
+      'Selected Location',
+      name: 'selected_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current Location`
+  String get current_location {
+    return Intl.message(
+      'Current Location',
+      name: 'current_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Location`
+  String get confirm_location {
+    return Intl.message(
+      'Confirm Location',
+      name: 'confirm_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Success`
+  String get success {
+    return Intl.message(
+      'Success',
+      name: 'success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location Confirmed`
+  String get location_confirmed {
+    return Intl.message(
+      'Location Confirmed',
+      name: 'location_confirmed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location Selected`
+  String get location_selected {
+    return Intl.message(
+      'Location Selected',
+      name: 'location_selected',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Saved Locations`
+  String get saved_locations {
+    return Intl.message(
+      'Saved Locations',
+      name: 'saved_locations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Saved Locations`
+  String get no_saved_locations {
+    return Intl.message(
+      'No Saved Locations',
+      name: 'no_saved_locations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `View on Map`
+  String get view_on_map {
+    return Intl.message(
+      'View on Map',
+      name: 'view_on_map',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete Location`
+  String get delete_location {
+    return Intl.message(
+      'Delete Location',
+      name: 'delete_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Delete`
+  String get confirm_delete {
+    return Intl.message(
+      'Confirm Delete',
+      name: 'confirm_delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure delete location ?`
+  String get are_you_sure_delete_location {
+    return Intl.message(
+      'Are you sure delete location ?',
+      name: 'are_you_sure_delete_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get common_delete {
+    return Intl.message(
+      'Delete',
+      name: 'common_delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location deleted successfully`
+  String get location_deleted_successfully {
+    return Intl.message(
+      'Location deleted successfully',
+      name: 'location_deleted_successfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location saved successfully`
+  String get location_saved_successfully {
+    return Intl.message(
+      'Location saved successfully',
+      name: 'location_saved_successfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please select location and enter address`
+  String get please_select_location_and_enter_address {
+    return Intl.message(
+      'Please select location and enter address',
+      name: 'please_select_location_and_enter_address',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

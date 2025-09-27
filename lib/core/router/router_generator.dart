@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:taskora/core/dependency_injection/injector.dart';
 import 'package:taskora/core/router/routes.dart';
 import 'package:taskora/features/ads/presentation/views/ad_details_view.dart';
 import 'package:taskora/features/ads/presentation/views/add_ad_details_view.dart';
@@ -18,6 +20,12 @@ import 'package:taskora/features/details/presentation/views/details_view.dart';
 import 'package:taskora/features/gifts/presentation/views/gifts_view.dart';
 import 'package:taskora/features/gifts/presentation/views/send_gift_view.dart';
 import 'package:taskora/features/listings/presentation/views/add_listing_view.dart';
+import 'package:taskora/features/location/presentation/cubits/add_location/add_location_cubit.dart';
+import 'package:taskora/features/location/presentation/cubits/location_list/location_list_cubit.dart';
+import 'package:taskora/features/location/presentation/views/add_new_location_view.dart';
+import 'package:taskora/features/location/presentation/views/locations_list_view.dart';
+import 'package:taskora/features/location/presentation/views/select_location_view.dart';
+import 'package:taskora/features/location/presentation/views/view_location_on_map_view.dart';
 import 'package:taskora/features/main/settings/presentation/views/about_app_view.dart';
 import 'package:taskora/features/main/settings/presentation/views/privacy_policy_view.dart';
 import 'package:taskora/features/main/settings/presentation/views/technical_support_view.dart';
@@ -79,6 +87,28 @@ class AppRouters {
         return _buildRoute(const AuctionsView(), isIOS, settings);
       case Routes.auctionDetails:
         return _buildRoute(const AuctionDetailsView(), isIOS, settings);
+      case Routes.selectLocationView:
+        return _buildRoute(const SelectLocationView(), isIOS, settings);
+      case Routes.addNewLocation:
+        return _buildRoute(
+          BlocProvider(
+            create: (context) => di<AddLocationCubit>(),
+            child: const AddNewLocationView(),
+          ),
+          isIOS,
+          settings,
+        );
+      case Routes.locationsListView:
+        return _buildRoute(
+          BlocProvider(
+            create: (context) => di<LocationListCubit>()..loadLocations(),
+            child: const LocationsListView(),
+          ),
+          isIOS,
+          settings,
+        );
+      case Routes.viewLocationOnMap:
+        return _buildRoute(const ViewLocationOnMapView(), isIOS, settings);
 
       default:
         return null;

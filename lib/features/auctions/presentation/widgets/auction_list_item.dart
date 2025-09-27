@@ -107,7 +107,6 @@ class _AuctionListItemState extends State<AuctionListItem>
                               border: widget.auction.status == "جارى"
                                   ? Border.all(
                                       color: AppColors.primaryBlue,
-                                      width: 1,
                                     )
                                   : null,
                             ),

@@ -6,6 +6,7 @@ import 'package:taskora/core/service/dio_factory.dart';
 import 'package:taskora/core/service/location_service.dart';
 import 'package:taskora/core/shared/cubits/app_cubit/app_cubit.dart';
 import 'package:taskora/core/shared/cubits/language_cubit/language_cubit.dart';
+import 'package:taskora/features/auth/register/presentation/cubits/register_cubit.dart';
 import 'package:taskora/features/location/presentation/cubits/add_location/add_location_cubit.dart';
 import 'package:taskora/features/location/presentation/cubits/location_list/location_list_cubit.dart';
 
@@ -26,6 +27,10 @@ abstract class AppModule {
   /// <!------ Language Cubit ------->
   @injectable
   LanguageCubit get languageCubit => LanguageCubit();
+
+  /// <!------ Register Cubit ------->
+  @injectable
+  RegisterCubit get registerCubit => RegisterCubit();
 
   /// <!------ APP MODULE ------->
   @factoryMethod

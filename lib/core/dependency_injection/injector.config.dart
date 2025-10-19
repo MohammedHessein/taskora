@@ -18,6 +18,10 @@ import 'package:taskora/core/service/location_service.dart' as _i37;
 import 'package:taskora/core/shared/cubits/app_cubit/app_cubit.dart' as _i467;
 import 'package:taskora/core/shared/cubits/language_cubit/language_cubit.dart'
     as _i103;
+import 'package:taskora/features/auth/register/data/repositories/register_repository.dart'
+    as _i938;
+import 'package:taskora/features/auth/register/presentation/cubits/register_cubit.dart'
+    as _i917;
 import 'package:taskora/features/location/presentation/cubits/add_location/add_location_cubit.dart'
     as _i110;
 import 'package:taskora/features/location/presentation/cubits/location_list/location_list_cubit.dart'
@@ -38,6 +42,7 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i532.LocationListCubit>(() => appModule.locationListCubit);
     gh.factory<_i110.AddLocationCubit>(() => appModule.addLocationCubit);
     gh.factory<_i103.LanguageCubit>(() => appModule.languageCubit);
+    gh.factory<_i917.RegisterCubit>(() => appModule.registerCubit);
     await gh.factoryAsync<_i361.Dio>(
       () => appModule.dio,
       preResolve: true,
@@ -51,6 +56,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => appModule.getLocationService());
     gh.lazySingleton<_i848.ApiClient>(
         () => appModule.getApiClient(gh<_i361.Dio>()));
+    gh.factory<_i938.RegisterRepository>(
+        () => _i938.RegisterRepository(gh<_i848.ApiClient>()));
     return this;
   }
 }
